@@ -1,6 +1,40 @@
-### JanusCSV2Graph
+### JanusCSV2Graph  
+##### A test to build a graph of Janus data types, units, query and measurement descriptions.  
 
-Some SPARQL call examples on the resulting graph
+#### Intro
+
+This member of the garden is a test to see what I could do with the collection of .txt files in here.  These files are really CSV (tab separated) files created by Pat Diver that expose metadata on the DSDP/ODP/IODP Janus database.  They are
+
+* **`ocd_metadata.txt`**  
+A master file that contains most of the metadata associated with Janus.  There are some extra elements in the various other files below but a lot of overlap. 
+* **`ocd_metadata_hdr.txt`** 
+A file that defines out some of the various query views into the Janus database like: JanusChemCarb.  It then also provides a brief description of these views.  
+* **`ocd_metadata_json_skos.txt`**  
+A file that associates a set or terms (parameters) with their units and also a brief description string.  This file could easily help populate a simple SKOS based vocabulary, hence its name
+* **`ocd_metadata_units.txt`**   
+A description of UNITS used in various Janus columns/parameters
+
+#### Output process
+The main.go code in here is a simple program that reads and parses the CSV and then makes an initial RDF file.  This test.nt file is a N-triples representation of the data.  A few things to note:
+
+* This .nt file does not use any vocabularies like NCEAS /oboe (https://github.com/NCEAS/oboe) or others at this time.  That is part of what this effort is about, to get an idea of what I should be using to encode this.
+* I likely should look at QUDT (http://www.qudt.org/) but I tried once and it hurt.   Jokes aside, I can't
+even tell if I should be looking at this.
+* Also should review ODM2 (http://www.odm2.org/) and see what I could use there.
+* Several vocabulary elements in test.nt are made up and are not resolvable URI's.  It's a test after all and I really want to use existing things in the end, not make something up.  
+
+The **test.nt** file is here to look at, but it's N-triples are noted so not the easiest to review.  I need to set up some live queries that people can follow and look at.  The main queries and results will be something like:
+
+* A simple query like q1 below that returns all the columns, parameter names, units,  and description to be added to the landing page for the datasets.  An example of the results (not all of them) are below for 2 or 3 of the columns for that call.
+* Also want to be able to have people select a parameter and see all datasets that have data for it
+* Also should be able to request all datasets for a given measurement
+
+
+#### Notes and comments
+
+Some SPARQL call examples on the resulting graph:
+
+q1
 
 ```
 SELECT  DISTINCT *  
@@ -46,6 +80,8 @@ uri	p	o
 
 Some other queries I am holding here for potential documentation.
 
+q2
+
 ```
 prefix bds: <http://www.bigdata.com/rdf/search#>
 select DISTINCT *
@@ -55,6 +91,8 @@ where {
    ?s ?pp ?oo .
 }
 ```
+
+q3
 
 ```
 prefix bds: <http://www.bigdata.com/rdf/search#>
@@ -66,6 +104,8 @@ where {
 }
 ```
 
+q4
+
 ```
 prefix bds: <http://www.bigdata.com/rdf/search#>
 select ?s ?p ?o
@@ -74,6 +114,8 @@ where {
    ?s ?p ?o .
 }
 ```
+
+q5
 
 ```
 SELECT  *
@@ -84,6 +126,8 @@ WHERE {
   ?jm   ?p ?o
 }
 ```
+
+q6
 
 ```
 SELECT  *

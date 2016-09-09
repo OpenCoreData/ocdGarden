@@ -1,0 +1,4 @@
+setenv.sh
+simpleCallTest/outputHold/*
+bleveIndexer/csvw.bleve/*
+simpleCallTest/output/*
