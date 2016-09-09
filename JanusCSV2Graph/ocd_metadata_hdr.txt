@@ -1,0 +1,59 @@
+table_name	struct_name	struct_descript	query_descript
+OCD_AGE_MODEL	JanusAgeModel	Age model (or Age Depth Model) interpretations based mostly on paleontological but also paleomagnetic and radio-isotopic analyses.	Age Model
+OCD_AGE_PROFILE	JanusAgeProfile	Interpretations of fossil datums used to construct age models for holes.	Age Profile
+OCD_CHEM_CARB	JanusChemCarb	Measurements of carbonate data generated from instrumentation in the shipboard chemistry lab including weight percentages of inorganic, organic, and total carbon, calcium carbonate, nitrogen, sulfur, and hydrogen.	Chemical Carbonate
+OCD_CHEM_GAS	JanusChemGas	Measurements of gas elements generated using gas chromatographs and natural gas analyzers in the shipboard chemistry lab.	Chemical Gas Element
+OCD_CHEM_IW	JanusChemIw	Measurements of elements,  compounds, salinity, alkalinity, and pH from interstitial (pore) water samples generated using gas chromatography, mass spectrometry, and atomic emissions spectrometry in the shipboard chemistry lab.	Chemical Interstitial Water
+OCD_CHEM_ROCK_EVAL	JanusChemRockEval	Measurements of type and maturity of organic carbon and hydrocarbon potential (for safety purposes) by sample pyrolysis using RockEval instrumentation.	Chemical Rock Eval
+OCD_CORE_CLOSEUP_IMAGE	JanusCoreCloseupImage	URL links to closeup core photo images.	Core Closeup Image
+OCD_CORE_IMAGE	JanusCoreImage	URL links to core and core-section photo images.	Core Image
+OCD_CORE_SAMPLE	JanusCoreSample	Information on samples taken from cores for shipboard laboratories to fulfill minimum data requirements and post-cruise for research proposals.	Core Sample
+OCD_CORE_SAMPLE_TOTAL	JanusCoreSampleTotal	Summary statistics regarding the number of samples taken for particular laboratory purposes or in fulfillment of a sample request.	Core Sample Total
+OCD_CORE_SECTION_SUMMARY	JanusCoreSectionSummary	Summary of core and section depths and offsets.	Core Section Summary
+OCD_CORE_SUMMARY	JanusCoreSummary	Summary of core depth intervals and offsets.	Core Summary
+OCD_CRYOMAG	JanusCryomag	Measurements of paleomagnetic data including declination, inclination and intensity taken with a cryogenic magnetometer and other equipment.	Paleomagnetics
+OCD_DHT	JanusDht	Measurements of downhole temperature.	Downhole Temperature
+OCD_DIGITAL_RGB	JanusDigitalRgb	Measurements of red, green, blue (RGB) values taken on cores with a line-scan camera.	Digital Imaging RGB
+OCD_GRA	JanusGra	Measurements of gamma-ray attenuation and calculated bulk density acquired using sensors on the whole-core multi-sensing track (WC-MST).	Gamma-Ray Attenuation (GRA)
+OCD_ICP_AES	JanusIcpAes	Measurements of major and trace elements by geochemical analyses using inductively coupled plasma-atomic emmission spectrometry (ICP-AES).	Inductively Coupled Plasma-Atomic Emmission Spectrometry (ICP-AES)
+OCD_LAB_SAMPLING_REF	JanusLabSamplingRef	Reference listing of Lab Sampling Codes.	Lab Sampling Codes Reference
+OCD_LEG_SAMPLING	JanusLegSampling	Leg Sampling Codes used to link groups of samples to investigators.	Leg Sampling Codes
+OCD_MAD	JanusMad	Index Properties of Moisture and Density (MAD) including moisture content, porosity, and void ratio derived from measurements from pycnometers and mass balances.	Moisture and Density (MAD) Index Properties
+OCD_MISC_METADATA	JanusMiscMetadata	Miscellaneous metadata on instrumentation, analyses, and measurements.	Measurement Metadata
+OCD_MISC_SPECIAL_HOLE	JanusMiscSpecialHole	Location and coring information on designated special holes.	Special Hole
+OCD_MS2F	JanusMs2f	Measurements of point magnetic susceptibility acquired using a meter attached to the Archive Half Multisensor Track (AMST) in the shipboard environment.	Point Magnetic Susceptibility
+OCD_MSCL	JanusMscl	Measurements of magnetic susceptibility acquired using a core logger configurable with one or two Bartington magnetic susceptibility sensors affixed to a push-rod style GeoTek rail system (MSCL).	Magnetic Susceptibility Core Logging
+OCD_MSL	JanusMsl	Measurements of magnetic susceptibility acquired using a Bartington loop affixed to the whole-core multi-sensor track (WC-MST).	Magnetic Susceptibility Whole-Core Multi-Sensor Track (WC-MST)
+OCD_NCR	JanusNcr	Measurements of non-contact resistivity (NCR) derived from GeoTek instrumentation.	Non-contact Resistivity
+OCD_NGR	JanusNgr	Measurements of natural gamma radiation (NGR) counts acquired using NaI sensors on the whole-core multi-sensor track (WC-MST) system.	Natural Gamma Radiation (NGR)
+OCD_PALEO_DATUM_REF	JanusPaleoDatumRef	Reference listing of taxon datum concepts.	Paleo Datum Reference
+OCD_PALEO_IMAGE	JanusPaleoImage	Url links to prime data images of scanned Paleontology and Biostratigraphy log sheets. 	Paleo Image
+OCD_PALEO_OCCURRENCE	JanusPaleoOccurrence	Fossil taxa occurrence (abundance and preservation) data, and age/zonation identification on a species by species basis for each sample.	Paleo Taxon Occurrence
+OCD_PALEO_SAMPLE_INTERP	JanusPaleoSampleInterp	Interpretations at a sample-level by fossil group of abundance, preservation, geological age range, zonation range, paleobathymetry, and comments.	Paleo Sample Interpretation
+OCD_PALEO_TAXONOMY_REF	JanusPaleoTaxonomyRef	Reference listing of taxon species concepts.	Paleo Taxonomy Reference
+OCD_PALEO_ZONE_REF	JanusPaleoZoneRef	Reference listing of taxon datum zone concepts.	Paleo Zone Reference
+OCD_PRIME_DATA_IMAGE	JanusPrimeDataImage	URL links to scanned images of prime data types including visual core description (VCD), Paleontology, VCD hard rock, VCD structual, and X-ray diffraction (XRD).	Prime Data Image
+OCD_PWL	JanusPwl	Measurements of P-wave velocity collected by the sonic velocity sensor on a whole-core multi-sensing track (WC-MST) system.	Whole-Core P-Wave Velocity
+OCD_PWS1	JanusPws1	Measurements of P-wave velocity in the z-direction on split cores.	P-Wave Velocity (z)
+OCD_PWS2	JanusPws2	Measurements of P-wave velocity in the y-direction on split cores.	P-Wave Velocity (y)
+OCD_PWS3	JanusPws3	Measurements of P-wave velocity in the x-direction on split cores with or without core liners, and in the x, y, and z-directions on cubic or cylindrical, consolidated, or lithified core specimens.	P-Wave Velocity (x,y,z)
+OCD_RSC	JanusRsc	Measurements of Reflectance Spectrophotometry and Colorimetry taken on cores using a Minolta CM2002 camera.	Reflectance Spectrophotometry and Colorimetry
+OCD_SHEAR_STRENGTH_AVS	JanusShearStrengthAvs	Measurements of the torque required to cause a split-core cylindrical surface to be sheared by an automated vane system (AVS).	Shear Strength (Automated Vane Shear – AVS)
+OCD_SHEAR_STRENGTH_PEN	JanusShearStrengthPen	Measurements of the unconfined compressive strength of a split-core surface using a pocket penetrometer.	Shear Strength (Penetrometer)
+OCD_SHEAR_STRENGTH_TOR	JanusShearStrengthTor	Measurements of shear strength on a split-core using a hand-held Torvane instrument.	Shear Strength (Torvane)
+OCD_SMEAR_SLIDE	JanusSmearSlide	Quantitative and qualitative abundances at a sample-level of sedimentary components as observed in microscopic smear slides.	Smear Slide Components
+OCD_SMEAR_SLIDE_COMP_REF	JanusSmearSlideCompRef	Reference listing of smear slide components.	Smear Slide Component Reference
+OCD_SPLICE_INTERVAL	JanusSpliceInterval	Summary of core stratigraphic depth correlation between holes at a site derived from downhole depth-shifting and correlation of multiple core and logging datasets.	Splice Interval Listing
+OCD_SPLICE_TIE	JanusSpliceTie	Detail of core stratigraphic depth correlation between holes at a site derived from downhole depth-shifting and correlation of multiple core and logging datasets.	Splice Tie Point Listing
+OCD_TENSOR_CORE	JanusTensorCore	Measurements of magnetic core orientation.	Tensor Core Orientation
+OCD_TENSOR_TOOL	JanusTensorTool	Metadata on Tensor Tool operation.	Tensor Tool
+OCD_THERMAL_CONDUCTIVITY	JanusThermalConductivity	Measurement of thermal conductivity on whole cores after reaching thermal equilibrium in the shipboard laboratory environment using Teka temperature probes.	Thermal Conductivity
+OCD_THIN_SECTION	JanusThinSection	Quantitative and qualitative abundances at a sample-level of sedimentary components as observed in microscopic thin sections.	Thin Section Components
+OCD_THIN_SECTION_COMP_REF	JanusThinSectionCompRef	Reference listing of thin section components.	Thin Section Component Reference
+OCD_THIN_SECTION_IMAGE	JanusThinSectionImage	URL links to images of thin section microphotographs.	Thin Section Image
+OCD_VCD_HARD_ROCK_IMAGE	JanusVcdHardRockImage	URL links to scanned images of visual core descriptions (VCD) on hard rocks.	Visual Core Description (VCD) Hard Rock Image
+OCD_VCD_IMAGE	JanusVcdImage	URL links to scanned images of visual core descriptions (VCD).	Visual Core Description (VCD) Image
+OCD_VCD_STRUCTURE_IMAGE	JanusVcdStructureImage	URL links to scanned images of visual core descriptions (VCD) on core structure.	Visual Core Description (VCD) Structure Image
+OCD_XRD	JanusXrd	URL links to X-Ray Diffraction (XRD) sample analysis scan data.	X-Ray Diffraction (XRD)
+OCD_XRD_IMAGE	JanusXrdImage	URL links to scanned images of instrumentation output of X-Ray Diffraction (XRD) peak values.	X-Ray Diffraction (XRD) Image
+OCD_XRF	JanusXrf	Measurements of concentrations of major and trace elements from X-Ray Fluorescence (XRF) spectrometry samples.	X-Ray Fluorescence (XRF)

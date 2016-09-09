@@ -1,0 +1,518 @@
+json_name	json_unit	json_unit_descript	json_descript
+ALK_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Alkalinity (ALK) in the sample in millimoles/1000cm3.
+A_star			Measurement value of the a* chromaticity green-red measurement of L*a*b* CIELAB system for color reflectance.
+Abundance_code			Code for abundance of a component in a thin section or smear slide.
+Acetate_um	µM	micromoles/1000cm3 (µM)	Measurement value of Acetate (CH3CO2−)in the sample in micromoles/1000cm3.
+Acoustic_signal_threshold			The strength of the acoustic signal for a velocity measurement.
+Actual_daq_period	s	seconds (s)	The actual data acquisition period used for measurements in seconds.
+Adapter_used			The adapter used for Penetrometer measurements in the physical properties laboratory.
+Added_by			Scientist or database admin who added the information.
+Advancement	m	meters (m)	Meters that the core barrel advanced.
+Age_ma	ma	millions of years (ma)	Age in millions of years (ma).
+Age_model_comment			Remark on an age model.
+Age_model_type			The type of the age model - where or when it was constructed (shipboard, initial reports, post-moratorium).
+Al2O3_wt_pct	wt%	weight percent (wt%)	Measurement value of Aluminum Oxide (Al2O3) in weight percent (wt%).
+Al_um	µM	micromoles/1000cm3 (µM)	Measurement value of Aluminum (Al) in the sample in micromoles/1000cm3.
+Angle_motf	°	degrees (°)	OCD_TENSOR_CORE:  Angle_motf
+Angle_mtf	°	degrees (°)	Measurement value of the angle between magnetic north and the double-line orientation mark on the core liner in degrees.
+Aperture	cm	centimeters (cm)	Diameter of camera aperture in centimeters (cm).
+Approval_comment			Remark on an approval of an entry.
+Arrival_date			Date of arrival at hole in mm/dd/yy hh24mi date format.
+Attempted_daqs			Attempted number of data acqusitions.
+Avg_magnetic_susceptibility	SI	SI	The average measured value of magnetic susceptibility in SI units.
+B_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Boron (B) in the sample in millimoles/1000cm3.
+B_star			Measurement value of the b* chromaticity blue-yellow measurement of L*a*b* CIELAB system for color reflectance.
+Ba_ppm	ppm	parts per million (ppm)	Measurement value of Barium (Ba) in ppm.
+Ba_um	µM	micromoles/1000cm3 (µM)	Measurement value of Barium (Ba) in the sample in micromoles/1000cm3.
+Background_total_counts	cps	counts per second (cps)	Measurement of total background NGR counts in seconds.
+Basement_penetration	m	meters (m)	Thickness of drilled/cored basement in meters (m).
+Be_ppm	ppm	parts per million (ppm)	Measurement value of Beryllium (Be) in ppm.
+Bead_loi	%	percent (%)	Measurement (calculated) value of sample weight lost after ignition in percent.
+Beaker_date_time			The date and time calibration data for a MAD (Moisture and Density) beaker from the physical properties laboratory.
+Beaker_mass	g	grams (g)	Mass of beaker used for moisture and density measurements in grams (g).
+Beaker_number			Beaker number used for moisture and density measurements.
+Beaker_type			Type of beaker used for moisture and density measurements.
+Beaker_volume	cm3	cubic centimeters (cm3)	Volume of beaker used for moisture and density measurements in cubic centimeters (cm3).
+Best_fit_error	°C	degrees Celcius (°C)	Measurement value of best-fit error in degrees Celcius.
+Best_fit_temperature	°C	degrees Celcius (°C)	Measurement value of best-fit downhole temperature in degrees Celcius
+Bkgd_elapsed_zero_time			Time elapsed since start of a section run.
+Bkgd_susceptibility	SI	SI	Measurement value of the background susceptibility at end of section run.
+Blue_value			Measurement value of blue in digital image RGB scale.
+Bot_cm	cm	centimeters (cm)	Bottom value of an interval of a section in cm.
+Bot_cm_end	cm	centimeters (cm)	Bottom interval of the tied-to point for splicing of meter composite depth from holes at a site in centimeters (cm).
+Bot_cm_start	cm	centimeters (cm)	Bottom interval of the tied-from point for splicing of meter composite depth from holes at a site in centimeters (cm).
+Br_um	µM	micromoles/1000cm3 (µM)	Measurement value of Bromide (Br) in the sample in micromoles/1000cm3.
+Bulk_density	g/cm3	grams per cubic centimeters (cm3)	Measurement value of the bulk density in g/cm3.
+Bulk_mass_dry_total	%	percent (%)	Measurement value of sample bulk mass (dry) in percent.
+Bulk_mass_wet_total	%	percent (%)	Measurement value of sample bulk mass (wet) in percent.
+Bulk_volume_dry_cell			Cell number used for sample measurements of bulk volume (dry).
+Bulk_volume_dry_n			Number of sample measurements taken for bulk volume (dry).
+Bulk_volume_dry_sd	cm3	cubic centimeters (cm3)	Measurement value of sample bulk volume (dry) standard deviation in cubic centimeters (cm3).
+Bulk_volume_dry_total	cm3	cubic centimeters (cm3)	Measurement value of sample bulk volume (dry) in cubic centimeters (cm3).
+Bulk_volume_wet_cell			Cell number used for sample measurements of bulk volume (wet).
+Bulk_volume_wet_n			Number of sample measurements taken for bulk volume (wet).
+Bulk_volume_wet_sd	cm3	cubic centimeters (cm3)	Measurement value of sample bulk volume (wet) standard deviation in cubic centimeters (cm3).
+Bulk_volume_wet_total	cm3	cubic centimeters (cm3)	Measurement value of sample bulk volume (wet) in cubic centimeters (cm3).
+C1_C2_ratio			Calculated value of ratio of Methane/Ethane (C1/C2 in ppm).
+C1_ppm	ppm	parts per million (ppm)	Measurement value of Methane (C1) in ppm.
+C2_C2e_ppm	ppm	parts per million (ppm)	Measurement value of Ethane+Ethylene (C2+C2=) in ppm.
+C2_ppm	ppm	parts per million (ppm)	Measurement value of Ethane (C2) in ppm.
+C2e_ppm	ppm	parts per million (ppm)	Measurement value of Ethylene (C2=) in ppm.
+C3_C3p_ppm	ppm	parts per million (ppm)	Measurement value of Propane+Propylene (C3+C3=) in ppm.
+C3_ppm	ppm	parts per million (ppm)	Measurement value of Propane (C3) in ppm.
+C3p_ppm	ppm	parts per million (ppm)	Measurement value of Propylene (C3=) in ppm.
+CO2_ppm	ppm	parts per million (ppm)	Measurement value of Carbon Dioxide (CO2) in ppm.
+CaCO3_wt_pct	wt%	weight percent (wt%)	Measurement value of Calcium Carbonate (CaCO3) in weight percent (wt%).
+CaO_wt_pct	wt%	weight percent (wt%)	Measurement value of Calcium Oxide (CaO) in weight percent (wt%).
+Ca_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Calcium (Ca) in the sample in millimoles/1000cm3.
+Calc_bulk_density	g/cm3	grams per cubic centimeters (cm3)	Measurement value of calculated bulk density in g/cm3.
+Calc_dry_density	g/cm3	grams per cubic centimeters (cm3)	Measurement value of calculated dry_density in g/cm3.
+Calc_grain_density	g/cm3	grams per cubic centimeters (cm3)	Measurement value of calculated grain density in g/cm3.
+Calc_method			Letter designation of the actual method of calculation for moisture and density measurements.
+Calc_porosity	%	percent (%)	Measurement value of calculated porosity in percent.
+Calc_void_ratio			Measurement value of calculated void ratio.
+Calc_water_content_dry	%	percent (%)	Measurement value of calculated water content (dry) in percent.
+Calc_water_content_wet	%	percent (%)	Measurement value of calculated water content (wet) in percent.
+Calib_channel_energy_m0			Calibration channel energy intercept.
+Calib_channel_energy_m1			Calibration channel energy slope.
+Calib_channel_energy_mse			Calibration channel energy mean squared error.
+Calib_delay			Calibration delay.
+Calib_density_m0			Calibration density intercept.
+Calib_density_m1			Calibration density slope.
+Calib_density_mse			Calibration density mean squared error.
+Calib_separation_m0			Calibration separation intercept.
+Calib_separation_m1			Calibration separation slope.
+Calib_separation_mse			Calibration separation mean squared error.
+Calib_time_m0			Calibration time intercept.
+Calib_time_m1			Calibration time slope.
+Calib_time_mse			Calibration time mean squared error.
+Calibration_system_name			Name of system instrument used for calibration.
+Calibration_timestamp			Date and time of calibration.
+Casing_info			Information on hole casing e.g., total meters cased/maximum depth cased (meters).
+Catwalk_sample			Flag to indicate if sample was taken on the core receiving platform before the core was split.
+Ce_ppm	ppm	parts per million (ppm)	Measurement value of Cerium (Ce) in ppm.
+Channel_increment			Wavelength increment between channels.
+Cl_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Chlorine (Cl) Chlorinity in the sample in millimoles/1000cm3.
+Co_ppm	ppm	parts per million (ppm)	Measurement value of Cobalt (Co) in ppm.
+Comment_source			Source of a comment.
+Comment_type			Type of a comment.
+Component_name			Name of the component in a smear slide or sedimentary thin section.
+Component_name_code			Code number of the component name in a smear slide or sedimentary thin section.
+Component_percent	%	percent (%)	Percent of a component in a smear slide or thin section.
+Component_type_code			Code for type of component in a smear slide; M=Mineral, R=Rock, B=Biogenic, O=Other.
+Component_type_name			Name of the type of component in a smear slide or sedimentary thin section.
+Contact_pressure			Contact pressure applied.
+Contaminated_reworked			Flag for Contamination (C) or Reworked (R) specimen in sample.
+Control_point_comment			Remark on a control point for an age model.
+Core			Sequential numbers identifying the cores retrieved from a particular hole.
+Core_comment			Remark on a core.
+Core_count	ct	count (ct)	Total number of cores.
+Core_diameter	cm	centimeters (cm)	Diameter of a core in cm.
+Core_end			Core of the tied-to point for splicing of meter composite depths from holes at a site.
+Core_image_type			Type of image for a core, either CORE for all of a core or SECTION for a section of a core.
+Core_recovered	m	meters (m)	Total length of core recovered in meters (m).
+Core_recovered_pct	%	percent (%)	Percent (%) of total core recovered.
+Core_start			Core of the tied-from point for splicing of meter composite depths from holes at a site.
+Core_status			Indicator for the status of a core, either FULL or HALF.
+Core_temperature	°C	degrees Celcius (°C)	Measurement value of temperature of a core in degrees Celcius.
+Core_type			Letter code identifying the drill bit/coring method used to retrieve the core.
+Core_type_end			Core type of the tied-to point for splicing of meter composite depths from holes at a site.
+Core_type_start			Core type of the tied-from point for splicing of meter composite depths from holes at a site.
+Core_types			Codes identifying the drill bit/coring methods used to retrieve cores.
+Corrected_susceptibility	SI	SI	Measurement value of calculated correction of magnetic susceptibility in SI units.
+Corrected_total_counts	cps	counts per second (cps)	Measurement value of (calculated) corrected total counts per second.
+Cr_ppm	ppm	parts per million (ppm)	Measurement value of Chromium (Cr) in ppm.
+Cs_ppm	ppm	parts per million (ppm)	Measurement value of Cesium (Cs) in ppm.
+Cu_ppm	ppm	parts per million (ppm)	Measurement value of Copper (Cu) in ppm.
+Cumulative_offset	m	meters (m)	Cumulative offset in meters of cores (msbf/mcd).
+Curated_length	m	meters (m)	Measurement value of the length of a curated core in meters.
+Cursory_exam_flag			Flag to indicate a cursory sample examination.
+DIC_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Dissolved Inorganic Carbon (DIC) in the sample in millimoles/1000cm3.
+DOC_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Dissolved Organic Carbon (DOC) in the sample in millimoles/1000cm3.
+Data_source			Source of the data;  IR=Initial Reports, SR=Scientific Results.
+Data_type_abbr			Abbreviation of the data type for an analysis or image.
+Datum_age	ma	millions of years (ma)	Age in millions of years (ma) of datum.
+Datum_age_error	ma	millions of years (ma)	Error value of datum age in millions of years (ma) of datum.
+Datum_age_range	ma	millions of years (ma)	Range of age of datum in millions of years (ma).
+Datum_author_year			Author and year reference of datum.
+Datum_comment			Remark on a datum.
+Datum_depth	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) of datum.
+Datum_depth_error	mbsf	meters below sea floor (mbsf)	Error value of datum depth in meters below sea floor (mbsf).
+Datum_description			Description of datum - fossil name.
+Datum_fossil_group			Identifier (ID) of the fossil group of the datum.
+Datum_id			Identifier (ID) of the datum.
+Datum_location			Location of sample from which datum call was made (ship or repository).
+Datum_post_cruise_flag			Flag to indicate if datum call was made post-cruise.
+Datum_sample_id			Identifier (ID) of a sample from which datum call was made.
+Datum_type			Type of datum such as first occurrence (FO), last common occurrence (LCO).
+Datum_type_old			Type of datum defining oldest part of paleo zone.
+Datum_type_young			Type of datum defining youngest part of paleo zone.
+Declination	°	degrees (°)	Measurement value of the orientation of the magnetic field of the sample (the field acquired at the time of the rock formation). The angle between geographic north and the magnetic field direction (the magnetic azimuth).
+Demag_level	mT / °C	milleteslas (mT) or degrees Celcius (°C)	Measurement value of the level of demagnetization in milliteslas (mT) if AF or degrees Celcius if thermal.
+Demag_type			Type of demagnetization system used for measurement - AFD (integrated sub-system of the cryomagnetometer), AFDD (DTek), THD (thermal demag unit).
+Departure_date			Date of departure from hole in mm/dd/yy hh24mi date format.
+Depth_mbsf	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf).
+Depth_mbsf_bot	mbsf	meters below sea floor (mbsf)	Depth at bottom of core in meters below sea floor (mbsf).
+Depth_mbsf_c	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) with compression applied.
+Depth_mbsf_e	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) with exotics removed.
+Depth_mbsf_ec	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) with exotics removed and compression applied.
+Depth_mbsf_end	mbsf	meters below sea floor (mbsf)	Drilled depth of the tie-to point in meters below sea floor (mbsf).
+Depth_mbsf_log	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) as recorded on log sheet.
+Depth_mbsf_start	mbsf	meters below sea floor (mbsf)	Drilled depth of the tie-from point in meters below sea floor (mbsf).
+Depth_mbsf_v	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) with voids removed.
+Depth_mbsf_vc	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) with voids removed and compression applied.
+Depth_mbsf_ve	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) with voids and exotics removed.
+Depth_mbsf_vec	mbsf	meters below sea floor (mbsf)	Depth in meters below sea floor (mbsf) with voids and exotics removed and compression applied.
+Depth_mcd	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd).
+Depth_mcd_bot	mcd	meters composite depth (mcd)	Depth at bottom of core in meters composite depth (mcd).
+Depth_mcd_c	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd) with compression applied.
+Depth_mcd_e	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd) with exotics removed.
+Depth_mcd_ec	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd) with exotics removed and compression applied.
+Depth_mcd_end	mcd	meters composite depth (mcd)	Depth-shifted composite depth of the tie-to point in meters composite depth (mcd).
+Depth_mcd_start	mcd	meters composite depth (mcd)	Depth-shifted composite depth of the tie-from point in meters composite depth (mcd).
+Depth_mcd_v	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd) with voids removed.
+Depth_mcd_vc	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd) with voids removed and compression applied.
+Depth_mcd_ve	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd) with voids and exotics removed.
+Depth_mcd_vec	mcd	meters composite depth (mcd)	Depth in meters composite depth (mcd) with voids and exotics removed and compression applied.
+Differential_offset	m	meters (m)	Differential offset in meters between cores (msbf/mcd).
+Direction			Direction of measurement relative to a section of a core - X, Y, or Z.  X is into the working half.
+Drift_corr_susceptibility	SI	SI	Measurement value of magnetic susceptibility corrected for instrumentation drift in SI units.
+Dy_ppm	ppm	parts per million (ppm)	Measurement value of Dysprosium (Dy) in ppm.
+Energy_windows			Number of energy windows for grouping of channel counts.
+Er_ppm	ppm	parts per million (ppm)	Measurement value of Erbium (Er) in ppm.
+Expected_velocity	m/s	meters per second (m/s)	Value of expected velocity based on a standard in meters per second.
+F_um	µM	micromoles/1000cm3 (µM)	Measurement value of Fluorine (F) Fluoride in the sample in micromoles/1000cm3.
+Fe2O3_wt_pct	wt%	weight percent (wt%)	Measurement value of Iron Oxide (Fe2O3) in weight percent (wt%).
+Fe_um	µM	micromoles/1000cm3 (µM)	Measurement value of Iron (Fe) in the sample in micromoles/1000cm3.
+Feature			Description of a feature in a thin section image.
+File_name			Name of a thin section image file.
+First_channel	nm	nannometers (nm)	Wavelength of the first channel of color reflectance spectral values in nm.
+Formate_um	µM	micromoles/1000cm3 (µM)	Measurement value of Formate (HC02-) in the sample in micromoles/1000cm3.
+Fossil_group			Identifier (ID) of a fossil group.
+Fossil_group_name			Name of a fossil group.
+Freq_normalization_factor			Factor used for normalizing magnetic susceptibility measurement.
+Ga_ppm	ppm	parts per million (ppm)	Measurement value of Gallium (Ga) in ppm.
+Gas_detector_signal			Type of detection signal for gas sample.
+Gas_sample_method			Method used for obtaining gas sample.
+Gd_ppm	ppm	parts per million (ppm)	Measurement value of Gadolinium (Gd) in ppm.
+Genus_subgenus			Name of the Genus/subgenus of a fossil taxon.
+Genus_subgenus_old			Genus/subgenus of datum defining oldest part of paleo zone.
+Genus_subgenus_young			Genus/subgenus of datum defining youngest part of paleo zone.
+Geologic_age_old			Name of the oldest geologic age of a paleo sample.
+Geologic_age_young			Name of the youngest geologic age of a paleo sample.
+Geologic_subdivisions			Geologic subdivisions (ages) of taxon concept.
+Green_value			Measurement value of green in digital image RGB scale.
+Group_abundance_name			Name of the abundance for a fossil group in a paleo sample.
+H2S_ppm	ppm	parts per million (ppm)	Measurement value of Hydrogen Sulfide (H2S) in ppm.
+H2S_um	µM	micromoles/1000cm3 (µM)	Measurement value of total Sulfide (H2S) in the sample in micromoles/1000cm3.
+H2_nM	nM	nanomoles/1000cm3 (nM)	Measurement value of Hydrogen (H2) in the sample in nanomoles/1000cm.
+H4SiO4_um	µM	micromoles/1000cm3 (µM)	Measurement value of Silica (H4Si04) in the sample in micromoles/1000cm3.
+HI_ratio			Calculated Hydrogen Index ratio value of 100 x S2/TOC.
+HPO4_um	µM	micromoles/1000cm3 (µM)	Measurement value of Phosphate (HPO4) in the sample in micromoles/1000cm3.
+H_wt_pct	wt%	weight percent (wt%)	Measurement value of Hydrogen (H) in weight percent (wt%).
+Height	mm	millimeters (mm)	Distance between aperture and core surface in mm.
+Height_assumed			Flag to indicate whether height measurement value was actually measured (1) or not (0).
+Hf_ppm	ppm	parts per million (ppm)	Measurement value of Hafnium (Hf) in ppm.
+Hole			Letter identifying the hole at a site from which a core was retrieved or data was collected.
+Hole_azimuth	°	degrees (°)	OCD_TENSOR_CORE:  Hole_azimuth
+Hole_end			Hole of the tied-to point for splicing of meter composite depths from holes at a site.
+Hole_inclination	°	degrees (°)	Measurement value of the deviation of the hole from vertical in degrees.
+Hole_start			Hole of the tied-from point for splicing of meter composite depths from holes at a site.
+I_C4_ppm	ppm	parts per million (ppm)	Measurement value of i Butane (I-C4) in ppm.
+I_C5_ppm	ppm	parts per million (ppm)	Measurement value of i Pentane (I-C5) in ppm.
+I_C6_ppm	ppm	parts per million (ppm)	Measurement value of i Hexane (I-C6) in ppm.
+I_C7_ppm	ppm	parts per million (ppm)	Measurement value of i Heptane (I-C7) in ppm.
+I_um	µM	micromoles/1000cm3 (µM)	Measurement value of Iodine (I) Iodide in the sample in micromoles/1000cm3.
+Image_comment			Remark about image.
+Image_date			Date image was acquired.
+Image_format			File image format of an image (TIF,JPG,PDF).
+Image_id			Identifier ID for an image.
+Image_number			Image number produced by the digital camera.
+Image_resolution	dpi	dots per inch (dpi)	Resolution of the image in dpi.
+Image_sampling_interval	cm	centimeters (cm)	Measurement of image sampling interval in cm.
+Image_swath_start	cm	centimeters (cm)	Measurement of starting pixel in cm left of center pixel.
+Image_swath_width	cm	centimeters (cm)	Measurement of swath width in cm.
+Image_timestamp			Timestamp for when digital scan was done.
+Image_type			Type of image - B&W or Color.
+Image_wet_dry			Indicator for if core was wet or dry when image was taken.
+Inclination			Measurement value of the orientation of the magnetic field of a sample (the field acquired at the time of the rock formation), and angle between the horizontal and the field direction measured positive downward, in degrees.
+Inor_C_wt_pct	wt%	weight percent (wt%)	Measurement value of Inorganic Carbon in weight percent (wt%).
+Integration_time	s	seconds (s)	Integration_time in seconds (s).
+Intensity	amp/m	ampere per meter (amp/m)	Measurement value of the intensity in amp/m.
+Intensity_x	amp/m	ampere per meter (amp/m)	Measurement value of the intensity in the x-direction that has been corrected for background and/or tray correction, in amp/m.
+Intensity_y	amp/m	ampere per meter (amp/m)	Measurement value of the intensity in the y-direction that has been corrected for background and/or tray correction, in amp/m.
+Intensity_z	amp/m	ampere per meter (amp/m)	Measurement value of the intensity in the z-direction that has been corrected for background and/or tray correction, in amp/m.
+Interval_cored	m	meters (m)	Total length of coring interval in meters (m).
+Interval_drilled	m	meters (m)	Total length of drilled interval in meters (m).
+Investigator			Last name of requestors/investigators of core samples.
+JWBL			Measurement value of color in the sample based on the JWBL standard.
+K2O_wt_pct	wt%	weight percent (wt%)	Measurement value of Potassium oxide (K2O) in weight percent (wt%).
+K_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Potassium (K) in the sample in millimoles/1000cm3.
+L_star			Measurement value of the L* lightness measurement of L*a*b* CIELAB system for color reflectance.
+La_ppm	ppm	parts per million (ppm)	Measurement value of Lanthanum (La) in ppm.
+Last_channel	nm	nannometers (nm)	Wavelength of the last channel of color reflectance spectral values in nm.
+Latitude	dd	decimal degrees (dd)	The latitude of the position of the beacon marking the hole in decimal degrees (dd).
+Leg			Number identifying the cruise.
+Leg_added			Leg when entry first added for use.
+Length_cored	m	meters (m)	Length cored of the core in meters.
+Length_recovered	m	meters (m)	Length of material recovered in the core in meters.
+Li_um	µM	micromoles/1000cm3 (µM)	Measurement value of Lithium (Li) in the sample in micromoles/1000cm3.
+Light_abbr			Abbreviation for microscope light type.
+Liner_correction			Flag for if liner correction was applied to measurement.
+Liner_length	cm	centimeters (cm)	The length in centimeters (cm) to which the liner of a core section is cut.
+Liner_status			Indicator for type of core liner; NONE, HALF, or FULL.
+Liner_thickness	mm	millimeters (mm)	Thickness of core liner in mm. If liner correction = No then this value is zero.
+Lithology_code			One character alpha-numeric code for lithology identified in smear slide.
+Location			Code that indicates the site where the Janus application is exercised.  Values are SHI(ship), GCR (Gulf Coast Repository), ECR (East Coast Repository) and BRE (Bremen repository).
+Longitude	dd	decimal degrees (dd)	The longitude of the position of the beacon marking the hole in decimal degrees (dd).
+Loop_temperature	°C	degrees Celcius (°C)	Temperature of the Bartington instrument loop through which a core is passed in degrees Celcius.
+Mad_comment			Remark on a moisture and density sample.
+Magnetic_susceptibility	SI	SI	Measurement value of magnetic susceptibility in SI units.
+Magnification			Magnification used for the microphotograph.
+Mass_dry_total	g	grams (g)	Calculated value of total sample mass (dry) in grams (g).
+Mass_porewater	g	grams (g)	Calculated value of mass of porewater in grams (g).
+Mass_salt	g	grams (g)	Calculated value of mass of salt in grams (g).
+Mass_solids	g	grams (g)	Calculated value of mass of solids, excluding precipitated salt, in grams (g).
+Mass_wet_total	g	grams (g)	Calculated value of total sample mass (wet), in grams (g).
+Max_torque_angle	°	degrees (°)	Measurement value of the torque angle at sediment failure in degrees.
+Mean_acoustic_signal			Measurement value of the mean acoustic signal for velocity.
+Meas_separation_mean	mm	millimeters (mm)	Measurement value of the distance between a pair of transducers in mm.
+Meas_separation_sd	mm	millimeters (mm)	Measurement value of the calculated standard deviation of the distance between a pair of transducers in mm.
+Meas_time_mean	µs	microseconds (µs)	Measurement value of the transit time for a wave to travel between transducers in microseconds.
+Meas_time_sd	µs	microseconds (µs)	Measurement value of the calculated standard deviation of the measured time for a signal to travel between a pair of transducers in microseconds.
+Measured_counts	ct	count (ct)	Raw measured counts collected by an MST instrument during a measurement.
+Measured_time	µs	microseconds (µs)	Measurement value of the transit time for a wave to travel between transducers in microseconds.
+Measurement_no			The number of the measurement taken to differentiate multiple measurements taken at the same interval.
+Metadata_comment			Remark on metadata.
+Method			Letter designation of the method of calculation for moisture and density measurements.
+Method_code			Code for the method or instrument used for analyzing a sample.
+MgO_wt_pct	wt%	weight percent (wt%)	Measurement value of Magnesium Oxide (MgO) in weight percent (wt%).
+Mg_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Magnesium (Mg) in the sample in millimoles/1000cm3.
+Micro_image_id			Identifier (ID) of a thin section microphotograph.
+MnO_wt_pct	wt%	weight percent (wt%)	Measurement value of Manganese Oxide (MnO) in weight percent (wt%).
+Mn_um	µM	micromoles/1000cm3 (µM)	Measurement value of Manganese (Mn) in the sample in micromoles/1000cm3.
+Mo_ppm	ppm	parts per million (ppm)	Measurement value of Molybdenum (Mo) in ppm.
+Ms2f_offset	mm	millimeters (mm)	Offset in millimeters of instrument to core.
+Mudline_temperature	°C	degrees Celcius (°C)	Measurement value of the temperature at mudline in degrees Celcius.
+Munsell_hvc			Measurement value of the Munsell HVC color notation.
+N2_ppm	ppm	parts per million (ppm)	Measurement value of Nitrogen (N2) in ppm.
+NH4_um	µM	micromoles/1000cm3 (µM)	Measurement value of Ammonia (NH4) in the sample in micromoles/1000cm3.
+NO2_um	µM	micromoles/1000cm3 (µM)	Measurement value of Nitrite (NO2) in the sample in micromoles/1000cm3.
+NO3_um	µM	micromoles/1000cm3 (µM)	Measurement value of Nitrate (NO3) in the sample in micromoles/1000cm3.
+N_C4_ppm	ppm	parts per million (ppm)	Measurement value of n Butane (N-C4) in ppm.
+N_C5_ppm	ppm	parts per million (ppm)	Measurement value of n Pentane (N-C4) in ppm.
+N_C6_ppm	ppm	parts per million (ppm)	Measurement value of n Hexane (N-C6) in ppm.
+N_C7_ppm	ppm	parts per million (ppm)	Measurement value of n Heptane (N-C7) in ppm.
+Na2O_wt_pct	wt%	weight percent (wt%)	Measurement value of Sodium Oxide (Na2O) in weight percent (wt%).
+Na_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Sodium (Na) in the sample in millimoles/1000cm3.
+Nb_ppm	ppm	parts per million (ppm)	Measurement value of Niobium (Nb) in ppm.
+Nd_ppm	ppm	parts per million (ppm)	Measurement value of Neodymium (Nd) in ppm.
+Ngr_channel_increment			Channel number increment for spectra values.
+Ngr_first_channel			First natural gamma ray channel number for spectra values.
+Ngr_last_channel			Last natural gamma ray channel number for spectra values.
+Ngr_spectra			NGR spectra values.
+Ni_ppm	ppm	parts per million (ppm)	Measurement value of Nickel (Ni) in ppm.
+Nit_wt_pct	wt%	weight percent (wt%)	Measurement value of Nitrogen (N) in weight percent (wt%).
+Normalized_susceptibility	SI	SI	Measurement value of normalized magnetic susceptibility in SI units.
+Number_cycles			Number of measurements taken at the specified integration time to obtain an averaged result.
+Number_measured			Number of measurements for each data point.
+O2_ppm	ppm	parts per million (ppm)	Measurement value of Oxygen (O2) in ppm.
+OI_ratio			Calculated Oxygen Index ratio value of 100 x S3/TOC.
+Offset	mm	millimeters (mm)	Distance core needed to be lowered from sensor in mm.
+Org_C_wt_pct	wt%	weight percent (wt%)	Measurement value of Organic Carbon in weight percent (wt%).
+Orientation_tool			Type of orientation tool used with the core.
+P2O5_wt_pct	wt%	weight percent (wt%)	Measurement value of Phosphorus pentoxide (P2O5) in weight percent (wt%).
+PC_mg_hc_g	mg	milligrams (mg)	Measurement of the pyrolyzable carbon in the sample in mg/HC/g.
+PI_ratio			Calculated Production Index ratio value of S1/(S1+S2).
+Page_id			Identifier (ID) for order of image for same data type and same stratigraphic level (core, section, interval or depth).
+Paleo_sample_comment			Remark about a paleo sample.
+Paleobathymetry_code			Code for paleobathymetry zone.
+Paleobathymetry_name			Name of paleobathymetry zone.
+Pb_ppm	ppm	parts per million (ppm)	Measurement value of Lead (Pb) in ppm.
+Pb_um	µM	micromoles/1000cm3 (µM)	Measurement value of Lead (Pb) in the sample in micromoles/1000cm3.
+Percent_clay	%	percent (%)	Measurement value of Clay in percent.
+Percent_recovered	%	percent (%)	Measurement value of core recovered in percent.
+Percent_sand	%	percent (%)	Measurement value of Sand in percent.
+Percent_silt	%	percent (%)	Measurement value of Silt in percent.
+Piece			Sequential number for a piece of rock (hard rock samples) within a section.
+Piece_sub_piece			Concatenated designation of a piece (number) and sub-piece (letter) sub-piece of a rock (hard rock samples) within a section.
+Post_cruise_flag			Flag to indicate analysis done post-cruise.
+Presence_absence_flag			Flag to indicate presence or absence of a taxon.
+Preservation_name			Abbreviation for qualitative assessment of overall preservation state of specimens of a fossil group in a sample.
+Probe_number			Number that uniquely identifies a probe of a manufacturers instrument for associating measurements.
+Probe_temperature	°C	degrees Celcius (°C)	Measurement value of the temperature of the probe in degrees Celcius.
+Probe_type			Type of needle probe: full-space (FULL; insertion into soft material) or half-space (HALF; contact with flat surface).
+Range	g/cm²	grams per centimeter squared (g/cm²)	Range of torvane - 200, 1000 or 2000 in grams per centimeter squared.
+Raw_data_collected			Flag to indicate if raw data was collected in association with measurement results for an instrument.
+Raw_strain_angle	°	degrees (°)	Measurement value of raw strain angle collected with automated vane system in degrees.
+Raw_torque_angle	°	degrees (°)	Measurement value of raw torque angle collected with automated vane system in degrees.
+Rb_ppm	ppm	parts per million (ppm)	Measurement value of Rubidium (Rb) in ppm.
+Rb_um	µM	micromoles/1000cm3 (µM)	Measurement value of Rubidium (Rb) in the sample in micromoles/1000cm3.
+Red_value			Measurement value of red in digital image RGB scale.
+Request_date			Date of request.
+Request_name			Last name of scientist(s) requesting samples.
+Request_number			Unique number (and part number) for a sample request.
+Request_number			Unique number assigned to a sample request.
+Requested_daq_interval	cm	centimeters (cm)	The requested data acquisition interval in cm.
+Requested_daq_period	s	seconds (s)	The requested data acquisition period in seconds.
+Requested_daqs_per_sample			The requested data acquisitions per sample interval.
+Residual_strength	kPa	kilopascal (kPa)	Measurement value of the residual strength of the sediment after shearing in kPa units.
+Residual_torque_angle	°	degrees (°)	Measurement value of the residual torque angle of the sediment after shearing in degrees.
+Resistivity	Ω	Ohms (Ω)	Measurement value of resistivity in ohms.
+Rotation_rate	°/min	degrees per minute (°/min)	The rate of rotation of a vane in degrees per minute.
+Run_comment			Remark on a run for analysis.
+Run_id			Identifier of a run on a sample analysis.
+Run_number			Number for a run for an analysis.
+Run_timestamp			Date/time of an analysis run.
+S1_mg_hc_g	mg	milligrams (mg)	Measurement of the free hydrocarbons present in the sample before cracking of kerogen during pyrolysis in mg/HC/g.
+S2_mg_hc_g	mg	milligrams (mg)	Measurement of the freed hydrocarbons from kerogen during pyrolysis of the sample in mg/HC/g.
+S3_mg_co2_g	mg	milligrams (mg)	Measurement of the yield of Carbon Dioxide (CO2) during pyrolysis of the sample in mg/CO2/g.
+SO4_mM	mM	millimoles/1000cm3 (mM)	Measurement value of Sulfate (SO4) in the sample in millimoles/1000cm3.
+S_ppm	ppm	parts per million (ppm)	Measurement value of Sulfur (S) in ppm.
+Salinity			Measurement value (unitless) of Salinity in the sample.
+Sample_archive_working			Denotes whether sample was taken from an archive or working core section.
+Sample_bulk_density	g/cm3	grams per cubic centimeters (cm3)	Measurement value of sample bulk density by Method A or B in g/cm3.
+Sample_comment			Remark on a sample.
+Sample_count	ct	count (ct)	Count of number of samples.
+Sample_dry_density	g/cm3	grams per cubic centimeters (cm3)	Measurement value of sample dry density in g/cm3.
+Sample_elapsed_zero_time	s	seconds (s)	Time elapsed since start of run in seconds.
+Sample_geologic_age_old			Oldest possible geologic age of a sample.
+Sample_geologic_age_young			Youngest possible geologic age of a sample.
+Sample_grain_density	g/cm3	grams per cubic centimeters (cm3)	Measurement value of sample grain density in g/cm3.
+Sample_group_abundance			Code for qualitative assessment of fossil group abundance in a sample.
+Sample_id			Identifier (ID) of a sample.
+Sample_lab_code			Code identifier for a lab sample.
+Sample_porosity	%	percent (%)	Measurement value of sample porosity in percent.
+Sample_prep			The type of preparation used for a sample.
+Sample_preservation			Code for qualitative assessment of fossil group preservation in a sample.
+Sample_repository			Repository where sample is stored.
+Sample_timestamp			Timestamp for when sample was taken.
+Sample_type			Type of sample (sediment or mineral) analyzed.
+Sample_void_ratio			Measurement value of sample void ratio.
+Sample_volume	cm3	cubic centimeters (cm3)	Volume of sample in cm3.
+Sample_water_content_bulk	%	percent (%)	Measurement value of bulk sample water content in percent.
+Sample_water_content_solids	%	percent (%)	Measurement value of solids sample water content in percent.
+Sample_zone_old			Code for oldest possible fossil zone of sample.
+Sample_zone_young			Code for youngest possible fossil zone of sample.
+Sampling_code			Code used to identify for whom (investigator(s) or lab) samples were taken.
+Sampling_code_description			Description of sampling code.
+Sampling_description			Description of sampling.
+Sampling_discipline			Scientific discipline of sampling.
+Sampling_request_type			Request type of sampling - Ship, Shore, Moratorium.
+Sc_ppm	ppm	parts per million (ppm)	Measurement value of Scandium (Sc) in ppm.
+Scientist_first_name			First name of a scientist.
+Scientist_id			Identifier (ID) of a scientist.
+Scientist_initials			Initials of a scientist.
+Scientist_last_name			Last name of a scientist.
+Section_comment			Remark on a section of a core.
+Section_id			Identifier (ID) of a section of a core.
+Section_id_end			Section ID of the tied-to point for splicing of meter composite depths from holes at a site.
+Section_id_start			Section ID of the tied-from point for splicing of meter composite depths from holes at a site.
+Section_number			Sequential number of a section of a core.
+Section_number_end			Section number of the tied-to point for splicing of meter composite depths from holes at a site.
+Section_number_start			Section number of the tied-from point for splicing of meter composite depths from holes at a site.
+Section_type			Type of a section (C=Core Catcher, S=Core).
+Section_type_end			Section type of the tied-to point for splicing of meter composite depths from holes at a site.
+Section_type_start			Section type of the tied-from point for splicing of meter composite depths from holes at a site.
+Sediment_rock_name			Name assigned to the sediment or rock by the observer at time of the description.
+Shear_strength	kPa	kilopascal (kPa)	Measurement value of shear strength in kPa units.
+Ship_date_time			Date and time on ship.
+SiO2_wt_pct	wt%	weight percent (wt%)	Measurement value of Silica/Silicon Oxide (SiO2) in weight percent (wt%).
+Site			Number identifying the site from which the core was retrieved. A site is the position of a beacon around which holes are drilled.
+Site_variation			OCD_TENSOR_CORE:  Site_variation
+Slide_number			Number assigned to a thin section slide.
+Sm_ppm	ppm	parts per million (ppm)	Measurement value of Samarium (Sm) in ppm.
+Smear_slide_comment			Remark on a smear slide.
+Special_hole_comment			Remark on special hole.
+Special_hole_location			General area location of special hole.
+Special_hole_type			Type of special hole.
+Species_subspecies			Name of the species/subspecies of a fossil taxon.
+Species_subspecies_old			Species/subspecies of datum defining oldest part of paleo zone.
+Species_subspecies_young			Species/subspecies of datum defining youngest part of paleo zone.
+Spectral_values	%	percent (%)	String of 31 spectral reflectance values in percent intensity.
+Splice_order			Order number for splicing of meter composite depths from holes at a site.
+Splice_relation			Type of relation between tied-from and tied-to points for splicing of meters composite depths from holes at a site.
+Spring_comment			Remark on a spring.
+Spring_id			Identifier (ID) of a spring.
+Sr_ppm	ppm	parts per million (ppm)	Measurement value of Strontium (Sr) in ppm.
+Sr_um	µM	micromoles/1000cm3 (µM)	Measurement value of Strontium (Sr) in the sample in micromoles/1000cm3.
+Standard_name			Name of physical properties standard.
+Standard_set_name			Name for a set of a physical properties standard.
+Strength_reading			The value of the strength reading, no units given.
+Sub_piece			Letter designation of a sub-piece of a hard rock piece in a section.
+Sul_wt_pct	wt%	weight percent (wt%)	Measurement value of Sulfur (S) in weight percent (wt%).
+Sys_id			Identifier (string) for the system used for analysis.
+System_id			Identifier (ID) for the system used in analysis.
+System_model_number			The model number of an piece of equipment used for scientific analysis.
+System_name			Name of system instrument used for measurement.
+TMax_deg_c	°C	degrees Celcius (°C)	Measurement of temperature recorded at S2 peak in degrees Celcius.
+TOC_wt_pct	wt%	weight percent (wt%)	Calculated value of Total Organic Carbon (TOC) in weight percent (wt%).
+Taxon_author_year			Author and year of reference for taxon concept.
+Taxon_comment			Remark on a fossil taxon in a sample.
+Taxon_id			Identifier (ID) of a fossil taxon.
+Taxon_id_old			Taxon ID of datum defining oldest part of paleo zone.
+Taxon_id_young			Taxon ID of datum defining youngest part of paleo zone.
+Taxon_numeric_abundance	ct	count (ct)	Abundance numeric count of a fossil taxon in a sample.
+Taxon_percent_abundance	%	percent (%)	Abundance percentage of a fossil taxon in a sample.
+Taxon_relative_abundance			Qualitative relative abundance of a fossil taxon in a sample.
+Taxon_sensu			The sensu of a taxon concept.
+Tensor_lab_comment			Remark on lab operation of tensor tool.
+Tensor_ops_comment			Remark on operation of tensor tool.
+Tensor_timestamp			Timestamp for when tensor shot was taken.
+Th_ppm	ppm	parts per million (ppm)	Measurement value of Thorium (Th) in ppm.
+Thermcon_comment			Remark on a thermal conductivity measurement.
+Thermcon_value			Measurement value of thermal conductivity.
+Thin_section_comment			Remark on a thin section.
+TiO2_wt_pct	wt%	weight percent (wt%)	Measurement value of Titanium Dioxide (TiO2) in weight percent (wt%).
+Time_on_hole			Total time at hole in dd:hh:mi format.
+Timescale_author_year			Timescale reference of the datum.
+Tool_name			Name of the tool used for measurement.
+Top_cm	cm	centimeters (cm)	Top value of an interval of a section in cm.
+Top_cm_end	cm	centimeters (cm)	Top interval of the tied-to point for splicing of meter composite depth from holes at a site in centimeters (cm).
+Top_cm_start	cm	centimeters (cm)	Top interval of the tied-from point for splicing of meter composite depth from holes at a site in centimeters (cm).
+Top_depth_mbsf	mbsf	meters below sea floor (mbsf)	Meters below sea floor to top of core, as measured by drill string and reported from driller.
+Tot_C_wt_pct	wt%	weight percent (wt%)	Measurement value of Total Carbon in weight percent (wt%).
+Total_counts	cps	counts per second (cps)	Measurement value of total NGR counts per second not corrected for background.
+Total_penetration	m	meters (m)	Thickness of drilled/cored sediment and basement in meters (m).
+Transducer_separation	mm	millimeters (mm)	Measurement value of the distance between a pair of transducers in mm.
+Treatment_bias	mT	milleteslas (mT)	Values expected for ARM between 0.000 to 1.000 mT, and for IRM between 1.0 to 3000.0 mT.
+Treatment_demag	mT	milleteslas (mT)	Values expected between 0.0 to 9999.9 mT.
+Treatment_type			System used for applying alternating frequencies or thermal demagnetizations to samples.
+Tristimulus_x			Measurement value in the x direction of the color sphere coordinates.
+Tristimulus_y			Measurement value in the y direction of the color sphere coordinates.
+Tristimulus_z			Measurement value in the z direction of the color sphere coordinates.
+Ts_comment			Remark on a thin section.
+Ts_sample_code_lab			Code to indicate the shipboard lab that performed the analysis.
+Url			Uniform Resource Locator (URL) for the image available on the internet.
+V_ppm	ppm	parts per million (ppm)	Measurement value of Vanadium in ppm.
+Valid_daqs			Valid number of data acquisitions.
+Vane_comment			Remark on a vane.
+Vane_id			Identifier (ID) of a vane.
+Velocity	m/s	meters per second (m/s)	Measurement value of velocity in m/s.
+Voltage	mV	milliVolts (mV)	Measurement value of voltage in milliVolts.
+Volume_dry	cm3	cubic centimeters (cm3)	Calculated value of sample volume (dry) in cubic centimeters (cm3).
+Volume_porewater	cm3	cubic centimeters (cm3)	Calculated value of volume of porewater, in cubic centimeters (cm3).
+Volume_salt	cm3	cubic centimeters (cm3)	Calculated value of volume of salt in cubic centimeters (cm3).
+Volume_solids	cm3	cubic centimeters (cm3)	Calculated value of volume of solids in cubic centimeters (cm3).
+Volume_total	cm3	cubic centimeters (cm3)	Calculated value of sample total volume in cubic centimeters (cm3).
+Water_depth	m	meters (m)	The depth of the water at conclusion of drilling in meters (m).
+Xrd_comment			Remark on an XRD analysis.
+Xrd_data_url			Uniform Resource Locator (URL) for the XRD scan data on the internet.
+Xrd_run_id			Identifier for a run on an XRD analysis.
+Xrf_analysis_type			The type of element analysis performed on xrf sample.
+Xrf_comment			Remark on an xrf analysis.
+Xrf_replicate			Identifer used for analysis of replicates of a sample.
+Xrf_run_identifier			Identifier for a run of an analysis on a sample.
+Y_ppm	ppm	parts per million (ppm)	Measurement value of Yttrium (Y) in ppm.
+Yb_ppm	ppm	parts per million (ppm)	Measurement value of Ytterbium (Yb) in ppm.
+Zn_ppm	ppm	parts per million (ppm)	Measurement value of Zinc (Zn) in ppm.
+Zn_um	µM	micromoles/1000cm3 (µM)	Measurement value of Zinc (Zn) in the sample in micromoles/1000cm3.
+Zone_abbr			Abbreviation for a paleo_zone.
+Zone_author_year			Author and year reference of zone.
+Zone_id			Identifier (ID) of a paleo zone.
+Zone_name			Name of a paleo zone.
+Zone_old			Oldest possible fossil zone for a sample.
+Zone_young			Youngest possible fossil zone for a sample.
+Zr_ppm	ppm	parts per million (ppm)	Measurement value of Zirconium (Zr) in ppm.
+pH			Measurement value of pH in the sample.
+ppH			Measurement value of pH punch-in in the sample.

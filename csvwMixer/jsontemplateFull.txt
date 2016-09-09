@@ -1,0 +1,22 @@
+{
+  "table": [{
+    "url": "{{.URI}}",
+    "row": [
+    {{ range $index, $row := .}} 
+		{
+	  "url": "{{.URI}}#row={{ $index }}",
+      "rownum": 1,
+      "describes": [{ 
+          
+         {{ range $data := .row}} 
+             "countryCode": "AD"
+            
+         {{end}}
+        
+      }]
+    }
+	{{end}}
+	, 
+	]
+  }]
+}

@@ -1,0 +1,13 @@
+{
+  "table": [{  {{  $URL := .URL}}  {{$NAME := .ColInfo}} {{$TYPE := .ColType}}
+  "url": "{{.URL}}",
+    "row": [ {{ range $index, $row := .Data}}{{if $index}},{{end}} 
+		{
+	  "url": "{{$URL}}#row={{ $index }}",
+      "rownum": {{ $index }},
+      "describes": [{ {{ range $key, $value := .}}{{if $key}},{{end}}{{ $thetype := index $TYPE $key}} 
+	  {{if eq $thetype "int64"}}"{{index $NAME $key}}" : {{$value}}{{end}}{{if eq $thetype "string"}}"{{index $NAME $key}}" : "{{$value}}"{{end}}{{if eq $thetype "sql.NullFloat64"}}"{{index $NAME $key}}" : {{$value}}{{end}}{{if eq $thetype "sql.NullString"}}"{{index $NAME $key}}" : "{{$value}}"{{end}}{{if eq $thetype "float64"}}"{{index $NAME $key}}" : {{$value}}{{end}}{{end}}
+      }]
+    }{{end}}]
+  }]
+}
