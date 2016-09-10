@@ -21,7 +21,7 @@ The main.go code in here is a simple program that reads and parses the CSV and t
 * I likely should look at QUDT (http://www.qudt.org/) but I tried once and it hurt.   Jokes aside, I can't
 even tell if I should be looking at this.
 * Also should review ODM2 (http://www.odm2.org/) and see what I could use there.
-* Several vocabulary elements in test.nt are made up and are not resolvable URI's.  It's a test after all and I really want to use existing things in the end, not make something up.  
+* Several vocabulary elements in test.nt are made up and are not resolvable URI's.  It's a test after all and I really want to use existing things in the end, not make something up.  For now I am just doing this to allow me to build out a graph to share to enable discussion with others.  
 
 The **test.nt** file is here to look at, but it's N-triples are noted so not the easiest to review.  I need to set up some live queries that people can follow and look at.  The main queries and results will be something like:
 
@@ -29,6 +29,10 @@ The **test.nt** file is here to look at, but it's N-triples are noted so not the
 * Also want to be able to have people select a parameter and see all datasets that have data for it
 * Also should be able to request all datasets for a given measurement
 
+
+The basic goal is to allow a relation between queries, parameters and units.  Note, I need to try and be clear on what each of these mean to me.  I am not sure there is a common agreement on what each is but I should try and find one and use it.   The goal is to allow people to walk across various datasets and also aid in the discovery of datasets based on these items and their relationship.
+
+![](queryParamUnits.png)
 
 #### Notes and comments
 
