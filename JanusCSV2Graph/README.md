@@ -21,6 +21,7 @@ The main.go code in here is a simple program that reads and parses the CSV and t
 * I likely should look at QUDT (http://www.qudt.org/) but I tried once and it hurt.   Jokes aside, I can't
 even tell if I should be looking at this.
 * Also should review ODM2 (http://www.odm2.org/) and see what I could use there.
+* Another review item: http://usgin.github.io/usginspecs/DataTypeModel-v1.htm 
 * Several vocabulary elements in test.nt are made up and are not resolvable URI's.  It's a test after all and I really want to use existing things in the end, not make something up.  For now I am just doing this to allow me to build out a graph to share to enable discussion with others.  
 
 The **test.nt** file is here to look at, but it's N-triples are noted so not the easiest to review.  I need to set up some live queries that people can follow and look at.  The main queries and results will be something like:
