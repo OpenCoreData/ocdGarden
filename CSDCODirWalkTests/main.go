@@ -92,7 +92,29 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 	}
 
 	if caseInsenstiveContains(fp, "Geotek Data/whole-core data") {
-		matched, err := filepath.Match("*_MSCL*", fi.Name())
+
+		// black list this extensions in here: .raw .dat .out and .cal
+		matched, err := filepath.Match("*.raw", fi.Name())
+		if !matched {
+			matched, err = filepath.Match("*.dat", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*.out", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*.cal", fi.Name())
+		}
+
+		if err != nil {
+			fmt.Println(err) // malformed pattern
+			return err       // this is fatal.
+		}
+		if matched {
+			return nil // we matched above
+		}
+
+		// if we don't drop out in the above black list, check for our white list pattern
+		matched, err = filepath.Match("*_MSCL*", fi.Name())
 		if err != nil {
 			fmt.Println(err) // malformed pattern
 			return err       // this is fatal.
@@ -122,7 +144,12 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 
 	// Walk all subdirectories?
 	if caseInsenstiveContains(fp, "ICD/") {
-		matched, err := filepath.Match("*.pdf", fi.Name())
+		matched, err := filepath.Match("ICD sheet.pdf", fi.Name())
+		if matched {
+			return nil // we matched above so get out now...
+		}
+
+		matched, err = filepath.Match("*.pdf", fi.Name())
 
 		if err != nil {
 			fmt.Println(err) // malformed pattern
