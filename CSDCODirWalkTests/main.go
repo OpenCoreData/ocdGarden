@@ -52,33 +52,6 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 	}
 
 	// Walk all subdirectories?
-	if caseInsenstiveContains(fp, "ICD/") {
-		matched, err := filepath.Match("*.pdf", fi.Name())
-
-		if err != nil {
-			fmt.Println(err) // malformed pattern
-			return err       // this is fatal.
-		}
-		if matched {
-			fmt.Printf("\n\nICD files\n")
-			fmt.Println(fp)
-		}
-	}
-
-	// Walk all subdirectories?
-	if caseInsenstiveContains(fp, "Images/rgb") {
-		matched, err := filepath.Match("*.csv", fi.Name())
-		if err != nil {
-			fmt.Println(err) // malformed pattern
-			return err       // this is fatal.
-		}
-		if matched {
-			fmt.Printf("\n\nImage/rgb data in CSV\n")
-			fmt.Println(fp)
-		}
-	}
-
-	// Walk all subdirectories?
 	if caseInsenstiveContains(fp, "Images/") {
 		matched, err := filepath.Match("*.jpg", fi.Name())
 
@@ -105,6 +78,19 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 		}
 	}
 
+	// Walk all subdirectories?
+	if caseInsenstiveContains(fp, "Images/rgb") {
+		matched, err := filepath.Match("*.csv", fi.Name())
+		if err != nil {
+			fmt.Println(err) // malformed pattern
+			return err       // this is fatal.
+		}
+		if matched {
+			fmt.Printf("\n\nImage/rgb data in CSV\n")
+			fmt.Println(fp)
+		}
+	}
+
 	if caseInsenstiveContains(fp, "Geotek Data/whole-core data") {
 		matched, err := filepath.Match("*_MSCL*", fi.Name())
 		if err != nil {
@@ -118,13 +104,32 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 	}
 
 	if caseInsenstiveContains(fp, "Geotek Data/high-resolution MS data") {
-		matched, err := filepath.Match("*.xls", fi.Name())
+		matched, err := filepath.Match("*_HRMS*", fi.Name())
+
+		if !matched {
+			matched, err = filepath.Match("*_XYZ*", fi.Name())
+		}
+
 		if err != nil {
 			fmt.Println(err) // malformed pattern
 			return err       // this is fatal.
 		}
 		if matched {
 			fmt.Printf("\n\nGeoTek High Res:\n")
+			fmt.Println(fp)
+		}
+	}
+
+	// Walk all subdirectories?
+	if caseInsenstiveContains(fp, "ICD/") {
+		matched, err := filepath.Match("*.pdf", fi.Name())
+
+		if err != nil {
+			fmt.Println(err) // malformed pattern
+			return err       // this is fatal.
+		}
+		if matched {
+			fmt.Printf("\n\nICD files\n")
 			fmt.Println(fp)
 		}
 	}
