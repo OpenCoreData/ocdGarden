@@ -25,6 +25,86 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 		return nil // not a file.  ignore.
 	}
 
+	// Walk all subdirectories?
+	if caseInsenstiveContains(fp, "/") {
+		matched, err := filepath.Match("*PID-metadata*", fi.Name())
+
+		if !matched {
+			matched, err = filepath.Match("*Dtube Lable_PID*", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*SRF*", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*.cml", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*.car", fi.Name())
+		}
+		if err != nil {
+			fmt.Println(err) // malformed pattern
+			return err       // this is fatal.
+		}
+		if matched {
+			fmt.Printf("\n\nGeneric Match for PID, Dtube, SRF .cml or .car files\n")
+			fmt.Println(fp)
+		}
+	}
+
+	// Walk all subdirectories?
+	if caseInsenstiveContains(fp, "ICD/") {
+		matched, err := filepath.Match("*.pdf", fi.Name())
+
+		if err != nil {
+			fmt.Println(err) // malformed pattern
+			return err       // this is fatal.
+		}
+		if matched {
+			fmt.Printf("\n\nICD files\n")
+			fmt.Println(fp)
+		}
+	}
+
+	// Walk all subdirectories?
+	if caseInsenstiveContains(fp, "Images/rgb") {
+		matched, err := filepath.Match("*.csv", fi.Name())
+		if err != nil {
+			fmt.Println(err) // malformed pattern
+			return err       // this is fatal.
+		}
+		if matched {
+			fmt.Printf("\n\nImage/rgb data in CSV\n")
+			fmt.Println(fp)
+		}
+	}
+
+	// Walk all subdirectories?
+	if caseInsenstiveContains(fp, "Images/") {
+		matched, err := filepath.Match("*.jpg", fi.Name())
+
+		if !matched {
+			matched, err = filepath.Match("*.jpeg", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*.tif", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*.tiff", fi.Name())
+		}
+		if !matched {
+			matched, err = filepath.Match("*.bmp", fi.Name())
+		}
+
+		if err != nil {
+			fmt.Println(err) // malformed pattern
+			return err       // this is fatal.
+		}
+		if matched {
+			fmt.Printf("\n\nImage directory (jpg jpeg tif bmp)\n")
+			fmt.Println(fp)
+		}
+	}
+
 	if caseInsenstiveContains(fp, "Geotek Data/whole-core data") {
 		matched, err := filepath.Match("*_MSCL*", fi.Name())
 		if err != nil {
@@ -32,7 +112,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Println("GeoTek Whole Core:")
+			fmt.Printf("\n\nGeoTek Whole Core:\n")
 			fmt.Println(fp)
 		}
 	}
@@ -44,7 +124,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Println("GeoTek High Res:")
+			fmt.Printf("\n\nGeoTek High Res:\n")
 			fmt.Println(fp)
 		}
 	}
