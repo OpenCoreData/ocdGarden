@@ -29,7 +29,8 @@ func posttest(username, passwd string) {
 	}
 
 	s := string(b)
-	packageString := fmt.Sprintf("datacite: %s", strings.Replace(s, "\n", " ", -1)) // note % must also be escaped
+	sFormatted := strings.Replace(strings.Replace(s, "\n", " ", -1), "%", "%25", -1) // replace \n and %
+	packageString := fmt.Sprintf("datacite: %s", sFormatted)
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer([]byte(packageString)))
 	req.Header.Set("Content-Type", "text/plain")
