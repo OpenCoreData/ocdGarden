@@ -25,38 +25,47 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 		return nil // not a file.  ignore.
 	}
 
+	pathElements := strings.Split(fp, "/")
+	projectIDSet := strings.Split(pathElements[5], " ")
+	projectID := projectIDSet[0]
+
 	// Look in all subdirectories of a project directory
 	if caseInsenstiveContains(fp, "/") {
 
 		// Looking for [ProjectID]-metadata
 		// We really don't know the PID..  need to try and pull that from the path....
 		matched, err := filepath.Match(strings.ToLower("*-metadata*"), strings.ToLower(fi.Name()))
+		predicate := "metadata"
 
 		// look for Dtube lable name...
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*metadata format Dtube Lable_*"), strings.ToLower(fi.Name())) // worry about case issue
+			predicate = "dtubeMetadata"
 		}
 
 		// subsample metadata information
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*SRF*"), strings.ToLower(fi.Name()))
+			predicate = "srf"
 		}
 
 		// Corelyzer session file
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*.cml"), strings.ToLower(fi.Name()))
+			predicate = "cml"
 		}
 
 		// Corelyzer archive file
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*.car"), strings.ToLower(fi.Name()))
+			predicate = "car"
 		}
 		if err != nil {
 			fmt.Println(err) // malformed pattern
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("Match for (PID/Dtube/SRF/.cml/.car): %s\n", fp)
+			fmt.Printf("%s : %s : %s\n", projectID, predicate, fp)
 		}
 	}
 
@@ -82,7 +91,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("Image directory (jpg/jpeg/tif/bmp): %s\n", fp)
+			fmt.Printf("%s : image : %s\n", projectID, fp)
 		}
 	}
 
@@ -94,7 +103,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("Image/rgb data in CSV: %s\n", fp)
+			fmt.Printf("%s : rgbData : %s\n", projectID, fp)
 		}
 	}
 
@@ -132,7 +141,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 				return nil // done with this test loop..
 			}
 			if matched {
-				fmt.Printf("GeoTek Whole Core: %s\n", fp)
+				fmt.Printf("%s : wholeCoreData : %s\n", projectID, fp)
 			}
 			if err != nil {
 				fmt.Println(err) // malformed pattern
@@ -163,7 +172,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 				return nil // done with this test loop..
 			}
 			if matched {
-				fmt.Printf("GeoTek High Res: %s\n", fp)
+				fmt.Printf("%s : geotekHighResMSdata : %s\n", projectID, fp)
 			}
 			if err != nil {
 				fmt.Println(err) // malformed pattern
@@ -187,7 +196,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("ICD files: %s\n", fp)
+			fmt.Printf("%s : icdFiles : %s\n", projectID, fp)
 		}
 	}
 
