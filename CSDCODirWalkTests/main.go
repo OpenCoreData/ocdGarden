@@ -25,47 +25,56 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 		return nil // not a file.  ignore.
 	}
 
-	// Walk all subdirectories?
+	// Look in all subdirectories of a project directory
 	if caseInsenstiveContains(fp, "/") {
-		matched, err := filepath.Match("*PID-metadata*", fi.Name())
 
+		// Looking for [ProjectID]-metadata
+		// We really don't know the PID..  need to try and pull that from the path....
+		matched, err := filepath.Match(strings.ToLower("*-metadata*"), strings.ToLower(fi.Name()))
+
+		// look for Dtube lable name...
 		if !matched {
-			matched, err = filepath.Match("*Dtube Lable_PID*", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*metadata format Dtube Lable_*"), strings.ToLower(fi.Name())) // worry about case issue
 		}
+
+		// subsample metadata information
 		if !matched {
-			matched, err = filepath.Match("*SRF*", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*SRF*"), strings.ToLower(fi.Name()))
 		}
+
+		// Corelyzer session file
 		if !matched {
-			matched, err = filepath.Match("*.cml", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.cml"), strings.ToLower(fi.Name()))
 		}
+
+		// Corelyzer archive file
 		if !matched {
-			matched, err = filepath.Match("*.car", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.car"), strings.ToLower(fi.Name()))
 		}
 		if err != nil {
 			fmt.Println(err) // malformed pattern
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("\n\nGeneric Match for PID, Dtube, SRF .cml or .car files\n")
-			fmt.Println(fp)
+			fmt.Printf("Match for (PID/Dtube/SRF/.cml/.car): %s\n", fp)
 		}
 	}
 
 	// Walk all subdirectories?
 	if caseInsenstiveContains(fp, "Images/") {
-		matched, err := filepath.Match("*.jpg", fi.Name())
+		matched, err := filepath.Match(strings.ToLower("*.jpg"), strings.ToLower(fi.Name()))
 
 		if !matched {
-			matched, err = filepath.Match("*.jpeg", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.jpeg"), strings.ToLower(fi.Name()))
 		}
 		if !matched {
-			matched, err = filepath.Match("*.tif", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.tif"), strings.ToLower(fi.Name()))
 		}
 		if !matched {
-			matched, err = filepath.Match("*.tiff", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.tiff"), strings.ToLower(fi.Name()))
 		}
 		if !matched {
-			matched, err = filepath.Match("*.bmp", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.bmp"), strings.ToLower(fi.Name()))
 		}
 
 		if err != nil {
@@ -73,36 +82,34 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("\n\nImage directory (jpg jpeg tif bmp)\n")
-			fmt.Println(fp)
+			fmt.Printf("Image directory (jpg/jpeg/tif/bmp): %s\n", fp)
 		}
 	}
 
 	// Walk all subdirectories?
 	if caseInsenstiveContains(fp, "Images/rgb") {
-		matched, err := filepath.Match("*.csv", fi.Name())
+		matched, err := filepath.Match(strings.ToLower("*.csv"), strings.ToLower(fi.Name()))
 		if err != nil {
 			fmt.Println(err) // malformed pattern
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("\n\nImage/rgb data in CSV\n")
-			fmt.Println(fp)
+			fmt.Printf("Image/rgb data in CSV: %s\n", fp)
 		}
 	}
 
 	if caseInsenstiveContains(fp, "Geotek Data/whole-core data") {
 
 		// black list this extensions in here: .raw .dat .out and .cal
-		matched, err := filepath.Match("*.raw", fi.Name())
+		matched, err := filepath.Match(strings.ToLower("*.raw"), strings.ToLower(fi.Name()))
 		if !matched {
-			matched, err = filepath.Match("*.dat", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.dat"), strings.ToLower(fi.Name()))
 		}
 		if !matched {
-			matched, err = filepath.Match("*.out", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.out"), strings.ToLower(fi.Name()))
 		}
 		if !matched {
-			matched, err = filepath.Match("*.cal", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*.cal"), strings.ToLower(fi.Name()))
 		}
 
 		if err != nil {
@@ -110,26 +117,35 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			return nil // we matched above
+			return nil // We return nil on match here since we got a postive from the Black list above
 		}
 
 		// if we don't drop out in the above black list, check for our white list pattern
-		matched, err = filepath.Match("*_MSCL*", fi.Name())
-		if err != nil {
-			fmt.Println(err) // malformed pattern
-			return err       // this is fatal.
-		}
+		matched, err = filepath.Match(strings.ToLower("*_MSCL*"), strings.ToLower(fi.Name()))
 		if matched {
-			fmt.Printf("\n\nGeoTek Whole Core:\n")
-			fmt.Println(fp)
+			// now check for correct extensions
+			matched, err = filepath.Match(strings.ToLower("*.xsl"), strings.ToLower(fi.Name()))
+			if !matched {
+				matched, err = filepath.Match(strings.ToLower("*.xsls"), strings.ToLower(fi.Name()))
+			}
+			if !matched {
+				return nil // done with this test loop..
+			}
+			if matched {
+				fmt.Printf("GeoTek Whole Core: %s\n", fp)
+			}
+			if err != nil {
+				fmt.Println(err) // malformed pattern
+				return err       // this is fatal.
+			}
 		}
 	}
 
 	if caseInsenstiveContains(fp, "Geotek Data/high-resolution MS data") {
-		matched, err := filepath.Match("*_HRMS*", fi.Name())
+		matched, err := filepath.Match(strings.ToLower("*_HRMS*"), strings.ToLower(fi.Name()))
 
 		if !matched {
-			matched, err = filepath.Match("*_XYZ*", fi.Name())
+			matched, err = filepath.Match(strings.ToLower("*_XYZ*"), strings.ToLower(fi.Name()))
 		}
 
 		if err != nil {
@@ -137,27 +153,41 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("\n\nGeoTek High Res:\n")
-			fmt.Println(fp)
+			// now check for correct extensions  //TODO  ask if I should add .csv here as well..
+
+			matched, err = filepath.Match(strings.ToLower("*.xls"), strings.ToLower(fi.Name()))
+			if !matched {
+				matched, err = filepath.Match(strings.ToLower("*.xlsx"), strings.ToLower(fi.Name()))
+			}
+			if !matched {
+				return nil // done with this test loop..
+			}
+			if matched {
+				fmt.Printf("GeoTek High Res: %s\n", fp)
+			}
+			if err != nil {
+				fmt.Println(err) // malformed pattern
+				return err       // this is fatal.
+			}
 		}
+
 	}
 
 	// Walk all subdirectories?
 	if caseInsenstiveContains(fp, "ICD/") {
-		matched, err := filepath.Match("ICD sheet.pdf", fi.Name())
+		matched, err := filepath.Match("ICD sheet.pdf", strings.ToLower(fi.Name()))
 		if matched {
 			return nil // we matched above so get out now...
 		}
 
-		matched, err = filepath.Match("*.pdf", fi.Name())
+		matched, err = filepath.Match(strings.ToLower("*.pdf"), strings.ToLower(fi.Name()))
 
 		if err != nil {
 			fmt.Println(err) // malformed pattern
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("\n\nICD files\n")
-			fmt.Println(fp)
+			fmt.Printf("ICD files: %s\n", fp)
 		}
 	}
 
