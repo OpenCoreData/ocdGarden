@@ -225,7 +225,7 @@ func main() {
 
 	// Write triples to a file
 	var inoutFormat rdf.Format
-	inoutFormat = rdf.FormatNT // FormatTTL or FormatNT
+	inoutFormat = rdf.NTriples // Turtle NQuads
 	enc := rdf.NewTripleEncoder(outFile, inoutFormat)
 	err = enc.EncodeAll(tr)
 	// err = enc.Encode(newtriple)
