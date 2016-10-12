@@ -50,7 +50,7 @@ func featuresAbsGeoJSON(session *mgo.Session) {
 
 	}
 
-	writeFile("featuresAbsGeoJSON.nt", tr)
+	writeFile("./output/featuresAbsGeoJSON.nt", tr)
 
 }
 
@@ -79,7 +79,7 @@ func schemaorg(session *mgo.Session) {
 
 	}
 
-	writeFile("schemaorg.nt", tr)
+	writeFile("./output/schemaorg.nt", tr)
 
 }
 
@@ -108,7 +108,7 @@ func csvwmeta(session *mgo.Session) {
 
 	}
 
-	writeFile("csvw.nt", tr)
+	writeFile("./output/csvw.nt", tr)
 
 }
 
@@ -143,7 +143,7 @@ func abstracts(session *mgo.Session) {
 
 	}
 
-	writeFile("abstracts.nt", tr)
+	writeFile("./output/abstracts.nt", tr)
 
 }
 

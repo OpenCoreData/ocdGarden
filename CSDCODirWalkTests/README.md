@@ -1,5 +1,8 @@
 # CSDCO Directory Walk testing
 
+## STATUS Cultivated
+This garden item has been cultivated.. its results are now in ocdFX
+
 ## About
 Need to use the testing described below to limit the discovery of files to correctly index the 
 CSDCO holdings and avoid file not of interest

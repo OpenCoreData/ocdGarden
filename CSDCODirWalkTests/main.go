@@ -35,30 +35,30 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 		// Looking for [ProjectID]-metadata
 		// We really don't know the PID..  need to try and pull that from the path....
 		matched, err := filepath.Match(strings.ToLower("*-metadata*"), strings.ToLower(fi.Name()))
-		predicate := "metadata"
+		predicate := "http://opencoredata.org/id/voc/csdco/v1/metadata"
 
 		// look for Dtube lable name...
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*metadata format Dtube Lable_*"), strings.ToLower(fi.Name())) // worry about case issue
-			predicate = "dtubeMetadata"
+			predicate = "http://opencoredata.org/id/voc/csdco/v1/dtubeMetadata"
 		}
 
 		// subsample metadata information
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*SRF*"), strings.ToLower(fi.Name()))
-			predicate = "srf"
+			predicate = "http://opencoredata.org/id/voc/csdco/v1/srf"
 		}
 
 		// Corelyzer session file
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*.cml"), strings.ToLower(fi.Name()))
-			predicate = "cml"
+			predicate = "http://opencoredata.org/id/voc/csdco/v1/cml"
 		}
 
 		// Corelyzer archive file
 		if !matched {
 			matched, err = filepath.Match(strings.ToLower("*.car"), strings.ToLower(fi.Name()))
-			predicate = "car"
+			predicate = "http://opencoredata.org/id/voc/csdco/v1/car"
 		}
 		if err != nil {
 			fmt.Println(err) // malformed pattern
@@ -91,7 +91,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("%s : image : %s\n", projectID, fp)
+			fmt.Printf("%s : http://opencoredata.org/id/voc/csdco/v1/image : %s\n", projectID, fp)
 		}
 	}
 
@@ -103,7 +103,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("%s : rgbData : %s\n", projectID, fp)
+			fmt.Printf("%s : http://opencoredata.org/id/voc/csdco/v1/rgbData : %s\n", projectID, fp)
 		}
 	}
 
@@ -141,7 +141,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 				return nil // done with this test loop..
 			}
 			if matched {
-				fmt.Printf("%s : wholeCoreData : %s\n", projectID, fp)
+				fmt.Printf("%s : http://opencoredata.org/id/voc/csdco/v1/wholeCoreData : %s\n", projectID, fp)
 			}
 			if err != nil {
 				fmt.Println(err) // malformed pattern
@@ -172,7 +172,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 				return nil // done with this test loop..
 			}
 			if matched {
-				fmt.Printf("%s : geotekHighResMSdata : %s\n", projectID, fp)
+				fmt.Printf("%s : http://opencoredata.org/id/voc/csdco/v1/geotekHighResMSdata : %s\n", projectID, fp)
 			}
 			if err != nil {
 				fmt.Println(err) // malformed pattern
@@ -196,7 +196,7 @@ func VisitFile(fp string, fi os.FileInfo, err error) error {
 			return err       // this is fatal.
 		}
 		if matched {
-			fmt.Printf("%s : icdFiles : %s\n", projectID, fp)
+			fmt.Printf("%s : http://opencoredata.org/id/voc/csdco/v1/icdFiles : %s\n", projectID, fp)
 		}
 	}
 
