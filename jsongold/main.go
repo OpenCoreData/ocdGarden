@@ -9,49 +9,15 @@ import (
 
 	"github.com/kazarena/json-gold/ld"
 	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
 	structs "opencoredata.org/ocdGarden/jsongold/structs"
 )
 
 func main() {
-	// restTest()  // works fine
-	stringTest() // working on this to use in the mongo mongoTest
-	// mongoTest() // waiting to resolve the stringTest() call
-}
 
-// Calls the REST API to get a JSON-LD document and then that document is
-//  1) converted to RDF
-//  2) attempted to convert back to JSON-LD
-// NOTE:  A newer version of the  JSON-LD is coming that will have no blank nodes
-func restTest() {
-	proc := ld.NewJsonLdProcessor()
-	options := ld.NewJsonLdOptions("")
-	options.Format = "application/nquads"
-
-	// triples, err := proc.ToRDF("http://localhost/api/v1/documents/download/e8fb758e-22ba-499d-92fb-8d653febcf28/JSON", options)
-	triples, err := proc.ToRDF("http://localhost/api/v1/documents/download/218fda28-6763-470f-b8ba-6f3350e26fde/JSON", options)
-	if err != nil {
-		log.Println("Error when transforming JSON-LD document to RDF:", err)
-		return
-	}
-	fmt.Println(triples) // os.Stdout.WriteString(triples.(string))
-
-	// from RDF to JSON-LD test
-	proc2 := ld.NewJsonLdProcessor()
-	options2 := ld.NewJsonLdOptions("")
-	doc, err := proc2.FromRDF(triples, options2)
-	expanded, err := proc.Compact(doc, nil, options)
-	ld.PrintDocument("JSON-LD expansion succeeded", expanded)
-}
-
-// Trys to take a simple JSON-LD string and process it. Having trouble here.. a git issue made
-// in the jsongold repo...
-func stringTest() {
-
-	jsld := `{
+	const jsld = `{
   "@context": {
-    "opencore":"http://opencore.org/",
-    "glview":"http://glview.org/",
+    "opencore":"http://opencore.org/voc/1",
+    "glview":"http://glview.org/voc/1/",
     "@vocab":"http://schema.org/"
   },
  "@type": "Dataset",
@@ -93,23 +59,114 @@ func stringTest() {
  "url": "http://opencoredata.org/id/dataset/e8fb758e-22ba-499d-92fb-8d653febcf28"
 }`
 
-	proc := ld.NewJsonLdProcessor()
-	options := ld.NewJsonLdOptions("")
-
-	var myInterface interface{}
-	err := json.Unmarshal([]byte(jsld), &myInterface)
-	if err != nil {
-		log.Println("Error when transforming JSON-LD document to interface:", err)
-	}
-
-	triples, err := proc.ToRDF(myInterface, options)
-	fmt.Println(triples)
+	csvwTest()
+	// mongoTest() // waiting to resolve the stringTest() call
+	// triples := stringTest(jsld) // working on this to use in the mongo mongoTest
+	// fmt.Println(triples)
+	// restTest() // works fine
 
 }
+func getMongoCon() (*mgo.Session, error) {
+	host := os.Getenv("localhost")
+	return mgo.Dial(host)
+}
 
-// This isn't working yet..  the JSON-LD in here has some errors (they can be fixed)
-// Goal is to fix them, process through jsongold to make sure we are complient and
-// then store the triples in a triple store for later extraction and use
+// TODO a version of mongoTest for the CSVW metadata...
+// this is for the the schema.org stuff
+func csvwTest() {
+	session, err := getMongoCon()
+	if err != nil {
+		panic(err)
+	}
+	defer session.Close()
+
+	// connect and get documents
+	c := session.DB("test").C("csvwmeta")
+	results := []structs.CSVWMeta{} // need this struct  (it's everywhere.   what can I do about that?   move only ocdServices from ocdWeb?)
+	// err = c.Find(bson.M{"url": "http://opencoredata.org/id/dataset/da39147d-deda-44ac-879d-684491a110fe"}).One(&result)
+	err = c.Find(nil).Limit(3).All(&results) // c.Find(nil).Limit(3).All(&results)
+	if err != nil {
+		log.Printf("URL lookup error: %v", err)
+	}
+
+	for _, result := range results {
+		// context setting hack
+		result.Context.Schema = "http://www.w3.org/ns/csvw/" // this "schema" is the @voc in the struct..  confusing when not using schema.org
+		result.Context.OpenCore = "http://opencore.org/voc/1/"
+		result.Context.GeoLink = "http://glview.org/voc/1/"
+		result.Context.Base = fmt.Sprintf("%s.json", result.URL)
+		result.Type = "http://www.w3.org/ns/dcat#DataSet"
+
+		// really this should be URL + .json ?
+		result.Id = fmt.Sprintf("%s.json", result.URL)
+
+		// add dc_publisher ID  TODO, set to DOI of OCD
+		//result.Dc_publisher.Id = fmt.Sprintf("%s%s", result.URL, "#distribution")
+
+		result.Dc_license.Type = "http://purl.org/dc/terms/RightsStatement"
+
+		result.TableSchema.Id = fmt.Sprintf("%s.json#tableSchema", result.URL)
+		result.TableSchema.Type = "TableSchema"
+
+		// add tableschema ID
+		result.Dc_publisher.Schema_url.Id = "http://opencoredata.org/voc/1/janus/"
+		result.Dc_publisher.Id = fmt.Sprintf("%s.json#publisher", result.URL)
+		result.Dc_publisher.Type = "http://purl.org/dc/terms/Publisher" // change to a better type..  like RE3 type?
+
+		// loop on column range to add ID and TYPE
+		for index, column := range result.TableSchema.Columns {
+			result.TableSchema.Columns[index].Id = fmt.Sprintf("%s.json#%s", result.URL, column.Name)
+			result.TableSchema.Columns[index].Type = "Column"
+			// TODO..  make a call to the vobulary graph and populate the description here too
+		}
+
+		jsonldtext, _ := json.MarshalIndent(result, "", " ") // results as embeddale JSON-LD
+
+		fmt.Println("jsonld text--------------------------------")
+
+		fmt.Println(string(jsonldtext))
+
+		fmt.Println("jsonLDToRDF--------------------------------")
+
+		fmt.Println(jsonLDToRDF(string(jsonldtext)))
+
+		fmt.Println("rdfToJSONLD--------------------------------")
+
+		fmt.Println(rdfToJSONLD(jsonLDToRDF(string(jsonldtext))))
+
+	}
+}
+
+// this is a test function to take the RDF triple stream and rebuild the JSON-LD backs
+func rdfToJSONLD(nquads string) string {
+
+	proc := ld.NewJsonLdProcessor()
+	options := ld.NewJsonLdOptions("")
+	options.Format = "application/nquads"
+
+	doc, err := proc.FromRDF(nquads, options)
+	expanded, err := proc.Compact(doc, nil, options)
+	if err != nil {
+		log.Println("Error when transforming nquads document to JSONDLD:", err)
+		return err.Error()
+	}
+
+	b, _ := json.MarshalIndent(expanded, "", "  ")
+
+	return string(b)
+}
+
+func PrintDocument(msg string, doc interface{}) {
+	b, _ := json.MarshalIndent(doc, "", "  ")
+	if msg != "" {
+		os.Stdout.WriteString(msg)
+		os.Stdout.WriteString("\n")
+	}
+	os.Stdout.Write(b)
+	os.Stdout.WriteString("\n")
+}
+
+// this is for the the schema.org stuff
 func mongoTest() {
 	session, err := getMongoCon()
 	if err != nil {
@@ -119,22 +176,80 @@ func mongoTest() {
 
 	// connect and get documents
 	c := session.DB("test").C("schemaorg")
-	result := structs.SchemaOrgMetadata{} // need this struct  (it's everywhere.   what can I do about that?   move only ocdServices from ocdWeb?)
-	err = c.Find(bson.M{"url": "http://opencoredata.org/id/dataset/da39147d-deda-44ac-879d-684491a110fe"}).One(&result)
+	results := []structs.SchemaOrgMetadata{} // need this struct  (it's everywhere.   what can I do about that?   move only ocdServices from ocdWeb?)
+	// err = c.Find(bson.M{"url": "http://opencoredata.org/id/dataset/da39147d-deda-44ac-879d-684491a110fe"}).One(&result)
+	err = c.Find(nil).All(&results) // c.Find(nil).Limit(3).All(&results)
 	if err != nil {
 		log.Printf("URL lookup error: %v", err)
 	}
 
-	// context setting hack
-	// result.Context = ` "opencore": "http://opencoredata.org/voc/1/", "glview": "http://geolink.org/view/1/", "schema": "http://schema.org/"`
-	result.Context = "http://schema.org"
-	// jsonldtext, _ := json.MarshalIndent(result, "", " ") // results as embeddale JSON-LD
-	if err != nil {
-		log.Printf("Error calling in GetFileBuyUUID : %v ", err)
+	for _, result := range results {
+		// context setting hack
+		result.Context.Schema = "http://glview.org/voc/1/"
+		result.Context.OpenCore = "http://opencore.org/voc/1"
+		result.Context.GeoLink = "http://schema.org/"
+
+		result.ID = result.URL
+		result.Distribution.ID = fmt.Sprintf("%s%s", result.URL, "#distribution")
+		result.Author.ID = fmt.Sprintf("%s%s", result.URL, "#author")
+		result.Spatial.ID = fmt.Sprintf("%s%s", result.URL, "#spatial")
+		result.Spatial.Geo.ID = fmt.Sprintf("%s%s", result.URL, "#geo")
+		if err != nil {
+			log.Printf("Error calling in GetFileBuyUUID : %v ", err)
+		}
+
+		jsonldtext, _ := json.MarshalIndent(result, "", " ") // results as embeddale JSON-LD
+		fmt.Println(jsonLDToRDF(string(jsonldtext)))
 	}
 }
 
-func getMongoCon() (*mgo.Session, error) {
-	host := os.Getenv("localhost")
-	return mgo.Dial(host)
+// Trys to take a simple JSON-LD string and process it.
+func jsonLDToRDF(jsonld string) string {
+
+	proc := ld.NewJsonLdProcessor()
+	options := ld.NewJsonLdOptions("")
+	options.Format = "application/nquads"
+
+	var myInterface interface{}
+	err := json.Unmarshal([]byte(jsonld), &myInterface)
+	if err != nil {
+		log.Println("Error when transforming JSON-LD document to interface:", err)
+	}
+
+	triples, err := proc.ToRDF(myInterface, options)
+	if err != nil {
+		log.Println("Error when transforming JSON-LD document to RDF:", err)
+		return err.Error()
+	}
+
+	return triples.(string)
+}
+
+// Calls the REST API to get a JSON-LD document and then that document is
+//  1) converted to RDF
+//  2) attempted to convert back to JSON-LD
+// NOTE:  A newer version of the  JSON-LD is coming that will have no blank nodes
+func restTest() {
+	proc := ld.NewJsonLdProcessor()
+	options := ld.NewJsonLdOptions("")
+	options.Format = "application/nquads"
+
+	// triples, err := proc.ToRDF("http://localhost/api/v1/documents/download/e8fb758e-22ba-499d-92fb-8d653febcf28/JSON", options)
+	triples, err := proc.ToRDF("http://localhost/api/v1/documents/download/218fda28-6763-470f-b8ba-6f3350e26fde/JSON", options)
+	if err != nil {
+		log.Println("Error when transforming JSON-LD document to RDF:", err)
+		return
+	}
+	fmt.Println(triples)
+
+	// from RDF to JSON-LD test
+	proc2 := ld.NewJsonLdProcessor()
+	options2 := ld.NewJsonLdOptions("")
+	doc, err := proc2.FromRDF(triples, options2)
+	expanded, err := proc.Compact(doc, nil, options)
+	if err != nil {
+		log.Println("Error when transforming JSON-LD document to RDF:", err)
+		return
+	}
+	ld.PrintDocument("JSON-LD expansion succeeded", expanded)
 }
