@@ -4,6 +4,10 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
+
+	"golang.org/x/text/transform"
+	"golang.org/x/text/unicode/norm"
 
 	rdf "github.com/knakk/rdf"
 	"gopkg.in/mgo.v2"
@@ -18,9 +22,9 @@ func main() {
 	}
 	defer session.Close()
 
-	// abstracts(session)
-	// csvwmeta(session)
-	// schemaorg(session)
+	abstracts(session)
+	// csvwmeta(session)  // change this to use jsongold approach
+	// schemaorg(session) // change this to use jsongold approach
 	featuresAbsGeoJSON(session)
 
 }
@@ -40,6 +44,8 @@ func featuresAbsGeoJSON(session *mgo.Session) {
 
 	// Loop on documents
 	for _, item := range features {
+
+		SPOIRI(item.Uri, "a", "http://opencoredata.org/id/voc/janus/v1/Feature")
 
 		if item.Type != "" {
 			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/type", item.Type))
@@ -111,7 +117,7 @@ func featuresAbsGeoJSON(session *mgo.Session) {
 			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/prcoeedingreport", item.Prcoeedingreport))
 		}
 		if item.Abstract != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/abstract", item.Abstract))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/abstract", stripCtlAndExtFromUnicode(item.Abstract)))
 		}
 
 	}
@@ -120,6 +126,7 @@ func featuresAbsGeoJSON(session *mgo.Session) {
 
 }
 
+// update with material from jsongold
 func schemaorg(session *mgo.Session) {
 
 	// connect and get documents
@@ -144,6 +151,7 @@ func schemaorg(session *mgo.Session) {
 
 }
 
+// update with material from jsongold
 func csvwmeta(session *mgo.Session) {
 
 	// connect and get documents
@@ -189,13 +197,65 @@ func abstracts(session *mgo.Session) {
 	// Loop on documents
 	for _, item := range csdcoAbs {
 		// Make subject IRI
-		newsub, _ := rdf.NewIRI(fmt.Sprintf("http://opencoredata/id/resource/janus/query/%s", item.ID)) // Sprintf a correct URI here
+		// newsub, _ := rdf.NewIRI(fmt.Sprintf("http://opencoredata.org/id/resource/janus/query/%s", item.ID)) // Sprintf a correct URI here
 
 		// title
-		newpred0, _ := rdf.NewIRI("http://www.w3.org/1999/02/22-rdf-syntax-ns#title")
-		newobj0, _ := rdf.NewIRI("http://opencoredata.org/id/voc/janus/v1/JanusQuery")
-		newtriple0 := rdf.Triple{Subj: newsub, Pred: newpred0, Obj: newobj0}
-		tr = append(tr, newtriple0)
+		// newpred0, _ := rdf.NewIRI("http://www.w3.org/1999/02/22-rdf-syntax-ns#title")
+		// newobj0, _ := rdf.NewIRI("http://opencoredata.org/id/voc/janus/v1/JanusQuery")
+		// newtriple0 := rdf.Triple{Subj: newsub, Pred: newpred0, Obj: newobj0}
+		// tr = append(tr, newtriple0)
+
+		abstractIRI := fmt.Sprintf("http://opencoredata.org/id/resource/csdco/abstract/%s", item.ID)
+
+		// need a TYPE!
+		SPOIRI(abstractIRI, "a", "http://opencoredata.org/id/voc/csdco/v1/Abstract")
+
+		if item.Title != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/title", stripCtlAndExtFromUnicode(item.Title)))
+		}
+		if item.Type != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/type", item.Type))
+		}
+		if item.Year != 0 {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/year", strconv.Itoa(item.Year)))
+		}
+		if item.Source != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/source", item.Source))
+		}
+		if item.ID != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/id", item.ID))
+		}
+		if !item.Created.IsZero() {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/created", item.Created.String()))
+		}
+		if item.Profile_ID != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/profileid", item.Profile_ID))
+		}
+		if item.Group_ID != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/groupid", item.Group_ID))
+		}
+		if !item.Last_Modified.IsZero() {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/lastmodified", item.Last_Modified.String()))
+		}
+		if item.Abstract != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/abstracttext", stripCtlAndExtFromUnicode(item.Abstract)))
+		}
+		if item.Identifiers.Doi != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/doi", item.Identifiers.Doi))
+		}
+		if item.Identifiers.Issn != "" {
+			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/issn", item.Identifiers.Issn))
+		}
+
+		// loop on Authors
+		if len(item.Authors) > 0 {
+			authorIRI := fmt.Sprintf("http://opencoredata.org/id/resource/csdco/abstract/%s#authors", item.ID)
+			tr = append(tr, SPOIRI(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/authors", authorIRI))
+			for _, author := range item.Authors {
+				tr = append(tr, SPOLiteral(authorIRI, "http://opencoredata.org/id/voc/csdco/v1/author/firstname", stripCtlAndExtFromUnicode(author.First_Name)))
+				tr = append(tr, SPOLiteral(authorIRI, "http://opencoredata.org/id/voc/csdco/v1/author/lastname", stripCtlAndExtFromUnicode(author.Last_Name)))
+			}
+		}
 
 		// for _, author := range item.Authors {
 		// 	fmt.Printf("FirstName: %s\n", author.First_Name)
@@ -206,6 +266,20 @@ func abstracts(session *mgo.Session) {
 
 	writeFile("./output/abstracts.nt", tr)
 
+}
+
+// ref:  https://rosettacode.org/wiki/Strip_control_codes_and_extended_characters_from_a_string#Go
+func stripCtlAndExtFromUnicode(str string) string {
+	isOk := func(r rune) bool {
+		return r < 32 || r >= 127
+	}
+	// The isOk filter is such that there is no need to chain to norm.NFC
+	t := transform.Chain(norm.NFKD, transform.RemoveFunc(isOk))
+	// This Transformer could also trivially be applied as an io.Reader
+	// or io.Writer filter to automatically do such filtering when reading
+	// or writing data anywhere.
+	str, _, _ = transform.String(t, str)
+	return str
 }
 
 func writeFile(name string, tr []rdf.Triple) {

@@ -65,7 +65,7 @@ func CSDCORDF(session *mgo.Session) {
 	tr := []rdf.Triple{}
 
 	for _, item := range csvwDocs {
-		newsub, _ := rdf.NewIRI(fmt.Sprintf("http://opencoredata/id/resource/csdco/project/%s", strings.ToLower(item.Project))) // Sprintf a correct URI here
+		newsub, _ := rdf.NewIRI(fmt.Sprintf("http://opencoredata/id/resource/csdco/project/%s", strings.ToLower(item.HoleID))) // Sprintf a correct URI here
 
 		newpred1, _ := rdf.NewIRI("http://opencoredata.org/id/voc/csdco/v1/locationname")
 		newpred2, _ := rdf.NewIRI("http://opencoredata.org/id/voc/csdco/v1/locationtype")
@@ -250,7 +250,8 @@ func CSDCORDF(session *mgo.Session) {
 
 	// Write triples to a file
 	var inoutFormat rdf.Format
-	inoutFormat = rdf.FormatNT // FormatTTL or FormatNT
+	inoutFormat = rdf.NTriples // Turtle NQuads
+
 	enc := rdf.NewTripleEncoder(outFile, inoutFormat)
 	err = enc.EncodeAll(tr)
 	// err = enc.Encode(newtriple)

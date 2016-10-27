@@ -75,9 +75,9 @@ type SchemaOrgMetadata struct {
 
 type Context struct {
 	Schema   string `json:"@vocab"`
-	GeoLink  string `json:"geolink"`  // namespace prefix in the rest of the struct
-	OpenCore string `json:"opencore"` // namespace prefix in the rest of the struct
-	Base     string `json:"@base"`    // used in CSVW to prevent relative IRI from becoming an absolute IRI
+	GeoLink  string `json:"geolink"`         // namespace prefix in the rest of the struct
+	OpenCore string `json:"opencore"`        // namespace prefix in the rest of the struct
+	Base     string `json:"@base,omitempty"` // used in CSVW to prevent relative IRI from becoming an absolute IRI
 }
 
 type Author struct {

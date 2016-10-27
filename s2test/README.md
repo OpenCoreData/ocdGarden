@@ -1,0 +1,1 @@
+Playing with s2 a bit based on this blog post  http://blog.nobugware.com/post/2016/geo_db_s2_geohash_database/

@@ -60,7 +60,7 @@ func main() {
 }`
 
 	csvwTest()
-	// mongoTest() // waiting to resolve the stringTest() call
+	mongoTest() // waiting to resolve the stringTest() call
 	// triples := stringTest(jsld) // working on this to use in the mongo mongoTest
 	// fmt.Println(triples)
 	// restTest() // works fine
@@ -94,28 +94,28 @@ func csvwTest() {
 		result.Context.Schema = "http://www.w3.org/ns/csvw/" // this "schema" is the @voc in the struct..  confusing when not using schema.org
 		result.Context.OpenCore = "http://opencore.org/voc/1/"
 		result.Context.GeoLink = "http://glview.org/voc/1/"
-		result.Context.Base = fmt.Sprintf("%s.json", result.URL)
+		result.Context.Base = fmt.Sprintf("%s", result.URL) //  %s.json
 		result.Type = "http://www.w3.org/ns/dcat#DataSet"
 
 		// really this should be URL + .json ?
-		result.Id = fmt.Sprintf("%s.json", result.URL)
+		result.Id = fmt.Sprintf("%s", result.URL) //  %s.json
 
 		// add dc_publisher ID  TODO, set to DOI of OCD
 		//result.Dc_publisher.Id = fmt.Sprintf("%s%s", result.URL, "#distribution")
 
 		result.Dc_license.Type = "http://purl.org/dc/terms/RightsStatement"
 
-		result.TableSchema.Id = fmt.Sprintf("%s.json#tableSchema", result.URL)
+		result.TableSchema.Id = fmt.Sprintf("%s#tableSchema", result.URL) //  %s.json
 		result.TableSchema.Type = "TableSchema"
 
 		// add tableschema ID
 		result.Dc_publisher.Schema_url.Id = "http://opencoredata.org/voc/1/janus/"
-		result.Dc_publisher.Id = fmt.Sprintf("%s.json#publisher", result.URL)
-		result.Dc_publisher.Type = "http://purl.org/dc/terms/Publisher" // change to a better type..  like RE3 type?
+		result.Dc_publisher.Id = fmt.Sprintf("%s#publisher", result.URL) //  %s.json
+		result.Dc_publisher.Type = "http://purl.org/dc/terms/Publisher"  // change to a better type..  like RE3 type?
 
 		// loop on column range to add ID and TYPE
 		for index, column := range result.TableSchema.Columns {
-			result.TableSchema.Columns[index].Id = fmt.Sprintf("%s.json#%s", result.URL, column.Name)
+			result.TableSchema.Columns[index].Id = fmt.Sprintf("%s#%s", result.URL, column.Name) //  %s.json
 			result.TableSchema.Columns[index].Type = "Column"
 			// TODO..  make a call to the vobulary graph and populate the description here too
 		}
@@ -178,7 +178,7 @@ func mongoTest() {
 	c := session.DB("test").C("schemaorg")
 	results := []structs.SchemaOrgMetadata{} // need this struct  (it's everywhere.   what can I do about that?   move only ocdServices from ocdWeb?)
 	// err = c.Find(bson.M{"url": "http://opencoredata.org/id/dataset/da39147d-deda-44ac-879d-684491a110fe"}).One(&result)
-	err = c.Find(nil).All(&results) // c.Find(nil).Limit(3).All(&results)
+	err = c.Find(nil).Limit(3).All(&results) // c.Find(nil).Limit(3).All(&results)
 	if err != nil {
 		log.Printf("URL lookup error: %v", err)
 	}
@@ -199,6 +199,7 @@ func mongoTest() {
 		}
 
 		jsonldtext, _ := json.MarshalIndent(result, "", " ") // results as embeddale JSON-LD
+		// fmt.Println(string(jsonldtext))
 		fmt.Println(jsonLDToRDF(string(jsonldtext)))
 	}
 }
