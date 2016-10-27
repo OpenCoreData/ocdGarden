@@ -33,12 +33,13 @@ func main() {
 	// put the keys in
 	db.Update(func(tx *bolt.Tx) error {
 		b := tx.Bucket([]byte("URIBucket"))
-		err := b.Put(key, []byte("test location in cell"))
+		err := b.Put(key, []byte("Site 1"))
 		return err
 	})
 
 	// Compute the CellID for lat, lng
-	c2 := s2.CellIDFromLatLng(s2.LatLngFromDegrees(50.10, 3.77))
+	// c2 := s2.CellIDFromLatLng(s2.LatLngFromDegrees(49.30, 2.7)) // will be in results
+	c2 := s2.CellIDFromLatLng(s2.LatLngFromDegrees(49.40, 2.7)) // is not in the results
 
 	// store the uint64 value of c to its bigendian binary form
 	key2 := make([]byte, 8)
@@ -47,7 +48,7 @@ func main() {
 	// put the keys in
 	db.Update(func(tx *bolt.Tx) error {
 		b := tx.Bucket([]byte("URIBucket"))
-		err := b.Put(key2, []byte("test location out of  cell"))
+		err := b.Put(key2, []byte("Site 2"))
 		return err
 	})
 
