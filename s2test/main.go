@@ -44,10 +44,11 @@ func main() {
 
 	enterDB(48.8, 2.0, "Site 1")
 	enterDB(49.30, 2.7, "Site 2")
-	enterDB(19.705627232977267, -155.093994140625, "Hilo Hawaii")
-	enterDB(21.300570216749353, -157.8680419921875, "Honolulu Hawaii") //POINT(-157.8680419921875 21.300570216749353)
-	enterDB(20.376492324368996, -155.9783935546875, "around hawaii but not in poly")
-	enterDB(20.546329665198517, -156.0552978515625, "Point off Kahulu") // POINT(-156.0552978515625 20.546329665198517)
+	enterDB(19.705627232977267, -155.093994140625, "Hilo Hawaii (in poly and rect)")
+	enterDB(21.300570216749353, -157.8680419921875, "Honolulu Hawaii  (should not see so far)") //POINT(-157.8680419921875 21.300570216749353)
+	enterDB(20.514981807048372, -155.9893798828125, "Around hawaii but not in poly")            // POINT(-155.9893798828125 20.514981807048372)
+	enterDB(20.546329665198517, -156.0552978515625, "Point off Maui (not in poly)")             // POINT(-156.0552978515625 20.546329665198517)
+	enterDB(20.698436036336485, -156.29837036132812, "Kula Forst Reserve Mau")                  // POINT(-156.29837036132812 20.698436036336485)
 
 	// POINT(-156.2200927734375 20.32498944633163)
 	// POINT(-154.720458984375 18.870879505128975)
@@ -67,10 +68,11 @@ func main() {
 	//POLYGON((-155.7366943359375 20.47944647508286,-156.5771484375 19.715969839114035,-155.5718994140625 18.725275098649522,-154.522705078125 19.628036391737734,-155.7366943359375 20.47944647508286))
 
 	// trying to figure out how to build a polygon
+	// points need to be counter-clockwise ?
 	ll1 := s2.LatLngFromDegrees(20.47944647508286, -155.7366943359375)
 	ll2 := s2.LatLngFromDegrees(19.715969839114035, -156.5771484375)
-	ll3 := s2.LatLngFromDegrees(19.628036391737734, -154.522705078125)
-	ll4 := s2.LatLngFromDegrees(20.47944647508286, -155.7366943359375) // first point is last point
+	ll3 := s2.LatLngFromDegrees(18.725275098649522, -155.5718994140625)
+	ll4 := s2.LatLngFromDegrees(19.628036391737734, -154.522705078125) // first point is last point
 
 	point1 := s2.PointFromLatLng(ll1)
 	point2 := s2.PointFromLatLng(ll2)
@@ -87,22 +89,26 @@ func main() {
 	loops := []*s2.Loop{}
 	loops = append(loops, loop)
 
-	// poly := s2.PolygonFromLoops(loops)
+	fmt.Println("----  poly search  (doesn't work at all it seems) -----")
 
-	// rc2 := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 300}
-	// r2 := s2.Region(poly.CapBound())
-	// covering2 := rc2.Covering(r2)
+	poly := s2.PolygonFromLoops(loops)
+	rc2 := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 3000}
+	r2 := s2.Region(poly.CapBound())
+	covering2 := rc2.Covering(r2)
 	// fmt.Println(covering2)
+	for _, c2 := range covering2 {
+		citiesInCellID(c2)
+	}
 
-	fmt.Println("----  polygon search  -----")
+	fmt.Println("----  loop search (gets too much) -----")
 
-	defaultCoverer := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 3000}
+	defaultCoverer := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 6000}
 	rg := s2.Region(loop.CapBound())
 	cvr := defaultCoverer.Covering(rg)
 
 	// fmt.Println(poly.CapBound())
-	for _, c2 := range cvr {
-		citiesInCellID(c2)
+	for _, c3 := range cvr {
+		citiesInCellID(c3)
 	}
 
 }
