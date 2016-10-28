@@ -8,14 +8,10 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/golang/geo/s2"
+	"github.com/kpawlik/geojson"
 )
 
-func main() {
-	fmt.Println("This is a s2 test app")
-
-	// init the DB
-	SetupSiteBolt()
-
+func enterDB(lat, long float64, name string) {
 	//   db, err := bolt.Open("my.db", 0600, nil)
 	db, err := bolt.Open("sites.db", 0600, nil)
 	if err != nil {
@@ -24,7 +20,7 @@ func main() {
 	defer db.Close()
 
 	// Compute the CellID for lat, lng
-	c := s2.CellIDFromLatLng(s2.LatLngFromDegrees(48.8, 2.0))
+	c := s2.CellIDFromLatLng(s2.LatLngFromDegrees(lat, long))
 
 	// store the uint64 value of c to its bigendian binary form
 	key := make([]byte, 8)
@@ -33,31 +29,33 @@ func main() {
 	// put the keys in
 	db.Update(func(tx *bolt.Tx) error {
 		b := tx.Bucket([]byte("URIBucket"))
-		err := b.Put(key, []byte("Site 1"))
-		return err
-	})
-
-	// Compute the CellID for lat, lng
-	// c2 := s2.CellIDFromLatLng(s2.LatLngFromDegrees(49.30, 2.7)) // will be in results
-	c2 := s2.CellIDFromLatLng(s2.LatLngFromDegrees(49.40, 2.7)) // is not in the results
-
-	// store the uint64 value of c to its bigendian binary form
-	key2 := make([]byte, 8)
-	binary.BigEndian.PutUint64(key2, uint64(c2))
-
-	// put the keys in
-	db.Update(func(tx *bolt.Tx) error {
-		b := tx.Bucket([]byte("URIBucket"))
-		err := b.Put(key2, []byte("Site 2"))
+		err := b.Put(key, []byte(name))
 		return err
 	})
 
 	db.Close()
+}
 
-	rect := s2.RectFromLatLng(s2.LatLngFromDegrees(48.99, 1.852))
-	rect = rect.AddPoint(s2.LatLngFromDegrees(48.68, 2.75))
+func main() {
+	fmt.Println("This is a s2 test app")
 
-	rc := &s2.RegionCoverer{MaxLevel: 20, MaxCells: 8}
+	// init the DB
+	SetupSiteBolt()
+
+	enterDB(48.8, 2.0, "Site 1")
+	enterDB(49.30, 2.7, "Site 2")
+	enterDB(19.705627232977267, -155.093994140625, "Hilo Hawaii")
+	enterDB(21.300570216749353, -157.8680419921875, "Honolulu Hawaii") //POINT(-157.8680419921875 21.300570216749353)
+	enterDB(20.376492324368996, -155.9783935546875, "around hawaii but not in poly")
+	enterDB(20.546329665198517, -156.0552978515625, "Point off Kahulu") // POINT(-156.0552978515625 20.546329665198517)
+
+	// POINT(-156.2200927734375 20.32498944633163)
+	// POINT(-154.720458984375 18.870879505128975)
+	rect := s2.RectFromLatLng(s2.LatLngFromDegrees(20.32498944633163, -156.2200927734375))
+	rect = rect.AddPoint(s2.LatLngFromDegrees(18.870879505128975, -154.720458984375))
+
+	fmt.Println("----  rectangle search  -----")
+	rc := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 300}
 	r := s2.Region(rect.CapBound())
 	covering := rc.Covering(r)
 
@@ -65,9 +63,54 @@ func main() {
 		citiesInCellID(c)
 	}
 
+	// Hawaii
+	//POLYGON((-155.7366943359375 20.47944647508286,-156.5771484375 19.715969839114035,-155.5718994140625 18.725275098649522,-154.522705078125 19.628036391737734,-155.7366943359375 20.47944647508286))
+
+	// trying to figure out how to build a polygon
+	ll1 := s2.LatLngFromDegrees(20.47944647508286, -155.7366943359375)
+	ll2 := s2.LatLngFromDegrees(19.715969839114035, -156.5771484375)
+	ll3 := s2.LatLngFromDegrees(19.628036391737734, -154.522705078125)
+	ll4 := s2.LatLngFromDegrees(20.47944647508286, -155.7366943359375) // first point is last point
+
+	point1 := s2.PointFromLatLng(ll1)
+	point2 := s2.PointFromLatLng(ll2)
+	point3 := s2.PointFromLatLng(ll3)
+	point4 := s2.PointFromLatLng(ll4)
+
+	points := []s2.Point{}
+	points = append(points, point1)
+	points = append(points, point2)
+	points = append(points, point3)
+	points = append(points, point4)
+
+	loop := s2.LoopFromPoints(points)
+	loops := []*s2.Loop{}
+	loops = append(loops, loop)
+
+	// poly := s2.PolygonFromLoops(loops)
+
+	// rc2 := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 300}
+	// r2 := s2.Region(poly.CapBound())
+	// covering2 := rc2.Covering(r2)
+	// fmt.Println(covering2)
+
+	fmt.Println("----  polygon search  -----")
+
+	defaultCoverer := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 3000}
+	rg := s2.Region(loop.CapBound())
+	cvr := defaultCoverer.Covering(rg)
+
+	// fmt.Println(poly.CapBound())
+	for _, c2 := range cvr {
+		citiesInCellID(c2)
+	}
+
 }
 
 func citiesInCellID(c s2.CellID) {
+
+	// fmt.Println("Ready  in citiesInCellID")
+
 	// compute min & max limits for c
 	bmin := make([]byte, 8)
 	bmax := make([]byte, 8)
@@ -124,4 +167,23 @@ func SetupSiteBolt() {
 		log.Printf("Bucket created %v", b.FillPercent)
 		return nil
 	})
+}
+
+func isClockwisePolygon(p geojson.Coordinates) bool {
+	sum := 0.0
+	for i, coord := range p[:len(p)-1] {
+		next := p[i+1]
+		sum += float64((next[0] - coord[0]) * (next[1] + coord[1]))
+	}
+	if sum == 0 {
+		return true
+	}
+	return sum > 0
+}
+
+func reversePolygon(p geojson.Coordinates) {
+	for i := len(p)/2 - 1; i >= 0; i-- {
+		opp := len(p) - 1 - i
+		p[i], p[opp] = p[opp], p[i]
+	}
 }
