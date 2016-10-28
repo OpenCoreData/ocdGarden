@@ -11,37 +11,13 @@ import (
 	"github.com/kpawlik/geojson"
 )
 
-func enterDB(lat, long float64, name string) {
-	//   db, err := bolt.Open("my.db", 0600, nil)
-	db, err := bolt.Open("sites.db", 0600, nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer db.Close()
-
-	// Compute the CellID for lat, lng
-	c := s2.CellIDFromLatLng(s2.LatLngFromDegrees(lat, long))
-
-	// store the uint64 value of c to its bigendian binary form
-	key := make([]byte, 8)
-	binary.BigEndian.PutUint64(key, uint64(c))
-
-	// put the keys in
-	db.Update(func(tx *bolt.Tx) error {
-		b := tx.Bucket([]byte("URIBucket"))
-		err := b.Put(key, []byte(name))
-		return err
-	})
-
-	db.Close()
-}
-
 func main() {
 	fmt.Println("This is a s2 test app")
 
 	// init the DB
 	SetupSiteBolt()
 
+	// enter some points on the map
 	enterDB(48.8, 2.0, "Site 1")
 	enterDB(49.30, 2.7, "Site 2")
 	enterDB(19.705627232977267, -155.093994140625, "Hilo Hawaii (in poly and rect)")
@@ -113,6 +89,32 @@ func main() {
 
 }
 
+func enterDB(lat, long float64, name string) {
+	//   db, err := bolt.Open("my.db", 0600, nil)
+	db, err := bolt.Open("sites.db", 0600, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer db.Close()
+
+	// Compute the CellID for lat, lng
+	c := s2.CellIDFromLatLng(s2.LatLngFromDegrees(lat, long))
+
+	// store the uint64 value of c to its bigendian binary form
+	key := make([]byte, 8)
+	binary.BigEndian.PutUint64(key, uint64(c))
+
+	// put the keys in
+	db.Update(func(tx *bolt.Tx) error {
+		b := tx.Bucket([]byte("URIBucket"))
+		err := b.Put(key, []byte(name))
+		return err
+	})
+
+	db.Close()
+}
+
+// ref  http://blog.nobugware.com/post/2016/geo_db_s2_geohash_database/
 func citiesInCellID(c s2.CellID) {
 
 	// fmt.Println("Ready  in citiesInCellID")
