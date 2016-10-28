@@ -17,14 +17,14 @@ func main() {
 	// init the DB
 	SetupSiteBolt()
 
-	// enter some points on the map
+	// enter some points on the map into the BoltDB
 	enterDB(48.8, 2.0, "Site 1")
 	enterDB(49.30, 2.7, "Site 2")
 	enterDB(19.705627232977267, -155.093994140625, "Hilo Hawaii (in poly and rect)")
-	enterDB(21.300570216749353, -157.8680419921875, "Honolulu Hawaii  (should not see so far)") //POINT(-157.8680419921875 21.300570216749353)
-	enterDB(20.514981807048372, -155.9893798828125, "Around hawaii but not in poly")            // POINT(-155.9893798828125 20.514981807048372)
-	enterDB(20.546329665198517, -156.0552978515625, "Point off Maui (not in poly)")             // POINT(-156.0552978515625 20.546329665198517)
-	enterDB(20.698436036336485, -156.29837036132812, "Kula Forst Reserve Mau")                  // POINT(-156.29837036132812 20.698436036336485)
+	enterDB(21.300570216749353, -157.8680419921875, "Honolulu Hawaii  (should not see so far)")      //POINT(-157.8680419921875 21.300570216749353)
+	enterDB(20.514981807048372, -155.9893798828125, "Around hawaii (should not be in poly nor rect") // POINT(-155.9893798828125 20.514981807048372)
+	enterDB(20.546329665198517, -156.0552978515625, "Point off Maui (should not be in poly)")        // POINT(-156.0552978515625 20.546329665198517)
+	enterDB(20.698436036336485, -156.29837036132812, "Kula Forset Reserve Mau")                      // POINT(-156.29837036132812 20.698436036336485)
 
 	// POINT(-156.2200927734375 20.32498944633163)
 	// POINT(-154.720458984375 18.870879505128975)
@@ -65,17 +65,6 @@ func main() {
 	loops := []*s2.Loop{}
 	loops = append(loops, loop)
 
-	fmt.Println("----  poly search  (doesn't work at all it seems) -----")
-
-	poly := s2.PolygonFromLoops(loops)
-	rc2 := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 3000}
-	r2 := s2.Region(poly.CapBound())
-	covering2 := rc2.Covering(r2)
-	// fmt.Println(covering2)
-	for _, c2 := range covering2 {
-		citiesInCellID(c2)
-	}
-
 	fmt.Println("----  loop search (gets too much) -----")
 
 	defaultCoverer := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 6000}
@@ -85,6 +74,17 @@ func main() {
 	// fmt.Println(poly.CapBound())
 	for _, c3 := range cvr {
 		citiesInCellID(c3)
+	}
+
+	fmt.Println("----  poly search  (doesn't work at all it seems) -----")
+
+	poly := s2.PolygonFromLoops(loops)
+	rc2 := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 3000}
+	r2 := s2.Region(poly.CapBound())
+	covering2 := rc2.Covering(r2)
+	// fmt.Println(covering2)
+	for _, c2 := range covering2 {
+		citiesInCellID(c2)
 	}
 
 }
