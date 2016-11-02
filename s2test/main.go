@@ -25,6 +25,7 @@ func main() {
 	enterDB(20.514981807048372, -155.9893798828125, "Around hawaii (should not be in poly nor rect") // POINT(-155.9893798828125 20.514981807048372)
 	enterDB(20.546329665198517, -156.0552978515625, "Point off Maui (should not be in poly)")        // POINT(-156.0552978515625 20.546329665198517)
 	enterDB(20.698436036336485, -156.29837036132812, "Kula Forset Reserve Mau")                      // POINT(-156.29837036132812 20.698436036336485)
+	enterDB(19.005970464828987, -155.9454345703125, "outside poly")                                  // POINT(-155.9454345703125 19.005970464828987)
 
 	// POINT(-156.2200927734375 20.32498944633163)
 	// POINT(-154.720458984375 18.870879505128975)
@@ -33,7 +34,7 @@ func main() {
 
 	fmt.Println("----  rectangle search  -----")
 	rc := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 300}
-	r := s2.Region(rect.CapBound())
+	r := s2.Region(rect.RectBound())
 	covering := rc.Covering(r)
 
 	for _, c := range covering {
@@ -49,27 +50,31 @@ func main() {
 	ll2 := s2.LatLngFromDegrees(19.715969839114035, -156.5771484375)
 	ll3 := s2.LatLngFromDegrees(18.725275098649522, -155.5718994140625)
 	ll4 := s2.LatLngFromDegrees(19.628036391737734, -154.522705078125) // first point is last point
+	// ll5 := s2.LatLngFromDegrees(20.47944647508286, -155.7366943359375)
 
 	point1 := s2.PointFromLatLng(ll1)
 	point2 := s2.PointFromLatLng(ll2)
 	point3 := s2.PointFromLatLng(ll3)
 	point4 := s2.PointFromLatLng(ll4)
+	// point5 := s2.PointFromLatLng(ll5)
 
 	points := []s2.Point{}
 	points = append(points, point1)
 	points = append(points, point2)
 	points = append(points, point3)
 	points = append(points, point4)
+	// points = append(points, point5)
 
 	loop := s2.LoopFromPoints(points)
-	loops := []*s2.Loop{}
-	loops = append(loops, loop)
 
 	fmt.Println("----  loop search (gets too much) -----")
+	// fmt.Printf("Some loop status items: empty:%t   full:%t \n", loop.IsEmpty(), loop.IsFull())
 
+	// ref: https://github.com/golang/geo/issues/14#issuecomment-257064823
 	defaultCoverer := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 6000}
-	rg := s2.Region(loop.CapBound())
-	cvr := defaultCoverer.Covering(rg)
+	// rg := s2.Region(loop.CapBound())
+	// cvr := defaultCoverer.Covering(rg)
+	cvr := defaultCoverer.Covering(loop.RectBound())
 
 	// fmt.Println(poly.CapBound())
 	for _, c3 := range cvr {
@@ -77,10 +82,14 @@ func main() {
 	}
 
 	fmt.Println("----  poly search  (doesn't work at all it seems) -----")
-
+	loops := []*s2.Loop{}
+	loops = append(loops, loop)
 	poly := s2.PolygonFromLoops(loops)
-	rc2 := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 3000}
-	r2 := s2.Region(poly.CapBound())
+	rc2 := &s2.RegionCoverer{MaxLevel: 30, MaxCells: 6000}
+
+	// ref: https://github.com/golang/geo/pull/6
+	r2 := s2.Region(poly.RectBound()) //  r2 := s2.Region(poly.CapBound()) // r2 := s2.Region(poly.RectBound())
+
 	covering2 := rc2.Covering(r2)
 	// fmt.Println(covering2)
 	for _, c2 := range covering2 {
@@ -89,29 +98,26 @@ func main() {
 
 }
 
-func enterDB(lat, long float64, name string) {
-	//   db, err := bolt.Open("my.db", 0600, nil)
-	db, err := bolt.Open("sites.db", 0600, nil)
-	if err != nil {
-		log.Fatal(err)
+// IntersectsCell finds if a loop and cell intersect
+// func (l *Loop) IntersectsCell(c s2.Cell) bool {
+func IntersectsCell(l *s2.Loop, c s2.Cell) bool {
+	// if any of the cell's vertices is contained by the loop
+	// they intersect
+	for i := 0; i < 4; i++ {
+		v := c.Vertex(i)
+		if l.ContainsPoint(v) {
+			return true
+		}
 	}
-	defer db.Close()
+	// missing case from the above implementation
+	// where the loop is fully contained by the cell
+	for _, v := range l.Vertices() {
+		if c.ContainsPoint(v) {
+			return true
+		}
+	}
 
-	// Compute the CellID for lat, lng
-	c := s2.CellIDFromLatLng(s2.LatLngFromDegrees(lat, long))
-
-	// store the uint64 value of c to its bigendian binary form
-	key := make([]byte, 8)
-	binary.BigEndian.PutUint64(key, uint64(c))
-
-	// put the keys in
-	db.Update(func(tx *bolt.Tx) error {
-		b := tx.Bucket([]byte("URIBucket"))
-		err := b.Put(key, []byte(name))
-		return err
-	})
-
-	db.Close()
+	return false
 }
 
 // ref  http://blog.nobugware.com/post/2016/geo_db_s2_geohash_database/
@@ -140,7 +146,7 @@ func citiesInCellID(c s2.CellID) {
 
 		for k, v := cur.Seek(bmin); k != nil && bytes.Compare(k, bmax) <= 0; k, v = cur.Next() {
 
-			fmt.Println("Ready  in loop")
+			// fmt.Println("Ready  in loop")
 
 			buf := bytes.NewReader(k)
 			binary.Read(buf, binary.BigEndian, &cell)
@@ -156,6 +162,31 @@ func citiesInCellID(c s2.CellID) {
 		return nil
 	})
 
+}
+
+func enterDB(lat, long float64, name string) {
+	//   db, err := bolt.Open("my.db", 0600, nil)
+	db, err := bolt.Open("sites.db", 0600, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer db.Close()
+
+	// Compute the CellID for lat, lng
+	c := s2.CellIDFromLatLng(s2.LatLngFromDegrees(lat, long))
+
+	// store the uint64 value of c to its bigendian binary form
+	key := make([]byte, 8)
+	binary.BigEndian.PutUint64(key, uint64(c))
+
+	// put the keys in
+	db.Update(func(tx *bolt.Tx) error {
+		b := tx.Bucket([]byte("URIBucket"))
+		err := b.Put(key, []byte(name))
+		return err
+	})
+
+	db.Close()
 }
 
 func SetupSiteBolt() {
