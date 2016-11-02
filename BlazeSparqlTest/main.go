@@ -9,6 +9,36 @@ import (
 	// sparql "opencoredata.org/ocdCommons/sparqlclient"
 )
 
+type CSDCO struct {
+	LocationName           string
+	LocationType           string
+	Project                string
+	LocationID             string
+	Site                   string
+	Hole                   string
+	SiteHole               string
+	OriginalID             string
+	HoleID                 string
+	Platform               string
+	Date                   string
+	WaterDepthM            string
+	Country                string
+	State_Province         string
+	County_Region          string
+	PI                     string
+	Lat                    string
+	Long                   string
+	Elevation              string
+	Position               string
+	StorageLocationWorking string
+	StorageLocationArchive string
+	SampleType             string
+	Comment                string
+	MblfT                  string
+	MblfB                  string
+	MetadataSource         string
+}
+
 // bring in the DataCite style struct to test serlizing to struct the SPARQL results
 type DataCite struct {
 	ExpDOI          string   // Is this the ID of the expedition or something else
