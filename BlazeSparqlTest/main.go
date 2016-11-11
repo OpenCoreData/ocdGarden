@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/knakk/rdf"
 	sparql "github.com/knakk/sparql"
 	// sparql "opencoredata.org/ocdCommons/sparqlclient"
 )
@@ -70,6 +71,14 @@ WHERE
   ?uri ?p ?o . 
 }
 
+# Get all the info on a HoleID from the CSDCO graph
+# tag: CSDCOHoleID
+SELECT *
+WHERE 
+{ 
+  <{{.HOLEID}}>  ?p ?o .
+}
+
 # tag: test2
 SELECT DISTINCT *
 WHERE 
@@ -83,11 +92,12 @@ select distinct ?Concept where {[] a ?Concept} LIMIT 100
 
 
 # tag: focusedCall
-SELECT DISTINCT ?uri ?date ?lat ?long 
+SELECT DISTINCT ?uri ?date ?lat ?long ?holeid
 WHERE 
 { 
   ?uri rdf:type <http://opencoredata.org/id/voc/csdco/v1/CSDCOProject> . 
   ?uri <http://opencoredata.org/id/voc/csdco/v1/project> "AAFBLP" . 
+  ?uri <http://opencoredata.org/id/voc/csdco/v1/holeid> ?holeid .
   ?uri 	<http://opencoredata.org/id/voc/csdco/v1/date> ?date . 
   ?uri 	<http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?lat .
   ?uri 	<http://www.w3.org/2003/01/geo/wgs84_pos#long> ?long .
@@ -97,6 +107,7 @@ WHERE
 func main() {
 	// callTest1()
 	callTest2()
+	// callTest3()
 }
 
 func callTest1() {
@@ -144,7 +155,7 @@ func callTest1() {
 
 func callTest2() {
 
-	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdco/sparql")
+	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdcov3/sparql")
 	// repo, err := sparql.NewRepo("http://opencoredata.org/sparql")
 
 	if err != nil {
@@ -186,25 +197,85 @@ func callTest2() {
 		fmt.Printf("At postion %v with %v \n\n", k, i)
 	}
 
-	// load up the struct with results
-	// s := DataCite{}
+	fmt.Println("call test for different sparql format")
+	fmt.Println(ObjectValForPred(bindingsTest2, "uri", "holeid", "http://opencoredata/id/resource/csdco/project/aafblp-lp06-6a"))
 
-	// s.ExpDOI = "TBA"
-	// s.ExpURI = "http://opencoredata.org/collections/csdco/CAPA-NGBA91-2A"
-	// s.ResourceType = "Field_expedition"
-	// s.CreatorName = "Open Core Data"
-	// s.CreatorDOI = "10.17616/R37936"
-	// s.Title = "CAPA"
-	// s.Abstract = "Need to get an abstract for this somehow"
-	// s.DateCollected = "1991-12-31"
-	// s.ContributorName = "Continental Scientific Drilling Coordination Office"
-	// s.RelatedDOIs = nil
-	// s.Long = "Long" // not one lat / long
-	// s.Lat = "Lat"
-	// s.Publisher = "Open Core Data"
-	// s.Version = "1"
-	// s.PubYear = "2016"
+}
 
-	// fmt.Print(s.Long)
+func callTest3() {
+	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdcov3/sparql")
+	// repo, err := sparql.NewRepo("http://opencoredata.org/sparql")
 
+	if err != nil {
+		log.Printf("query make repo: %v\n", err)
+	}
+
+	f := bytes.NewBufferString(queries)
+	bank := sparql.LoadBank(f)
+
+	q, err := bank.Prepare("CSDCOHoleID", struct{ HOLEID string }{"http://opencoredata/id/resource/csdco/project/aafblp-llb06-2a"})
+	if err != nil {
+		log.Printf("query bank prepair: %v\n", err)
+	}
+
+	res, err := repo.Query(q)
+
+	if err != nil {
+		log.Printf("query call: %v\n", err)
+	}
+
+	data := CSDCO{}
+
+	// Print loop testing
+	bindingsTest := res.Results.Bindings // []map[string][]rdf.Term
+	fmt.Println("res.Results.Bindings:")
+	for k, i := range bindingsTest {
+		fmt.Printf("At postion %v with %v and %v\n\n", k, i["p"].Value, i["o"].Value)
+	}
+
+	// data.Country = bindingsTest[0]["o"].Value // need to know index value
+
+	bindingsTest2 := res.Bindings() // map[string][]rdf.Term
+	fmt.Println("res.Bindings():")
+	for k, i := range bindingsTest2 {
+		fmt.Printf("At postion %v with %v \n\n", k, i)
+	}
+
+	// data.Hole
+
+	solutionsTest := res.Solutions() // []map[string][]rdf.Term
+	fmt.Println("res.Solutions():")
+	for k, i := range solutionsTest {
+		fmt.Printf("At postion %v with %v \n\n", k, i)
+	}
+
+	// what I need for a function then Is
+	data.Hole = ObjectValForPred(bindingsTest2, "p", "o", "http://opencoredata.org/id/voc/csdco/v1/holeid")
+	data.Country = ObjectValForPred(bindingsTest2, "p", "o", "http://opencoredata.org/id/voc/csdco/v1/country")
+	data.Elevation = ObjectValForPred(bindingsTest2, "p", "o", "http://opencoredata.org/id/voc/csdco/v1/elevation")
+
+	fmt.Println(data)
+
+}
+
+func ObjectValForPred(sparql map[string][]rdf.Term, predcol string, objectcol string, predicate string) string {
+	pSlice := sparql[predcol]
+	oSlice := sparql[objectcol]
+	indexval := SliceIndex(len(pSlice), func(i int) bool { return pSlice[i].String() == predicate })
+	// fmt.Println(indexval)
+	// if -1 above return what?
+	if indexval == -1 {
+		return ""
+	}
+	return oSlice[indexval].String()
+}
+
+// SliceIndex return int location of item in slice  http://stackoverflow.com/questions/8307478/go-how-to-find-out-element-position-in-slice
+func SliceIndex(limit int, predicate func(i int) bool) int {
+	for i := 0; i < limit; i++ {
+		if predicate(i) {
+			return i
+		}
+	}
+	return -1
 }
