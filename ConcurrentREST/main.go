@@ -8,16 +8,18 @@
 // http://stackoverflow.com/questions/33104192/how-to-run-10000-goroutines-in-parallel-where-each-routine-calls-an-api
 // https://medium.com/golangspec/synchronized-goroutines-part-i-4fbcdd64a4ec#.qav8o43uj
 // https://medium.com/golangspec/synchronized-goroutines-part-ii-b1130c815c9d#.mximrcqzv
-//
+// http://nomad.so/2016/01/interesting-ways-of-using-go-channels/
 
 package main
 
 import (
 	"encoding/csv"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
 	"strings"
 	"time"
@@ -27,6 +29,12 @@ type Calls struct {
 	URL string
 }
 
+type Candidates struct {
+	GivenName  string
+	FamilyName string
+	EmailFrag  string
+}
+
 func main() {
 	start := time.Now()
 	ch := make(chan string)
@@ -34,20 +42,23 @@ func main() {
 	// read in a CSV file with the URL's
 	csvdata := readMetaData()
 
-	// for _, url := range os.Args[1:] {
-	for _, url := range csvdata {
-		go MakeRequest(strings.TrimSpace(url.URL), ch)
+	// get the token from the command lines
+	tokenPtr := flag.String("token", "db58936b-c6a1-4abf-8477-34f417da2a75", "A valid Orcid token")
+
+	// send of the calls based on the CSV file
+	for _, person := range csvdata {
+		go MakeRequest(*tokenPtr, strings.TrimSpace(person.GivenName), strings.TrimSpace(person.FamilyName), strings.TrimSpace(person.EmailFrag), ch)
 	}
 
-	// for range os.Args[1:] {
+	// read the channels
 	for range csvdata {
 		fmt.Println(<-ch)
 	}
 	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
 }
 
-func readMetaData() []Calls {
-	csvFile, err := os.Open("./sites.csv")
+func readMetaData() []Candidates {
+	csvFile, err := os.Open("./candidates.csv")
 	defer csvFile.Close()
 	if err != nil {
 		panic(err)
@@ -62,10 +73,10 @@ func readMetaData() []Calls {
 	}
 
 	commentLines := 0
-	callstoMake := make([]Calls, len(lines)-commentLines)
+	callstoMake := make([]Candidates, len(lines)-commentLines)
 
 	for i, entry := range lines {
-		ob := Calls{URL: entry[0]} //  later can split this for more complex CSV lines with many items
+		ob := Candidates{GivenName: entry[0], FamilyName: entry[1], EmailFrag: entry[2]} //  later can split this for more complex CSV lines with many items
 		callstoMake[i] = ob
 	}
 
@@ -73,11 +84,33 @@ func readMetaData() []Calls {
 
 }
 
-func MakeRequest(url string, ch chan<- string) {
-	start := time.Now()
-	resp, _ := http.Get(url)
+func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- string) {
+	// start := time.Now()
 
-	secs := time.Since(start).Seconds()
-	body, _ := ioutil.ReadAll(resp.Body)
-	ch <- fmt.Sprintf("%.2f elapsed with response length: %d %s", secs, len(body), url)
+	urlstring := "https://pub.orcid.org/v1.2/search/orcid-bio/?q=family-name%3AFils%20AND%20given-names%3ADoug*%20OR%20email%3A*%40iodp.org&rows=10&start=0"
+
+	u, err := url.Parse(urlstring)
+	if err != nil {
+		log.Fatal(err)
+	}
+	q := u.Query()
+	q.Set("q", fmt.Sprintf("family-name:%s+AND+given-names:%s*+OR+email:*@%s", familyname, givenname, emailfrag))
+	// u.RawQuery = q.Encode()  // this should work, but Orcid doesn't like the way the URL is being encoded
+	u.RawQuery = fmt.Sprintf("q=family-name:%s+AND+given-names:%s*+OR+email:*@%s&rows=10&start=0", familyname, givenname, emailfrag)
+
+	req, _ := http.NewRequest("GET", u.String(), nil)
+
+	req.Header.Add("content-type", "application/json")
+	req.Header.Add("authorization", fmt.Sprintf("Bearer %s", token)) // make a var to hide key
+	req.Header.Add("cache-control", "no-cache")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+
+	// secs := time.Since(start).Seconds()
+	body, _ := ioutil.ReadAll(res.Body)
+
+	// ch <- fmt.Sprintf("%.2f elapsed with response length: %d %s", secs, len(body), u.String())
+	ch <- string(body)
 }
