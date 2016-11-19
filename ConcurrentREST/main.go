@@ -25,10 +25,6 @@ import (
 	"time"
 )
 
-type Calls struct {
-	URL string
-}
-
 type Candidates struct {
 	GivenName  string
 	FamilyName string
@@ -43,7 +39,8 @@ func main() {
 	csvdata := readMetaData()
 
 	// get the token from the command lines
-	tokenPtr := flag.String("token", "db58936b-c6a1-4abf-8477-34f417da2a75", "A valid Orcid token")
+	tokenPtr := flag.String("token", "xxx-xxx-xxx-xxx", "A valid Orcid token")
+	flag.Parse()
 
 	// send of the calls based on the CSV file
 	for _, person := range csvdata {
@@ -53,6 +50,30 @@ func main() {
 	// read the channels
 	for range csvdata {
 		fmt.Println(<-ch)
+
+		//  // Playing with some streaming XML parsing
+		// 	b := bytes.NewBufferString(<-ch) // convert out string to an io reader type
+		// 	decoder := xml.NewDecoder(b)
+
+		// 	t, _ := decoder.Token()
+		// 	if t == nil {
+		// 		break
+		// 	}
+
+		// 	switch se := t.(type) {
+		// 	case xml.StartElement:
+		// 		// If we just read a StartElement token
+		// 		// ...and its name is "page"
+		// 		fmt.Println(se.Name.Local)
+		// 		if se.Name.Local == "orcid-identifier" {
+		// 			// var p Page
+		// 			fmt.Println("found an orcid id")
+		// 		}
+		// 	default:
+		// 		fmt.Println("XML node not found")
+
+		// 	}
+
 	}
 	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
 }
@@ -100,9 +121,9 @@ func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- strin
 
 	req, _ := http.NewRequest("GET", u.String(), nil)
 
-	req.Header.Add("content-type", "application/json")
-	req.Header.Add("authorization", fmt.Sprintf("Bearer %s", token)) // make a var to hide key
-	req.Header.Add("cache-control", "no-cache")
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token)) // make a var to hide key
+	req.Header.Set("Cache-Control", "no-cache")
 
 	res, _ := http.DefaultClient.Do(req)
 
