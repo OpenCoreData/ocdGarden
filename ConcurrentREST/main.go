@@ -72,23 +72,17 @@ func printOrcid(data string) {
 			break
 		}
 		if err != nil {
-			log.Printf("Error %v \n", err)
+			log.Printf("Token error %v \n", err)
 		}
 
 		if t == "orcid-identifier" {
-			// fmt.Println("found ID")
-			// fmt.Println(t)
-
-			//for dec.More() {
 			var m OrcidIdentifier
-			// decode an array value (Message)
 			err := dec.Decode(&m)
 			if err != nil {
-				log.Printf("Error %v \n", err)
+				log.Printf("Decode error %v \n", err)
 				return
 			}
 			fmt.Printf("Values %v  %v  %v: %v\n", m.Value, m.URI, m.Path, m.Host)
-			//}
 		}
 	}
 }
@@ -101,20 +95,18 @@ func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- strin
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	q := u.Query()
 	q.Set("q", fmt.Sprintf("family-name:%s+AND+given-names:%s*+OR+email:*@%s", familyname, givenname, emailfrag))
 	// u.RawQuery = q.Encode()  // this should work, but Orcid doesn't like the way the URL is being encoded
 	u.RawQuery = fmt.Sprintf("q=family-name:%s+AND+given-names:%s*+OR+email:*@%s&rows=10&start=0", familyname, givenname, emailfrag)
 
 	req, _ := http.NewRequest("GET", u.String(), nil)
-
 	// req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Accept", "application/json")                     // oddly the content-type is ignored for the accept header...
 	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token)) // make a var to hide key
 	req.Header.Set("Cache-Control", "no-cache")
-
 	res, _ := http.DefaultClient.Do(req)
-
 	defer res.Body.Close()
 
 	// secs := time.Since(start).Seconds()
@@ -148,5 +140,4 @@ func readMetaData() []Candidates {
 	}
 
 	return callstoMake
-
 }
