@@ -14,8 +14,10 @@ package main
 
 import (
 	"encoding/csv"
+	"encoding/json"
 	"flag"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -29,6 +31,13 @@ type Candidates struct {
 	GivenName  string
 	FamilyName string
 	EmailFrag  string
+}
+
+type OrcidIdentifier struct {
+	Value interface{} `json:"value,omitempty"`
+	URI   string      `json:"uri,omitempty"`
+	Path  string      `json:"path,omitempty"`
+	Host  string      `json:"host,omitempty"`
 }
 
 func main() {
@@ -49,33 +58,70 @@ func main() {
 
 	// read the channels
 	for range csvdata {
-		fmt.Println(<-ch)
-
-		//  // Playing with some streaming XML parsing
-		// 	b := bytes.NewBufferString(<-ch) // convert out string to an io reader type
-		// 	decoder := xml.NewDecoder(b)
-
-		// 	t, _ := decoder.Token()
-		// 	if t == nil {
-		// 		break
-		// 	}
-
-		// 	switch se := t.(type) {
-		// 	case xml.StartElement:
-		// 		// If we just read a StartElement token
-		// 		// ...and its name is "page"
-		// 		fmt.Println(se.Name.Local)
-		// 		if se.Name.Local == "orcid-identifier" {
-		// 			// var p Page
-		// 			fmt.Println("found an orcid id")
-		// 		}
-		// 	default:
-		// 		fmt.Println("XML node not found")
-
-		// 	}
-
+		// fmt.Println(<-ch)
+		printOrcid(<-ch)
 	}
 	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
+}
+
+func printOrcid(data string) {
+	dec := json.NewDecoder(strings.NewReader(data))
+	for {
+		t, err := dec.Token()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			log.Printf("Error %v \n", err)
+		}
+
+		if t == "orcid-identifier" {
+			// fmt.Println("found ID")
+			// fmt.Println(t)
+
+			//for dec.More() {
+			var m OrcidIdentifier
+			// decode an array value (Message)
+			err := dec.Decode(&m)
+			if err != nil {
+				log.Printf("Error %v \n", err)
+				return
+			}
+			fmt.Printf("Values %v  %v  %v: %v\n", m.Value, m.URI, m.Path, m.Host)
+			//}
+		}
+	}
+}
+
+func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- string) {
+	// start := time.Now()
+	urlstring := "https://pub.orcid.org/v1.2/search/orcid-bio/?q=family-name%3AFils%20AND%20given-names%3ADoug*%20OR%20email%3A*%40iodp.org&rows=10&start=0"
+
+	u, err := url.Parse(urlstring)
+	if err != nil {
+		log.Fatal(err)
+	}
+	q := u.Query()
+	q.Set("q", fmt.Sprintf("family-name:%s+AND+given-names:%s*+OR+email:*@%s", familyname, givenname, emailfrag))
+	// u.RawQuery = q.Encode()  // this should work, but Orcid doesn't like the way the URL is being encoded
+	u.RawQuery = fmt.Sprintf("q=family-name:%s+AND+given-names:%s*+OR+email:*@%s&rows=10&start=0", familyname, givenname, emailfrag)
+
+	req, _ := http.NewRequest("GET", u.String(), nil)
+
+	// req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Accept", "application/json")                     // oddly the content-type is ignored for the accept header...
+	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token)) // make a var to hide key
+	req.Header.Set("Cache-Control", "no-cache")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+
+	// secs := time.Since(start).Seconds()
+	body, _ := ioutil.ReadAll(res.Body)
+
+	// ch <- fmt.Sprintf("%.2f elapsed with response length: %d %s", secs, len(body), u.String())
+	ch <- string(body)
 }
 
 func readMetaData() []Candidates {
@@ -103,35 +149,4 @@ func readMetaData() []Candidates {
 
 	return callstoMake
 
-}
-
-func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- string) {
-	// start := time.Now()
-
-	urlstring := "https://pub.orcid.org/v1.2/search/orcid-bio/?q=family-name%3AFils%20AND%20given-names%3ADoug*%20OR%20email%3A*%40iodp.org&rows=10&start=0"
-
-	u, err := url.Parse(urlstring)
-	if err != nil {
-		log.Fatal(err)
-	}
-	q := u.Query()
-	q.Set("q", fmt.Sprintf("family-name:%s+AND+given-names:%s*+OR+email:*@%s", familyname, givenname, emailfrag))
-	// u.RawQuery = q.Encode()  // this should work, but Orcid doesn't like the way the URL is being encoded
-	u.RawQuery = fmt.Sprintf("q=family-name:%s+AND+given-names:%s*+OR+email:*@%s&rows=10&start=0", familyname, givenname, emailfrag)
-
-	req, _ := http.NewRequest("GET", u.String(), nil)
-
-	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token)) // make a var to hide key
-	req.Header.Set("Cache-Control", "no-cache")
-
-	res, _ := http.DefaultClient.Do(req)
-
-	defer res.Body.Close()
-
-	// secs := time.Since(start).Seconds()
-	body, _ := ioutil.ReadAll(res.Body)
-
-	// ch <- fmt.Sprintf("%.2f elapsed with response length: %d %s", secs, len(body), u.String())
-	ch <- string(body)
 }
