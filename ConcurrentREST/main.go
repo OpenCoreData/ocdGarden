@@ -33,6 +33,12 @@ type Candidates struct {
 	EmailFrag  string
 }
 
+type SearchResults struct {
+	Results    string
+	GivenName  string
+	FamilyName string
+}
+
 type OrcidIdentifier struct {
 	Value interface{} `json:"value,omitempty"`
 	URI   string      `json:"uri,omitempty"`
@@ -42,7 +48,7 @@ type OrcidIdentifier struct {
 
 func main() {
 	start := time.Now()
-	ch := make(chan string)
+	ch := make(chan SearchResults) // ch := make(chan string)
 
 	// read in a CSV file with the URL's
 	csvdata := readMetaData()
@@ -64,8 +70,8 @@ func main() {
 	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
 }
 
-func printOrcid(data string) {
-	dec := json.NewDecoder(strings.NewReader(data))
+func printOrcid(data SearchResults) {
+	dec := json.NewDecoder(strings.NewReader(data.Results))
 	for {
 		t, err := dec.Token()
 		if err == io.EOF {
@@ -82,14 +88,14 @@ func printOrcid(data string) {
 				log.Printf("Decode error %v \n", err)
 				return
 			}
-			fmt.Printf("Values %v  %v  %v: %v\n", m.Value, m.URI, m.Path, m.Host)
+			fmt.Printf("Results \t%s \t%s\t\t%v  \t%v \t%v\n", data.GivenName, data.FamilyName, m.URI, m.Path, m.Host)
 		}
 	}
 }
 
-func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- string) {
+func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- SearchResults) {
 	// start := time.Now()
-	urlstring := "https://pub.orcid.org/v1.2/search/orcid-bio/?q=family-name%3AFils%20AND%20given-names%3ADoug*%20OR%20email%3A*%40iodp.org&rows=10&start=0"
+	urlstring := "https://pub.orcid.org/v1.2/search/orcid-bio/?q=query&rows=10&start=0"
 
 	u, err := url.Parse(urlstring)
 	if err != nil {
@@ -112,8 +118,10 @@ func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- strin
 	// secs := time.Since(start).Seconds()
 	body, _ := ioutil.ReadAll(res.Body)
 
+	results := SearchResults{FamilyName: familyname, GivenName: givenname, Results: string(body)}
+
 	// ch <- fmt.Sprintf("%.2f elapsed with response length: %d %s", secs, len(body), u.String())
-	ch <- string(body)
+	ch <- results //   ch <- string(body)
 }
 
 func readMetaData() []Candidates {
