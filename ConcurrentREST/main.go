@@ -44,12 +44,14 @@ func main() {
 	start := time.Now()
 	ch := make(chan SearchResults) // ch := make(chan string)
 
-	// read in a CSV file with the URL's
-	csvdata := readMetaData()
-
-	// get the token from the command lines
+	// get the token and input file from the command lines
 	tokenPtr := flag.String("token", "xxx-xxx-xxx-xxx", "A valid Orcid token")
+	filenamePtr := flag.String("file", "./candidates.csv", "A CSV file of fname, lname, email to feed into the orcid API")
 	flag.Parse()
+
+	// read in a CSV file with the URL's
+	filenameValue := *filenamePtr // dereference the pointer for my function
+	csvdata := readMetaData(filenameValue)
 
 	// send of the calls based on the CSV file
 	for _, person := range csvdata {
@@ -128,8 +130,8 @@ func MakeRequest(token, givenname, familyname, emailfrag string, ch chan<- Searc
 	ch <- results //   ch <- string(body)
 }
 
-func readMetaData() []Candidates {
-	csvFile, err := os.Open("./candidates.csv")
+func readMetaData(inputfile string) []Candidates {
+	csvFile, err := os.Open(inputfile)
 	defer csvFile.Close()
 	if err != nil {
 		panic(err)
