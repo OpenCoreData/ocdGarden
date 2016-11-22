@@ -3,12 +3,6 @@
 // A simple program to demonstract some basic concurrance (no sync issues)
 // for calling an REST API endpoint
 //
-//  Some references worth looking over
-// http://blog.narenarya.in/concurrent-http-in-go.html
-// http://stackoverflow.com/questions/33104192/how-to-run-10000-goroutines-in-parallel-where-each-routine-calls-an-api
-// https://medium.com/golangspec/synchronized-goroutines-part-i-4fbcdd64a4ec#.qav8o43uj
-// https://medium.com/golangspec/synchronized-goroutines-part-ii-b1130c815c9d#.mximrcqzv
-// http://nomad.so/2016/01/interesting-ways-of-using-go-channels/
 
 package main
 
@@ -71,6 +65,15 @@ func main() {
 }
 
 func printOrcid(data SearchResults) {
+	// get the json string...  indented nicely...   in case we need to inspect it.
+	// var out bytes.Buffer
+	// err := json.Indent(&out, []byte(data.Results), "", "  ")
+	// if err != nil {
+	// 	log.Printf("Problem indenting json %v \n", err)
+	// 	return
+	// }
+	// fmt.Println(out.String())
+
 	dec := json.NewDecoder(strings.NewReader(data.Results))
 	for {
 		t, err := dec.Token()
@@ -89,6 +92,7 @@ func printOrcid(data SearchResults) {
 				return
 			}
 			fmt.Printf("Results \t%s \t%s\t\t%v  \t%v \t%v\n", data.GivenName, data.FamilyName, m.URI, m.Path, m.Host)
+			// At this point I could also send this info off to a function to make up some RDF for this too  (future feature, already have the code for this)
 		}
 	}
 }
