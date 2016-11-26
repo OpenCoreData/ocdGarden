@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>ocdel-license demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../ocdel-license.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+
+    </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Dataset",
+            "author": {
+                "@type": "Organization",
+                "description": "NSF funded International Ocean Discovery Program operated by JRSO",
+                "name": "International Ocean Discovery Program",
+                "url": "http://iodp.org"
+            },
+            "description": "Data set description",
+            "distribution": {
+                "@type": "DataDownload",
+                "contentUrl": "http://opencoredata.org/id/dataset/045deec9-94b2-445a-8fd2-43dbe90841fb",
+                "datePublished": "Sunday, 25-Oct-15 23:06:10 EDT",
+                "encodingFormat": "text/tab-separated-values",
+                "inLanguage": "en"
+            },
+            "glview:dataset": "199_1215A_JanusVcdImage_JcAruSDk.csv",
+            "glview:keywords": "DSDP, OPD, IODP, JanusVcdImage",
+            "opencore:leg": "199",
+            "opencore:site": "1215",
+            "opencore:hole": "A",
+            "opencore:measurement": "JanusVcdImage",
+            "keywords": "DSDP, OPD, IODP, JanusVcdImage",
+            "name": "199_1215A_JanusVcdImage_JcAruSDk.csv",
+            "spatial": {
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "26.03",
+                    "longitude": "-147.93"
+                }
+            },
+            "url": "http://opencoredata.org/id/dataset/045deec9-94b2-445a-8fd2-43dbe90841fb"
+        }
+    </script>
+
+    <script>
+        window.addEventListener('WebComponentsReady', function(e) {
+            var jsonld = JSON.parse(
+                document.querySelector(
+                    'script[type="application/ld+json"]').innerText);
+            document.querySelector('ocdel-license').jsonld = jsonld;
+            console.log("component is ready");
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="vertical-section-container centered">
+        <h3>Basic ocdel-license demo</h3>
+        <demo-snippet>
+            <template>
+          <ocdel-license jsonld=""></ocdel-license>
+        </template>
+        </demo-snippet>
+    </div>
+</body>
+
+
+
+</html>
