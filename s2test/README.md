@@ -26,3 +26,9 @@ working code examples.
 
 * http://blog.nobugware.com/post/2016/geo_db_s2_geohash_database/ 
 * http://blog.christianperone.com/2015/08/googles-s2-geometry-on-the-sphere-cells-and-hilbert-curve/
+
+
+Look for help
+* https://github.com/golang/geo/issues/14#issuecomment-257155616
+* https://github.com/golang/geo/pull/6 
+* https://github.com/golang/geo/blob/master/s2/point.go#L85 

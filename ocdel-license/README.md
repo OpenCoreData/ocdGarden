@@ -1,6 +1,6 @@
 # \<ocdel-license\>
 
-Displays license information extracted from schema.org metadatga with a page
+Displays license information extracted from schema.org metadatga with a page.
 
 ## Install the Polymer-CLI
 
