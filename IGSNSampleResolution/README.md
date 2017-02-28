@@ -2,7 +2,7 @@
 
 ### About
 A simple program to resolve IGSN values to Open Core resources
- based on the sample ID'sample
+ based on the sample IDs 
 
 
 ### Files
