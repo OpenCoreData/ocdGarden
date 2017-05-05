@@ -102,16 +102,29 @@ WHERE
   ?uri 	<http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?lat .
   ?uri 	<http://www.w3.org/2003/01/geo/wgs84_pos#long> ?long .
 }
+
+#tag: csdcoproj
+SELECT ?uri ?project ?lat ?long
+WHERE  
+{    
+  ?uri rdf:type <http://opencoredata.org/id/voc/csdco/v1/CSDCOProject> .    
+  ?uri <http://opencoredata.org/id/voc/csdco/v1/holeid> "AAFBLP-LLB06-2A" . 
+  ?uri <http://opencoredata.org/id/voc/csdco/v1/project> ?project . 
+  ?uri <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?lat .
+  ?uri <http://www.w3.org/2003/01/geo/wgs84_pos#long> ?long .
+}
 `
 
 func main() {
 	// callTest1()
-	callTest2()
+	// callTest2()
 	// callTest3()
+	CSDCODataCite()
 }
 
 func callTest1() {
-	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdco/sparql")
+	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/opencore/sparql")
+	// repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdco/sparql")
 	// repo, err := sparql.NewRepo("http://opencoredata.org/sparql")
 
 	if err != nil {
@@ -155,7 +168,8 @@ func callTest1() {
 
 func callTest2() {
 
-	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdcov3/sparql")
+	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/opencore/sparql")
+	// repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdcov3/sparql")
 	// repo, err := sparql.NewRepo("http://opencoredata.org/sparql")
 
 	if err != nil {
@@ -203,7 +217,8 @@ func callTest2() {
 }
 
 func callTest3() {
-	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdcov3/sparql")
+	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/opencore/sparql")
+	// repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/csdcov3/sparql")
 	// repo, err := sparql.NewRepo("http://opencoredata.org/sparql")
 
 	if err != nil {
@@ -213,7 +228,8 @@ func callTest3() {
 	f := bytes.NewBufferString(queries)
 	bank := sparql.LoadBank(f)
 
-	q, err := bank.Prepare("CSDCOHoleID", struct{ HOLEID string }{"http://opencoredata/id/resource/csdco/project/aafblp-llb06-2a"})
+	// q, err := bank.Prepare("CSDCOHoleID", struct{ HOLEID string }{"http://opencoredata/id/resource/csdco/project/aafblp-llb06-2a"})
+	q, err := bank.Prepare("focusedCall")
 	if err != nil {
 		log.Printf("query bank prepair: %v\n", err)
 	}
@@ -224,35 +240,71 @@ func callTest3() {
 		log.Printf("query call: %v\n", err)
 	}
 
-	data := CSDCO{}
+	data := DataCite{}
 
 	// Print loop testing
-	bindingsTest := res.Results.Bindings // []map[string][]rdf.Term
-	fmt.Println("res.Results.Bindings:")
-	for k, i := range bindingsTest {
-		fmt.Printf("At postion %v with %v and %v\n\n", k, i["p"].Value, i["o"].Value)
-	}
+	// bindingsTest := res.Results.Bindings // []map[string][]rdf.Term
+	// fmt.Println("res.Results.Bindings:")
+	// for k, i := range bindingsTest {
+	// 	fmt.Printf("At postion %v with %v and %v\n\n", k, i["p"].Value, i["o"].Value)
+	// }
 
 	// data.Country = bindingsTest[0]["o"].Value // need to know index value
 
 	bindingsTest2 := res.Bindings() // map[string][]rdf.Term
-	fmt.Println("res.Bindings():")
-	for k, i := range bindingsTest2 {
-		fmt.Printf("At postion %v with %v \n\n", k, i)
-	}
+	// fmt.Println("res.Bindings():")
+	// for k, i := range bindingsTest2 {
+	// 	fmt.Printf("At postion %v with %v \n\n", k, i)
+	// }
 
 	// data.Hole
 
-	solutionsTest := res.Solutions() // []map[string][]rdf.Term
-	fmt.Println("res.Solutions():")
-	for k, i := range solutionsTest {
-		fmt.Printf("At postion %v with %v \n\n", k, i)
-	}
+	// solutionsTest := res.Solutions() // []map[string][]rdf.Term
+	// fmt.Println("res.Solutions():")
+	// for k, i := range solutionsTest {
+	// 	fmt.Printf("At postion %v with %v \n\n", k, i)
+	// }
 
 	// what I need for a function then Is
-	data.Hole = ObjectValForPred(bindingsTest2, "p", "o", "http://opencoredata.org/id/voc/csdco/v1/holeid")
-	data.Country = ObjectValForPred(bindingsTest2, "p", "o", "http://opencoredata.org/id/voc/csdco/v1/country")
-	data.Elevation = ObjectValForPred(bindingsTest2, "p", "o", "http://opencoredata.org/id/voc/csdco/v1/elevation")
+	data.Title = ObjectValForPred(bindingsTest2, "p", "o", "http://opencoredata.org/id/voc/csdco/v1/holeid")
+	data.Abstract = "Abstract value here"
+	data.Long = ObjectValForPred(bindingsTest2, "p", "o", "http://www.w3.org/2003/01/geo/wgs84_pos#long")
+	data.Lat = ObjectValForPred(bindingsTest2, "p", "o", "http://www.w3.org/2003/01/geo/wgs84_pos#lat")
+
+	fmt.Println(data)
+
+}
+
+func CSDCODataCite() {
+	repo, err := sparql.NewRepo("http://localhost:9999/blazegraph/namespace/opencore/sparql")
+	if err != nil {
+		log.Printf("query make repo: %v\n", err)
+	}
+
+	f := bytes.NewBufferString(queries)
+	bank := sparql.LoadBank(f)
+
+	// q, err := bank.Prepare("CSDCOHoleID", struct{ HOLEID string }{"http://opencoredata/id/resource/csdco/project/aafblp-llb06-2a"})
+	q, err := bank.Prepare("csdcoproj")
+	if err != nil {
+		log.Printf("query bank prepair: %v\n", err)
+	}
+
+	res, err := repo.Query(q)
+
+	if err != nil {
+		log.Printf("query call: %v\n", err)
+	}
+
+	data := DataCite{}
+	bindingsTest2 := res.Bindings() // map[string][]rdf.Term
+
+	fmt.Println(bindingsTest2)
+
+	data.Title = bindingsTest2["project"][0].String()
+	data.Abstract = "Abstract value here"
+	data.Long = bindingsTest2["lat"][0].String()
+	data.Lat = bindingsTest2["long"][0].String()
 
 	fmt.Println(data)
 

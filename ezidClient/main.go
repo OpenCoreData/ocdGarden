@@ -6,23 +6,27 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"os"
 	"strings"
 )
 
-// go run main.go -username=apitest -password=password
+// go run main.go -username=apitest -password=password file
 func main() {
 	username := flag.String("username", "apitest", "EZID username")
 	passwd := flag.String("password", "password", "EZID password")
 	flag.Parse()
 
-	posttest(*username, *passwd)
+	file := os.Args[3]
+
+	posttest(*username, *passwd, file)
 }
 
-func posttest(username, passwd string) {
+func posttest(username, passwd, file string) {
 	url := "https://ezid.cdlib.org/shoulder/doi:10.5072/FK2"
 	fmt.Println("URL:>", url)
 
-	b, err := ioutil.ReadFile("datacite-example-dataset-v3.0.xml") // just pass the file name
+	b, err := ioutil.ReadFile(file) // just pass the file name
+	// b, err := ioutil.ReadFile("datacite-example-dataset-v3.0.xml") // just pass the file name
 	// b, err := ioutil.ReadFile("test.anvl") // just pass the file name
 	if err != nil {
 		fmt.Print(err)
@@ -44,7 +48,7 @@ func posttest(username, passwd string) {
 	defer resp.Body.Close()
 
 	fmt.Println("response Status:", resp.Status)
-	fmt.Println("response Headers:", resp.Header)
+	// fmt.Println("response Headers:", resp.Header)
 	body, _ := ioutil.ReadAll(resp.Body)
 	fmt.Println("response Body:", string(body))
 }

@@ -61,6 +61,7 @@ func main() {
 
 	csvwTest()
 	mongoTest() // waiting to resolve the stringTest() call
+
 	// triples := stringTest(jsld) // working on this to use in the mongo mongoTest
 	// fmt.Println(triples)
 	// restTest() // works fine
