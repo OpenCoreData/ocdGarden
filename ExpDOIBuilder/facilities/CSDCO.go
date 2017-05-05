@@ -116,7 +116,7 @@ func CSDCOProjMetadata(project string) {
 
 	// blend with the XML template and return the text
 
-	ht, err := template.New("some template").Parse(structures.CSDCOtemplate)
+	ht, err := template.New("some template").Parse(structures.DataCitev4Template)
 	if err != nil {
 		log.Printf("template parse failed: %s", err)
 	}

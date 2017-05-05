@@ -3,8 +3,8 @@ package facilities
 import (
 	"bytes"
 	"fmt"
-	"html/template"
 	"log"
+	"text/template"
 
 	"opencoredata.org/ocdGarden/ExpDOIBuilder/structures"
 
@@ -91,35 +91,36 @@ func JRSOProjMetadata(project string) {
 		latLongs = append(latLongs, latLong)
 	}
 
-	data.CreatorName = "JOIDES Resulution Science Operator"
-	data.ExpURI = fmt.Sprintf("http://opencoredata.org/id/expedition/%s", bindingsTest2["leg"][0].String())
-	data.ResourceType = "Field_expedition"
-	data.ContributorName = "Open Core Data"
-	data.ContributorDOI = "10.17616/R37936"
-	data.Title = project
-	data.GeoPoint = latLongs
-	data.Abstract = "Abstract value here"
-	data.Version = "1"
-	data.Publisher = "Interdisciplinary Earth Data Applications (IEDA)"
-	data.PubYear = "2017"
-
-	// blend with the XML template and return the text
-
-	ht, err := template.New("some template").Parse(structures.JRSOTemplate)
-	if err != nil {
-		log.Printf("template parse failed: %s", err)
-	}
-
-	var buff = bytes.NewBufferString("")
-	err = ht.Execute(buff, data)
-	if err != nil {
-		log.Printf("RDF template execution failed: %s", err)
-	}
-
+	// check to see if I really have data for this expedition
 	if len(bindingsTest2) == 0 {
 		fmt.Printf("No expedition data found for %s\n", project)
 	} else {
 		// fmt.Println(string(buff.Bytes()))
+
+		data.CreatorName = "JOIDES Resulution Science Operator"
+		data.ExpURI = fmt.Sprintf("http://opencoredata.org/id/expedition/%s", bindingsTest2["leg"][0].String())
+		data.ResourceType = "Field_expedition"
+		data.ContributorName = "Open Core Data"
+		data.ContributorDOI = "10.17616/R37936"
+		data.Title = project
+		data.GeoPoint = latLongs
+		data.Abstract = "Abstract value here"
+		data.Version = "1"
+		data.Publisher = "Interdisciplinary Earth Data Applications (IEDA)"
+		data.PubYear = "2017"
+
+		// blend with the XML template and return the text
+		ht, err := template.New("some template").Parse(structures.DataCitev4Template)
+		if err != nil {
+			log.Printf("template parse failed: %s", err)
+		}
+
+		var buff = bytes.NewBufferString("")
+		err = ht.Execute(buff, data)
+		if err != nil {
+			log.Printf("RDF template execution failed: %s", err)
+		}
+
 		writeFile(fmt.Sprintf("./output/jrso_%s.xml", bindingsTest2["leg"][0].String()), string(buff.Bytes()))
 	}
 

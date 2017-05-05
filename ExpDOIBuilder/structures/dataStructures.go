@@ -53,8 +53,7 @@ type GeoPoint struct {
 	Lat  string // latitude
 }
 
-
-const CSDCOtemplatev4 = `<?xml version="1.0"?>
+const DataCitev4Template = `<?xml version="1.0"?>
 <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
    <identifier identifierType="DOI">{{.ExpDOI}}</identifier>
   <alternateIdentifiers>
@@ -96,102 +95,6 @@ const CSDCOtemplatev4 = `<?xml version="1.0"?>
         <pointLongitude> {{.Long}}</pointLongitude>
         <pointLatitude>{{.Lat}}</pointLatitude>
     </geoLocationPoint> </geoLocation>
-			{{end}}
-  </geoLocations>
-  <publisher>{{.Publisher}}</publisher>
-  <version>{{.Version}}</version>
-  <publicationYear>{{.PubYear}}</publicationYear>
-</resource>
-`
-
-
-
-const CSDCOtemplate = `<?xml version="1.0"?>
-<resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
-  <identifier identifierType="DOI">{{.ExpDOI}}</identifier>
-  <alternateIdentifiers>
-     <alternateIdentifier alternateIdentifierType="URL">{{.ExpURI}}</alternateIdentifier>
-  </alternateIdentifiers>
-  <resourceType resourceTypeGeneral="Event">{{.ResourceType}}</resourceType>
-  <creators>
-    <creator>
-      <creatorName>{{.CreatorName}}</creatorName>
-    </creator>
-  </creators>
-  <titles>
-    <title>{{.Title}}</title>
-  </titles>
-  <descriptions>
-    <description descriptionType="Abstract">{{.Abstract}}</description>
-  </descriptions>
-  <dates>
-    <date dateType="Collected">{{.DateCollected}}</date>
-  </dates>
-  <language>en</language>
-  <contributors>
-    <contributor contributorType="Producer">
-      <contributorName>{{.ContributorName}}</contributorName>
-      <nameIdentifier nameIdentifierScheme="DOI">{{.ContributorDOI}}</nameIdentifier>
-    </contributor>
-    <contributor contributorType="Funder">
-      <contributorName>National Science Foundation</contributorName>
-      <nameIdentifier nameIdentifierScheme="DOI">10.13039/100000001</nameIdentifier>
-    </contributor>
-  </contributors>
-  <relatedIdentifiers>
-                {{range $ITEMS := .RelatedDOIs}}
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">{{.}}</relatedIdentifier>  
-                {{end}}
-  </relatedIdentifiers>
-  <geoLocations>
-	  {{range $latlong := .GeoPoint}} <geoLocation> <geoLocationPoint>{{.Long}} {{.Lat}}</geoLocationPoint> </geoLocation>
-			{{end}}
-  </geoLocations>
-  <publisher>{{.Publisher}}</publisher>
-  <version>{{.Version}}</version>
-  <publicationYear>{{.PubYear}}</publicationYear>
-</resource>
-`
-
-const JRSOTemplate = `<?xml version="1.0"?>
-<resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
-  <identifier identifierType="DOI">{{.ExpDOI}}</identifier>
-  <alternateIdentifiers>
-     <alternateIdentifier alternateIdentifierType="URL">{{.ExpURI}}</alternateIdentifier>
-  </alternateIdentifiers>
-  <resourceType resourceTypeGeneral="Event">{{.ResourceType}}</resourceType>
-  <creators>
-    <creator>
-      <creatorName>{{.CreatorName}}</creatorName>
-    </creator>
-  </creators>
-  <titles>
-    <title>{{.Title}}</title>
-  </titles>
-  <descriptions>
-    <description descriptionType="Abstract">{{.Abstract}}</description>
-  </descriptions>
-  <dates>
-    <date dateType="Collected">{{.DateCollected}}</date>
-  </dates>
-  <language>en</language>
-  <contributors>
-    <contributor contributorType="Producer">
-      <contributorName>{{.ContributorName}}</contributorName>
-      <nameIdentifier nameIdentifierScheme="DOI">{{.ContributorDOI}}</nameIdentifier>
-    </contributor>
-    <contributor contributorType="Funder">
-      <contributorName>National Science Foundation</contributorName>
-      <nameIdentifier nameIdentifierScheme="DOI">10.13039/100000001</nameIdentifier>
-    </contributor>
-  </contributors>
-  <relatedIdentifiers>
-                {{range $ITEMS := .RelatedDOIs}}
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">{{.}}</relatedIdentifier>  
-                {{end}}
-  </relatedIdentifiers>
-  <geoLocations>
-	  {{range $latlong := .GeoPoint}} <geoLocation> <geoLocationPoint>{{.Long}} {{.Lat}}</geoLocationPoint> </geoLocation>
 			{{end}}
   </geoLocations>
   <publisher>{{.Publisher}}</publisher>
