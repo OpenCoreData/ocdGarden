@@ -1,4 +1,4 @@
 setenv.sh
-simpleCallTest/outputHold/*
-bleveIndexer/csvw.bleve/*
-simpleCallTest/output/*
+Oracle/OracleSimpleClient/outputHold/*
+BleveIndexer/csvw.bleve/*
+Oracle/OracleSimpleClient/output/*

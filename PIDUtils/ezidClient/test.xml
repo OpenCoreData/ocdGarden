@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record identifier="ark:/99999/fk4gt78tq">
+    <element name="_created">1300812337</element>
+    <element name="_export">yes</element>
+    <element name="_owner">apitest</element>
+    <element name="_ownergroup">apitest</element>
+    <element name="_profile">erc</element>
+    <element name="_status">public</element>
+    <element name="_target">http://www.gutenberg.org/ebooks/7178</element>
+    <element name="_updated">1300913550</element>
+    <element name="erc.what">Remembrance of Things Past</element>
+    <element name="erc.when">1922</element>
+    <element name="erc.who">Proust, Marcel</element>
+  </record>
+  <record identifier="doi:10.5072/FK2S75905Q">
+    <element name="_created">1421276359</element>
+    <element name="_datacenter">CDL.CDL</element>
+    <element name="_export">yes</element>
+    <element name="_owner">apitest</element>
+    <element name="_ownergroup">apitest</element>
+    <element name="_profile">datacite</element>
+    <element name="_shadowedby">ark:/b5072/fk2s75905q</element>
+    <element name="_status">public</element>
+    <element name="_target">http://www.gutenberg.org/ebooks/26014</element>
+    <element name="_updated">1421276359</element>
+    <element name="datacite">
+      <resource xmlns="http://datacite.org/schema/kernel-3">
+        <identifier identifierType="DOI">10.5072/FK2S75905Q</identifier>
+        <creators>
+          <creator>
+            <creatorName>Montagu Browne</creatorName>
+          </creator>
+        </creators>
+        <titles>
+          <title>Practical Taxidermy</title>
+        </titles>
+        <publisher>Charles Scribner's Sons</publisher>
+        <publicationYear>1884</publicationYear>
+        <resourceType resourceTypeGeneral="Text"/>
+      </resource>
+    </element>
+  </record>
+</records>

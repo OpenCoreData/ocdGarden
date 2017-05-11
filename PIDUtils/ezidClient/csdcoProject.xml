@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<resource 
+  xmlns="http://datacite.org/schema/kernel-3" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+  <identifier identifierType="DOI"></identifier>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="URL"></alternateIdentifier>
+  </alternateIdentifiers>
+  <resourceType resourceTypeGeneral="Event"></resourceType>
+  <creators>
+    <creator>
+      <creatorName>Open Core Data</creatorName>
+      <nameIdentifier nameIdentifierScheme="DOI">10.17616/R37936</nameIdentifier>
+    </creator>
+  </creators>
+  <titles>
+    <title>XIT</title>
+  </titles>
+  <descriptions>
+    <description descriptionType="Abstract">Abstract value here</description>
+  </descriptions>
+  <dates>
+    <date dateType="Collected"></date>
+  </dates>
+  <language>en</language>
+  <contributors>
+    <contributor contributorType="Producer">
+      <contributorName>Continental Scientific Drilling Coordination Office</contributorName>
+    </contributor>
+    <contributor contributorType="Funder">
+      <contributorName>National Science Foundation</contributorName>
+      <nameIdentifier nameIdentifierScheme="DOI">10.13039/100000001</nameIdentifier>
+    </contributor>
+  </contributors>
+  <relatedIdentifiers></relatedIdentifiers>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPoint>-100.600905 37.02155</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.600904 37.021549</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.618244 37.034123</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.61833 37.033529</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.61743 37.035874</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.617522 37.035348</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.617649 37.034709</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.617809 37.034012</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.617947 37.033372</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.618191 37.03348</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.617903 37.036034</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.618031 37.035523</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.618117 37.034838</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.603504 37.018457</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.603917 37.018221</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.604297 37.017931</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.602254 37.01788</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.602607 37.017613</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.602934 37.017306</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.60331 37.016986</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.602729 37.018299</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.602983 37.07941</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.60336 37.01774</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.603713 37.017409</geoLocationPoint>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPoint>-100.603204 37.018778</geoLocationPoint>
+    </geoLocation>
+  </geoLocations>
+  <publisher>Open Core Data</publisher>
+  <version></version>
+  <publicationYear>2017</publicationYear>
+</resource>

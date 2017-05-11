@@ -1,0 +1,31 @@
+@prefix geosp: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix samfl: <http://def.seegrid.csiro.au/ontology/om/sam-lite#> .
+@prefix sampling: <http://www.w3.org/ns/sosa/sampling/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://pid.geoscience.gov.au/sample/AU239> a sosa:Sample ;
+    rdfs:label "Sample igsn:AU239"^^xsd:string ;
+    sosa:isResultOf [ a sosa:Sampling ;
+            sosa:madeBySampler [ a sosa:Sampler ] ] ;
+    sosa:isSampleOf <http://registry.it.csiro.au/sandbox/csiro/oznome/feature/earth-realm/lithosphere> ;
+    sampling:hasSampleRelationship [ a sampling:SampleRelationship ;
+            sampling:natureOfRelationship <http://example.org/sampling/relationship/subsample> ;
+            sampling:relatedSample <http://pid.geoscience.gov.au/site/17943> ] .
+
+<http://pid.geoscience.gov.au/def/voc/featureofinteresttype/borehole> rdfs:subClassOf sosa:Sample .
+
+<http://pid.geoscience.gov.au/site/17943> a <http://pid.geoscience.gov.au/def/voc/featureofinteresttype/borehole>,
+        <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+    samfl:samplingElevation [ a samfl:Elevation ;
+            samfl:elevation "51"^^xsd:float ;
+            samfl:verticalDatum "http://spatialreference.org/ref/epsg/4283/"^^xsd:anyUri ] ;
+    geosp:hasGeometry [ a geosp:Geometry ;
+            geosp:asWKT "SRID=8311;POINT(137.8563726 -33.7108293)"^^geosp:wktLiteral ] .
+
+<http://registry.it.csiro.au/sandbox/csiro/oznome/feature/earth-realm/lithosphere> a sosa:FeatureOfInterest ;
+    skos:exactMatch <http://sweet.jpl.nasa.gov/2.3/realmGeol.owl#Lithosphere> .

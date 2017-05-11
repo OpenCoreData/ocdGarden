@@ -1,0 +1,36 @@
+<igsn:resource 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:igsn="http://schema.igsn.org/description/1.0" xsi:schemaLocation="http://schema.igsn.org/description/1.0 https://raw.githubusercontent.com/IGSN/metadata/dev/description/resource.xsd" registedObjectType="http://schema.igsn.org/vocab/PhysicalSample">
+    <igsn:identifier type="IGSN">http://igsn.org/AU239</igsn:identifier>
+    <igsn:title>Sample igsn:AU239</igsn:title>
+    <igsn:alternateIdentifiers>
+        <igsn:alternateIdentifier>2000362089A</igsn:alternateIdentifier>
+    </igsn:alternateIdentifiers>
+    <igsn:description/>
+    <igsn:registrant>
+        <igsn:name>Geoscience Australia</igsn:name>
+        <igsn:affiliation>
+            <igsn:identifier type="URI">http://pid.geoscience.gov.au/org/ga</igsn:identifier>
+            <igsn:name>Geoscience Australia</igsn:name>
+        </igsn:affiliation>
+    </igsn:registrant>
+    <igsn:locations>
+        <igsn:geometry type="Point" sridType="4326">SRID=8311;POINTZ(137.8563726 -33.7108293 51)</igsn:geometry>
+    </igsn:locations>
+    <igsn:resourceTypes>
+        <igsn:resourceType>http://vocabulary.odm2.org/specimentype/core/</igsn:resourceType>
+    </igsn:resourceTypes>
+    <igsn:materials>
+        <igsn:material>http://vocabulary.odm2.org/medium/rock/</igsn:material>
+    </igsn:materials>
+    <igsn:collectionMethods>
+        <igsn:collectionMethod>http://www.opengis.net/def/nil/OGC/0/missing</igsn:collectionMethod>
+    </igsn:collectionMethods>
+    <igsn:isMetadataPublic>Public</igsn:isMetadataPublic>
+    <igsn:contributors>
+        <igsn:contributor type="HostingInstitution">
+            <igsn:identifier type="URI">http://pid.geoscience.gov.au/org/ga</igsn:identifier>
+            <igsn:name>Geoscience Australia</igsn:name>
+        </igsn:contributor>
+    </igsn:contributors>
+</igsn:resource>

@@ -1,0 +1,6 @@
+_target: http://www.usap-data.org/entry/xyz
+datacite.creator:  Dr. Who
+datacite.title: Data supporting the project TARDIS, funded by NSF award# '.$award.'
+datacite.publisher: U.S. Antarctic Program (USAP) Data Center
+datacite.publicationyear: 2022
+datacite.resourcetype: Dataset
