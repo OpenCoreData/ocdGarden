@@ -128,7 +128,7 @@ var Schema = `
 	# The input object sent when someone is creating a new review
 	input ReviewInput {
 		# 0-5 stars
-		stars: Int!
+		stars: Int! 
 		# Comment about the movie, optional
 		commentary: String
 	}

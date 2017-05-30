@@ -5,9 +5,10 @@ import (
 	//"io"
 	"log"
 	"net/http"
-	"opencoredata.org/ocdCatalog/db"
-	"opencoredata.org/ocdCatalog/lookup"
-	"opencoredata.org/ocdCatalog/register"
+
+	"opencoredata.org/ocdGarden/BoltTest/db"
+	"opencoredata.org/ocdGarden/BoltTest/lookup"
+	"opencoredata.org/ocdGarden/BoltTest/register"
 )
 
 func main() {
