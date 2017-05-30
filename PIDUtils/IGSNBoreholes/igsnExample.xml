@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<samples xmlns="http://app.geosamples.org" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:schemaLocation="http://app.geosamples.org/samplev2.xsd ">
+<sample>
+<user_code>ABC</user_code> <!-- required --> 
+<sample_type>Individual Sample</sample_type> <!-- required --> 
+<name>TestSample123</name> <!-- Required --> 
+<material>Rock</material> <!-- required, -->
+<igsn>ABC123456</igsn> <!-- Not Required, If it is not specifed, the system will create it automatically. --> 
+<description>arkose</description> 
+<age_min>6.5</age_min> 
+<age_max>13</age_max> 
+<age_unit>years</age_unit> 
+<collection_method>Grab</collection_method> 
+<latitude>35.5134</latitude> 
+<longitude>-117.3463</longitude> 
+<elevation>781.4</elevation> 
+<primary_location_name>Lava Mountains, Mojave Desert, California
+</primary_location_name> 
+<country>United States</country>
+<province>California</province>
+<county>San Bernardino</county> 
+<collector>J. E. Andrew</collector>
+<collection_start_date>2002-05-30T09:30:10Z
+</collection_start_date> 
+<collection_date_precision>time</collection_date_precision> 
+<original_archive>University of Kansas</original_archive> 
+</sample> 
+</samples>
+
+
+<samples>
+    <sample>
+        <qrcode_img_src>app.geosamples.org/barcode/image.php?igsn=ODP000001&amp;sample_id=Hole 1-1*</qrcode_img_src>
+        <user_code>ODP</user_code>
+        <igsn>ODP000001</igsn>
+        <name>Hole 1-1*</name>
+        <sample_type>Hole</sample_type>
+        <publish_date>2010-12-10</publish_date>
+        <external_urls>
+            <external_url>
+                <url>http://www.ngdc.noaa.gov/geosamples/showsample.jsp?igsn=ODP000001</url>
+                <description>Link to IMLGS, Index to Marine &amp; Lacustrine Geological Samples</description>
+                <url_type>regular URL</url_type>
+            </external_url>
+        </external_urls>
+        <collection_method>Coring</collection_method>
+        <collection_method_descr>Coring method varies along hole length</collection_method_descr>
+        <size>Length: 770.5m</size>
+        <latitude>25.8583</latitude>
+        <longitude>-92.1833</longitude>
+        <elevation>-2827</elevation>
+        <cruise_field_prgrm>DSDP Leg 1</cruise_field_prgrm>
+        <platform_type>Ship</platform_type>
+        <platform_name>Glomar Challenger</platform_name>
+        <collector>Curator</collector>
+        <collector_detail>Texas A&amp;M University, Integrated Ocean Drilling Program, College Station, TX, 77845, USA</collector_detail>
+        <current_archive>Integrated Ocean Drilling Program (IODP)</current_archive>
+        <current_archive_contact>Curator</current_archive_contact>
+        <original_archive>Texas A&amp;M University, Integrated Ocean Drilling Program, College Station, TX, 77845, USA</original_archive>
+        <original_archive_contact>Curator</original_archive_contact>
+        <children>
+            <samples>
+                <sample>
+                    <igsn>ODP000002</igsn>
+                    <name>Core 1-1*-1M</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000003</igsn>
+                    <name>Core 1-1*-1R</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000004</igsn>
+                    <name>Core 1-1*-2R</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000005</igsn>
+                    <name>Core 1-1*-3R</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000006</igsn>
+                    <name>Core 1-1*-40</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000007</igsn>
+                    <name>Core 1-1*-5R</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000008</igsn>
+                    <name>Core 1-1*-6R</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000009</igsn>
+                    <name>Core 1-1*-7R</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000010</igsn>
+                    <name>Core 1-1*-8R</name>
+                </sample>
+                <sample>
+                    <igsn>ODP000011</igsn>
+                    <name>Core 1-1*-9R</name>
+                </sample>
+            </samples>
+        </children>
+    </sample>
+</samples>

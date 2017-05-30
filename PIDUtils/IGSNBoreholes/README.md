@@ -13,3 +13,5 @@ ways to encode the borehole and other potential features.
 * http://vocabulary.odm2.org/specimentype/core/ 
 * http://vocabulary.odm2.org/medium/rock/ 
 * http://pid.geoscience.gov.au/def/voc/featureofinteresttype/borehole 
+* https://app.geosamples.org/samplev2.xml (IGSN example XML)
+* https://app.geosamples.org/samplev2.xsd (IGSN XSD)
