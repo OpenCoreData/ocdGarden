@@ -1,0 +1,10 @@
+document
+  prefix foo  <http://www.foo.org/foo/>
+  prefix prov <http://www.w3c.org/prov/>
+
+entity(foo:GeoLinkGraph, [prov:type='foo:dataset', prov:label="Open Core Data GeoLink graph"])
+agent(foo:OCD, [prov:type='prov:Organization', prov:label="Open Core Data"])
+activity(foo:generation, [prov:label="generation"])
+wasGeneratedBy(foo:OCD, foo:generation, -)
+
+endDocument
