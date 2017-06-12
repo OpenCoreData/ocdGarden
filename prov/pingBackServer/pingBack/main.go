@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-
 	wsContainer := restful.NewContainer()
 
 	// CORS

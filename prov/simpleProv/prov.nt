@@ -1,0 +1,14 @@
+@prefix ns0:	<http://www.w3.org/ns/prov#> .
+@prefix ns1:	<http://foo.org/> .
+ns1:thisSample	a	ns0:entity ;
+	ns0:qualifiedAttribution	_:bn1 ;
+	ns0:wasAttributedTo	_:bn1 .
+@prefix ns2:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns3:	<http://opencoredata.org/> .
+ns3:org	ns2:label	"Geoscience Australia" ;
+	a	ns0:Agent ,
+			ns0:org .
+_:bn1	a	ns0:attribution ;
+	ns0:agent	ns3:org .
+@prefix ns4:	<http://www.aurole.org/> .
+_:bn1	ns0:hadRole	ns4:Publisher .
