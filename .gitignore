@@ -1,4 +1,5 @@
 setenv.sh
 Oracle/OracleSimpleClient/outputHold/*
-BleveIndexer/csvw.bleve/*
+bleveIndexer/MongoIndexing/csvw.bleve/*
+bleveIndexer/MonogIndexing/csvw.bleve/store
 Oracle/OracleSimpleClient/output/*
