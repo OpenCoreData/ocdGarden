@@ -1,4 +1,6 @@
 setenv.sh
+.vscode
+.gitignore
 Oracle/OracleSimpleClient/outputHold/*
 bleveIndexer/MongoIndexing/csvw.bleve/*
 bleveIndexer/MonogIndexing/csvw.bleve/store

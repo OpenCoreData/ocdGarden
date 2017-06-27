@@ -1,0 +1,97 @@
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix pav:   <http://purl.org/pav/> .
+@prefix freq:  <http://purl.org/cld/freq/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://opencoredata.org/dataset/geolink/geolinkvoid>      a     void:DatasetDescription ;
+        dcterms:description  "Desctiption for a set of graphs created for the GeoLink EarthCube BB"@en ;
+        dcterms:issued       "2015-11-07T12:41:38.69Z"^^xsd:dateTime ;
+        dcterms:title        "VoID Description"@en ;
+        pav:createdBy        <http://orcid.org/0000-0002-2257-9127> ;
+        pav:createdOn        "2015-11-07T12:41:38.69Z"^^xsd:dateTime ;
+        foaf:primaryTopic    <http://opencoredata.org/id/rdf/JRSO_cruises_gl>  ;
+        foaf:primaryTopic    <http://opencoredata.org/id/rdf/JRSO_deployments_gl>  ;
+        foaf:primaryTopic    <http://opencoredata.org/id/rdf/JRSO_holes_gl>  .
+
+<http://orcid.org/0000-0002-2257-9127>
+        a                 foaf:Person ;
+        foaf:family_name  "Fils" ;
+        foaf:givenname    "Douglas" ;
+        foaf:mbox         <mailto:dfils@oceanleadership.org> .
+
+
+<http://opencoredata.org/dataset/geolink/JRSO_cruises_gl>
+        a                           void:Dataset , dctypes:Dataset ;
+        dcterms:accrualPeriodicity  "Irregular" ;
+        dcterms:description         "Collection of cruise data (leg level) for IODP collected for GeoLink"@en ;
+        dcterms:issued              "2014-11-10T00:00:00.69Z"^^xsd:dateTime ;
+        dcterms:license             <http://creativecommons.org/licenses/by-sa/3.0/> ;
+        dcterms:publisher           <http://opencordata.org> ;
+        dcterms:title               "Open Core Data IODP Cruises/Expeditions/Legs GeoLink Dataset"@en ;
+        pav:authoredBy              <http://orcid.org/0000-0002-2257-9127> ;
+        pav:curatedBy               <http://orcid.org/0000-0002-2257-9127> ;
+        void:vocabulary             <http://purl.org/dc/terms/> ;
+        void:vocabulary             <http://schema.geolink.org/voc/> ;
+        void:vocabulary             <http://opencoredata.org/voc/1/> ;
+        void:vocabulary             <http://opencoredata.org/voc/janus/1/> ;
+        void:dataDump               <http://opencoredata.org/id/graph/JRSO_cruises_gl.ttl.gz> ;
+        dcterms:source              <http://iodp.tamu.edu/web/page/of/info> ;
+        pav:derivedFrom             <http://iodp.tamu.edu/web/page/of/info> ;
+        pav:version                 "0.2" ;
+        dcat:landingPage            <http://opencoredata.org/doc/graph/JRSO_cruises_gl> ;
+        dcat:downloadURL            <http://opencoredata.org/id/graph/JRSO_cruises_gl.ttl.gz> ;
+        dcat:mediaType              "rdf" .
+
+<http://opencoredata.org/dataset/geolink/JRSO_deployments_gl>
+        a                           void:Dataset , dctypes:Dataset ;
+        dcterms:accrualPeriodicity  "Irregular" ;
+        dcterms:description         "Collection of Science Party Deployment Information collected for GeoLink"@en ;
+        dcterms:issued              "2014-11-10T00:00:00.69Z"^^xsd:dateTime ;
+        dcterms:license             <http://creativecommons.org/licenses/by-sa/3.0/> ;
+        dcterms:publisher           <http://opencordata.org> ;
+        dcterms:title               "Open Core Data IODP Science Party Deployment Information GeoLink Dataset"@en ;
+        pav:authoredBy              <http://orcid.org/0000-0002-2257-9127> ;
+        pav:curatedBy               <http://orcid.org/0000-0002-2257-9127> ;
+        void:vocabulary             <http://purl.org/dc/terms/> ;
+        void:vocabulary             <http://schema.geolink.org/voc/> ;
+        void:vocabulary             <http://opencoredata.org/voc/1/> ;
+        void:vocabulary             <http://opencoredata.org/voc/janus/1/> ;
+        void:dataDump               <http://opencoredata.org/id/graph/JRSO_deployments_gl.ttl.gz> ;
+        dcterms:source              <http://iodp.tamu.edu/web/page/of/info> ;
+        pav:derivedFrom             <http://iodp.tamu.edu/web/page/of/info> ;
+        pav:version                 "0.2" ;
+        dcat:landingPage            <http://opencoredata.org/doc/graph/JRSO_deployments_gl> ;
+        dcat:downloadURL            <http://opencoredata.org/id/graph/JRSO_deployments_gl.ttl.gz> ;
+        dcat:mediaType              "rdf" .
+
+
+<http://opencoredata.org/dataset/geolink/JRSO_holes_gl>
+        a                           void:Dataset , dctypes:Dataset ;
+        dcterms:accrualPeriodicity  "Irregular" ;
+        dcterms:description         "Collection of cruise data (hole level) for IODP collected for GeoLink"@en ;
+        dcterms:issued              "2014-11-10T00:00:00.69Z"^^xsd:dateTime ;
+        dcterms:license             <http://creativecommons.org/licenses/by-sa/3.0/> ;
+        dcterms:publisher           <http://opencordata.org> ;
+        dcterms:title               "Open Core Data IODP Leg Site Hole GeoLink Dataset"@en ;
+        pav:authoredBy              <http://orcid.org/0000-0002-2257-9127> ;
+        pav:curatedBy               <http://orcid.org/0000-0002-2257-9127> ;
+        void:vocabulary             <http://purl.org/dc/terms/> ;
+        void:vocabulary             <http://schema.geolink.org/voc/> ;
+        void:vocabulary             <http://opencoredata.org/voc/1/> ;
+        void:vocabulary             <http://opencoredata.org/voc/janus/1/> ;
+        void:dataDump               <http://opencoredata.org/id/graph/JRSO_holes_gl.ttl.gz> ;
+        dcterms:source              <http://iodp.tamu.edu/web/page/of/info> ;
+        pav:derivedFrom             <http://iodp.tamu.edu/web/page/of/info> ;
+        pav:version                 "0.2" ;
+        dcat:landingPage            <http://opencoredata.org/doc/graph/JRSO_holes_gl> ;
+        dcat:downloadURL            <http://opencoredata.org/id/graph/JRSO_holes_gl.ttl.gz> ;
+        dcat:mediaType              "rdf" .
+
