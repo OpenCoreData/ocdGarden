@@ -30,7 +30,7 @@ type VoidDataset struct {
 func main() {
 	fmt.Println("VOID reader")
 	output := VoidReader() // pass a URI or file reference   return []VoidDataset
-	fmt.Println(output)
+	fmt.Printf("Datasets indexed from VoID file: %d \n", len(output))
 }
 
 func VoidReader() []VoidDataset {
@@ -45,13 +45,16 @@ func VoidReader() []VoidDataset {
 	// r is an io.Reader
 	g.Parse(nr, "text/turtle")
 
+	fmt.Printf("Read in file with %d triples\n", g.Len())
+
 	var vdsa []VoidDataset
 
-	triples := g.All(nil, nil, rdf2go.NewResource("http://rdfs.org/ns/Dataset"))
+	triples := g.All(nil, nil, rdf2go.NewResource("http://rdfs.org/ns/void#Dataset"))
 	for triple := range triples {
+
 		var vds VoidDataset
 
-		// fmt.Printf("Found the URI: %s \n", triples[triple].String())
+		fmt.Printf("Found the URI: %s \n", triples[triple].String())
 
 		vds.ID = triples[triple].Subject.RawValue()  //.String()  // hold what we are talking about
 		vds.URL = triples[triple].Subject.RawValue() // The ID is the URL for this LOD case
@@ -72,6 +75,9 @@ func VoidReader() []VoidDataset {
 		vds.LandingPage = getObject(g, triples[triple].Subject, rdf2go.NewResource("http://www.w3.org/ns/dcat#landingPage"))
 		vds.DownloadURL = getObject(g, triples[triple].Subject, rdf2go.NewResource("http://www.w3.org/ns/dcat#downloadURL"))
 		vds.MediaType = getObject(g, triples[triple].Subject, rdf2go.NewResource("http://www.w3.org/ns/dcat#mediaType"))
+
+		fmt.Println(vds.DownloadURL)
+
 		vdsa = append(vdsa, vds)
 	}
 
