@@ -119,9 +119,7 @@ const _ = grpc.SupportPackageIsVersion4
 // Client API for Greeter service
 
 type GreeterClient interface {
-	// Sends a greeting
 	SayHello(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (*HelloReply, error)
-	// Sends another greeting
 	SayHelloAgain(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (*HelloReply, error)
 	YAMLToSchema(ctx context.Context, in *YAMLFacilityMeta, opts ...grpc.CallOption) (*SchemaorgFacilityMeta, error)
 }
@@ -164,9 +162,7 @@ func (c *greeterClient) YAMLToSchema(ctx context.Context, in *YAMLFacilityMeta, 
 // Server API for Greeter service
 
 type GreeterServer interface {
-	// Sends a greeting
 	SayHello(context.Context, *HelloRequest) (*HelloReply, error)
-	// Sends another greeting
 	SayHelloAgain(context.Context, *HelloRequest) (*HelloReply, error)
 	YAMLToSchema(context.Context, *YAMLFacilityMeta) (*SchemaorgFacilityMeta, error)
 }

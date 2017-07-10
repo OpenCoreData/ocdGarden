@@ -7,15 +7,22 @@ option java_outer_classname = "HelloWorldProto";
 
 package helloworld;
 
-// The greeting service definition.
-service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
-   // Sends another greeting
-  rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
-  
-    rpc YAMLToSchema (YAMLFacilityMeta) returns (SchemaorgFacilityMeta) {}
+// needed to support REST gateway
+// import "/Users/dfils/src/go/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google/api/annotations.proto";
+// import "google/api/annotations.proto";   
 
+// The service definition.
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
+  rpc YAMLToSchema (YAMLFacilityMeta) returns (SchemaorgFacilityMeta) {}
+  // The following exposed a REST version of the RPC call
+  // rpc YAMLToSchema (YAMLFacilityMeta) returns (SchemaorgFacilityMeta) {
+  //   option (google.api.http) = {
+  //     post: "/v1/example/echo"
+  //     body: "*"
+  //   };
+  // }
 }
 
 // The request message containing the user's name.
@@ -27,13 +34,6 @@ message HelloRequest {
 message HelloReply {
   string message = 1;
 }
-
-// below here are some extension tests.  
-// Test 1, send in a YAML file, get back a JSON-LD version of 
-// it encoded in schema.org + extensions
-// service FacilityMetadata {
-//   rpc YAMLToSchema (YAMLFacilityMeta) returns (SchemaorgFacilityMeta) {}
-// }
 
 message YAMLFacilityMeta {
   string yaml = 1;

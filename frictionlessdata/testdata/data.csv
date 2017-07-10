@@ -1,0 +1,12 @@
+Leg	Site	Hole	Core	Core_type	Section_number	Section_type	Top_cm	Depth_mbsf	Page_id	Url
+199	1215	A	1	H	1	S		0	1	primedata/06.vcd/leg199/06_199_1215A_001H_01.pdf
+199	1215	A	2	H	1	S		1	1	primedata/06.vcd/leg199/06_199_1215A_002H_01.pdf
+199	1215	A	3	H	1	S		10	1	primedata/06.vcd/leg199/06_199_1215A_003H_01.pdf
+199	1215	A	4	H	1	S		20	1	primedata/06.vcd/leg199/06_199_1215A_004H_01.pdf
+199	1215	A	4	H	1	S		20	2	primedata/06.vcd/leg199/06_199_1215A_004H_01_2.pdf
+199	1215	A	5	H	1	S		29	1	primedata/06.vcd/leg199/06_199_1215A_005H_01.pdf
+199	1215	A	6	H	1	S		39	1	primedata/06.vcd/leg199/06_199_1215A_006H_01.pdf
+199	1215	A	7	H	1	C		47	1	primedata/06.vcd/leg199/06_199_1215A_007H_01.pdf
+199	1215	A	8	H	1	S		50	1	primedata/06.vcd/leg199/06_199_1215A_008H_01.pdf
+199	1215	A	9	H	1	S		59	1	primedata/06.vcd/leg199/06_199_1215A_009H_01.pdf
+199	1215	A	10	X	1	C		69	1	primedata/06.vcd/leg199/06_199_1215A_010X_CC.pdf
