@@ -19,18 +19,18 @@ type ProvPingBackURLs struct {
 func main() {
 	fmt.Println("Simple prov-aq demo client")
 
-	body, provLinks := getAResource("http://127.0.0.1:9900/rdf/graph/void.ttl")
+	body, provLinks := getAResource("http://opencoredata.org/rdf/graph/void.ttl")
 
 	fmt.Println(len(body)) // body of the resoruces we started with..   do whatever with it...
 
 	fmt.Println(provLinks)
 	// existingProv := getProvEntry(provLinks.HasProv) //  see what prov the resource has
 	// existingProv := getProvEntry("http://127.0.0.1:9900/id/rdf/graph/void.ttl/provenance") //  see what prov the resource has
-	existingProv := getProvEntry("http://127.0.0.1:9900/id/graph/void.ttl/provenance") //  see what prov the resource has
-	fmt.Println(string(existingProv))                                                  // body of existing prov for resources..  do whatever with it...
+	existingProv := getProvEntry("http://opencoredata.org/id/graph/void.ttl/provenance") //  see what prov the resource has
+	fmt.Println(string(existingProv))                                                    // body of existing prov for resources..  do whatever with it...
 
-	// doPingBack("http://127.0.0.1:9900/rdf/graph/void.ttl/pingback")
-	status := doPingBack("http://127.0.0.1:9900/rdf/graph/void.ttl/pingback")
+	// status := doPingBack(provLinks.PingBack)
+	status := doPingBack("http://openoredata.org/rdf/graph/void.ttl/pingback")
 	fmt.Println(status)
 }
 
