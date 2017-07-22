@@ -20,9 +20,8 @@ func main() {
 	fmt.Println("Simple prov-aq demo client")
 
 	// body, provLinks := getAResource("http://opencoredata.org/rdf/graph/void.ttl")
-	// body, provLinks := getAResource("http://opencore.ldeo.columbia.edu/rdf/graph/void.ttl")
-	// body, provLinks := getAResource("http://127.0.0.1:9900/rdf/graph/void.ttl")
 	body, provLinks := getAResource("http://opencore.ldeo.columbia.edu/rdf/graph/void.ttl")
+	// body, provLinks := getAResource("http://127.0.0.1:9900/rdf/graph/void.ttl")
 
 	fmt.Println(len(body)) // body of the resoruces we started with..   do whatever with it...
 
