@@ -5,68 +5,65 @@
     <!-- Import Web Component polyfills and all Vaadin Core Elements. -->
 
     <!-- CDN -->
-    <script src="https://cdn.vaadin.com/vaadin-core-elements/latest/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <!-- <script src="https://cdn.vaadin.com/vaadin-core-elements/latest/webcomponentsjs/webcomponents-lite.min.js"></script> -->
     <link href="https://cdn.vaadin.com/vaadin-core-elements/latest/vaadin-core-elements/vaadin-core-elements.html" rel="import">
 
+    <script src="./bower_components/webcomponentsjs/webcomponents-lite.min.js" />
+    <link rel="import" href="./bower_components/iron-ajax/iron-ajax.html">
+
+
     <!-- Bower -->
-    <!-- <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-   <link href="bower_components/vaadin-core-elements/vaadin-core-elements.html" rel="import"> -->
+    <!-- <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js">
+    </script>
+    <link href="bower_components/vaadin-core-elements/vaadin-core-elements.html" rel="import"> -->
 
     <!-- ZIP archive -->
     <!-- <script src="deps/webcomponentsjs/webcomponents-lite.min.js"></script>
    <link href="deps/vaadin-core-elements/vaadin-core-elements.html" rel="import"> -->
 </head>
 
+
+
 <body>
 
-    <vaadin-grid>
+    <h1>CSDCO grid replacement</h1>
+    <template is="dom-bind">
+  <!-- Fetch an array of users to be shown in the grid -->
+<iron-ajax auto url="https://demo.vaadin.com/demo-data/1.0/people?count=200" handle-as="json" last-response="{{users}}"></iron-ajax>
 
-        <vaadin-grid-column>
-            <template class="header">First Name</template>
-            <template>[[item.firstName]]</template>
-        </vaadin-grid-column>
 
-        <vaadin-grid-column>
-            <template class="header">Last Name</template>
-            <template>[[item.lastName]]</template>
-        </vaadin-grid-column>
+    <vaadin-grid aria-label="Basic Binding Example" items="[[users.result]]">
 
-        <vaadin-grid-column>
-            <template class="header">Email</template>
-            <template><a href="[[item.email]]">[[item.email]]</a></template>
-        </vaadin-grid-column>
+        <vaadin-grid-column width="50px" flex-grow="0">
+            <template class="header">#</template>
+    <template>[[index]]</template>
+    <!-- If necessary, the footer could be set using <template class="footer"> -->
+    <template class="footer">#</template>
+    </vaadin-grid-column>
+
+    <vaadin-grid-column>
+        <template class="header">First Name</template>
+        <template>[[item.firstName]]</template>
+        <template class="footer">First Name</template>
+    </vaadin-grid-column>
+
+    <vaadin-grid-column>
+        <template class="header">Last Name</template>
+        <template>[[item.lastName]]</template>
+        <template class="footer">Last Name</template>
+    </vaadin-grid-column>
+
+    <vaadin-grid-column width="150px">
+        <template class="header">Address</template>
+        <template>
+        <p style="white-space: normal">[[item.address.street]], [[item.address.city]]</p>
+      </template>
+        <template class="footer">Address</template>
+    </vaadin-grid-column>
+
 
     </vaadin-grid>
-
-    <script>
-        // The Web Components polyfill introduces a custom event we can
-        // use to determine when the custom elements are ready to be used.
-        document.addEventListener("WebComponentsReady", function() {
-
-            // Reference to the grid element.
-            var grid = document.querySelector("vaadin-grid");
-
-            // Add some example data as an array.
-            grid.items = [{
-                "firstName": "Hugo",
-                "lastName": "Romero",
-                "email": "hugo.romero@example.com"
-            }, {
-                "firstName": "Nieves",
-                "lastName": "Diez",
-                "email": "nieves.diez@example.com"
-            }, {
-                "firstName": "Esteban",
-                "lastName": "Vega",
-                "email": "esteban.vega@example.com"
-            }, {
-                "firstName": "Roxane",
-                "lastName": "Diez",
-                "email": "roxane.diez@example.com"
-            }];
-        });
-    </script>
-
+    </template>
 </body>
 
 </html>
