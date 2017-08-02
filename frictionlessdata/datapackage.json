@@ -1,1 +1,140 @@
-{"name": "my_sleep_duration", "resources": [{"data": [7, 8, 5, 6, 9, 7, 8], "name": "data"}]}
+{
+    "name": "154_925C_JanusChemCarb_FIUtooys",
+    "resources": [{
+        "path": "./testdata/data.csv",
+        "name": "data",
+        "schema": {
+            "fields": [{
+                    "description": "",
+                    "format": "default",
+                    "type": "geojson",
+                    "name": "Leg",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Site",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Hole",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Core",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Core_type",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Section_number",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Section_type",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Top_cm",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Bot_cm",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Depth_mbsf",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Inor_c_wt_pct",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Caco3_wt_pct",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Tot_c_wt_pct",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Org_c_wt_pct",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Nit_wt_pct",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "Sul_wt_pct",
+                    "title": ""
+                },
+                {
+                    "description": "",
+                    "format": "default",
+                    "type": "duration",
+                    "name": "H_wt_pct",
+                    "title": ""
+                }
+            ]
+        }
+    }],
+    "title": "154 925 C JanusChemCarb",
+    "views": [{
+        "id": "graph",
+        "label": "Graph",
+        "type": "Graph",
+        "state": {
+            "group": "Depth_mbsf",
+            "series": ["Caco3_wt_pct", "Inor_c_wt_pct"],
+            "graphType": "points"
+        }
+    }]
+}

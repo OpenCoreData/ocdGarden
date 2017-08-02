@@ -28,6 +28,16 @@ go run main.go pack ./testdata/
 ```
 
 
+testing
+```
+http://data.okfn.org/tools/view  or http://goodtables.okfnlabs.org/
+
+simple-httpd
+
+ngrok
+```
+
+
 http://frictionlessdata.io/ 
 https://github.com/the42/datapackage (very old)
 https://github.com/frictionlessdata/tableschema-go 

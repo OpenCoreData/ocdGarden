@@ -1,107 +1,148 @@
 {
- "@context": "context string here",
- "dc:license": {
-  "@id": "http://opendefinition.org/licenses/cc-by/"
- },
- "dc:modified": {
-  "@type": "xsd:date",
-  "@value": "Sunday, 25-Oct-15 23:06:10 EDT"
- },
- "dc:publisher": {
-  "schema:name": "Open Core Data",
-  "schema:url": {
-   "@id": "http://opencoredata.org"
-  }
- },
- "dc:title": "199_1215A_JanusVcdImage_JcAruSDk.csv",
- "dcat:keyword": [
-  "DSDP",
-  "ODP",
-  "IODP",
-  "JanusVcdImage"
- ],
- "tableSchema": {
-  "aboutUrl": "",
-  "columns": [
-   {
-    "datatype": "int64",
-    "dc:description": "",
-    "name": "Leg",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "int64",
-    "dc:description": "",
-    "name": "Site",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "string",
-    "dc:description": "",
-    "name": "Hole",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "int64",
-    "dc:description": "",
-    "name": "Core",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "string",
-    "dc:description": "",
-    "name": "Core_type",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "int64",
-    "dc:description": "",
-    "name": "Section_number",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "string",
-    "dc:description": "",
-    "name": "Section_type",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "float64",
-    "dc:description": "",
-    "name": "Top_cm",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "float64",
-    "dc:description": "",
-    "name": "Depth_mbsf",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "int64",
-    "dc:description": "",
-    "name": "Page_id",
-    "required": false,
-    "titles": []
-   },
-   {
-    "datatype": "string",
-    "dc:description": "",
-    "name": "Url",
-    "required": false,
-    "titles": []
-   }
-  ],
-  "primaryKey": ""
- },
- "url": "http://opencoredata.org/id/dataset/045deec9-94b2-445a-8fd2-43dbe90841fb"
+    "@context": "context string here",
+    "dc:license": {
+        "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:modified": {
+        "@type": "xsd:date",
+        "@value": "Sunday, 25-Oct-15 14:59:07 EDT"
+    },
+    "dc:publisher": {
+        "schema:name": "Open Core Data",
+        "schema:url": {
+            "@id": "http://opencoredata.org"
+        }
+    },
+    "dc:title": "154_925C_JanusChemCarb_FIUtooys.csv",
+    "dcat:keyword": [
+        "DSDP",
+        "ODP",
+        "IODP",
+        "JanusChemCarb"
+    ],
+    "tableSchema": {
+        "aboutUrl": "",
+        "columns": [{
+                "datatype": "int64",
+                "dc:description": "",
+                "name": "Leg",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "int64",
+                "dc:description": "",
+                "name": "Site",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "string",
+                "dc:description": "",
+                "name": "Hole",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "int64",
+                "dc:description": "",
+                "name": "Core",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "string",
+                "dc:description": "",
+                "name": "Core_type",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "int64",
+                "dc:description": "",
+                "name": "Section_number",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "string",
+                "dc:description": "",
+                "name": "Section_type",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "float64",
+                "dc:description": "",
+                "name": "Top_cm",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "float64",
+                "dc:description": "",
+                "name": "Bot_cm",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "float64",
+                "dc:description": "",
+                "name": "Depth_mbsf",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "sql.NullFloat64",
+                "dc:description": "",
+                "name": "Inor_c_wt_pct",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "sql.NullFloat64",
+                "dc:description": "",
+                "name": "Caco3_wt_pct",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "sql.NullFloat64",
+                "dc:description": "",
+                "name": "Tot_c_wt_pct",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "sql.NullFloat64",
+                "dc:description": "",
+                "name": "Org_c_wt_pct",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "sql.NullFloat64",
+                "dc:description": "",
+                "name": "Nit_wt_pct",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "sql.NullFloat64",
+                "dc:description": "",
+                "name": "Sul_wt_pct",
+                "required": false,
+                "titles": []
+            },
+            {
+                "datatype": "sql.NullFloat64",
+                "dc:description": "",
+                "name": "H_wt_pct",
+                "required": false,
+                "titles": []
+            }
+        ],
+        "primaryKey": ""
+    },
+    "url": "http://opencoredata.org/id/dataset/4de38532-c7b7-435e-9a0a-d329ebfe6b79"
 }
