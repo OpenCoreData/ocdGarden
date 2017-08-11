@@ -111,7 +111,6 @@ func openIndex(indexPath string) (bleve.Index, error) {
 
 	if bleveIdx == nil {
 		var err error
-		// bleveIdx, err = bleve.Open(indexPath)
 		bleveIdx, err = bleve.OpenUsing(indexPath, map[string]interface{}{"read_only": true})
 		if err != nil {
 			return nil, err
