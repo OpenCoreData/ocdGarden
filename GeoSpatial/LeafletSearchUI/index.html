@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quick Start - Leaflet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <p>Test doc to see about reading the bounds of the map as an input option</p>
+    NE Lat: <span id="nelat"></span><br/> NE Lng: <span id="nelng"></span><br/> SW Lat: <span id="swlat"></span><br/> SW Lng: <span id="swlng"></span><br/>
+
+    <div id="mapid" style="margin:40px;width: 600px; height: 400px;"></div>
+    <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 3);
+
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            id: 'mapbox.streets'
+        }).addTo(mymap);
+
+        // Get map bounds from Leaflet.  getBounds() returns an object
+        function onMapMoved(e) {
+            var bbox = mymap.getBounds();
+            console.log(bbox);
+            var id1 = $("#nelat");
+            var id2 = $("#nelng");
+            var id3 = $("#swlat");
+            var id4 = $("#swlng");
+            id1[0].innerHTML = bbox._northEast.lat;
+            id2[0].innerHTML = bbox._northEast.lng;
+            id3[0].innerHTML = bbox._southWest.lat;
+            id4[0].innerHTML = bbox._southWest.lng;
+        }
+
+
+
+        // Call getData() and show spinner when the map is dragged
+        mymap.on('dragend', onMapMoved);
+        mymap.on('zoomend', onMapMoved);
+    </script>
+
+</body>
+
+</html>
