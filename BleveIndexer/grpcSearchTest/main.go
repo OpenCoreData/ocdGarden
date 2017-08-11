@@ -20,13 +20,15 @@ const (
 // server is used to implement package SearchServer.
 type server struct{}
 
-// SayHello implements package SearchServer
+// DoSearch implements search
 func (s *server) DoSearch(ctx context.Context, in *pb.SearchRequest) (*pb.SearchReply, error) {
 	results := searchCall(in.Name, in.Index)
 	return &pb.SearchReply{Message: "Results: " + results}, nil
 }
 
 func main() {
+	log.Println("Opening indexes")
+
 	log.Println("Loading grpc server")
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
@@ -45,6 +47,7 @@ func searchCall(phrase string, searchIndex string) string {
 	log.Printf("Search Term: %s \n", phrase)
 
 	// Open all the index files
+	// TODO  really should only open the ones I already know will be in the index alias
 	index1, err := openIndex("/Users/dfils/Data/OCDDataVolumes/indexes/abstracts.bleve")
 	if err != nil {
 		log.Printf("Error with index1 alias: %v", err)
@@ -76,17 +79,19 @@ func searchCall(phrase string, searchIndex string) string {
 		log.Println("All indexes active")
 	}
 
+	// Set up query and search
 	// query := bleve.NewMatchQuery(phrase)
 	query := bleve.NewQueryStringQuery(phrase)
 	search := bleve.NewSearchRequestOptions(query, 10, 0, false) // no explanation
 	search.Highlight = bleve.NewHighlight()                      // need Stored and IncludeTermVectors in index
 	// search.Highlight = bleve.NewHighlightWithStyle("html") // need Stored and IncludeTermVectors in index
+
+	var jsonResults []byte // will hold our results
+
+	// do search and get results
 	searchResults, err := index.Search(search)
-
-	var jsonResults []byte
-
 	if err != nil {
-		log.Printf("Error in index call: %v", err)
+		log.Printf("Error in search call: %v", err)
 	} else {
 		hits := searchResults.Hits
 		jsonResults, err = json.MarshalIndent(hits, " ", " ")
