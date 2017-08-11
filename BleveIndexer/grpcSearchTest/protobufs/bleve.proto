@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+// How many language options might be useful?
+// The following Java options are just here in case someone build for Java..  should include python too?
+// option java_multiple_files = true;
+// option java_package = "org.opencoredata.grpc.examples.helloworld";
+// option java_outer_classname = "HelloWorldProto";
+
+package protobufs;
+
+// The service definition.
+service Search {
+  rpc DoSearch (SearchRequest) returns (SearchReply) {}
+}
+
+// The request message containing the user's name.
+message SearchRequest {
+  string name = 1;
+  string index = 2;
+}
+
+// The response message containing the greetings
+message SearchReply {
+  string message = 1;
+}

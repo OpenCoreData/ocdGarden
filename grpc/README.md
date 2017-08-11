@@ -13,8 +13,10 @@ go get -u github.com/golang/protobuf/protoc-gen-go
 
 The compiler plugin, protoc-gen-go, will be installed in $GOBIN, defaulting to $GOPATH/bin. It must be in your $PATH for the protocol compiler, protoc, to find it.
 
+protoc is in my home bin dir...
 ```
 export PATH=$PATH:$GOPATH/bin
+export PATH=~/bin/:$PATH
 ```
 
 Proto building  (no REST gateway option in proto file)
