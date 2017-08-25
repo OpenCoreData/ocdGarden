@@ -1,0 +1,115 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../iron-collapse/iron-collapse.html">
+<link rel="import" href="../paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="../paper-button/paper-button.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+
+<dom-module id="p418-geobox">
+    <template>
+    <style>
+      :host {
+        display: block;
+      }
+</style>
+<style>
+  .collapse-content {
+    padding: 15px;
+    border: 1px solid #dedede;
+  }
+</style>
+<style is="custom-style">
+  paper-button.custom {
+    --paper-button-ink-color: var(--paper-pink-a200);
+    /* These could also be individually defined for each of the
+      specific css classes, but we'll just do it once as an example */
+    --paper-button-flat-keyboard-focus: {
+      background-color: var(--paper-pink-a200);
+      color: white !important;
+    };
+    --paper-button-raised-keyboard-focus: {
+      background-color: var(--paper-pink-a200) !important;
+      color: white !important;
+    };
+  }
+  paper-button.custom:hover {
+    background-color: var(--paper-indigo-100);
+  }
+  paper-button.pink {
+    color: var(--paper-pink-a200);
+
+  }
+  paper-button.indigo {
+    background-color: var(--paper-indigo-500);
+    color: white;
+    --paper-button-raised-keyboard-focus: {
+      background-color: var(--paper-pink-a200) !important;
+      color: white !important;
+    };
+  }
+  paper-button.green {
+    background-color: var(--paper-green-500);
+    color: white;
+  }
+  paper-button.green[active] {
+    background-color: var(--paper-red-500);
+  }
+  paper-button.disabled {
+    color: white;
+  }
+</style>
+      <!-- <paper-toggle-button id="toggleslider" on-change="toggle2" checked={{test}}>Constrain by map</paper-toggle-button> -->
+      
+    <paper-button  toggles raised class="custom green" on-click="toggle" my-attribute="collapse1">toggle map</paper-button>
+
+<iron-collapse id="collapse1" class="collapse">
+  <div class="collapse-content"  opened$="[[opened]]">
+    <div>
+   <p>Use map approach used in geocomponents leaflet work</p>
+
+
+    </div>
+  </div>
+</iron-collapse>
+
+    <h2>Map for [[prop1]]!</h2>
+  </template>
+
+
+    <script>
+        /**
+         * `p418-geobox`
+         * Build a bounding box search string
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class P418Geobox extends Polymer.Element {
+            static get is() {
+
+                return 'p418-geobox';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'p418-geobox'
+                    }
+                };
+            }
+
+            toggle(e) {
+                //console.log(this);
+                var id = e.target.getAttribute('my-attribute');
+                console.log(id);
+                this.shadowRoot.querySelector('#' + id).toggle();
+                //this.shadowRoot.querySelector('.collapse').toggle();
+            }
+
+        }
+
+
+        window.customElements.define(P418Geobox.is, P418Geobox);
+    </script>
+</dom-module>

@@ -10,13 +10,31 @@
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById('mapid');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+
+
 </head>
 
 <body>
     <p>Test doc to see about reading the bounds of the map as an input option</p>
     NE Lat: <span id="nelat"></span><br/> NE Lng: <span id="nelng"></span><br/> SW Lat: <span id="swlat"></span><br/> SW Lng: <span id="swlng"></span><br/>
 
+    <button onclick="myFunction()">Use map constraints</button>
+
+
+
     <div id="mapid" style="margin:40px;width: 600px; height: 400px;"></div>
+
+
     <script>
         var mymap = L.map('mapid').setView([51.505, -0.09], 3);
 
