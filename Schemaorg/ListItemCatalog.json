@@ -1,0 +1,38 @@
+{
+    "@context": "http://schema.org",
+    "@type": "ItemList",
+    "name": "Janus Catalog Collection",
+    "itemListOrder": "unordered",
+    "numberOfItems": 3,
+    "itemListElement": [{
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@type": "DataCatalog",
+                "description": "Data set for measurement JanusVcdImage and leg 204",
+                "name": "JanusVcdImage204",
+                "url": "http://opencoredata.org/collections/measurement/JanusVcdImage/204"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "DataCatalog",
+                "description": "Data set for measurement JanusVcdImage and leg 204",
+                "name": "JanusVcdImage2041",
+                "url": "http://opencoredata.org/collections/measurement/JanusVcdImage/2041"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "DataCatalog",
+                "description": "Data set for measurement JanusVcdImage and leg 204",
+                "name": "JanusVcdImage2042",
+                "url": "http://opencoredata.org/collections/measurement/JanusVcdImage/2042"
+            }
+        }
+    ]
+}

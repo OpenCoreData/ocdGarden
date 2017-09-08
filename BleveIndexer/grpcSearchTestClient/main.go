@@ -62,8 +62,6 @@ func simpleCall(term string, index string) {
 	defer conn.Close()
 	c := pb.NewSearchClient(conn)
 
-	// Contact the server and print out its response.
-
 	r, err := c.DoSearch(context.Background(), &pb.SearchRequest{Name: term, Index: index})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)

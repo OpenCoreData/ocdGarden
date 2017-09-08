@@ -14,6 +14,9 @@ http://frictionlessdata.io/guides/data-package/
 http://frictionlessdata.io/data-packages/
 
 
+### Go lang packages
+The go based libraries are evolving quickly.  Ref:  https://github.com/frictionlessdata/tableschema-go
+
 ### Python
 The python tools are far more mature.   Ref: https://github.com/frictionlessdata/datapackage-py 
 

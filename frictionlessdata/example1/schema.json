@@ -1,0 +1,25 @@
+{
+    "fields": [
+        {
+            "name": "1",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "39",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Paul",
+            "type": "string",
+            "format": "default"
+        }
+    ],
+    "primaryKey": null,
+    "foreignKeys": {
+        "reference": {
+            "fields": null
+        }
+    }
+}
