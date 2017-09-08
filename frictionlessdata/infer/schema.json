@@ -1,0 +1,25 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "age",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "format": "default"
+        }
+    ],
+    "primaryKey": null,
+    "foreignKeys": {
+        "reference": {
+            "fields": null
+        }
+    }
+}
