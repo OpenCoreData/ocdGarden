@@ -1,0 +1,129 @@
+{
+    "fields": [{
+            "name": "Leg",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Site",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Hole",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Core",
+            "type": "boolean",
+            "format": "default"
+        },
+        {
+            "name": "Core_type",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Section_number",
+            "type": "boolean",
+            "format": "default"
+        },
+        {
+            "name": "Section_type",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Top_cm",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Depth_mbsf",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Section_id",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Density",
+            "type": "boolean",
+            "format": "default"
+        },
+        {
+            "name": "Run_number",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Run_timestamp",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Core_status",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Liner_status",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Requested_daq_interval",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "Requested_daq_period",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Actual_daq_period",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Measured_counts",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Core_diameter",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "Calibration_timestamp",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Calib_density_m0",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "Calib_density_m1",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "Calib_density_mse",
+            "type": "number",
+            "format": "default"
+        }
+    ],
+    "primaryKey": null,
+    "foreignKeys": {
+        "reference": {
+            "fields": null
+        }
+    }
+}

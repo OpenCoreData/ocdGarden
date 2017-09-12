@@ -1,0 +1,198 @@
+{
+ "@context": "context string here",
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@type": "xsd:date",
+  "@value": "Sunday, 25-Oct-15 16:45:33 EDT"
+ },
+ "dc:publisher": {
+  "schema:name": "Open Core Data",
+  "schema:url": {
+   "@id": "http://opencoredata.org"
+  }
+ },
+ "dc:title": "208_1262C_JanusGraSection_tALVlUMg.csv",
+ "dcat:keyword": [
+  "DSDP",
+  "ODP",
+  "IODP",
+  "JanusGraSection"
+ ],
+ "tableSchema": {
+  "aboutUrl": "",
+  "columns": [
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Leg",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Site",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Hole",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Core",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Core_type",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Section_number",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Section_type",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Top_cm",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Depth_mbsf",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Section_id",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Density",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Run_number",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Run_timestamp",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Core_status",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Liner_status",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Requested_daq_interval",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Requested_daq_period",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Actual_daq_period",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Measured_counts",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Core_diameter",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Calibration_timestamp",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Calib_density_m0",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Calib_density_m1",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Calib_density_mse",
+    "required": false,
+    "titles": []
+   }
+  ],
+  "primaryKey": ""
+ },
+ "url": "http://opencoredata.org/id/dataset/ac1786b3-0caf-4b3b-a59b-60afd208aa8d"
+}

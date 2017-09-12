@@ -158,7 +158,7 @@ func (s *Schema) SaveToFile(path string) error {
 // the schema field value can not be unmarshalled to the struct field type.
 func (s *Schema) Decode(row []string, out interface{}) error {
 	if reflect.ValueOf(out).Kind() != reflect.Ptr || reflect.Indirect(reflect.ValueOf(out)).Kind() != reflect.Struct {
-		return fmt.Errorf("UnmarshalRow only accepts a pointer to a struct.")
+		return fmt.Errorf("can only decode pointer to structs")
 	}
 	outv := reflect.Indirect(reflect.ValueOf(out))
 	outt := outv.Type()
@@ -166,27 +166,49 @@ func (s *Schema) Decode(row []string, out interface{}) error {
 		fieldValue := outv.Field(i)
 		if fieldValue.CanSet() { // Only consider exported fields.
 			field := outt.Field(i)
-			fieldName := strings.ToLower(field.Name)
-			f, fieldIndex := s.GetField(fieldName)
+			f, fieldIndex := s.GetField(field.Name)
 			if fieldIndex != InvalidPosition {
 				cell := row[fieldIndex]
 				if s.isMissingValue(cell) {
 					continue
 				}
-				v, err := f.UnmarshalString(cell)
+				v, err := f.Decode(cell)
 				if err != nil {
 					return err
 				}
 				toSetValue := reflect.ValueOf(v)
 				toSetType := toSetValue.Type()
 				if !toSetType.ConvertibleTo(field.Type) {
-					return fmt.Errorf("value:%s field:%s - can not convert from %v to %v", fieldName, cell, toSetType, field.Type)
+					return fmt.Errorf("value:%s field:%s - can not convert from %v to %v", field.Name, cell, toSetType, field.Type)
 				}
 				fieldValue.Set(toSetValue.Convert(field.Type))
 			}
 		}
 	}
 	return nil
+}
+
+// Encode encodes struct into a row. This method can only encode structs (or pointer to structs) and
+// will error out if nil is passed.
+func (s *Schema) Encode(in interface{}) ([]string, error) {
+	inValue := reflect.Indirect(reflect.ValueOf(in))
+	if inValue.Kind() != reflect.Struct {
+		return nil, fmt.Errorf("can only encode structs and does not support nil pointers")
+	}
+	inType := inValue.Type()
+	row := make([]string, inType.NumField())
+	for i := 0; i < inType.NumField(); i++ {
+		structFieldValue := inValue.Field(i)
+		f, fieldIndex := s.GetField(inType.Field(i).Name)
+		if fieldIndex != InvalidPosition {
+			r, err := f.Encode(structFieldValue.Interface())
+			if err != nil {
+				return nil, err
+			}
+			row[fieldIndex] = r
+		}
+	}
+	return row, nil
 }
 
 func (s *Schema) isMissingValue(value string) bool {
@@ -283,4 +305,21 @@ func (s *Schema) DecodeTable(tab table.Table, out interface{}) error {
 	}
 	outv.Elem().Set(slicev.Slice(0, i))
 	return nil
+}
+
+// EncodeTable encodes each element (struct) of the passed-in slice and
+func (s *Schema) EncodeTable(in interface{}) ([][]string, error) {
+	inVal := reflect.Indirect(reflect.ValueOf(in))
+	if inVal.Kind() != reflect.Slice {
+		return nil, fmt.Errorf("tables must be slice of structs")
+	}
+	var t [][]string
+	for i := 0; i < inVal.Len(); i++ {
+		r, err := s.Encode(inVal.Index(i).Interface())
+		if err != nil {
+			return nil, err
+		}
+		t = append(t, r)
+	}
+	return t, nil
 }

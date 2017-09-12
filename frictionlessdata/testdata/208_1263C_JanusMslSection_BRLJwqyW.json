@@ -1,0 +1,205 @@
+{
+ "@context": "context string here",
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@type": "xsd:date",
+  "@value": "Sunday, 25-Oct-15 18:03:48 EDT"
+ },
+ "dc:publisher": {
+  "schema:name": "Open Core Data",
+  "schema:url": {
+   "@id": "http://opencoredata.org"
+  }
+ },
+ "dc:title": "208_1263C_JanusMslSection_BRLJwqyW.csv",
+ "dcat:keyword": [
+  "DSDP",
+  "ODP",
+  "IODP",
+  "JanusMslSection"
+ ],
+ "tableSchema": {
+  "aboutUrl": "",
+  "columns": [
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Leg",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Site",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Hole",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Core",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Core_type",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Section_number",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Section_type",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Top_cm",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Depth_mbsf",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "int64",
+    "dc:description": "",
+    "name": "Section_id",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Magnetic_susceptibility",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "float64",
+    "dc:description": "",
+    "name": "Corrected_susceptibility",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Run_number",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "string",
+    "dc:description": "",
+    "name": "Run_timestamp",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullString",
+    "dc:description": "",
+    "name": "Core_status",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullString",
+    "dc:description": "",
+    "name": "Liner_status",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Requested_daq_interval",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullInt64",
+    "dc:description": "",
+    "name": "Requested_daqs_per_sample",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Bkgd_susceptibility",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullInt64",
+    "dc:description": "",
+    "name": "Bkgd_elapsed_zero_time",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Core_temperature",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Loop_temperature",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullInt64",
+    "dc:description": "",
+    "name": "Sample_elapsed_zero_time",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Actual_daq_period",
+    "required": false,
+    "titles": []
+   },
+   {
+    "datatype": "sql.NullFloat64",
+    "dc:description": "",
+    "name": "Core_diameter",
+    "required": false,
+    "titles": []
+   }
+  ],
+  "primaryKey": ""
+ },
+ "url": "http://opencoredata.org/id/dataset/6bf7c266-0299-4eeb-b29b-117222931927"
+}
