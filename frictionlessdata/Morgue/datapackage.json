@@ -1,7 +1,7 @@
 {
     "name": "154_925C_JanusChemCarb_FIUtooys",
     "resources": [{
-        "path": "./testdata/data.csv",
+        "path": "./data.csv",
         "name": "data",
         "schema": {
             "fields": [{
