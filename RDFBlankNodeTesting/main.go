@@ -5,10 +5,8 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strings"
 	"time"
 
-	"github.com/deiu/rdf2go"
 	"github.com/kazarena/json-gold/ld"
 	tstore "github.com/wallix/triplestore"
 )
@@ -29,7 +27,7 @@ type Person struct {
 
 func main() {
 
-	const jsld = `{
+	const jsld1 = `{
 		"@context": {
 		  "opencore":"http://opencore.org/voc/1",
 		  "glview":"http://glview.org/voc/1/",
@@ -112,17 +110,35 @@ func main() {
 	  }`
 	// ts()
 
-	fmt.Println(jsonLDToRDF(jsld))
+	// fmt.Println(jsonLDToRDF(jsld1))
 
-	// trying rdf2go
-	baseUri := "https://example.org/foo" // Set a base URI
-	g := rdf2go.NewGraph(baseUri)        // Create a new graph
-	r := strings.NewReader(jsld)
-	r2 := strings.NewReader(jsld2)
-	g.Parse(r, "application/ld+json")  // r is an io.Reader
-	g.Parse(r2, "application/ld+json") // r is an io.Reader
+	ntstrings1 := jsonLDToRDF(jsld1)
+	ntstrings2 := jsonLDToRDF(jsld2)
 
-	fmt.Print(g.String())
+	ntsUniqueBN1 := bnodeUnique(ntstrings1)
+	ntsUniqueBN2 := bnodeUnique(ntstrings2)
+
+	fmt.Println(ntsUniqueBN1)
+	fmt.Println(ntsUniqueBN2)
+
+	// RDF2GO: trying rdf2go  WILL FAIL DUE TO BLANK NODE HANDLING
+	// baseUri := "https://example.org/foo" // Set a base URI
+	// g := rdf2go.NewGraph(baseUri)        // Create a new graph
+	// r := strings.NewReader(jsld)
+	// r2 := strings.NewReader(jsld2)
+	// g.Parse(r, "application/ld+json")  // r is an io.Reader
+	// g.Parse(r2, "application/ld+json") // r is an io.Reader
+	// fmt.Print(g.String())
+}
+
+func bnodeUnique(ntstring string) string {
+
+	// get md5 of ntstring to act as UUID
+	// locate the bnodes (how?)
+	// replace with some new UUID for bnodes
+	// return
+
+	return ntstring
 }
 
 // Trys to take a simple JSON-LD string and process it.

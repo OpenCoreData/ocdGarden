@@ -30,6 +30,15 @@ protoc -I /usr/local/include -I helloworld/ -I$GOPATH/src    -I$GOPATH/src/githu
 
 ```
 
+Building the python library with protoc
+```
+export SRC_DIR=source_dir
+~/bin/protoc -I=$SRC_DIR --python_out=./libraries $SRC_DIR/bleve.proto
+
+To get client code needed..  you should really use
+~/anaconda/bin/python -m grpc_tools.protoc -I./protobufs --python_out=./libraries/ --grpc_python_out=./libraries/ ./protobufs/bleve.proto
+```
+
 
 ### REST gateway
 
