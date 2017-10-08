@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"reflect"
+	"regexp"
 )
 
 // Default for schema fields.
@@ -16,6 +17,9 @@ const (
 var (
 	defaultTrueValues  = []string{"yes", "y", "true", "t", "1"}
 	defaultFalseValues = []string{"no", "n", "false", "f", "0"}
+	defaultDecimalChar = "."
+	defaultGroupChar   = ","
+	defaultBareNumber  = true
 )
 
 // Field types.
@@ -33,12 +37,29 @@ const (
 	YearType      = "year"
 	DurationType  = "duration"
 	GeoPointType  = "geopoint"
+	AnyType       = "any"
 )
 
 // Formats.
 const (
 	AnyDateFormat = "any"
 )
+
+// Constraints can be used by consumers to list constraints for validating
+// field values.
+type Constraints struct {
+	// Required indicates whether this field is allowed to be null.
+	// Schema.MissingValues define how the string representation can
+	// represent null values.
+	Required bool `json:"required,omitempty"`
+
+	Maximum         string `json:"maximum,omitempty"`
+	Minimum         string `json:"minimum,omitempty"`
+	MinLength       int    `json:"minLength,omitempty"`
+	MaxLength       int    `json:"maxLength,omitempty"`
+	Pattern         string `json:"pattern,omitempty"`
+	compiledPattern *regexp.Regexp
+}
 
 // Field describes a single field in the table schema.
 // More: https://specs.frictionlessdata.io/table-schema/#field-descriptors
@@ -56,6 +77,25 @@ type Field struct {
 	// https://specs.frictionlessdata.io/table-schema/#boolean
 	TrueValues  []string `json:"trueValues,omitempty"`
 	FalseValues []string `json:"falseValues,omitempty"`
+
+	// Number/Integer properties.
+
+	// A string whose value is used to represent a decimal point within the number. The default value is ".".
+	DecimalChar string `json:"decimalChar,omitempty"`
+	// A string whose value is used to group digits within the number. The default value is null. A common value is "," e.g. "100,000".
+	GroupChar string `json:"groupChar,omitempty"`
+	// If true the physical contents of this field must follow the formatting constraints already set out.
+	// If false the contents of this field may contain leading and/or trailing non-numeric characters which
+	// are going to be stripped. Default value is true:
+	BareNumber bool `json:"bareNumber,omitempty"`
+
+	// MissingValues is a map which dictates which string values should be treated as null
+	// values.
+	MissingValues map[string]struct{} `json:"-"`
+
+	// Constraints can be used by consumers to list constraints for validating
+	// field values.
+	Constraints Constraints
 }
 
 // UnmarshalJSON sets *f to a copy of data. It will respect the default values
@@ -68,44 +108,63 @@ func (f *Field) UnmarshalJSON(data []byte) error {
 		Format:      defaultFieldFormat,
 		TrueValues:  defaultTrueValues,
 		FalseValues: defaultFalseValues,
+		DecimalChar: defaultDecimalChar,
+		GroupChar:   defaultGroupChar,
+		BareNumber:  defaultBareNumber,
 	}
 	if err := json.Unmarshal(data, u); err != nil {
 		return err
 	}
 	*f = Field(*u)
+
+	if f.Constraints.Pattern != "" {
+		p, err := regexp.Compile(f.Constraints.Pattern)
+		if err != nil {
+			return err
+		}
+		f.Constraints.compiledPattern = p
+	}
 	return nil
 }
 
 // Decode decodes the passed-in string against field type. Returns an error
 // if the value can not be cast or any field constraint can not be satisfied.
 func (f *Field) Decode(value string) (interface{}, error) {
+	if f.Constraints.Required {
+		_, ok := f.MissingValues[value]
+		if ok {
+			return nil, fmt.Errorf("%s is required", f.Name)
+		}
+	}
 	switch f.Type {
 	case IntegerType:
-		return castInt(value)
+		return castInt(f.BareNumber, value, f.Constraints)
 	case StringType:
-		return castString(f.Format, value)
+		return decodeString(f.Format, value, f.Constraints)
 	case BooleanType:
 		return castBoolean(value, f.TrueValues, f.FalseValues)
 	case NumberType:
-		return castNumber(value)
+		return castNumber(f.DecimalChar, f.GroupChar, f.BareNumber, value, f.Constraints)
 	case DateType:
-		return castDate(f.Format, value)
+		return decodeDate(f.Format, value, f.Constraints)
 	case ObjectType:
 		return castObject(value)
 	case ArrayType:
 		return castArray(value)
 	case TimeType:
-		return castTime(f.Format, value)
+		return decodeTime(f.Format, value, f.Constraints)
 	case YearMonthType:
-		return castYearMonth(value)
+		return decodeYearMonth(value, f.Constraints)
 	case YearType:
-		return castYear(value)
+		return decodeYear(value, f.Constraints)
 	case DateTimeType:
-		return castDateTime(f.Format, value)
+		return decodeDateTime(value, f.Constraints)
 	case DurationType:
 		return castDuration(value)
 	case GeoPointType:
 		return castGeoPoint(f.Format, value)
+	case AnyType:
+		return castAny(value)
 	}
 	return nil, fmt.Errorf("invalid field type: %s", f.Type)
 }
@@ -144,6 +203,8 @@ func (f *Field) Encode(in interface{}) (string, error) {
 		_, ok = inInterface.(string)
 	case ArrayType:
 		ok = reflect.TypeOf(inInterface).Kind() == reflect.Slice
+	case AnyType:
+		return encodeAny(in)
 	}
 	if !ok {
 		return "", fmt.Errorf("can not convert \"%d\" which type is %s to type %s", in, reflect.TypeOf(in), f.Type)

@@ -2,10 +2,10 @@
 
 
 [[projects]]
+  branch = "master"
   name = "github.com/frictionlessdata/tableschema-go"
-  packages = ["schema","table"]
-  revision = "3525b8723e57cdb156f6f4ceb89af902a0688af6"
-  version = "v0.1.2"
+  packages = ["csv","schema","table"]
+  revision = "0e04865b160218122a485282d888adf73a74d908"
 
 [[projects]]
   name = "github.com/satori/go.uuid"
@@ -16,6 +16,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f4bf49e0daa178ef1a518ee3ca158b4c0eb9efbd63a626b23669ee813caea6a5"
+  inputs-digest = "811809182e7e2c3c3cc263b85c49abb2ec5cfd15dd58d2811ad7618651741d93"
   solver-name = "gps-cdcl"
   solver-version = 1

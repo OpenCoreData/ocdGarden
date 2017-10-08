@@ -3,6 +3,8 @@ package schema
 import (
 	"bytes"
 	"fmt"
+	"net/http"
+	"net/http/httptest"
 
 	"reflect"
 	"strings"
@@ -20,11 +22,13 @@ func ExampleSchema_Decode() {
 		{"Foo", "42"},
 		{"Bar", "43"}})
 
-	// And we would like to process them using Go types. First we need to create a struct to hold the
-	// content of each row.
+	// And we would like to process them using Go types. First we need to create a struct to
+	// hold the content of each row.
+	// The tag tableheader maps the field to the schema. If no tag is set the name of the field
+	// has to be the same like inside the schema.
 	type person struct {
-		Name string
-		Age  int
+		MyName string `tableheader:"Name"`
+		Age    int
 	}
 
 	// Now it is a matter of iterate over the table and Decode each row.
@@ -34,8 +38,8 @@ func ExampleSchema_Decode() {
 		s.Decode(iter.Row(), &p)
 		fmt.Printf("%+v\n", p)
 	}
-	// Output: {Name:Foo Age:42}
-	// {Name:Bar Age:43}
+	// Output: {MyName:Foo Age:42}
+	// {MyName:Bar Age:43}
 }
 
 func ExampleSchema_DecodeTable() {
@@ -47,26 +51,30 @@ func ExampleSchema_DecodeTable() {
 		{"Foo", "42"},
 		{"Bar", "43"}})
 
-	// And we would like to process them using Go types. First we need to create a struct to hold the
-	// content of each row.
+	// And we would like to process them using Go types. First we need to create a struct to
+	// hold the content of each row.
+	// The tag tableheader maps the field to the schema. If no tag is set the name of the field
+	// has to be the same like inside the schema.
 	type person struct {
-		Name string
-		Age  int
+		MyName string `tableheader:"Name"`
+		Age    int
 	}
 	var people []person
 	s.DecodeTable(t, &people)
 	fmt.Print(people)
 	// Output: [{Foo 42} {Bar 43}]
 }
+
 func ExampleSchema_Encode() {
 	// Lets assume we have a schema.
 	s := Schema{Fields: []Field{{Name: "Name", Type: StringType}, {Name: "Age", Type: IntegerType}}}
 
-	// And would like to create a CSV out of this list conforming to
-	// to the schema above.
+	// And would like to create a CSV out of this list. The tag tableheader maps
+	// the field to the schema name. If no tag is set the name of the field
+	// has to be the same like inside the schema.
 	people := []struct {
-		Name string
-		Age  int
+		MyName string `tableheader:"Name"`
+		Age    int
 	}{{"Foo", 42}, {"Bar", 43}}
 
 	// First create the writer and write the header.
@@ -89,11 +97,12 @@ func ExampleSchema_EncodeTable() {
 	// Lets assume we have a schema.
 	s := Schema{Fields: []Field{{Name: "Name", Type: StringType}, {Name: "Age", Type: IntegerType}}}
 
-	// And would like to create a CSV out of this list conforming to
-	// to the schema above.
+	// And would like to create a CSV out of this list. The tag tableheader maps
+	// the field to the schema name. If no tag is set the name of the field
+	// has to be the same like inside the schema.
 	people := []struct {
-		Name string
-		Age  int
+		MyName string `tableheader:"Name"`
+		Age    int
 	}{{"Foo", 42}, {"Bar", 43}}
 
 	// Then encode the people slice into a slice of rows.
@@ -110,6 +119,28 @@ func ExampleSchema_EncodeTable() {
 	// Bar,43
 }
 
+func TestLoadRemote(t *testing.T) {
+	h := func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, `{"fields": [{"name": "ID", "type": "integer"}]}`)
+	}
+	ts := httptest.NewServer(http.HandlerFunc(h))
+	defer ts.Close()
+	got, err := LoadRemote(ts.URL)
+	if err != nil {
+		t.Fatalf("want:nil, got:%q", err)
+	}
+	want := &Schema{Fields: []Field{asJSONField(Field{Name: "ID", Type: "integer"})}}
+	if !reflect.DeepEqual(got, want) {
+		t.Errorf("want:%+v, got:%+v", want, got)
+	}
+	t.Run("Error", func(t *testing.T) {
+		_, err := LoadRemote("invalidURL")
+		if err == nil {
+			t.Fatalf("want:err got:nil")
+		}
+	})
+}
+
 func TestRead_Sucess(t *testing.T) {
 	data := []struct {
 		Desc   string
@@ -122,7 +153,8 @@ func TestRead_Sucess(t *testing.T) {
                 "fields":[{"name":"n","title":"ti","type":"integer","description":"desc","format":"f","trueValues":["ntrue"],"falseValues":["nfalse"]}]
             }`,
 			Schema{
-				Fields: []Field{{Name: "n", Title: "ti", Type: "integer", Description: "desc", Format: "f", TrueValues: []string{"ntrue"}, FalseValues: []string{"nfalse"}}},
+				Fields: []Field{{Name: "n", Title: "ti", Type: "integer", Description: "desc", Format: "f", TrueValues: []string{"ntrue"}, FalseValues: []string{"nfalse"},
+					DecimalChar: defaultDecimalChar, GroupChar: defaultGroupChar, BareNumber: defaultBareNumber}},
 			},
 		},
 		{
@@ -132,8 +164,8 @@ func TestRead_Sucess(t *testing.T) {
             }`,
 			Schema{
 				Fields: []Field{
-					{Name: "n1", Type: "t1", Format: "f1", TrueValues: defaultTrueValues, FalseValues: []string{}},
-					{Name: "n2", Type: "t2", Format: "f2", TrueValues: []string{}, FalseValues: defaultFalseValues},
+					{Name: "n1", Type: "t1", Format: "f1", TrueValues: defaultTrueValues, FalseValues: []string{}, DecimalChar: defaultDecimalChar, GroupChar: defaultGroupChar, BareNumber: defaultBareNumber},
+					{Name: "n2", Type: "t2", Format: "f2", TrueValues: []string{}, FalseValues: defaultFalseValues, DecimalChar: defaultDecimalChar, GroupChar: defaultGroupChar, BareNumber: defaultBareNumber},
 				},
 			},
 		},
@@ -175,10 +207,21 @@ func TestRead_Sucess(t *testing.T) {
 				t.Fatalf("want:nil, got:%q", err)
 			}
 			if !reflect.DeepEqual(s, &d.Schema) {
-				t.Errorf("want:%+v, got:%+v", d.Schema, s)
+				t.Errorf("want:%+v, got:%+v", &d.Schema, s)
 			}
 		})
 	}
+	t.Run("MissingValues", func(t *testing.T) {
+		reader := strings.NewReader(`{"fields":[{"name":"n","type":"integer"}],"missingValues":["na"]}`)
+		s, err := Read(reader)
+		if err != nil {
+			t.Fatalf("want:nil, got:%q", err)
+		}
+		f := s.Fields[0]
+		if _, ok := f.MissingValues["na"]; !ok {
+			t.Fatalf("want:ok got:!ok")
+		}
+	})
 }
 
 func TestRead_Error(t *testing.T) {
@@ -202,20 +245,6 @@ func TestRead_Error(t *testing.T) {
 	}
 }
 
-func TestHeaders(t *testing.T) {
-	// Empty schema, empty headers.
-	s := Schema{}
-	if len(s.Headers()) > 0 {
-		t.Errorf("want:0 got:%d", len(s.Headers()))
-	}
-
-	s1 := Schema{Fields: []Field{{Name: "f1"}, {Name: "f2"}}}
-	expected := []string{"f1", "f2"}
-	if !reflect.DeepEqual(s1.Headers(), expected) {
-		t.Errorf("want:%v got:%v", expected, s1.Headers())
-	}
-}
-
 func TestSchema_Decode(t *testing.T) {
 	t.Run("NoImplicitCast", func(t *testing.T) {
 		t1 := struct {
@@ -231,6 +260,22 @@ func TestSchema_Decode(t *testing.T) {
 		}
 		if t1.Age != 42 {
 			t.Errorf("value:Age want:42 got:%d", t1.Age)
+		}
+	})
+	t.Run("StructWithTags", func(t *testing.T) {
+		t1 := struct {
+			MyName string `tableheader:"Name"`
+			MyAge  int64  `tableheader:"Age"`
+		}{}
+		s := Schema{Fields: []Field{{Name: "Name", Type: StringType}, {Name: "Age", Type: IntegerType}}}
+		if err := s.Decode([]string{"Foo", "42"}, &t1); err != nil {
+			t.Fatalf("err want:nil, got:%q", err)
+		}
+		if t1.MyName != "Foo" {
+			t.Errorf("value:Name want:Foo got:%s", t1.MyName)
+		}
+		if t1.MyAge != 42 {
+			t.Errorf("value:Age want:42 got:%d", t1.MyAge)
 		}
 	})
 	t.Run("ImplicitCastToInt", func(t *testing.T) {
@@ -497,6 +542,21 @@ func TestSchema_Encode(t *testing.T) {
 		}
 		s := Schema{Fields: []Field{{Name: "Name", Type: StringType}, {Name: "Age", Type: IntegerType}}}
 		got, err := s.Encode(rowType{Name: "Foo", Age: 42})
+		if err != nil {
+			t.Fatalf("err want:nil got:%q", err)
+		}
+		want := []string{"Foo", "42"}
+		if !reflect.DeepEqual(want, got) {
+			t.Fatalf("val want:%v got:%v", want, got)
+		}
+	})
+	t.Run("SuccessWithTags", func(t *testing.T) {
+		type rowType struct {
+			MyName string `tableheader:"Name"`
+			MyAge  int    `tableheader:"Age"`
+		}
+		s := Schema{Fields: []Field{{Name: "Name", Type: StringType}, {Name: "Age", Type: IntegerType}}}
+		got, err := s.Encode(rowType{MyName: "Foo", MyAge: 42})
 		if err != nil {
 			t.Fatalf("err want:nil got:%q", err)
 		}

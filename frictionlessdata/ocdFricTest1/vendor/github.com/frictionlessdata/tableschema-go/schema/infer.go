@@ -38,7 +38,9 @@ var (
 	}
 
 	// Types ordered from narrower to wider.
-	orderedTypes = []string{BooleanType, YearType, IntegerType, NumberType, YearMonthType, DateType, DateTimeType, TimeType, DurationType, GeoPointType, ArrayType, ObjectType}
+	orderedTypes = []string{BooleanType, YearType, IntegerType, GeoPointType, NumberType, YearMonthType, DateType, DateTimeType, TimeType, DurationType, ArrayType, ObjectType}
+
+	noConstraints = Constraints{}
 )
 
 // Maximum number of rows used to infer schema.
@@ -160,15 +162,15 @@ func findType(value string, checkOrder []string) string {
 				return BooleanType
 			}
 		case IntegerType:
-			if _, err := castInt(value); err == nil {
+			if _, err := castInt(defaultBareNumber, value, noConstraints); err == nil {
 				return IntegerType
 			}
 		case NumberType:
-			if _, err := castNumber(value); err == nil {
+			if _, err := castNumber(defaultDecimalChar, defaultGroupChar, defaultBareNumber, value, noConstraints); err == nil {
 				return NumberType
 			}
 		case DateType:
-			if _, err := castDate(defaultFieldFormat, value); err == nil {
+			if _, err := decodeDate(defaultFieldFormat, value, noConstraints); err == nil {
 				return DateType
 			}
 		case ArrayType:
@@ -180,19 +182,19 @@ func findType(value string, checkOrder []string) string {
 				return ObjectType
 			}
 		case TimeType:
-			if _, err := castTime(defaultFieldFormat, value); err == nil {
+			if _, err := decodeTime(defaultFieldFormat, value, noConstraints); err == nil {
 				return TimeType
 			}
 		case YearMonthType:
-			if _, err := castYearMonth(value); err == nil {
+			if _, err := decodeYearMonth(value, noConstraints); err == nil {
 				return YearMonthType
 			}
 		case YearType:
-			if _, err := castYear(value); err == nil {
+			if _, err := decodeYear(value, noConstraints); err == nil {
 				return YearType
 			}
 		case DateTimeType:
-			if _, err := castDateTime(defaultFieldFormat, value); err == nil {
+			if _, err := decodeDateTime(value, noConstraints); err == nil {
 				return DateTimeType
 			}
 		case DurationType:

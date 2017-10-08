@@ -16,12 +16,14 @@ func TestDefaultValues(t *testing.T) {
 		{
 			"Default Values",
 			`{"name":"n1"}`,
-			Field{Name: "n1", Type: defaultFieldType, Format: defaultFieldFormat, TrueValues: defaultTrueValues, FalseValues: defaultFalseValues},
+			Field{Name: "n1", Type: defaultFieldType, Format: defaultFieldFormat, TrueValues: defaultTrueValues, FalseValues: defaultFalseValues,
+				DecimalChar: defaultDecimalChar, GroupChar: defaultGroupChar, BareNumber: defaultBareNumber},
 		},
 		{
 			"Overrinding default values",
 			`{"name":"n2","type":"t2","format":"f2","falseValues":["f2"],"trueValues":["t2"]}`,
-			Field{Name: "n2", Type: "t2", Format: "f2", TrueValues: []string{"t2"}, FalseValues: []string{"f2"}},
+			Field{Name: "n2", Type: "t2", Format: "f2", TrueValues: []string{"t2"}, FalseValues: []string{"f2"},
+				DecimalChar: defaultDecimalChar, GroupChar: defaultGroupChar, BareNumber: defaultBareNumber},
 		},
 	}
 	for _, d := range data {
@@ -55,10 +57,11 @@ func TestField_Decode(t *testing.T) {
 		{"Time_CustomFormat", "10-10-10", Field{Type: TimeType, Format: "%H-%M-%S"}, time.Date(0000, time.January, 01, 10, 10, 10, 00, time.UTC)},
 		{"YearMonth", "2017-08", Field{Type: YearMonthType}, time.Date(2017, time.August, 01, 00, 00, 00, 00, time.UTC)},
 		{"Year", "2017", Field{Type: YearType}, time.Date(2017, time.January, 01, 00, 00, 00, 00, time.UTC)},
-		{"DateTime_NoFormat", "2008-09-15T15:53:00+05:00", Field{Type: DateTimeType}, time.Date(2008, time.September, 15, 10, 53, 00, 00, time.UTC)},
-		{"DateTime_DefaultFormat", "2008-09-15T15:53:00+05:00", Field{Type: DateTimeType, Format: defaultFieldFormat}, time.Date(2008, time.September, 15, 10, 53, 00, 00, time.UTC)},
+		{"DateTime_NoFormat", "2008-09-15T10:53:00Z", Field{Type: DateTimeType}, time.Date(2008, time.September, 15, 10, 53, 00, 00, time.UTC)},
+		{"DateTime_DefaultFormat", "2008-09-15T10:53:00Z", Field{Type: DateTimeType, Format: defaultFieldFormat}, time.Date(2008, time.September, 15, 10, 53, 00, 00, time.UTC)},
 		{"Duration", "P2H", Field{Type: DurationType}, 2 * time.Hour},
 		{"GeoPoint", "90,45", Field{Type: GeoPointType}, GeoPoint{90, 45}},
+		{"Any", "10", Field{Type: AnyType}, "10"},
 	}
 	for _, d := range data {
 		t.Run(d.Desc, func(t *testing.T) {
@@ -139,8 +142,16 @@ func TestField_Decode(t *testing.T) {
 	t.Run("InvalidFieldType", func(t *testing.T) {
 		f := Field{Type: "invalidType"}
 		if _, err := f.Decode("42"); err == nil {
-			t.Errorf("err want:err, got:nil")
+			t.Errorf("err want:err got:nil")
 		}
+	})
+	t.Run("Constraints", func(t *testing.T) {
+		t.Run("Required", func(t *testing.T) {
+			f := Field{Type: StringType, Constraints: Constraints{Required: true}, MissingValues: map[string]struct{}{"NA": struct{}{}}}
+			if _, err := f.Decode("NA"); err == nil {
+				t.Fatalf("err want:err got:nil")
+			}
+		})
 	})
 }
 
@@ -184,6 +195,7 @@ func TestField_Encode(t *testing.T) {
 			{"DateTime", Field{Type: DateTimeType}, time.Unix(1, 0), "1970-01-01T00:00:01Z"},
 			{"Date", Field{Type: DateType}, time.Unix(1, 0), "1970-01-01T00:00:01Z"},
 			{"Object", Field{Type: ObjectType}, eoStruct{Name: "Foo"}, `{"name":"Foo"}`},
+			{"Any", Field{Type: AnyType}, "10", "10"},
 		}
 		for _, d := range data {
 			t.Run(d.desc, func(t *testing.T) {

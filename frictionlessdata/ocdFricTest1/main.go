@@ -37,8 +37,8 @@ func inferSchema1() {
 }
 
 func validateSchema1() {
-	// Reading schem.
-	chemCarbSchema, err := schema.ReadFromFile("schema.json")
+	// Reading schema.
+	chemCarbSchema, err := schema.LoadFromFile("schema.json")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -48,7 +48,13 @@ func validateSchema1() {
 	}
 
 	// Printing headers.
-	log.Printf("Headers: %v\n", chemCarbSchema.Headers())
+	// log.Printf("Headers: %v\n", chemCarbSchema.Headers())
+
+	// Printing schema fields names.
+	log.Println("Fields:")
+	for i, f := range chemCarbSchema.Fields {
+		log.Printf("%d - %s\n", i, f.Name)
+	}
 
 	// Working with schema fields.
 	if chemCarbSchema.HasField("Section_number") {
@@ -70,9 +76,10 @@ func validateSchema1() {
 	// Dealing with tabular data associated with the schema.
 	table, err := csv.NewTable(csv.FromFile("../testdata/data1.csv"), csv.LoadHeaders())
 	chemCarbRow := struct {
-		Leg  string
-		Site string
-		Hole string
+		Leg        string
+		Site       string
+		Hole       string
+		Depth_mbsf int
 	}{}
 
 	iter, _ := table.Iter()

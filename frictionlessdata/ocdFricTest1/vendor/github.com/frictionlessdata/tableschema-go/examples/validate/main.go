@@ -10,7 +10,7 @@ import (
 // Example of how to read, validate and change a schema.
 func main() {
 	// Reading schem.
-	capitalSchema, err := schema.ReadFromFile("schema.json")
+	capitalSchema, err := schema.LoadFromFile("schema.json")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -19,8 +19,11 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Printing headers.
-	log.Printf("Headers: %v\n", capitalSchema.Headers())
+	// Printing schema fields names.
+	log.Println("Fields:")
+	for i, f := range capitalSchema.Fields {
+		log.Printf("%d - %s\n", i, f.Name)
+	}
 
 	// Working with schema fields.
 	if capitalSchema.HasField("Capital") {

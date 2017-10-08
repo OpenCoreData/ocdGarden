@@ -4,9 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"net/http"
 	"os"
 	"reflect"
 	"strings"
+	"sync"
+	"time"
 
 	"github.com/frictionlessdata/tableschema-go/table"
 )
@@ -14,6 +17,9 @@ import (
 // InvalidPosition is returned by GetField call when
 // it refers to a field that does not exist in the schema.
 const InvalidPosition = -1
+
+// Unexportet tagname for the tableheader
+const tableheaderTag = "tableheader"
 
 // Read reads and parses a descriptor to create a schema.
 //
@@ -34,16 +40,53 @@ func Read(r io.Reader) (*Schema, error) {
 	if err := dec.Decode(&s); err != nil {
 		return nil, err
 	}
+	if len(s.MissingValues) == 0 {
+		return &s, nil
+	}
+	// Transforming the list in a set.
+	valueSet := make(map[string]struct{}, len(s.MissingValues))
+	for _, v := range s.MissingValues {
+		valueSet[v] = struct{}{}
+	}
+	// Updating fields.
+	for i := range s.Fields {
+		s.Fields[i].MissingValues = make(map[string]struct{}, len(valueSet))
+		for k, v := range valueSet {
+			s.Fields[i].MissingValues[k] = v
+		}
+	}
 	return &s, nil
 }
 
-// ReadFromFile reads and parses a schema descrptor from a local file.
-func ReadFromFile(path string) (*Schema, error) {
+// LoadFromFile loads and parses a schema descriptor from a local file.
+func LoadFromFile(path string) (*Schema, error) {
 	f, err := os.Open(path)
 	if err != nil {
 		return nil, err
 	}
 	return Read(f)
+}
+
+var (
+	httpClient *http.Client
+	once       sync.Once
+)
+
+const remoteFetchTimeoutSecs = 15
+
+// LoadRemote downloads and parses a schema descriptor from the specified URL.
+func LoadRemote(url string) (*Schema, error) {
+	once.Do(func() {
+		httpClient = &http.Client{
+			Timeout: remoteFetchTimeoutSecs * time.Second,
+		}
+	})
+	resp, err := httpClient.Get(url)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+	return Read(resp.Body)
 }
 
 // Fields represents a list of schema fields.
@@ -74,16 +117,6 @@ type Schema struct {
 	PrimaryKeys           []string    `json:"-"`
 	ForeignKeys           ForeignKeys `json:"foreignKeys,omitempty"`
 	MissingValues         []string    `json:"missingValues,omitempty"`
-}
-
-// Headers returns the headers of the tabular data described
-// by the schema.
-func (s *Schema) Headers() []string {
-	var h []string
-	for i := range s.Fields {
-		h = append(h, s.Fields[i].Name)
-	}
-	return h
 }
 
 // GetField fetches the index and field referenced by the name argument.
@@ -166,7 +199,11 @@ func (s *Schema) Decode(row []string, out interface{}) error {
 		fieldValue := outv.Field(i)
 		if fieldValue.CanSet() { // Only consider exported fields.
 			field := outt.Field(i)
-			f, fieldIndex := s.GetField(field.Name)
+			fieldName, ok := field.Tag.Lookup(tableheaderTag)
+			if !ok { // if no tag is set use own name
+				fieldName = field.Name
+			}
+			f, fieldIndex := s.GetField(fieldName)
 			if fieldIndex != InvalidPosition {
 				cell := row[fieldIndex]
 				if s.isMissingValue(cell) {
@@ -199,7 +236,11 @@ func (s *Schema) Encode(in interface{}) ([]string, error) {
 	row := make([]string, inType.NumField())
 	for i := 0; i < inType.NumField(); i++ {
 		structFieldValue := inValue.Field(i)
-		f, fieldIndex := s.GetField(inType.Field(i).Name)
+		fieldName, ok := inType.Field(i).Tag.Lookup(tableheaderTag)
+		if !ok {
+			fieldName = inType.Field(i).Name
+		}
+		f, fieldIndex := s.GetField(fieldName)
 		if fieldIndex != InvalidPosition {
 			r, err := f.Encode(structFieldValue.Interface())
 			if err != nil {

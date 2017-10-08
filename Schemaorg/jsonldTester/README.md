@@ -12,10 +12,10 @@ in a time for 18171 (OCD on XSEDE) calls of:
 
 2017/10/03 10:58:36 P418 indexer took 54m38.789842318s
 
-Later, a concurrent versiion set to allow X simultaneous calls resulted in a
+Later, a concurrent versiion set to allow 5 simultaneous calls resulted in a
 time for 18171 (OCD on XSEDE) calls of:
 
-
+~20 minutes once I resolve the scaling on the server side
 
 
 ##### http 2.0

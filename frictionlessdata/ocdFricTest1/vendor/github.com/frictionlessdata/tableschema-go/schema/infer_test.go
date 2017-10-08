@@ -45,7 +45,7 @@ func ExampleInferImplicitCasting() {
 	// {Name:Height Type:number Format:default}
 }
 
-func TestInfer_Success(t *testing.T) {
+func TestInfer(t *testing.T) {
 	data := []struct {
 		desc    string
 		headers []string
@@ -91,31 +91,30 @@ func TestInfer_Success(t *testing.T) {
 			sort.Sort(s.Fields)
 			sort.Sort(d.want.Fields)
 			if !reflect.DeepEqual(s, &d.want) {
-				t.Errorf("want:%+v, got:%+v", d.want, s)
+				t.Errorf("want:%+v, got:%+v", &d.want, s)
 			}
 		})
 	}
+	t.Run("Error", func(t *testing.T) {
+		data := []struct {
+			desc    string
+			headers []string
+			table   [][]string
+		}{
+			{"NotATable", []string{}, [][]string{[]string{"1"}}},
+		}
+		for _, d := range data {
+			t.Run(d.desc, func(t *testing.T) {
+				_, err := infer(d.headers, d.table)
+				if err == nil {
+					t.Fatalf("want:error, got:nil")
+				}
+			})
+		}
+	})
 }
 
-func TestInfer_Error(t *testing.T) {
-	data := []struct {
-		desc    string
-		headers []string
-		table   [][]string
-	}{
-		{"NotATable", []string{}, [][]string{[]string{"1"}}},
-	}
-	for _, d := range data {
-		t.Run(d.desc, func(t *testing.T) {
-			_, err := infer(d.headers, d.table)
-			if err == nil {
-				t.Fatalf("want:error, got:nil")
-			}
-		})
-	}
-}
-
-func TestInferImplicitCasting_Success(t *testing.T) {
+func TestInferImplicitCasting(t *testing.T) {
 	data := []struct {
 		desc    string
 		headers []string
@@ -165,24 +164,23 @@ func TestInferImplicitCasting_Success(t *testing.T) {
 			}
 		})
 	}
-}
-
-func TestInferImplicitCasting_Error(t *testing.T) {
-	data := []struct {
-		desc    string
-		headers []string
-		table   [][]string
-	}{
-		{"NotATable", []string{}, [][]string{[]string{"1"}}},
-	}
-	for _, d := range data {
-		t.Run(d.desc, func(t *testing.T) {
-			_, err := inferImplicitCasting(d.headers, d.table)
-			if err == nil {
-				t.Fatalf("want:error, got:nil")
-			}
-		})
-	}
+	t.Run("Error", func(t *testing.T) {
+		data := []struct {
+			desc    string
+			headers []string
+			table   [][]string
+		}{
+			{"NotATable", []string{}, [][]string{[]string{"1"}}},
+		}
+		for _, d := range data {
+			t.Run(d.desc, func(t *testing.T) {
+				_, err := inferImplicitCasting(d.headers, d.table)
+				if err == nil {
+					t.Fatalf("want:error, got:nil")
+				}
+			})
+		}
+	})
 }
 
 var (

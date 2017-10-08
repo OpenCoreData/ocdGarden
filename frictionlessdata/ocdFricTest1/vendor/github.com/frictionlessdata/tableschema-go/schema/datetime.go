@@ -2,7 +2,6 @@ package schema
 
 import (
 	"fmt"
-	"reflect"
 	"strings"
 	"time"
 )
@@ -32,32 +31,97 @@ var strftimeToGoConversionTable = map[string]string{
 	"%p":  "PM",
 }
 
-func castDate(format, value string) (time.Time, error) {
-	return castDefaultOrCustomTime("2006-01-02", format, value)
+func decodeYearMonth(value string, c Constraints) (time.Time, error) {
+	y, err := decodeYearMonthWithoutChecks(value)
+	if err != nil {
+		return y, err
+	}
+	var max, min time.Time
+	if c.Maximum != "" {
+		max, err = decodeYearMonthWithoutChecks(c.Maximum)
+		if err != nil {
+			return y, err
+		}
+	}
+	if c.Minimum != "" {
+		min, err = decodeYearMonthWithoutChecks(c.Minimum)
+		if err != nil {
+			return y, err
+		}
+	}
+	return checkConstraints(y, max, min, YearMonthType)
 }
 
-func castTime(format, value string) (time.Time, error) {
-	return castDefaultOrCustomTime("03:04:05", format, value)
-}
-
-func castYearMonth(value string) (time.Time, error) {
+func decodeYearMonthWithoutChecks(value string) (time.Time, error) {
 	return time.Parse("2006-01", value)
 }
 
-func castYear(value string) (time.Time, error) {
+func decodeYearWithoutChecks(value string) (time.Time, error) {
 	return time.Parse("2006", value)
 }
 
-func castDateTime(format, value string) (time.Time, error) {
-	return castDefaultOrCustomTime(time.RFC3339, format, value)
+func decodeYear(value string, c Constraints) (time.Time, error) {
+	y, err := decodeYearWithoutChecks(value)
+	if err != nil {
+		return y, err
+	}
+	var max, min time.Time
+	if c.Maximum != "" {
+		max, err = decodeYearWithoutChecks(c.Maximum)
+		if err != nil {
+			return y, err
+		}
+	}
+	if c.Minimum != "" {
+		min, err = decodeYearWithoutChecks(c.Minimum)
+		if err != nil {
+			return y, err
+		}
+	}
+	return checkConstraints(y, max, min, YearType)
 }
 
-func castDefaultOrCustomTime(defaultFormat, format, value string) (time.Time, error) {
+func decodeDateTime(value string, c Constraints) (time.Time, error) {
+	dt, err := decodeDateTimeWithoutChecks(value)
+	if err != nil {
+		return dt, err
+	}
+	var max, min time.Time
+	if c.Maximum != "" {
+		max, err = decodeDateTimeWithoutChecks(c.Maximum)
+		if err != nil {
+			return dt, err
+		}
+	}
+	if c.Minimum != "" {
+		min, err = decodeDateTimeWithoutChecks(c.Minimum)
+		if err != nil {
+			return dt, err
+		}
+	}
+	return checkConstraints(dt, max, min, DateTimeType)
+}
+
+func decodeDateTimeWithoutChecks(value string) (time.Time, error) {
+	return time.Parse(time.RFC3339, value)
+}
+
+func checkConstraints(v, max, min time.Time, t string) (time.Time, error) {
+	if !max.IsZero() && v.After(max) {
+		return v, fmt.Errorf("constraint check error: %s:%v > maximum:%v", t, v, max)
+	}
+	if !min.IsZero() && v.Before(min) {
+		return v, fmt.Errorf("constraint check error: %s:%v < minimum:%v", t, v, min)
+	}
+	return v, nil
+}
+
+func decodeDefaultOrCustomTime(defaultFormat, format, value string) (time.Time, error) {
 	switch format {
 	case "", defaultFieldFormat:
 		t, err := time.Parse(defaultFormat, value)
 		if err != nil {
-			return time.Now(), err
+			return t, err
 		}
 		return t.In(time.UTC), nil
 	case AnyDateFormat:
@@ -69,16 +133,7 @@ func castDefaultOrCustomTime(defaultFormat, format, value string) (time.Time, er
 	}
 	t, err := time.Parse(goFormat, value)
 	if err != nil {
-		return time.Now(), err
+		return t, err
 	}
 	return t.In(time.UTC), nil
-}
-
-func encodeTime(v interface{}) (string, error) {
-	value, ok := v.(time.Time)
-	if !ok {
-		return "", fmt.Errorf("invalid date - value:%v type:%v", v, reflect.ValueOf(v).Type())
-	}
-	utc := value.In(time.UTC)
-	return utc.Format(time.RFC3339), nil
 }
