@@ -3,13 +3,17 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 
 	"github.com/frictionlessdata/tableschema-go/csv"
 	"github.com/frictionlessdata/tableschema-go/schema"
 )
 
 type chemicalCarbon struct {
-	Leg string
+	Leg        string
+	Site       string
+	Hole       string
+	Depth_mbsf int
 }
 
 func main() {
@@ -31,8 +35,8 @@ func inferSchema1() {
 		log.Fatal(err)
 	}
 	sch.SaveToFile("schema.json") // save inferred schema to file
-	var users []chemicalCarbon
-	sch.DecodeTable(tab, &users) // unmarshals the table data into the slice.
+	var cc []chemicalCarbon
+	sch.DecodeTable(tab, &cc) // unmarshals the table data into the slice.
 
 }
 
@@ -42,13 +46,10 @@ func validateSchema1() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// Validate schema.
+	// Validate schema.  What does this really do?
 	if err := chemCarbSchema.Validate(); err != nil {
 		log.Fatal(err)
 	}
-
-	// Printing headers.
-	// log.Printf("Headers: %v\n", chemCarbSchema.Headers())
 
 	// Printing schema fields names.
 	log.Println("Fields:")
@@ -62,6 +63,8 @@ func validateSchema1() {
 	} else {
 		log.Fatalf("Schema must have the field Section_number")
 	}
+
+	// Get a schema field and test a value against it
 	field, _ := chemCarbSchema.GetField("Leg")
 	if field.TestString("123") {
 		value, err := field.Decode("123")
@@ -75,18 +78,33 @@ func validateSchema1() {
 
 	// Dealing with tabular data associated with the schema.
 	table, err := csv.NewTable(csv.FromFile("../testdata/data1.csv"), csv.LoadHeaders())
-	chemCarbRow := struct {
-		Leg        string
-		Site       string
-		Hole       string
-		Depth_mbsf int
-	}{}
 
-	iter, _ := table.Iter()
-	for iter.Next() {
-		if err := chemCarbSchema.Decode(iter.Row(), &chemCarbRow); err != nil {
-			log.Fatalf("Couldn't unmarshal row:%v err:%q", iter.Row(), err)
-		}
-		log.Printf("Unmarshal Row: %+v\n", chemCarbRow)
+	var cc []chemicalCarbon
+
+	// iter, _ := table.Iter()
+	// for iter.Next() {
+	// 	if err := chemCarbSchema.Decode(iter.Row(), &chemicalCarbon); err != nil {
+	// 		log.Fatalf("Couldn't unmarshal row:%v err:%q", iter.Row(), err)
+	// 	}
+	// 	log.Printf("Unmarshal Row: %+v\n", chemicalCarbon)
+	// }
+
+	// Don't iterate..  data is small enough..
+	chemCarbSchema.DecodeTable(table, &cc)
+
+	// play with output
+	f, _ := os.Open("./testout.csv")
+	defer f.Close()
+
+	w := csv.NewWriter(f)
+	defer w.Flush()
+
+	w.Write([]string{"Leg", "Site", "Hole", "depth_mbsf"})
+	//w.Flush()
+	for _, row := range cc {
+		row, _ := chemCarbSchema.Encode(row)
+		w.Write(row)
+		//w.Flush()
 	}
+
 }
