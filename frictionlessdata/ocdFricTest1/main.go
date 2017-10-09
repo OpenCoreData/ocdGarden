@@ -100,11 +100,18 @@ func validateSchema1() {
 	defer w.Flush()
 
 	w.Write([]string{"Leg", "Site", "Hole", "depth_mbsf"})
-	//w.Flush()
+	err = w.Error()
+	if err != nil {
+		log.Fatal(err)
+	}
 	for _, row := range cc {
+		fmt.Println(row)
 		row, _ := chemCarbSchema.Encode(row)
 		w.Write(row)
-		//w.Flush()
+		err = w.Error()
+		if err != nil {
+			log.Fatal(err)
+		}
 	}
 
 }
