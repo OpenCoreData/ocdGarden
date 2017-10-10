@@ -5,7 +5,7 @@
   branch = "master"
   name = "github.com/frictionlessdata/tableschema-go"
   packages = ["csv","schema","table"]
-  revision = "0e04865b160218122a485282d888adf73a74d908"
+  revision = "d5d8935ce5d63b4b297110433be0b4f9716d2f9e"
 
 [[projects]]
   name = "github.com/satori/go.uuid"

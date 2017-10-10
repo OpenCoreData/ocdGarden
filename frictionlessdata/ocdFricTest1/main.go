@@ -10,7 +10,7 @@ import (
 )
 
 type chemicalCarbon struct {
-	Leg        string
+	Leg        int
 	Site       string
 	Hole       string
 	Depth_mbsf int
@@ -36,8 +36,10 @@ func inferSchema1() {
 	}
 	sch.SaveToFile("schema.json") // save inferred schema to file
 	var cc []chemicalCarbon
-	sch.DecodeTable(tab, &cc) // unmarshals the table data into the slice.
-
+	err = sch.DecodeTable(tab, &cc) // unmarshals the table data into the slice.
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func validateSchema1() {
@@ -93,7 +95,7 @@ func validateSchema1() {
 	chemCarbSchema.DecodeTable(table, &cc)
 
 	// play with output
-	f, _ := os.Open("./testout.csv")
+	f, _ := os.Create("./testout.csv")
 	defer f.Close()
 
 	w := csv.NewWriter(f)
