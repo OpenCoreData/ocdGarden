@@ -54,10 +54,10 @@ func validateSchema1() {
 	}
 
 	// Printing schema fields names.
-	log.Println("Fields:")
-	for i, f := range chemCarbSchema.Fields {
-		log.Printf("%d - %s\n", i, f.Name)
-	}
+	// log.Println("Fields:")
+	// for i, f := range chemCarbSchema.Fields {
+	// 	log.Printf("%d - %s\n", i, f.Name)
+	// }
 
 	// Working with schema fields.
 	if chemCarbSchema.HasField("Section_number") {
@@ -67,10 +67,10 @@ func validateSchema1() {
 	}
 
 	// Get a schema field and test a value against it
-	field, _ := chemCarbSchema.GetField("Leg")
+	field, index := chemCarbSchema.GetField("Leg")
 	if field.TestString("123") {
 		value, err := field.Decode("123")
-		log.Printf("Unmarshal to value: %v\n", value)
+		log.Printf("Unmarshal at index %d to value: %v\n", index, value)
 		if err != nil {
 			log.Fatalf("Error casting value: %q", err)
 		}
@@ -107,8 +107,10 @@ func validateSchema1() {
 		log.Fatal(err)
 	}
 	for _, row := range cc {
-		fmt.Println(row)
-		row, _ := chemCarbSchema.Encode(row)
+		row, err := chemCarbSchema.Encode(row)
+		if err != nil {
+			log.Fatal(err)
+		}
 		w.Write(row)
 		err = w.Error()
 		if err != nil {
