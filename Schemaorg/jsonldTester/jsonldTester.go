@@ -97,7 +97,7 @@ func main() {
 		if err != nil {
 			fmt.Printf("URL %s  at index %d has error: %v\n", url, index, err)
 		} else {
-			fmt.Printf("URL processed %d/%d: %s \n", index, len(urls), url)
+			fmt.Printf("URL processed %d/%d: %s \n", index+1, len(urls), url)
 		}
 	}
 
