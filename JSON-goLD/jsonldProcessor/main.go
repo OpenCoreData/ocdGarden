@@ -9,10 +9,49 @@ import (
 
 	"github.com/kazarena/json-gold/ld"
 	"gopkg.in/mgo.v2"
-	structs "opencoredata.org/ocdGarden/jsongold/structs"
+	structs "opencoredata.org/ocdGarden/JSON-goLD/jsonldProcessor/structs"
 )
 
 func main() {
+
+	const schemaorgEntry = `{ 
+		"_id" : ObjectId("562d259814df3782006b2c44"), 
+		"context" : [
+	
+		], 
+		"type" : "Dataset", 
+		"author" : {
+			"type" : "Organization", 
+			"description" : "NSF funded International Ocean Discovery Program operated by JRSO", 
+			"name" : "International Ocean Discovery Program", 
+			"url" : "http://iodp.org"
+		}, 
+		"description" : "Data set description", 
+		"distribution" : {
+			"type" : "DataDownload", 
+			"contenturl" : "http://opencoredata.org/id/dataset/8266648c-a5f1-4c8a-8889-584fa00a5584", 
+			"datepublished" : "Sunday, 25-Oct-15 14:55:20 EDT", 
+			"encodingformat" : "text/tab-separated-values", 
+			"inlanguage" : "en"
+		}, 
+		"glviewdataset" : "104_643A_JanusAgeDatapoint_VbkOzEdY.csv", 
+		"glviewkeywords" : "DSDP, OPD, IODP, JanusAgeDatapoint", 
+		"opencoreleg" : "104", 
+		"opencoresite" : "643", 
+		"opencorehole" : "A", 
+		"opencoremeasurement" : "JanusAgeDatapoint", 
+		"keywords" : "DSDP, OPD, IODP, JanusAgeDatapoint", 
+		"name" : "104_643A_JanusAgeDatapoint_VbkOzEdY.csv", 
+		"spatial" : {
+			"type" : "Place", 
+			"geo" : {
+				"type" : "GeoCoordinates", 
+				"latitude" : "67.72", 
+				"longitude" : "1.03"
+			}
+		}, 
+		"url" : "http://opencoredata.org/id/dataset/8266648c-a5f1-4c8a-8889-584fa00a5584"
+	}`
 
 	const jsld = `{
   "@context": {
@@ -59,7 +98,7 @@ func main() {
  "url": "http://opencoredata.org/id/dataset/e8fb758e-22ba-499d-92fb-8d653febcf28"
 }`
 
-	csvwTest()
+	// csvwTest()
 	mongoTest() // waiting to resolve the stringTest() call
 
 	// triples := stringTest(jsld) // working on this to use in the mongo mongoTest
@@ -186,9 +225,9 @@ func mongoTest() {
 
 	for _, result := range results {
 		// context setting hack
-		result.Context.Schema = "http://glview.org/voc/1/"
+		result.Context.Schema = "http://schema.org/"
 		result.Context.OpenCore = "http://opencore.org/voc/1"
-		result.Context.GeoLink = "http://schema.org/"
+		result.Context.GeoLink = "http://glview.org/voc/1/"
 
 		result.ID = result.URL
 		result.Distribution.ID = fmt.Sprintf("%s%s", result.URL, "#distribution")

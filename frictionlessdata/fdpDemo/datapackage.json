@@ -1,0 +1,143 @@
+{
+    "name": "154_925C_JanusChemCarb_FIUtooys",
+    "sources": [
+        {
+            "name": "Open Core Data Example Page",
+            "web": "http://opencoredata.org/doc/dataset/045deec9-94b2-445a-8fd2-43dbe90841fb"
+        }
+    ],
+    "resources": [
+        {
+            "path": "./data.csv",
+            "name": "data",
+            "schema": {
+                "fields": [
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Leg"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "string",
+                        "name": "Site"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "string",
+                        "name": "Hole"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "string",
+                        "name": "Core"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "string",
+                        "name": "Core_type"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "string",
+                        "name": "Section_number"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "string",
+                        "name": "Section_type"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Top_cm"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Bot_cm"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Depth_mbsf"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Inor_c_wt_pct"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Caco3_wt_pct"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Tot_c_wt_pct"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Org_c_wt_pct"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Nit_wt_pct"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "Sul_wt_pct"
+                    },
+                    {
+                        "description": "",
+                        "format": "default",
+                        "type": "number",
+                        "name": "H_wt_pct"
+                    }
+                ],
+                "primaryKey": null,
+                "foreignKeys": {
+                    "reference": {
+                        "fields": null
+                    }
+                }
+            }
+        }
+    ],
+    "title": "154 925 C JanusChemCarb",
+    "views": [
+        {
+            "id": "graph",
+            "label": "Graph",
+            "type": "Graph",
+            "state": {
+                "group": "Top_cm",
+                "series": [
+                    "Caco3_wt_pct",
+                    "Inor_c_wt_pct"
+                ],
+                "graphType": "points"
+            }
+        }
+    ]
+}

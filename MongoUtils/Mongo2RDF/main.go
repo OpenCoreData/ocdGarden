@@ -22,10 +22,10 @@ func main() {
 	}
 	defer session.Close()
 
-	abstracts(session)
-	csvwmeta(session)  // change this to use jsongold approach
+	// abstracts(session)
+	// csvwmeta(session)  // change this to use jsongold approach
 	schemaorg(session) // change this to use jsongold approach
-	featuresAbsGeoJSON(session)
+	// featuresAbsGeoJSON(session)
 
 }
 
