@@ -9,7 +9,6 @@
     "resources": [
         {
             "path": "./data.csv",
-            "name": "data",
             "schema": {
                 "fields": [
                     {
