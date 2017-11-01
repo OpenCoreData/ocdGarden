@@ -72,12 +72,16 @@ type Mdoc struct {
 		FirstName string `json:"first_name"`
 		LastName  string `json:"last_name"`
 	} `json:"editors"`
-	Title       string `json:"title"`
-	Revision    string `json:"revision"`
-	Identifiers string `json:"identifiers"`
-	Abstract    string `json:"abstract"`
-	Type        string `json:"type"`
-	OCDSOURCE   string `json:ocdsource`
+	Title    string `json:"title"`
+	Revision string `json:"revision"`
+	// Identifiers string `json:"identifiers"`
+	Identifiers []struct {
+		Doi  string `json:"dio"`
+		Issn string `json:"issn"`
+	} `json:"identifiers"`
+	Abstract  string `json:"abstract"`
+	Type      string `json:"type"`
+	OCDSOURCE string `json:ocdsource`
 }
 
 type CSDCO struct {

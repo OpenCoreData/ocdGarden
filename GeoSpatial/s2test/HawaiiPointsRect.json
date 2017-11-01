@@ -1,0 +1,102 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -155.093994140625,
+            19.705627232977267
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -157.8680419921875,
+            21.300570216749353
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -155.9893798828125,
+            20.514981807048372
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -156.0552978515625,
+            20.546329665198517
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -156.29837036132812,
+            20.698436036336485
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -155.9454345703125,
+            19.005970464828987
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -158.060302734375,
+                20.601936194281016
+              ],
+              [
+                -157.313232421875,
+                19.621892180319374
+              ],
+              [
+                -154.87426757812497,
+                20.673905264672843
+              ],
+              [
+                -155.85205078125,
+                21.85130210558968
+              ],
+              [
+                -158.060302734375,
+                20.601936194281016
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }

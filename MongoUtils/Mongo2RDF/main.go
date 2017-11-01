@@ -22,9 +22,9 @@ func main() {
 	}
 	defer session.Close()
 
-	// abstracts(session)
+	abstracts(session)
 	// csvwmeta(session)  // change this to use jsongold approach
-	schemaorg(session) // change this to use jsongold approach
+	// schemaorg(session) // change this to use jsongold approach
 	// featuresAbsGeoJSON(session)
 
 }
@@ -190,7 +190,7 @@ func abstracts(session *mgo.Session) {
 
 	// connect and get documents
 	csvw := session.DB("abstracts").C("csdco")
-	var csdcoAbs []ocdstructs.Mdocs
+	var csdcoAbs []ocdstructs.MdocsV2
 	err := csvw.Find(nil).All(&csdcoAbs)
 	if err != nil {
 		fmt.Printf("this is error %v \n", err)
@@ -252,6 +252,15 @@ func abstracts(session *mgo.Session) {
 			tr = append(tr, SPOLiteral(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/issn", item.Identifiers.Issn))
 		}
 
+		// loop on Tags
+		if len(item.Tags) > 0 {
+			tagIRI := fmt.Sprintf("http://opencoredata.org/id/resource/csdco/abstract/%s#tag", item.ID)
+			tr = append(tr, SPOIRI(abstractIRI, "http://opencoredata.org/id/voc/csdco/v1/tag", tagIRI))
+			for _, tag := range item.Tags {
+				tr = append(tr, SPOLiteral(tagIRI, "http://opencoredata.org/id/voc/csdco/v1/tag/value", stripCtlAndExtFromUnicode(tag)))
+			}
+		}
+
 		// loop on Authors
 		if len(item.Authors) > 0 {
 			authorIRI := fmt.Sprintf("http://opencoredata.org/id/resource/csdco/abstract/%s#authors", item.ID)
@@ -297,7 +306,7 @@ func writeFile(name string, tr []rdf.Triple) {
 
 	// Write triples to a file
 	var inoutFormat rdf.Format
-	inoutFormat = rdf.NQuads // Turtle NQuads Ntriples
+	inoutFormat = rdf.NTriples // Turtle NQuads Ntriples
 	enc := rdf.NewTripleEncoder(outFile, inoutFormat)
 	err = enc.EncodeAll(tr)
 	// err = enc.Encode(newtriple)

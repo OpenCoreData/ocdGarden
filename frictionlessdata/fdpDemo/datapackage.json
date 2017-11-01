@@ -8,7 +8,8 @@
     ],
     "resources": [
         {
-            "path": "./data.csv",
+            "path": "data.csv",
+            "name": "154_925C_JanusChemCarb_FIUtooys",            
             "schema": {
                 "fields": [
                     {
