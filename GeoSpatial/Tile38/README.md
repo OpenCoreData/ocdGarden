@@ -5,6 +5,9 @@ This is an experiment with Tile 38.
 
 http://tile38.com
 
+Search API reference:
+http://tile38.com/commands/intersects/ 
+
 The client to this (since we are geohashing) is just Redigo (Redis API complient client).
 
 ```
