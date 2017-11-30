@@ -1,0 +1,15 @@
+{
+  "name": "slimjs",
+  "homepage": "https://github.com/eavichay/slim-web-components",
+  "version": "3.1.1",
+  "_release": "3.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.1.1",
+    "commit": "5caa7dee60e416f7e5b3ed0700b8b80114c307e1"
+  },
+  "_source": "https://github.com/eavichay/slim-web-components.git",
+  "_target": "^3.1.1",
+  "_originalSource": "slimjs",
+  "_direct": true
+}

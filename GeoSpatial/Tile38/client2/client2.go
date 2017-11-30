@@ -17,7 +17,7 @@ func main() {
 	var value1 int
 	var value2 interface{}
 	// var value2 []GeoReturn
-	reply, err := redis.Values(c.Do("INTERSECTS", "p418", "OBJECT", dataExample()))
+	reply, err := redis.Values(c.Do("INTERSECTS", "p418", "OBJECT", dataExample(), "OBJECT"))
 	if err != nil {
 		fmt.Printf("Error in reply %v \n", err)
 	}
@@ -25,8 +25,9 @@ func main() {
 		fmt.Printf("Error in scan %v \n", err)
 	}
 
+	sp := fmt.Sprintf("%s", value2)
 	fmt.Println(value1)
-	fmt.Println(value2)
+	fmt.Println(sp)
 
 }
 

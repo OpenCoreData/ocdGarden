@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./custom-elements.min.js"></script>
+	<script src="./webcomponents-loader.js"></script>
+	<script src="./bower_components/slimjs/Slim.js"></script>
+	<script src="./params.js"></script>
+	<title>Parameter component test</title> 
+
+	<style>
+	.div-table {
+  display: table;         
+  width: auto;         
+  background-color: #eee;         
+  border: 1px solid #3843a8;         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.div-table-colsmall {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 150px;         
+  background-color:#eee;  
+}
+.div-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 400px;         
+  background-color:#eee;  
+}
+	</style>
+
+	<script id="test" type="application/ld+json">
+	  {
+			"@context": {
+			 "@vocab": "http://schema.org/",
+			 "re3data": "http://example.org/re3data/0.1/"
+			},
+			"@id": "http://opencoredata.org/id/dataset/2de213cc-ea25-435b-b46e-781bd60d9e5c",
+			"@type": "Dataset",
+			"description": "Janus Vcd Image for ocean drilling expedition 204 site 1244 hole A",
+			"distribution": {
+			 "@type": "DataDownload",
+			 "contentUrl": "http://opencoredata.org/api/v1/documents/download/204_1244A_JanusVcdImage_wmQQywwi.csv"
+			},
+			"keywords": "Leg Site Hole Core Core_type Section_number Section_type Top_cm Depth_mbsf Page_id Url Janus Vcd Image DSDP, OPD, IODP, JanusVcdImage",
+			"name": "204_1244A_JanusVcdImage_wmQQywwi.csv",
+			"publisher": {
+			 "@type": "Organization",
+			 "description": "NSF funded International Ocean Discovery Program operated by JRSO",
+			 "name": "International Ocean Discovery Program",
+			 "url": "http://iodp.org"
+			},
+			"spatialCoverage": {
+			 "@type": "Place",
+			 "geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "44.59",
+				"longitude": "-125.12"
+			 }
+			},
+			"url": "http://opencoredata.org/id/dataset/2de213cc-ea25-435b-b46e-781bd60d9e5c",
+			"variableMeasured": [
+			 {
+				"@type": "PropertyValue",
+				"description": "Number identifying the cruise.",
+				"unitText": "int64",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/1",
+				"value": "Leg"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Number identifying the site from which the core was retrieved. A site is the position of a beacon around which holes are drilled.",
+				"unitText": "int64",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/2",
+				"value": "Site"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Letter identifying the hole at a site from which a core was retrieved or data was collected.",
+				"unitText": "string",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/3",
+				"value": "Hole"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Sequential numbers identifying the cores retrieved from a particular hole.",
+				"unitText": "int64",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/4",
+				"value": "Core"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Letter code identifying the drill bit/coring method used to retrieve the core.",
+				"unitText": "string",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/5",
+				"value": "Core_type"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Sequential number of a section of a core.",
+				"unitText": "int64",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/6",
+				"value": "Section_number"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Type of a section C=Core Catcher, S=Core.",
+				"unitText": "string",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/7",
+				"value": "Section_type"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Identifier ID of a section of a core.",
+				"unitText": "int64",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/8",
+				"value": "Section_id"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Top value of an interval of a section in cm.",
+				"unitText": "string",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/9",
+				"value": "Top_cm"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/10",
+				"value": "Depth_mbsf"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf with compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/11",
+				"value": "Depth_mbsf_c"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf with voids removed.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/12",
+				"value": "Depth_mbsf_v"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf with voids removed and compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/13",
+				"value": "Depth_mbsf_vc"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf with exotics removed.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/14",
+				"value": "Depth_mbsf_e"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf with exotics removed and compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/15",
+				"value": "Depth_mbsf_ec"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf with voids and exotics removed.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/16",
+				"value": "Depth_mbsf_ve"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters below sea floor mbsf with voids and exotics removed and compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/17",
+				"value": "Depth_mbsf_vec"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/18",
+				"value": "Depth_mcd"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd with compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/19",
+				"value": "Depth_mcd_c"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd with voids removed.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/20",
+				"value": "Depth_mcd_v"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd with voids removed and compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/21",
+				"value": "Depth_mcd_vc"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd with exotics removed.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/22",
+				"value": "Depth_mcd_e"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd with exotics removed and compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/23",
+				"value": "Depth_mcd_ec"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd with voids and exotics removed.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/24",
+				"value": "Depth_mcd_ve"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Depth in meters composite depth mcd with voids and exotics removed and compression applied.",
+				"unitText": "sql.NullString",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/25",
+				"value": "Depth_mcd_vec"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Identifier ID for order of image for same data type and same stratigraphic level core, section, interval or depth.",
+				"unitText": "int64",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/26",
+				"value": "Page_id"
+			 },
+			 {
+				"@type": "PropertyValue",
+				"description": "Uniform Resource Locator URL for the image available on the internet.",
+				"unitText": "string",
+				"url": "http://opencoredata/id/resource/janus/janusvcdimage/27",
+				"value": "Url"
+			 }
+			]
+		 } 
+</script>
+
+
+</head>
+<body style="background-color:rgb(214, 180, 117);">	
+	
+	<my-tag></my-tag>
+
+</body>
+</html>

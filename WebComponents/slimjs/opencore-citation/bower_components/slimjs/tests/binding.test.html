@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../Slim.js"></script>
+    <title></title>
+</head>
+<body>
+    <test-binding></test-binding>
+    <script>
+
+        Slim.tag('test-binding',
+        `
+        <h1 click="changeName" bind>Hello, {{myName}}</h1>
+        <h2 bind>{{rev(myName)}}</h2>
+        <div id="check-prop" bind:attr="myName" bind:nested-value="nested.value1">Test Div</div>
+        <div id="check-method" bind:multi="multi(myName, nested.text)" bind:attr="rev(myName)" bind:nested-value="rev(nested.text)">Test Div</div>
+        <div id="check-undefined-method" bind>{{undefinedMethod(prop)}}</div>
+        `,
+        class extends Slim {
+
+            onBeforeCreated() {
+                this.myName = "eavichay";
+                this.nested = {
+                  value1: 1,
+                  text: 'hello'
+                }
+            }
+
+            multi(a, b) {
+              return '*' + a + '*' + b + '*'
+            }
+
+            rev(what) {
+                return what.split('').reverse().join('');
+            }
+
+            changeName() {
+                this.myName = 'slim.js';
+            }
+        });
+    </script>
+</body>
+</html>

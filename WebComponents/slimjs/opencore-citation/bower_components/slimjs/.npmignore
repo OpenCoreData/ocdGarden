@@ -1,0 +1,11 @@
+bin
+docs
+example
+website
+reports
+.idea
+.vscode
+./Slim.js
+./Slim.es6.js
+./Slim.min.js
+
