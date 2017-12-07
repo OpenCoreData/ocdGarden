@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -12,10 +13,11 @@ import (
 )
 
 func main() {
-	dirname := "."
-	if len(os.Args) > 1 {
-		dirname = os.Args[1]
-	}
+	dirToIndexPtr := flag.String("dir", ".", "directory to index")
+
+	flag.Parse()
+	dirname := *dirToIndexPtr
+
 	err := godirwalk.Walk(dirname, &godirwalk.Options{
 		Callback: func(osPathname string, de *godirwalk.Dirent) error {
 			projDir(de, osPathname)

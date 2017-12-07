@@ -1,0 +1,9 @@
+
+
+Check with test3 and see if it just needs the webcomponet.js 
+also included as a seperate js call prior to the bundle.  If 
+that is the case, then just push forward for now with that.
+
+Look for the MS render test farm interface
+
+https://developer.microsoft.com/en-us/microsoft-edge/tools/screenshots/?url=https%3A%2F%2Fnews.ycombinator.com%2F

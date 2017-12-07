@@ -1,0 +1,14 @@
+⏳  Building...
+
+⏳  Building tag2.js...
+🚨  /Users/dfils/src/go/src/opencoredata.org/ocdGarden/WebComponents/slimjs/opencore-citation/parcelTest/tag2.js: MOZ_TO_ME[node.type] is not a function
+    at from_moz (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1), <anonymous>:10753:54)
+    at Array.map (<anonymous>)
+    at Object.From_Moz_CallExpression [as CallExpression] (eval at map (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1)), <anonymous>:8:19)
+    at from_moz (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1), <anonymous>:10753:54)
+    at Object.ExpressionStatement (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1), <anonymous>:10292:23)
+    at from_moz (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1), <anonymous>:10753:54)
+    at Array.map (<anonymous>)
+    at Object.Program (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1), <anonymous>:10267:51)
+    at from_moz (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1), <anonymous>:10753:54)
+    at Function.AST_Node.from_mozilla_ast (eval at <anonymous> (/usr/local/lib/node_modules/parcel-bundler/node_modules/uglify-js/tools/node.js:21:1), <anonymous>:10761:19)

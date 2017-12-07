@@ -1,0 +1,26 @@
+{
+	"name": "world",
+	"resources": [
+		{
+			"name": "population",
+			"path": "population.csv",
+			"profile": "tabular-data-resource",
+			"schema": {
+				"fields": [
+					{
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"name": "year",
+						"type": "integer"
+					},
+					{
+						"name": "population",
+						"type": "integer"
+					}
+				]
+			}
+		}
+	]
+}
