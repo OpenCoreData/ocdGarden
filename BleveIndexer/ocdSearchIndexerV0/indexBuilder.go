@@ -192,9 +192,9 @@ ORDER By (xsd:integer(?column))
 `
 
 func main() {
-	indexSchemaOrg()
+	// indexSchemaOrg()
 	// indexAbstracts()
-	// indexCSDCO()
+	indexCSDCO()
 }
 
 // JRSO
@@ -221,7 +221,11 @@ func indexCSDCO() {
 
 	for _, elem2 := range results2 {
 		elem2.OCDSOURCE = "CSDCO"
-		err = index.Index(elem2.HoleID, elem2) // TODO:  review if this is really what I want for a UID here?
+
+		// TODO  make a URI to index with
+		indexid := fmt.Sprintf("http://opencoredata.org/collections/csdco/%s", elem2.HoleID)
+
+		err = index.Index(indexid, elem2) // TODO:  review if this is really what I want for a UID here?
 	}
 
 }

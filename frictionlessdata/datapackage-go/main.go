@@ -7,6 +7,7 @@ import (
 	"github.com/frictionlessdata/datapackage-go/datapackage"
 )
 
+// TODO integrate with CSDCO walker code
 func main() {
 	fmt.Println("Frictionless Data Package")
 

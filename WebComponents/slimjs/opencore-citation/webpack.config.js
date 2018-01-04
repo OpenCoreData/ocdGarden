@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: [  './webcomponents-loader.js', './custom-elements.min.js','./bower_components/slimjs/Slim.js', './tag2.js'],
+    entry: ['./webcomponents-hi-ce.js','./webcomponents-hi-sd-ce.js','./webcomponents-hi.js','./webcomponents-lite.js','./webcomponents-loader.js','./webcomponents-sd-ce.js',  './custom-elements.min.js','./bower_components/slimjs/Slim.js', './tag2.js'],
     output: {
         path: path.resolve(__dirname, '.'),
         filename: 'bundle.js'

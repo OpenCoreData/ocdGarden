@@ -18,8 +18,11 @@ func main() {
 
 	// cmd1 := redis.NewStringCmd("GET", "test", "hono")
 	// cmd1 := redis.NewStringCmd("GET", "fleet", "truck3")
-	// cmd1 := redis.NewGeoLocationCmd("INTERSECTS", "fleet", "BOUNDS 33.462 -112.268 33.491 -112.245")
+	// cmd1 := redis.NewGeoLocationCmd("INTERSECTS", "p418", "BOUNDS 33.462 -112.268 33.491 -112.245")
+	// cmd1 := redis.NewStringCmd("INTERSECTS", "p418", "BOUNDS", 33.462, -112.268, 33.491, -112.245)
 	cmd1 := redis.NewStringCmd("INTERSECTS", "p418", "OBJECT", dataExample())
+	// cmd1 := redis.NewStringCmd("GET", "p418", "http://opencoredata.org/id/dataset/740caec2-3bb2-473a-9dc2-d132dc51e2c1")
+	// cmd1 := redis.NewStringCmd("SCAN", "fleet")
 
 	client.Process(cmd1)
 	v1, err := cmd1.Result()
