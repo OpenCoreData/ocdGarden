@@ -1,0 +1,2846 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foo: <http://www.foo.org/foo/> .
+
+<http://opencoredata.org/voc/janus/1/>
+    dc:creator "Open Core Data" ;
+    dc:description "A vocabulary for describing parameters used in the DSDP/OPD/IODP Janus Database" ;
+    dc:title "OCD Janus Controlled Vocabulary" ;
+    a skos:ConceptScheme .
+
+<http://opencoredata.org/voc/janus/1/calib_separation_m0>
+    a skos:Concept ;
+    skos:definition "Calibration separation intercept." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_separation_m0" .
+
+<http://opencoredata.org/voc/janus/1/calib_separation_m1>
+    a skos:Concept ;
+    skos:definition "Calibration separation slope." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_separation_m1" .
+
+<http://opencoredata.org/voc/janus/1/calib_separation_mse>
+    a skos:Concept ;
+    skos:definition "Calibration separation mean squared error." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_separation_mse" .
+
+<http://opencoredata.org/voc/janus/1/calib_time_m0>
+    a skos:Concept ;
+    skos:definition "Calibration time intercept." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_time_m0" .
+
+<http://opencoredata.org/voc/janus/1/calib_time_m1>
+    a skos:Concept ;
+    skos:definition "Calibration time slope." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_time_m1" .
+
+<http://opencoredata.org/voc/janus/1/calib_time_mse>
+    a skos:Concept ;
+    skos:definition "Calibration time mean squared error." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_time_mse" .
+
+<http://opencoredata.org/voc/janus/1/calibration_timestamp>
+    a skos:Concept ;
+    skos:definition "Date and time of calibration." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Calibration_timestamp" .
+
+<http://opencoredata.org/voc/janus/1/calibration_timestamp>
+    a skos:Concept ;
+    skos:definition "Date and time of calibration." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Calibration_timestamp" .
+
+<http://opencoredata.org/voc/janus/1/cao_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Calcium Oxide (CaO) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "CaO_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/catwalk_sample>
+    a skos:Concept ;
+    skos:definition "Flag to indicate if sample was taken on the core receiving platform before the core was split." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Catwalk_sample" .
+
+<http://opencoredata.org/voc/janus/1/ce_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Cerium (Ce) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Ce_ppm" .
+
+<http://opencoredata.org/voc/janus/1/channel_increment>
+    a skos:Concept ;
+    skos:definition "Wavelength increment between channels." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Channel_increment" .
+
+<http://opencoredata.org/voc/janus/1/co_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Cobalt (Co) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Co_ppm" .
+
+<http://opencoredata.org/voc/janus/1/mad_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a moisture and density sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Mad_comment" .
+
+<http://opencoredata.org/voc/janus/1/component_name>
+    a skos:Concept ;
+    skos:definition "Name of the component in a smear slide or sedimentary thin section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Component_name" .
+
+<http://opencoredata.org/voc/janus/1/component_name_code>
+    a skos:Concept ;
+    skos:definition "Code number of the component name in a smear slide or sedimentary thin section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Component_name_code" .
+
+<http://opencoredata.org/voc/janus/1/component_percent>
+    a skos:Concept ;
+    skos:definition "Percent of component in a smear slide." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Component_percent" .
+
+<http://opencoredata.org/voc/janus/1/component_type_code>
+    a skos:Concept ;
+    skos:definition "Code for type of component in a smear slide; M=Mineral, R=Rock, B=Biogenic, O=Other." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Component_type_code" .
+
+<http://opencoredata.org/voc/janus/1/contact_pressure>
+    a skos:Concept ;
+    skos:definition "Contact pressure applied." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Contact_pressure" .
+
+<http://opencoredata.org/voc/janus/1/contaminated_reworked>
+    a skos:Concept ;
+    skos:definition "Flag for Contamination (C) or Reworked (R) specimen in sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Contaminated_reworked" .
+
+<http://opencoredata.org/voc/janus/1/control_point_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a control point for an age model." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Control_point_comment" .
+
+<http://opencoredata.org/voc/janus/1/core>
+    a skos:Concept ;
+    skos:definition "Sequential numbers identifying the cores retrieved from a particular hole." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Core" .
+
+<http://opencoredata.org/voc/janus/1/core_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a core." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Core_comment" .
+
+<http://opencoredata.org/voc/janus/1/core_diameter>
+    a skos:Concept ;
+    skos:definition "Diameter of a core in cm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "cm" ; 
+    foo:unitDescription "centimeters (cm)" ; 
+    skos:prefLabel "Core_diameter" .
+
+<http://opencoredata.org/voc/janus/1/core_diameter>
+    a skos:Concept ;
+    skos:definition "Diameter of a core in cm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "cm" ; 
+    foo:unitDescription "centimeters (cm)" ; 
+    skos:prefLabel "Core_diameter" .
+
+<http://opencoredata.org/voc/janus/1/core_image_type>
+    a skos:Concept ;
+    skos:definition "Type of image for a core, either CORE for all of a core or SECTION for a section of a core." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Core_image_type" .
+
+<http://opencoredata.org/voc/janus/1/core_status>
+    a skos:Concept ;
+    skos:definition "Indicator for the status of a core, either FULL or HALF." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Core_status" .
+
+<http://opencoredata.org/voc/janus/1/core_status>
+    a skos:Concept ;
+    skos:definition "Indicator for the status of a core, either FULL or HALF." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Core_status" .
+
+<http://opencoredata.org/voc/janus/1/core_temperature>
+    a skos:Concept ;
+    skos:definition "Measurement value of temperature of a core in degrees celcius." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "��C" ; 
+    foo:unitDescription "degrees Celcius (��C)" ; 
+    skos:prefLabel "Core_temperature" .
+
+<http://opencoredata.org/voc/janus/1/core_temperature>
+    a skos:Concept ;
+    skos:definition "Measurement value of temperature of a core in degrees celcius." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��C" ; 
+    foo:unitDescription "degrees Celcius (��C)" ; 
+    skos:prefLabel "Core_temperature" .
+
+<http://opencoredata.org/voc/janus/1/core_type>
+    a skos:Concept ;
+    skos:definition "Letter code identifying the drill bit/coring method used to retrieve the core." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Core_type" .
+
+<http://opencoredata.org/voc/janus/1/corrected_susceptibility>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated correction of magnetic susceptibility." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "SI" ; 
+    foo:unitDescription "SI" ; 
+    skos:prefLabel "Corrected_susceptibility" .
+
+<http://opencoredata.org/voc/janus/1/corrected_susceptibility>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated correction of magnetic susceptibility." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    foo:unit "SI" ; 
+    foo:unitDescription "SI" ; 
+    skos:prefLabel "Corrected_susceptibility" .
+
+<http://opencoredata.org/voc/janus/1/corrected_total_counts>
+    a skos:Concept ;
+    skos:definition "Measurement value of (calculated) corrected total counts per second." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "cps" ; 
+    foo:unitDescription "counts per second (cps)" ; 
+    skos:prefLabel "Corrected_total_counts" .
+
+<http://opencoredata.org/voc/janus/1/cr_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Chromium (Cr) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Cr_ppm" .
+
+<http://opencoredata.org/voc/janus/1/cs_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Cesium (Cs) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Cs_ppm" .
+
+<http://opencoredata.org/voc/janus/1/cu_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Copper (Cu) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Cu_ppm" .
+
+<http://opencoredata.org/voc/janus/1/curated_length>
+    a skos:Concept ;
+    skos:definition "Measurement value of the length of a curated core in meters." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "m" ; 
+    foo:unitDescription "meters (m)" ; 
+    skos:prefLabel "Curated_length" .
+
+<http://opencoredata.org/voc/janus/1/data_type_abbr>
+    a skos:Concept ;
+    skos:definition "Data type of an image." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Data_type_abbr" .
+
+<http://opencoredata.org/voc/janus/1/datum_age>
+    a skos:Concept ;
+    skos:definition "Age in millions of years (ma) of datum." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "ma" ; 
+    foo:unitDescription "millions of years (ma)" ; 
+    skos:prefLabel "Datum_age" .
+
+<http://opencoredata.org/voc/janus/1/datum_age_error>
+    a skos:Concept ;
+    skos:definition "Error value of datum age in millions of years (ma) of datum." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ma" ; 
+    foo:unitDescription "millions of years (ma)" ; 
+    skos:prefLabel "Datum_age_error" .
+
+<http://opencoredata.org/voc/janus/1/datum_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a datum." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Datum_comment" .
+
+<http://opencoredata.org/voc/janus/1/datum_depth>
+    a skos:Concept ;
+    skos:definition "Depth in meters below sea floor (mbsf) of datum." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mbsf" ; 
+    foo:unitDescription "meters below sea floor (mbsf)" ; 
+    skos:prefLabel "Datum_depth" .
+
+<http://opencoredata.org/voc/janus/1/datum_depth_error>
+    a skos:Concept ;
+    skos:definition "Error value of datum depth in meters below sea floor (mbsf)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mbsf" ; 
+    foo:unitDescription "meters below sea floor (mbsf)" ; 
+    skos:prefLabel "Datum_depth_error" .
+
+<http://opencoredata.org/voc/janus/1/datum_description>
+    a skos:Concept ;
+    skos:definition "Description of datum - fossil name." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Datum_description" .
+
+<http://opencoredata.org/voc/janus/1/datum_fossil_group>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of the fossil group of the datum." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Datum_fossil_group" .
+
+<http://opencoredata.org/voc/janus/1/datum_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of the datum." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Datum_id" .
+
+<http://opencoredata.org/voc/janus/1/datum_location>
+    a skos:Concept ;
+    skos:definition "Location of sample from which datum call was made (ship or repository)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Datum_location" .
+
+<http://opencoredata.org/voc/janus/1/datum_post_cruise_flag>
+    a skos:Concept ;
+    skos:definition "Flag to indicate if datum call was made post-cruise." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Datum_post_cruise_flag" .
+
+<http://opencoredata.org/voc/janus/1/datum_sample_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a sample from which datum call was made." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Datum_sample_id" .
+
+<http://opencoredata.org/voc/janus/1/datum_type>
+    a skos:Concept ;
+    skos:definition "Type of datum such as first occurrence (FO), last common occurrence (LCO)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Datum_type" .
+
+<http://opencoredata.org/voc/janus/1/declination>
+    a skos:Concept ;
+    skos:definition "Measurement value of the orientation of the magnetic field of the sample (the field acquired at the time of the rock formation). The angle between geographic north and the magnetic field direction (the magnetic azimuth)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees" ; 
+    skos:prefLabel "Declination" .
+
+<http://opencoredata.org/voc/janus/1/demag_level>
+    a skos:Concept ;
+    skos:definition "Measurement value of the level of demagnetization in milliteslas (mT) if AF or deg. C. if thermal." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mT / ��C" ; 
+    foo:unitDescription "milleteslas (mT) or degrees Celcius (��C)" ; 
+    skos:prefLabel "Demag_level" .
+
+<http://opencoredata.org/voc/janus/1/demag_type>
+    a skos:Concept ;
+    skos:definition "Type of demagnetization system used for measurement - AFD (integrated sub-system of the cryomagnetometer), AFDD (DTek), THD (thermal demag unit)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Demag_type" .
+
+<http://opencoredata.org/voc/janus/1/bulk_density>
+    a skos:Concept ;
+    skos:definition "Measurement value of the bulk density in grams/cc." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "g/cc" ; 
+    foo:unitDescription "grams per cc (g/cc)" ; 
+    skos:prefLabel "Bulk_density" .
+
+<http://opencoredata.org/voc/janus/1/dht_comment>
+    a skos:Concept ;
+    skos:definition "Comment on downhole temperature measurement." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Dht_comment" .
+
+<http://opencoredata.org/voc/janus/1/depth_mbsf>
+    a skos:Concept ;
+    skos:definition "Depth in meters below sea floor (mbsf)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mbsf" ; 
+    foo:unitDescription "meters below sea floor (mbsf)" ; 
+    skos:prefLabel "Depth_mbsf" .
+
+<http://opencoredata.org/voc/janus/1/direction>
+    a skos:Concept ;
+    skos:definition "Direction of measurement relative to a section of a core - X, Y, or Z.  X is into the working half." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Direction" .
+
+<http://opencoredata.org/voc/janus/1/drift_corr_susceptibility>
+    a skos:Concept ;
+    skos:definition "Measurement value of magnetic susceptibility corrected for instrumentation drift." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "SI" ; 
+    foo:unitDescription "SI" ; 
+    skos:prefLabel "Drift_corr_susceptibility" .
+
+<http://opencoredata.org/voc/janus/1/dy_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Dysprosium (Dy) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Dy_ppm" .
+
+<http://opencoredata.org/voc/janus/1/er_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Erbium (Er) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Er_ppm" .
+
+<http://opencoredata.org/voc/janus/1/expected_velocity>
+    a skos:Concept ;
+    skos:definition "Value of expected velocity based on a standard in meters per second." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "m/s" ; 
+    foo:unitDescription "meters per second (m/s)" ; 
+    skos:prefLabel "Expected_velocity" .
+
+<http://opencoredata.org/voc/janus/1/fe2o3_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Iron Oxide (Fe2O3) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Fe2O3_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/feature>
+    a skos:Concept ;
+    skos:definition "Description of a feature in a thin section image." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Feature" .
+
+<http://opencoredata.org/voc/janus/1/file_name>
+    a skos:Concept ;
+    skos:definition "Name of a thin section image file." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "File_name" .
+
+<http://opencoredata.org/voc/janus/1/first_channel>
+    a skos:Concept ;
+    skos:definition "Wavelength of the first channel of color reflectance spectral values in nm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    foo:unit "nm" ; 
+    foo:unitDescription "nannometers (nm)" ; 
+    skos:prefLabel "First_channel" .
+
+<http://opencoredata.org/voc/janus/1/fossil_group>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a fossil group." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Fossil_group" .
+
+<http://opencoredata.org/voc/janus/1/fossil_group_name>
+    a skos:Concept ;
+    skos:definition "Name of a fossil group." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Fossil_group_name" .
+
+<http://opencoredata.org/voc/janus/1/fossil_group_name>
+    a skos:Concept ;
+    skos:definition "Name of a fossil group." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Fossil_group_name" .
+
+<http://opencoredata.org/voc/janus/1/freq_normalization_factor>
+    a skos:Concept ;
+    skos:definition "Factor used for normalizing magnetic susceptibility measurement." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Freq_normalization_factor" .
+
+<http://opencoredata.org/voc/janus/1/ga_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Gallium (Ga) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Ga_ppm" .
+
+<http://opencoredata.org/voc/janus/1/gd_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Gadolinium (Gd) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Gd_ppm" .
+
+<http://opencoredata.org/voc/janus/1/genus_subgenus>
+    a skos:Concept ;
+    skos:definition "Name of the Genus/subgenus of a fossil taxon." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Genus_subgenus" .
+
+<http://opencoredata.org/voc/janus/1/geologic_age_old>
+    a skos:Concept ;
+    skos:definition "Name of the oldest geologic age of a paleo sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Geologic_age_old" .
+
+<http://opencoredata.org/voc/janus/1/geologic_age_young>
+    a skos:Concept ;
+    skos:definition "Name of the youngest geologic age of a paleo sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Geologic_age_young" .
+
+<http://opencoredata.org/voc/janus/1/group_abundance_name>
+    a skos:Concept ;
+    skos:definition "Name of the abundance for a fossil group in a paleo sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Group_abundance_name" .
+
+<http://opencoredata.org/voc/janus/1/h_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Hydrogen (H) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "H_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/height>
+    a skos:Concept ;
+    skos:definition "Distance between aperture and core surface in mm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mm" ; 
+    foo:unitDescription "millimeters (mm)" ; 
+    skos:prefLabel "Height" .
+
+<http://opencoredata.org/voc/janus/1/height_assumed>
+    a skos:Concept ;
+    skos:definition "Flag to indicate whether height measurement value was actually measured (1) or not (0)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Height_assumed" .
+
+<http://opencoredata.org/voc/janus/1/hf_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Hafnium (Hf) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Hf_ppm" .
+
+<http://opencoredata.org/voc/janus/1/hole>
+    a skos:Concept ;
+    skos:definition "Letter identifying the hole at a site from which a core was retrieved or data was collected." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Hole" .
+
+<http://opencoredata.org/voc/janus/1/hole_azimuth>
+    a skos:Concept ;
+    skos:definition "OCD_TENSOR_CORE Measurement value of the azimuth of the hole in degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees (��)" ; 
+    skos:prefLabel "Hole_azimuth" .
+
+<http://opencoredata.org/voc/janus/1/hole_inclination>
+    a skos:Concept ;
+    skos:definition "Measurement value of the deviation of the hole from vertical in degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees (��)" ; 
+    skos:prefLabel "Hole_inclination" .
+
+<http://opencoredata.org/voc/janus/1/hole_inclination>
+    a skos:Concept ;
+    skos:definition "Measurement value of the deviation of the hole from vertical in degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees (��)" ; 
+    skos:prefLabel "Hole_inclination" .
+
+<http://opencoredata.org/voc/janus/1/image_date>
+    a skos:Concept ;
+    skos:definition "Date image was acquired." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Image_date" .
+
+<http://opencoredata.org/voc/janus/1/image_format>
+    a skos:Concept ;
+    skos:definition "File image format of an image (TIF,JPG,PDF)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Image_format" .
+
+<http://opencoredata.org/voc/janus/1/image_resolution>
+    a skos:Concept ;
+    skos:definition "Resolution of the image in dpi." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    foo:unit "dpi" ; 
+    foo:unitDescription "dots per inch (dpi)" ; 
+    skos:prefLabel "Image_resolution" .
+
+<http://opencoredata.org/voc/janus/1/inclination>
+    a skos:Concept ;
+    skos:definition "Measurement value of the orientation of the magnetic field of a sample (the field acquired at the time of the rock formation), and angle between the horizontal and the field direction measured positive downward, in degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Inclination" .
+
+<http://opencoredata.org/voc/janus/1/inor_c_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Inorganic Carbon in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "Inor_C_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/integration_time>
+    a skos:Concept ;
+    skos:definition "Integration_time in seconds (s)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "s" ; 
+    foo:unitDescription "seconds (s)" ; 
+    skos:prefLabel "Integration_time" .
+
+<http://opencoredata.org/voc/janus/1/intensity>
+    a skos:Concept ;
+    skos:definition "OCD_CRYOMAG_SECTION  Measurement value of the intensity in amp/m." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "amp/m" ; 
+    foo:unitDescription "ampere per meter (amp/m)" ; 
+    skos:prefLabel "Intensity" .
+
+<http://opencoredata.org/voc/janus/1/intensity_x>
+    a skos:Concept ;
+    skos:definition "Measurement value of the intensity in the x-direction  that has been corrected for background and/or tray correction, in amp/m." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "amp/m" ; 
+    foo:unitDescription "ampere per meter (amp/m)" ; 
+    skos:prefLabel "Intensity_x" .
+
+<http://opencoredata.org/voc/janus/1/intensity_y>
+    a skos:Concept ;
+    skos:definition "Measurement value of the intensity in the y-direction  that has been corrected for background and/or tray correction, in amp/m." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "amp/m" ; 
+    foo:unitDescription "ampere per meter (amp/m)" ; 
+    skos:prefLabel "Intensity_y" .
+
+<http://opencoredata.org/voc/janus/1/intensity_z>
+    a skos:Concept ;
+    skos:definition "Measurement value of the intensity in the z-direction  that has been corrected for background and/or tray correction, in amp/m." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "amp/m" ; 
+    foo:unitDescription "ampere per meter (amp/m)" ; 
+    skos:prefLabel "Intensity_z" .
+
+<http://opencoredata.org/voc/janus/1/k2o_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Potassium oxide (K2O) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "K2O_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/l_star>
+    a skos:Concept ;
+    skos:definition "Measurement value of the L* lightness measurement of L*a*b* CIELAB system for color reflectance." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "L_star" .
+
+<http://opencoredata.org/voc/janus/1/la_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Lanthanum (La) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "La_ppm" .
+
+<http://opencoredata.org/voc/janus/1/last_channel>
+    a skos:Concept ;
+    skos:definition "Wavelength of the last channel of color reflectance spectral values in nm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    foo:unit "nm" ; 
+    foo:unitDescription "nannometers (nm)" ; 
+    skos:prefLabel "Last_channel" .
+
+<http://opencoredata.org/voc/janus/1/leg>
+    a skos:Concept ;
+    skos:definition "Number identifying the cruise." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Leg" .
+
+<http://opencoredata.org/voc/janus/1/length_cored>
+    a skos:Concept ;
+    skos:definition "Length cored of the core in meters." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "m" ; 
+    foo:unitDescription "meters (m)" ; 
+    skos:prefLabel "Length_cored" .
+
+<http://opencoredata.org/voc/janus/1/length_recovered>
+    a skos:Concept ;
+    skos:definition "Length of material recovered in the core in meters." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "m" ; 
+    foo:unitDescription "meters (m)" ; 
+    skos:prefLabel "Length_recovered" .
+
+<http://opencoredata.org/voc/janus/1/light_abbr>
+    a skos:Concept ;
+    skos:definition "Abbreviation for microscope light type." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Light_abbr" .
+
+<http://opencoredata.org/voc/janus/1/lims_component_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of the LIMS component for the loop." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Lims_component_id" .
+
+<http://opencoredata.org/voc/janus/1/liner_correction>
+    a skos:Concept ;
+    skos:definition "Flag for if liner correction was applied to measurement." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Liner_correction" .
+
+<http://opencoredata.org/voc/janus/1/liner_status>
+    a skos:Concept ;
+    skos:definition "Indicator for type of core liner; NONE, HALF, or FULL." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Liner_status" .
+
+<http://opencoredata.org/voc/janus/1/liner_status>
+    a skos:Concept ;
+    skos:definition "Indicator for type of core liner; NONE, HALF, or FULL." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Liner_status" .
+
+<http://opencoredata.org/voc/janus/1/liner_thickness>
+    a skos:Concept ;
+    skos:definition "Thickness of core liner in mm. If liner correction = No then this value is zero." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mm" ; 
+    foo:unitDescription "millimeters (mm)" ; 
+    skos:prefLabel "Liner_thickness" .
+
+<http://opencoredata.org/voc/janus/1/lithology_code>
+    a skos:Concept ;
+    skos:definition "One character alpha-numeric code for lithology identified in smear slide." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Lithology_code" .
+
+<http://opencoredata.org/voc/janus/1/location>
+    a skos:Concept ;
+    skos:definition "Code that indicates the site where the Janus application is exercised.  Values are SHI(ship), GCR (Gulf Coast Repository), ECR (East Coast Repository) and BRE (Bremen repository)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Location" .
+
+<http://opencoredata.org/voc/janus/1/loop_temperature>
+    a skos:Concept ;
+    skos:definition "Temperature of the Bartington instrument loop through which a core is passed in degrees celcius." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��C" ; 
+    foo:unitDescription "degrees Celcius (��C)" ; 
+    skos:prefLabel "Loop_temperature" .
+
+<http://opencoredata.org/voc/janus/1/magnetic_susceptibility>
+    a skos:Concept ;
+    skos:definition "Measurement value of magnetic susceptibility in SI units." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "SI" ; 
+    foo:unitDescription "SI" ; 
+    skos:prefLabel "Magnetic_susceptibility" .
+
+<http://opencoredata.org/voc/janus/1/magnification>
+    a skos:Concept ;
+    skos:definition "Magnification used for the microphotograph." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Magnification" .
+
+<http://opencoredata.org/voc/janus/1/max_torque_angle>
+    a skos:Concept ;
+    skos:definition "Measurement value of the torque angle at sediment failure in degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees (��)" ; 
+    skos:prefLabel "Max_torque_angle" .
+
+<http://opencoredata.org/voc/janus/1/mean_acoustic_signal>
+    a skos:Concept ;
+    skos:definition "Measurement value of the mean acoustic signal for velocity." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Mean_acoustic_signal" .
+
+<http://opencoredata.org/voc/janus/1/meas_separation_mean>
+    a skos:Concept ;
+    skos:definition "Measurement value of the distance between a pair of transducers in mm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mm" ; 
+    foo:unitDescription "millimeters (mm)" ; 
+    skos:prefLabel "Meas_separation_mean" .
+
+<http://opencoredata.org/voc/janus/1/meas_time_mean>
+    a skos:Concept ;
+    skos:definition "Measurement value of the transit time for a wave to travel between transducers in microseconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��s" ; 
+    foo:unitDescription "microseconds (��s)" ; 
+    skos:prefLabel "Meas_time_mean" .
+
+<http://opencoredata.org/voc/janus/1/meas_time_sd>
+    a skos:Concept ;
+    skos:definition "Measurement value of the calculated standard deviation of the measured time for a signal to travel between a pair of transducers in microseconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��s" ; 
+    foo:unitDescription "microseconds (��s)" ; 
+    skos:prefLabel "Meas_time_sd" .
+
+<http://opencoredata.org/voc/janus/1/measured_counts>
+    a skos:Concept ;
+    skos:definition "Raw measured counts collected by an MST instrument during a measurement." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    foo:unit "ct" ; 
+    foo:unitDescription "count (ct)" ; 
+    skos:prefLabel "Measured_counts" .
+
+<http://opencoredata.org/voc/janus/1/measured_time>
+    a skos:Concept ;
+    skos:definition "Measurement value of the distance between a pair of transducers in mm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mm" ; 
+    foo:unitDescription "millimeters (mm)" ; 
+    skos:prefLabel "Measured_time" .
+
+<http://opencoredata.org/voc/janus/1/measurement_no>
+    a skos:Concept ;
+    skos:definition "The number of the measurement taken to differentiate multiple measurements taken at the same interval." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Measurement_no" .
+
+<http://opencoredata.org/voc/janus/1/measurement_no>
+    a skos:Concept ;
+    skos:definition "The number of the measurement taken to differentiate multiple measurements taken at the same interval." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Measurement_no" .
+
+<http://opencoredata.org/voc/janus/1/method>
+    a skos:Concept ;
+    skos:definition "Letter designation of the method of calculation for moisture and density measurements." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Method" .
+
+<http://opencoredata.org/voc/janus/1/mgo_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Magnesium Oxide (MgO) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "MgO_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/micro_image_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a thin section microphotograph." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Micro_image_id" .
+
+<http://opencoredata.org/voc/janus/1/mno_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Manganese Oxide (MnO) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "MnO_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/mo_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Molybdenum (Mo) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Mo_ppm" .
+
+<http://opencoredata.org/voc/janus/1/mudline_temperature>
+    a skos:Concept ;
+    skos:definition "Measurement value of the temperature at mudline in degrees celcius." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��C" ; 
+    foo:unitDescription "degrees Celcius (��C)" ; 
+    skos:prefLabel "Mudline_temperature" .
+
+<http://opencoredata.org/voc/janus/1/munsell_hvc>
+    a skos:Concept ;
+    skos:definition "Measurement value of the Munsell HVC color notation." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    foo:unitDescription "Munsell HVC" ; 
+    skos:prefLabel "Munsell_hvc" .
+
+<http://opencoredata.org/voc/janus/1/na2o_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Sodium Oxide (Na2O) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "Na2O_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/nb_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Niobium (Nb) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Nb_ppm" .
+
+<http://opencoredata.org/voc/janus/1/nd_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Neodymium (Nd) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Nd_ppm" .
+
+<http://opencoredata.org/voc/janus/1/ni_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Nickel (Ni) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Ni_ppm" .
+
+<http://opencoredata.org/voc/janus/1/nit_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Nitrogen (N) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "Nit_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/normalized_susceptibility>
+    a skos:Concept ;
+    skos:definition "Measurement value of normalized magnetic susceptibility." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "SI" ; 
+    foo:unitDescription "SI" ; 
+    skos:prefLabel "Normalized_susceptibility" .
+
+<http://opencoredata.org/voc/janus/1/number_cycles>
+    a skos:Concept ;
+    skos:definition "Number of measurements taken at the specified integration time to obtain an averaged result." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Number_cycles" .
+
+<http://opencoredata.org/voc/janus/1/number_measured>
+    a skos:Concept ;
+    skos:definition "Number of measurements for each data point." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Number_measured" .
+
+<http://opencoredata.org/voc/janus/1/offset>
+    a skos:Concept ;
+    skos:definition "Distance core needed to be lowered from sensor in mm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mm" ; 
+    foo:unitDescription "millimeters (mm)" ; 
+    skos:prefLabel "Offset" .
+
+<http://opencoredata.org/voc/janus/1/org_c_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Organic Carbon in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "Org_C_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/p2o5_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Phosphorus pentoxide (P2O5) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "P2O5_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/page_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) for order of image for same data type and same stratigraphic level (core, section, interval or depth)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Page_id" .
+
+<http://opencoredata.org/voc/janus/1/paleo_sample_comment>
+    a skos:Concept ;
+    skos:definition "Remark about a paleo sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Paleo_sample_comment" .
+
+<http://opencoredata.org/voc/janus/1/pb_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Lead (Pb) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Pb_ppm" .
+
+<http://opencoredata.org/voc/janus/1/percent_clay>
+    a skos:Concept ;
+    skos:definition "Measurement value of Clay in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Percent_clay" .
+
+<http://opencoredata.org/voc/janus/1/percent_recovered>
+    a skos:Concept ;
+    skos:definition "Measurement value of core recovered in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Percent_recovered" .
+
+<http://opencoredata.org/voc/janus/1/percent_sand>
+    a skos:Concept ;
+    skos:definition "Measurement value of Sand in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Percent_sand" .
+
+<http://opencoredata.org/voc/janus/1/percent_silt>
+    a skos:Concept ;
+    skos:definition "Measurement value of Silt in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Percent_silt" .
+
+<http://opencoredata.org/voc/janus/1/piece>
+    a skos:Concept ;
+    skos:definition "Sequential number for a piece of rock (hard rock samples) within a section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Piece" .
+
+<http://opencoredata.org/voc/janus/1/piece_sub_piece>
+    a skos:Concept ;
+    skos:definition "Concatenated designation of a piece (number) and sub-piece (letter) sub-piece of a rock (hard rock samples) within a section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Piece_sub_piece" .
+
+<http://opencoredata.org/voc/janus/1/post_cruise_flag>
+    a skos:Concept ;
+    skos:definition "Flag to indicate analysis done post-cruise." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Post_cruise_flag" .
+
+<http://opencoredata.org/voc/janus/1/presence_absence_flag>
+    a skos:Concept ;
+    skos:definition "Flag to indicate presence or absence of a taxon." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Presence_absence_flag" .
+
+<http://opencoredata.org/voc/janus/1/preservation_name>
+    a skos:Concept ;
+    skos:definition "Abbreviation for qualitative assessment of overall preservation state of specimens of a fossil group in a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Preservation_name" .
+
+<http://opencoredata.org/voc/janus/1/probe_number>
+    a skos:Concept ;
+    skos:definition "Number that uniquely identifies a probe of a manufacturers instrument for associating measurements." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Probe_number" .
+
+<http://opencoredata.org/voc/janus/1/probe_temperature>
+    a skos:Concept ;
+    skos:definition "Measurement value of the temperature of the probe in celcius degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "��C" ; 
+    foo:unitDescription "degrees Celcius (��C)" ; 
+    skos:prefLabel "Probe_temperature" .
+
+<http://opencoredata.org/voc/janus/1/probe_type>
+    a skos:Concept ;
+    skos:definition "Type of needle probe: full-space (FULL; insertion into soft material) or half-space (HALF; contact with flat surface)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Probe_type" .
+
+<http://opencoredata.org/voc/janus/1/range>
+    a skos:Concept ;
+    skos:definition "Range of torvane - 200, 1000 or 2000 in g/cm^2." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    foo:unit "g/cm��" ; 
+    foo:unitDescription "grams per cm��(g/cm��)" ; 
+    skos:prefLabel "Range" .
+
+<http://opencoredata.org/voc/janus/1/raw_data_collected>
+    a skos:Concept ;
+    skos:definition "Flag to indicate if raw data was collected in association with measurement results for an instrument." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Raw_data_collected" .
+
+<http://opencoredata.org/voc/janus/1/raw_strain_angle>
+    a skos:Concept ;
+    skos:definition "Measurement value of raw strain angle collected with automated vane system." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees" ; 
+    skos:prefLabel "Raw_strain_angle" .
+
+<http://opencoredata.org/voc/janus/1/raw_torque_angle>
+    a skos:Concept ;
+    skos:definition "Measurement value of raw torque angle collected with automated vane system." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees" ; 
+    skos:prefLabel "Raw_torque_angle" .
+
+<http://opencoredata.org/voc/janus/1/rb_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Rubidium (Rb) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Rb_ppm" .
+
+<http://opencoredata.org/voc/janus/1/request_number>
+    a skos:Concept ;
+    skos:definition "Unique number assigned to a sample request." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Request_number" .
+
+<http://opencoredata.org/voc/janus/1/requested_daq_interval>
+    a skos:Concept ;
+    skos:definition "The requested data acquisition interval in cm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "cm" ; 
+    foo:unitDescription "centimeters (cm)" ; 
+    skos:prefLabel "Requested_daq_interval" .
+
+<http://opencoredata.org/voc/janus/1/requested_daq_interval>
+    a skos:Concept ;
+    skos:definition "The requested data acquisition interval in cm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "cm" ; 
+    foo:unitDescription "centimeters (cm)" ; 
+    skos:prefLabel "Requested_daq_interval" .
+
+<http://opencoredata.org/voc/janus/1/requested_daq_period>
+    a skos:Concept ;
+    skos:definition "The requested data acquisition period in seconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "s" ; 
+    foo:unitDescription "seconds (s)" ; 
+    skos:prefLabel "Requested_daq_period" .
+
+<http://opencoredata.org/voc/janus/1/requested_daq_period>
+    a skos:Concept ;
+    skos:definition "The requested data acquisition period in seconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "s" ; 
+    foo:unitDescription "seconds (s)" ; 
+    skos:prefLabel "Requested_daq_period" .
+
+<http://opencoredata.org/voc/janus/1/requested_daqs_per_sample>
+    a skos:Concept ;
+    skos:definition "The requested data acquisitions per sample interval." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Requested_daqs_per_sample" .
+
+<http://opencoredata.org/voc/janus/1/a_star>
+    a skos:Concept ;
+    skos:definition "Measurement value of the a* chromaticity green-red measurement of L*a*b* CIELAB system for color reflectance." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "A_star" .
+
+<http://opencoredata.org/voc/janus/1/abundance_code>
+    a skos:Concept ;
+    skos:definition "Code for abundance of a component in a thin section or smear slide." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Abundance_code" .
+
+<http://opencoredata.org/voc/janus/1/acoustic_signal_threshold>
+    a skos:Concept ;
+    skos:definition "The strength of the acoustic signal for a velocity measurement." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    foo:unitDescription "valid values from 0-255" ; 
+    skos:prefLabel "Acoustic_signal_threshold" .
+
+<http://opencoredata.org/voc/janus/1/actual_daq_period>
+    a skos:Concept ;
+    skos:definition "The actual data acquisition period used for measurements in seconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "s" ; 
+    foo:unitDescription "seconds (s)" ; 
+    skos:prefLabel "Actual_daq_period" .
+
+<http://opencoredata.org/voc/janus/1/actual_daq_period>
+    a skos:Concept ;
+    skos:definition "The actual data acquisition period used for measurements in seconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "s" ; 
+    foo:unitDescription "seconds (s)" ; 
+    skos:prefLabel "Actual_daq_period" .
+
+<http://opencoredata.org/voc/janus/1/adapter_used>
+    a skos:Concept ;
+    skos:definition "The adapter used for Penetrometer measurements in the physical properties laboratory." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Adapter_used" .
+
+<http://opencoredata.org/voc/janus/1/age_ma>
+    a skos:Concept ;
+    skos:definition "Age in millions of years (ma)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ma" ; 
+    foo:unitDescription "millions of years (ma)" ; 
+    skos:prefLabel "Age_ma" .
+
+<http://opencoredata.org/voc/janus/1/age_model_type>
+    a skos:Concept ;
+    skos:definition "The type of the age model - where or when it was constructed (shipboard, initial reports, post-moratorium)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Age_model_type" .
+
+<http://opencoredata.org/voc/janus/1/al2o3_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Aluminum Oxide (Al2O3) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "Al2O3_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/angle_motf>
+    a skos:Concept ;
+    skos:definition "Measurement value of the 'Magnetic Only tool face angle' in degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees" ; 
+    skos:prefLabel "Angle_motf" .
+
+<http://opencoredata.org/voc/janus/1/angle_mtf>
+    a skos:Concept ;
+    skos:definition "Measurement value of the angle between magnetic north and the double-line orientation mark on the core liner in degrees; 'Magnetic Tool Face' angle." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees" ; 
+    skos:prefLabel "Angle_mtf" .
+
+<http://opencoredata.org/voc/janus/1/attempted_daqs>
+    a skos:Concept ;
+    skos:definition "Attempted number of data acqusitions." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Attempted_daqs" .
+
+<http://opencoredata.org/voc/janus/1/avg_magnetic_susceptibility>
+    a skos:Concept ;
+    skos:definition "The average measured susceptibility value in unitless volume susceptibility." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "SI" ; 
+    foo:unitDescription "SI" ; 
+    skos:prefLabel "Avg_magnetic_susceptibility" .
+
+<http://opencoredata.org/voc/janus/1/b_star>
+    a skos:Concept ;
+    skos:definition "Measurement value of the b* chromaticity blue-yellow measurement of L*a*b* CIELAB system for color reflectance." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "B_star" .
+
+<http://opencoredata.org/voc/janus/1/ba_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Barium (Ba) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Ba_ppm" .
+
+<http://opencoredata.org/voc/janus/1/background_total_counts>
+    a skos:Concept ;
+    skos:definition "Measurement of total background NGR counts in seconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "cps" ; 
+    foo:unitDescription "counts per second (cps)" ; 
+    skos:prefLabel "Background_total_counts" .
+
+<http://opencoredata.org/voc/janus/1/be_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Beryllium (Be) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Be_ppm" .
+
+<http://opencoredata.org/voc/janus/1/bead_loi>
+    a skos:Concept ;
+    skos:definition "Measurement (calculated) value of sample weight lost after ignition in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Bead_loi" .
+
+<http://opencoredata.org/voc/janus/1/beaker_date_time>
+    a skos:Concept ;
+    skos:definition "The date and time calibration data for a MAD (Moisture and Density) beaker from the physical properties laboratory." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Beaker_date_time" .
+
+<http://opencoredata.org/voc/janus/1/best_fit_error>
+    a skos:Concept ;
+    skos:definition "Measurement value of best-fit error in degrees celcius." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��C" ; 
+    foo:unitDescription "degrees Celcius (��C)" ; 
+    skos:prefLabel "Best_fit_error" .
+
+<http://opencoredata.org/voc/janus/1/best_fit_temperature>
+    a skos:Concept ;
+    skos:definition "Measurement value of best-fit downhole temperature in degrees celcius." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��C" ; 
+    foo:unitDescription "degrees Celcius (��C)" ; 
+    skos:prefLabel "Best_fit_temperature" .
+
+<http://opencoredata.org/voc/janus/1/bkgd_elapsed_zero_time>
+    a skos:Concept ;
+    skos:definition "Time elapsed since start of a section run." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Bkgd_elapsed_zero_time" .
+
+<http://opencoredata.org/voc/janus/1/bkgd_susceptibility>
+    a skos:Concept ;
+    skos:definition "Measurement value of the background susceptibility at end of section run." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "SI" ; 
+    foo:unitDescription "SI" ; 
+    skos:prefLabel "Bkgd_susceptibility" .
+
+<http://opencoredata.org/voc/janus/1/bot_cm>
+    a skos:Concept ;
+    skos:definition "Bottom value of an interval of a section in cm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "cm" ; 
+    foo:unitDescription "centimeters (cm)" ; 
+    skos:prefLabel "Bot_cm" .
+
+<http://opencoredata.org/voc/janus/1/bot_depth_mbsf>
+    a skos:Concept ;
+    skos:definition "Bottom depth value in meters below sea floor (mbsf)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mbsf" ; 
+    foo:unitDescription "meters below sea floor (mbsf)" ; 
+    skos:prefLabel "Bot_depth_mbsf" .
+
+<http://opencoredata.org/voc/janus/1/caco3_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Calcium Carbonate (CaCO3) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "CaCO3_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/calc_bulk_density>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated bulk density in g/cc." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "g/cc" ; 
+    foo:unitDescription "grams per cc (g/cc)" ; 
+    skos:prefLabel "Calc_bulk_density" .
+
+<http://opencoredata.org/voc/janus/1/calc_dry_density>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated dry_density in g/cc." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "g/cc" ; 
+    foo:unitDescription "grams per cc (g/cc)" ; 
+    skos:prefLabel "Calc_dry_density" .
+
+<http://opencoredata.org/voc/janus/1/calc_grain_density>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated grain density in g/cc." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    foo:unitDescription "grams per cc (g/cc)" ; 
+    skos:prefLabel "Calc_grain_density" .
+
+<http://opencoredata.org/voc/janus/1/calc_method>
+    a skos:Concept ;
+    skos:definition "Letter designation of the actual method of calculation for moisture and density measurements." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Calc_method" .
+
+<http://opencoredata.org/voc/janus/1/calc_porosity>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated porosity in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Calc_porosity" .
+
+<http://opencoredata.org/voc/janus/1/calc_void_ratio>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated void ratio." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    foo:unitDescription "ratio" ; 
+    skos:prefLabel "Calc_void_ratio" .
+
+<http://opencoredata.org/voc/janus/1/calc_water_content_dry>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated water content (dry) in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Calc_water_content_dry" .
+
+<http://opencoredata.org/voc/janus/1/calc_water_content_wet>
+    a skos:Concept ;
+    skos:definition "Measurement value of calculated water content (wet) in percent." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Calc_water_content_wet" .
+
+<http://opencoredata.org/voc/janus/1/calib_channel_energy_m0>
+    a skos:Concept ;
+    skos:definition "Calibration channel energy intercept." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_channel_energy_m0" .
+
+<http://opencoredata.org/voc/janus/1/calib_channel_energy_m1>
+    a skos:Concept ;
+    skos:definition "Calibration channel energy slope." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_channel_energy_m1" .
+
+<http://opencoredata.org/voc/janus/1/calib_channel_energy_mse>
+    a skos:Concept ;
+    skos:definition "Calibration channel energy mean squared error." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_channel_energy_mse" .
+
+<http://opencoredata.org/voc/janus/1/calib_delay>
+    a skos:Concept ;
+    skos:definition "Calibration delay." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_delay" .
+
+<http://opencoredata.org/voc/janus/1/calib_density_m0>
+    a skos:Concept ;
+    skos:definition "Calibration density intercept." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Calib_density_m0" .
+
+<http://opencoredata.org/voc/janus/1/calib_density_m1>
+    a skos:Concept ;
+    skos:definition "Calibration density slope." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Calib_density_m1" .
+
+<http://opencoredata.org/voc/janus/1/calib_density_mse>
+    a skos:Concept ;
+    skos:definition "Calibration density mean squared error." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Calib_density_mse" .
+
+<http://opencoredata.org/voc/janus/1/residual_strength>
+    a skos:Concept ;
+    skos:definition "Measurement value of the residual strength of the sediment after shearing in kPa units." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "kPa" ; 
+    foo:unitDescription "kilopascal (kPa)" ; 
+    skos:prefLabel "Residual_strength" .
+
+<http://opencoredata.org/voc/janus/1/residual_torque_angle>
+    a skos:Concept ;
+    skos:definition "Measurement value of the residual torque angle of the sediment after shearing in degrees." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "degrees" ; 
+    skos:prefLabel "Residual_torque_angle" .
+
+<http://opencoredata.org/voc/janus/1/resistivity>
+    a skos:Concept ;
+    skos:definition "Measurement value of resistivity in ohmm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��" ; 
+    foo:unitDescription "Ohms" ; 
+    skos:prefLabel "Resistivity" .
+
+<http://opencoredata.org/voc/janus/1/rotation_rate>
+    a skos:Concept ;
+    skos:definition "The rate of rotation of a vane in degrees per minute." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "��/min" ; 
+    foo:unitDescription "degrees per minute (��/min)" ; 
+    skos:prefLabel "Rotation_rate" .
+
+<http://opencoredata.org/voc/janus/1/run_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a run for analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Run_comment" .
+
+<http://opencoredata.org/voc/janus/1/run_number>
+    a skos:Concept ;
+    skos:definition "Number for a run for an analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Run_number" .
+
+<http://opencoredata.org/voc/janus/1/run_number>
+    a skos:Concept ;
+    skos:definition "Number for a run for an analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Run_number" .
+
+<http://opencoredata.org/voc/janus/1/run_timestamp>
+    a skos:Concept ;
+    skos:definition "Date/time of an analysis run." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Run_timestamp" .
+
+<http://opencoredata.org/voc/janus/1/run_timestamp>
+    a skos:Concept ;
+    skos:definition "Date/time of an analysis run." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Run_timestamp" .
+
+<http://opencoredata.org/voc/janus/1/s_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Sulfur (S) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "S_ppm" .
+
+<http://opencoredata.org/voc/janus/1/sample_archive_working>
+    a skos:Concept ;
+    skos:definition "Denotes whether sample was taken from an archive or working core section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_archive_working" .
+
+<http://opencoredata.org/voc/janus/1/sample_bulk_density>
+    a skos:Concept ;
+    skos:definition "Measurement value of sample bulk density by Method A or B." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Sample_bulk_density" .
+
+<http://opencoredata.org/voc/janus/1/sample_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_comment" .
+
+<http://opencoredata.org/voc/janus/1/sample_dry_density>
+    a skos:Concept ;
+    skos:definition "Measurement value of sampled dry density." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Sample_dry_density" .
+
+<http://opencoredata.org/voc/janus/1/sample_elapsed_zero_time>
+    a skos:Concept ;
+    skos:definition "Time elapsed since start of run in seconds." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    foo:unit "s" ; 
+    foo:unitDescription "seconds (s)" ; 
+    skos:prefLabel "Sample_elapsed_zero_time" .
+
+<http://opencoredata.org/voc/janus/1/sample_geologic_age_old>
+    a skos:Concept ;
+    skos:definition "Oldest possible geologic age of a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_geologic_age_old" .
+
+<http://opencoredata.org/voc/janus/1/sample_geologic_age_young>
+    a skos:Concept ;
+    skos:definition "Youngest possible geologic age of a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_geologic_age_young" .
+
+<http://opencoredata.org/voc/janus/1/sample_grain_density>
+    a skos:Concept ;
+    skos:definition "Measurement value of sample grain density." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Sample_grain_density" .
+
+<http://opencoredata.org/voc/janus/1/sample_group_abundance>
+    a skos:Concept ;
+    skos:definition "Code for qualitative assessment of fossil group abundance in a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_group_abundance" .
+
+<http://opencoredata.org/voc/janus/1/sample_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Sample_id" .
+
+<http://opencoredata.org/voc/janus/1/sample_lab_code>
+    a skos:Concept ;
+    skos:definition "Code identifier for a lab sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Sample_lab_code" .
+
+<http://opencoredata.org/voc/janus/1/sample_porosity>
+    a skos:Concept ;
+    skos:definition "Measurement value of porosity." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Sample_porosity" .
+
+<http://opencoredata.org/voc/janus/1/sample_preservation>
+    a skos:Concept ;
+    skos:definition "Code for qualitative assessment of fossil group preservation in a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_preservation" .
+
+<http://opencoredata.org/voc/janus/1/sample_repository>
+    a skos:Concept ;
+    skos:definition "Repository where sample is stored." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_repository" .
+
+<http://opencoredata.org/voc/janus/1/sample_timestamp>
+    a skos:Concept ;
+    skos:definition "Timestamp for when sample was taken." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Sample_timestamp" .
+
+<http://opencoredata.org/voc/janus/1/sample_type>
+    a skos:Concept ;
+    skos:definition "Type of sample (sediment or mineral) analyzed." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Sample_type" .
+
+<http://opencoredata.org/voc/janus/1/sample_void_ratio>
+    a skos:Concept ;
+    skos:definition "Measurement value of sample void ratio." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    foo:unitDescription "ratio" ; 
+    skos:prefLabel "Sample_void_ratio" .
+
+<http://opencoredata.org/voc/janus/1/sample_volume>
+    a skos:Concept ;
+    skos:definition "Volume of sample in cc." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "cc" ; 
+    foo:unitDescription "volume (cc = cm3)" ; 
+    skos:prefLabel "Sample_volume" .
+
+<http://opencoredata.org/voc/janus/1/sample_water_content_bulk>
+    a skos:Concept ;
+    skos:definition "Measurement value of bulk sample water content." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Sample_water_content_bulk" .
+
+<http://opencoredata.org/voc/janus/1/sample_water_content_solids>
+    a skos:Concept ;
+    skos:definition "Measurement value of solids sample water content." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Sample_water_content_solids" .
+
+<http://opencoredata.org/voc/janus/1/sample_zone_old>
+    a skos:Concept ;
+    skos:definition "Code for oldest possible fossil zone of sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_zone_old" .
+
+<http://opencoredata.org/voc/janus/1/sample_zone_young>
+    a skos:Concept ;
+    skos:definition "Code for youngest possible fossil zone of sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sample_zone_young" .
+
+<http://opencoredata.org/voc/janus/1/sc_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Scandium (Sc) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Sc_ppm" .
+
+<http://opencoredata.org/voc/janus/1/scientist_first_name>
+    a skos:Concept ;
+    skos:definition "First name of a scientist." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Scientist_first_name" .
+
+<http://opencoredata.org/voc/janus/1/scientist_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a scientist." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Scientist_id" .
+
+<http://opencoredata.org/voc/janus/1/scientist_initials>
+    a skos:Concept ;
+    skos:definition "Initials of a scientist." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Scientist_initials" .
+
+<http://opencoredata.org/voc/janus/1/scientist_last_name>
+    a skos:Concept ;
+    skos:definition "Last name of a scientist." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Scientist_last_name" .
+
+<http://opencoredata.org/voc/janus/1/scientist_last_name>
+    a skos:Concept ;
+    skos:definition "Last name of a scientist." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Scientist_last_name" .
+
+<http://opencoredata.org/voc/janus/1/section_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a section of a core." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Section_comment" .
+
+<http://opencoredata.org/voc/janus/1/section_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a section of a core." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Section_id" .
+
+<http://opencoredata.org/voc/janus/1/section_number>
+    a skos:Concept ;
+    skos:definition "Sequential number of a section of a core." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Section_number" .
+
+<http://opencoredata.org/voc/janus/1/section_number>
+    a skos:Concept ;
+    skos:definition "Sequential number of a section of a core." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Section_number" .
+
+<http://opencoredata.org/voc/janus/1/section_type>
+    a skos:Concept ;
+    skos:definition "Type of a section (C=Core Catcher, S=Core)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Section_type" .
+
+<http://opencoredata.org/voc/janus/1/section_type>
+    a skos:Concept ;
+    skos:definition "Type of a section (C=Core Catcher, S=Core)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Section_type" .
+
+<http://opencoredata.org/voc/janus/1/shear_strength>
+    a skos:Concept ;
+    skos:definition "Measurement value of shear strength in kPa units." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "kPa" ; 
+    foo:unitDescription "kilopascal (kPa)" ; 
+    skos:prefLabel "Shear_strength" .
+
+<http://opencoredata.org/voc/janus/1/ship_date_time>
+    a skos:Concept ;
+    skos:definition "Date and time on ship." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Ship_date_time" .
+
+<http://opencoredata.org/voc/janus/1/sio2_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Silica/Silicon Oxide (SiO2) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "SiO2_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/site>
+    a skos:Concept ;
+    skos:definition "Number identifying the site from which the core was retrieved. A site is the position of a beacon around which holes are drilled." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Site" .
+
+<http://opencoredata.org/voc/janus/1/site_variation>
+    a skos:Concept ;
+    skos:definition "OCD_TENSOR_CORE" ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    
+    
+    skos:prefLabel "Site_variation" .
+
+<http://opencoredata.org/voc/janus/1/slide_number>
+    a skos:Concept ;
+    skos:definition "Number assigned to a thin section slide." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Slide_number" .
+
+<http://opencoredata.org/voc/janus/1/sm_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Samarium (Sm) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Sm_ppm" .
+
+<http://opencoredata.org/voc/janus/1/species_subspecies>
+    a skos:Concept ;
+    skos:definition "Name of the species/subspecies of a fossil taxon." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Species_subspecies" .
+
+<http://opencoredata.org/voc/janus/1/spectral_values>
+    a skos:Concept ;
+    skos:definition "String of 31 spectral reflectance values (% intensity)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent intensity (%)" ; 
+    skos:prefLabel "Spectral_values" .
+
+<http://opencoredata.org/voc/janus/1/spring_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a spring." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Spring_comment" .
+
+<http://opencoredata.org/voc/janus/1/spring_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a spring." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Spring_id" .
+
+<http://opencoredata.org/voc/janus/1/sr_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Strontium (Sr) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Sr_ppm" .
+
+<http://opencoredata.org/voc/janus/1/standard_name>
+    a skos:Concept ;
+    skos:definition "Name of physical properties standard." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Standard_name" .
+
+<http://opencoredata.org/voc/janus/1/standard_set_name>
+    a skos:Concept ;
+    skos:definition "Name for a set of a physical properties standard." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Standard_set_name" .
+
+<http://opencoredata.org/voc/janus/1/strength_reading>
+    a skos:Concept ;
+    skos:definition "'The value of the strength reading, no units given.'" ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Strength_reading" .
+
+<http://opencoredata.org/voc/janus/1/sub_piece>
+    a skos:Concept ;
+    skos:definition "Letter designation of a sub-piece of a hard rock piece in a section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Sub_piece" .
+
+<http://opencoredata.org/voc/janus/1/sul_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of of Sulfur in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "Sul_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/sys_id>
+    a skos:Concept ;
+    skos:definition "Identifier (string) for the system used for analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Sys_id" .
+
+<http://opencoredata.org/voc/janus/1/system_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) for the system used in analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "System_id" .
+
+<http://opencoredata.org/voc/janus/1/system_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) for the system used in analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "System_id" .
+
+<http://opencoredata.org/voc/janus/1/taxon_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a fossil taxon in a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Taxon_comment" .
+
+<http://opencoredata.org/voc/janus/1/taxon_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a fossil taxon." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "int64" ; 
+    
+    
+    skos:prefLabel "Taxon_id" .
+
+<http://opencoredata.org/voc/janus/1/taxon_numeric_abundance>
+    a skos:Concept ;
+    skos:definition "Abundance numeric count of a fossil taxon in a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    foo:unit "ct" ; 
+    foo:unitDescription "count (ct)" ; 
+    skos:prefLabel "Taxon_numeric_abundance" .
+
+<http://opencoredata.org/voc/janus/1/taxon_percent_abundance>
+    a skos:Concept ;
+    skos:definition "Abundance percentage of a fossil taxon in a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "%" ; 
+    foo:unitDescription "percent (%)" ; 
+    skos:prefLabel "Taxon_percent_abundance" .
+
+<http://opencoredata.org/voc/janus/1/taxon_relative_abundance>
+    a skos:Concept ;
+    skos:definition "Qualitative relative abundance of a fossil taxon in a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Taxon_relative_abundance" .
+
+<http://opencoredata.org/voc/janus/1/th_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Thorium (Th) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Th_ppm" .
+
+<http://opencoredata.org/voc/janus/1/thermcon_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a thermal conductivity measurement." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Thermcon_comment" .
+
+<http://opencoredata.org/voc/janus/1/thermcon_value>
+    a skos:Concept ;
+    skos:definition "Measurement value of thermal conductivity." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Thermcon_value" .
+
+<http://opencoredata.org/voc/janus/1/thin_section_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a thin section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Thin_section_comment" .
+
+<http://opencoredata.org/voc/janus/1/timescale_author_year>
+    a skos:Concept ;
+    skos:definition "Timescale reference of the datum." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Timescale_author_year" .
+
+<http://opencoredata.org/voc/janus/1/tio2_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Titanium Dioxide (TiO2) in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "TiO2_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/tool_name>
+    a skos:Concept ;
+    skos:definition "Name of the tool used for measurement." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Tool_name" .
+
+<http://opencoredata.org/voc/janus/1/top_cm>
+    a skos:Concept ;
+    skos:definition "Top value of an interval of a section in cm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "cm" ; 
+    foo:unitDescription "centimeters (cm)" ; 
+    skos:prefLabel "Top_cm" .
+
+<http://opencoredata.org/voc/janus/1/top_depth_mbsf>
+    a skos:Concept ;
+    skos:definition "Depth value of top of an interval in meters below sea floor (mbsf)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mbsf" ; 
+    foo:unitDescription "meters below sea floor (mbsf)" ; 
+    skos:prefLabel "Top_depth_mbsf" .
+
+<http://opencoredata.org/voc/janus/1/top_depth_mbsf>
+    a skos:Concept ;
+    skos:definition "Depth value of top of an interval in meters below sea floor (mbsf)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mbsf" ; 
+    foo:unitDescription "meters below sea floor (mbsf)" ; 
+    skos:prefLabel "Top_depth_mbsf" .
+
+<http://opencoredata.org/voc/janus/1/tot_c_wt_pct>
+    a skos:Concept ;
+    skos:definition "Measurement value of Total Carbon in weight percent (wt%)." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "wt%" ; 
+    foo:unitDescription "weight percent (wt%)" ; 
+    skos:prefLabel "Tot_C_wt_pct" .
+
+<http://opencoredata.org/voc/janus/1/total_counts>
+    a skos:Concept ;
+    skos:definition "Measurement value of total NGR counts per second not corrected for background." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "ct" ; 
+    foo:unitDescription "count (ct)" ; 
+    skos:prefLabel "Total_counts" .
+
+<http://opencoredata.org/voc/janus/1/transducer_separation>
+    a skos:Concept ;
+    skos:definition "Measurement value of the distance between a pair of transducers in mm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mm" ; 
+    foo:unitDescription "millimeters (mm)" ; 
+    skos:prefLabel "Transducer_separation" .
+
+<http://opencoredata.org/voc/janus/1/treatment_bias>
+    a skos:Concept ;
+    skos:definition "Values expected for ARM between 0.000 to 1.000 mT, and for IRM between 1.0 to 3000.0 mT." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mT" ; 
+    foo:unitDescription "milleteslas (mT)" ; 
+    skos:prefLabel "Treatment_bias" .
+
+<http://opencoredata.org/voc/janus/1/treatment_demag>
+    a skos:Concept ;
+    skos:definition "Values expected between 0.0 to 9999.9 mT." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "mT" ; 
+    foo:unitDescription "milleteslas (mT)" ; 
+    skos:prefLabel "Treatment_demag" .
+
+<http://opencoredata.org/voc/janus/1/treatment_type>
+    a skos:Concept ;
+    skos:definition "System used for applying alternating frequencies or thermal demagnetizations to samples." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Treatment_type" .
+
+<http://opencoredata.org/voc/janus/1/tristimulus_x>
+    a skos:Concept ;
+    skos:definition "Measurement value in the x direction of the color sphere coordinates." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Tristimulus_x" .
+
+<http://opencoredata.org/voc/janus/1/tristimulus_y>
+    a skos:Concept ;
+    skos:definition "Measurement value in the y direction of the color sphere coordinates." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Tristimulus_y" .
+
+<http://opencoredata.org/voc/janus/1/tristimulus_z>
+    a skos:Concept ;
+    skos:definition "Measurement value in the z direction of the color sphere coordinates." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    
+    
+    skos:prefLabel "Tristimulus_z" .
+
+<http://opencoredata.org/voc/janus/1/ts_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a thin section." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Ts_comment" .
+
+<http://opencoredata.org/voc/janus/1/ts_sample_code_lab>
+    a skos:Concept ;
+    skos:definition "Code to indicate the shipboard lab that performed the analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Ts_sample_code_lab" .
+
+<http://opencoredata.org/voc/janus/1/url>
+    a skos:Concept ;
+    skos:definition "Uniform Resource Locator (URL) for the image available on the internet." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Url" .
+
+<http://opencoredata.org/voc/janus/1/url>
+    a skos:Concept ;
+    skos:definition "Uniform Resource Locator (URL) for the image available on the internet." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Url" .
+
+<http://opencoredata.org/voc/janus/1/v_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Vanadium in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "V_ppm" .
+
+<http://opencoredata.org/voc/janus/1/valid_daqs>
+    a skos:Concept ;
+    skos:definition "Valid number of data acquisitions." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullInt64" ; 
+    
+    
+    skos:prefLabel "Valid_daqs" .
+
+<http://opencoredata.org/voc/janus/1/vane_comment>
+    a skos:Concept ;
+    skos:definition "Remark on a vane." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Vane_comment" .
+
+<http://opencoredata.org/voc/janus/1/vane_id>
+    a skos:Concept ;
+    skos:definition "Identifier (ID) of a vane." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Vane_id" .
+
+<http://opencoredata.org/voc/janus/1/velocity>
+    a skos:Concept ;
+    skos:definition "Measurement value of velocity in m/s." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "m/s" ; 
+    foo:unitDescription "meters per second (m/s)" ; 
+    skos:prefLabel "Velocity" .
+
+<http://opencoredata.org/voc/janus/1/velocity>
+    a skos:Concept ;
+    skos:definition "Measurement value of velocity in m/s." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "m/s" ; 
+    foo:unitDescription "meters per second (m/s)" ; 
+    skos:prefLabel "Velocity" .
+
+<http://opencoredata.org/voc/janus/1/voltage>
+    a skos:Concept ;
+    skos:definition "Measurement value of voltage in milliVolts." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "float64" ; 
+    foo:unit "mV" ; 
+    foo:unitDescription "milliVolts (mV)" ; 
+    skos:prefLabel "Voltage" .
+
+<http://opencoredata.org/voc/janus/1/xrf_analysis_type>
+    a skos:Concept ;
+    skos:definition "The type of element analysis performed on xrf sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Xrf_analysis_type" .
+
+<http://opencoredata.org/voc/janus/1/xrf_comment>
+    a skos:Concept ;
+    skos:definition "Remark on an xrf analysis." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Xrf_comment" .
+
+<http://opencoredata.org/voc/janus/1/xrf_replicate>
+    a skos:Concept ;
+    skos:definition "Identifer used for analysis of replicates of a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Xrf_replicate" .
+
+<http://opencoredata.org/voc/janus/1/xrf_run_identifier>
+    a skos:Concept ;
+    skos:definition "Identifier for a run of an analysis on a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "string" ; 
+    
+    
+    skos:prefLabel "Xrf_run_identifier" .
+
+<http://opencoredata.org/voc/janus/1/y_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Yttrium (Y) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Y_ppm" .
+
+<http://opencoredata.org/voc/janus/1/yb_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Ytterbium (Yb) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Yb_ppm" .
+
+<http://opencoredata.org/voc/janus/1/zn_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Zinc (Zn) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Zn_ppm" .
+
+<http://opencoredata.org/voc/janus/1/zone_old>
+    a skos:Concept ;
+    skos:definition "Oldest possible fossil zone for a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Zone_old" .
+
+<http://opencoredata.org/voc/janus/1/zone_young>
+    a skos:Concept ;
+    skos:definition "Youngest possible fossil zone for a sample." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullString" ; 
+    
+    
+    skos:prefLabel "Zone_young" .
+
+<http://opencoredata.org/voc/janus/1/zr_ppm>
+    a skos:Concept ;
+    skos:definition "Measurement value of Zirconium (Zr) in ppm." ;
+    skos:inScheme <http://opencoredata.org/voc/janus/1/> ;
+    foo:datatype "sql.NullFloat64" ; 
+    foo:unit "ppm" ; 
+    foo:unitDescription "parts per million (ppm)" ; 
+    skos:prefLabel "Zr_ppm" .
+

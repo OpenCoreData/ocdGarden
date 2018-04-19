@@ -1,0 +1,99 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://opencoredata.org/voc/1/>
+    dc:creator "Open Core Data" ;
+    dc:description "A vocabulary for describing parameters used in the DSDP/OPD/IODP Janus Database" ;
+    dc:title "OCD Janus Controlled Vocabulary" ;
+    a skos:ConceptScheme .
+
+<http://opencoredata.org/voc/1/drillsite>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "Drillsite" .
+
+<http://opencoredata.org/voc/1/scientificProspectus>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "scientificprospectus" .
+
+<http://opencoredata.org/voc/1/coreRecovery>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "coreRecovery" .
+
+<http://opencoredata.org/voc/1/penetration>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "penetration" .
+
+<http://opencoredata.org/voc/1/scientificReportVolume>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "scientificreportvolume" .
+
+<http://opencoredata.org/voc/1/program>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "program" .
+
+<http://opencoredata.org/voc/1/waterdepth>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "waterdepth" .
+
+<http://opencoredata.org/voc/1/coreCount>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "coreCount" .
+
+<http://opencoredata.org/voc/1/initialReportVolume>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "initialreportvolume" .
+
+<http://opencoredata.org/voc/1/coredata>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "coredata" .
+
+<http://opencoredata.org/voc/1/expeditionSite>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "expeditionsite" .
+
+<http://opencoredata.org/voc/1/preliminaryReport>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "preliminaryreport" .
+
+<http://opencoredata.org/voc/1/coreInterval>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "coreInterval" .
+
+<http://opencoredata.org/voc/1/percentRecovery>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "percentRecovery" .
+
+<http://opencoredata.org/voc/1/drilled>
+      a skos:Concept ;
+      skos:definition "Definition for this concept will be coming." ;
+      skos:inScheme <http://opencoredata.org/voc/1/> ;
+      skos:prefLabel "drilled" .
