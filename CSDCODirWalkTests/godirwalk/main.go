@@ -9,7 +9,9 @@ import (
 	"strings"
 
 	"github.com/karrick/godirwalk"
+	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/datapackage"
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/kv"
+	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/report"
 )
 
 // TODO
@@ -46,15 +48,17 @@ func main() {
 	}
 
 	// build excell
-	//x := report.InitNotebook()
-	//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
-	//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
-	//row, _ = report.WriteNotebookRow(row, x, "notvalid", projname, file, "")
-	//report.SaveNotebook(x)
+	x := report.InitNotebook()
+	for i := range f {
+		_, _ = report.WriteNotebookRow(i+1, x, f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement)
+	}
+	report.SaveNotebook(x)
 
 	// build graph
 
 	// build packages
+	datapackage.BuildPackage(f)
+
 }
 
 func projDir(de *godirwalk.Dirent, osPathname string) {
