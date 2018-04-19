@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/kazarena/json-gold/ld"
+	"github.com/piprate/json-gold/ld"
 	"gopkg.in/mgo.v2"
 	structs "opencoredata.org/ocdGarden/JSON-goLD/jsonldProcessor/structs"
 )
@@ -53,7 +53,7 @@ func main() {
 		"url" : "http://opencoredata.org/id/dataset/8266648c-a5f1-4c8a-8889-584fa00a5584"
 	}`
 
-	const jsld = `{
+	const jsldold = `{
   "@context": {
     "opencore":"http://opencore.org/voc/1",
     "glview":"http://glview.org/voc/1/",
@@ -98,8 +98,60 @@ func main() {
  "url": "http://opencoredata.org/id/dataset/e8fb758e-22ba-499d-92fb-8d653febcf28"
 }`
 
+	const jsld = `{
+		"@context": "http://schema.org",
+		"@type": "Dataset",
+		"url": "http:\/\/wiki.linked.earth\/Aus-TakapariCedar.Xiong.2000",
+		"Name": ["Aus-TakapariCedar.Xiong.2000"],
+		"Author": [{
+			"@type": "Person",
+			"name": "JG RN"
+		}],
+		"spatialCoverage": [{
+			"@type": "Place",
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "-40.07",
+				"longitude": "175.98",
+				"elevation": "820"
+			}
+		}],
+		"includedInDataCatalog": ["PAGES2k"],
+		"citation": [{
+			"@type": "CreativeWork",
+			"identifier": "10.1023\/A:1005525903714",
+			"name": "Reconstruction of New Zealand temperatures back to AD 1720 using Libocedrus bidwillii tree rings",
+			"url": "http:\/\/dx.doi.org\/10.1023\/A:1005525903714"
+		}, {
+			"@type": "CreativeWork",
+			"identifier": null,
+			"name": "World Data Center for Paleoclimatology",
+			"url": null
+		}],
+		"keywords": "paleoclimate, climate",
+		"distribution": [{
+			"@type": "DataDownload",
+			"encodingFormat": "LPD",
+			"contentUrl": "http:\/\/wiki.linked.earth\/wiki\/index.php\/Special:WTLiPD?op=export&lipdid=Aus-TakapariCedar.Xiong.2000"
+		}]
+	}`
+
 	// csvwTest()
-	mongoTest() // waiting to resolve the stringTest() call
+	// mongoTest() // waiting to resolve the stringTest() call
+
+	nq := jsonLDToRDF(jsld)
+	fmt.Println(nq)
+
+	ldp := ld.NewJsonLdApi()
+	nodeMap := make(map[string]interface{})
+	nodeMap["@default"] = make(map[string]interface{})
+	issuer := ld.NewIdentifierIssuer("_:b")
+
+	var ji interface{} = jsld
+
+	ldp.GenerateNodeMap(ji, nodeMap, "@default", nil, "", nil, issuer)
+
+	fmt.Print(nodeMap)
 
 	// triples := stringTest(jsld) // working on this to use in the mongo mongoTest
 	// fmt.Println(triples)

@@ -4,8 +4,8 @@
 [[projects]]
   name = "github.com/karrick/godirwalk"
   packages = ["."]
-  revision = "544981fb2778aae847d953fdfc624ec55950815f"
-  version = "v1.2.7"
+  revision = "17c244300a0e2101858b851a8df1ae8e796a0bca"
+  version = "v1.3.0"
 
 [[projects]]
   name = "github.com/pkg/errors"

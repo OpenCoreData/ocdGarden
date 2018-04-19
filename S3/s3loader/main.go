@@ -1,15 +1,33 @@
 package main
 
 import (
+	"flag"
 	"log"
 
 	"github.com/minio/minio-go"
 )
 
 func main() {
-	endpoint := "172.20.42.161:9000"
-	accessKeyID := "E48OPWF0ICVNMF4E3UHN"
-	secretAccessKey := "qJdWwMTN4ZyO/jwrmueQRUODM51C+WLzW3efr88U"
+
+	namePtr := flag.String("name", "", "Name for the object, might be a hash to ID the file with.")
+	pathPtr := flag.String("path", "", "Path to file to upload")
+	typePtr := flag.String("type", "", "Valid mimetype entry")
+
+	// if *objectNamePtr == "" || *filePathPtr == "" || *contentTypePtr == "" {
+	// 	log.Fatalln("please fill out all options")
+	// }
+
+	flag.Parse()
+
+	objectName := *namePtr
+	filePath := *pathPtr
+	contentType := *typePtr
+
+	log.Printf("Load %s from %s at type %s \n", objectName, filePath, contentType)
+
+	endpoint := "oss.opencoredata.org"
+	accessKeyID := "AKIAIOSFODNN7JASUINM"
+	secretAccessKey := "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"
 	useSSL := false
 
 	// Initialize minio client object.
@@ -19,8 +37,8 @@ func main() {
 	}
 
 	// Make a new bucked called coreimages.
-	bucketName := "coreimages"
-	location := "us-east-1"
+	bucketName := "tier0"
+	location := "us-east-1" // not uses in minio..  an Amazon S3 item
 
 	err = minioClient.MakeBucket(bucketName, location)
 	if err != nil {
@@ -29,19 +47,14 @@ func main() {
 		if err == nil && exists {
 			log.Printf("We already own %s\n", bucketName)
 		} else {
-			log.Println("here we are")
+			log.Println("Fatal error..   bad place to be")
 			log.Fatalln(err)
 		}
 	}
 	log.Printf("Successfully created or connected to %s\n", bucketName)
 
-	// Upload the zip file
-	objectName := "coreref2.png"
-	filePath := "/Users/dfils/Google Drive/Documents/Images/coreref.png"
-	contentType := "image/png"
-
 	// Upload the zip file with FPutObject
-	n, err := minioClient.FPutObject(bucketName, objectName, filePath, contentType)
+	n, err := minioClient.FPutObject(bucketName, objectName, filePath, minio.PutObjectOptions{ContentType: contentType})
 	if err != nil {
 		log.Println(err)
 		log.Fatalln(err)

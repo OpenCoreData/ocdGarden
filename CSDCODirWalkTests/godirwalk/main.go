@@ -3,16 +3,23 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"strings"
-	"syscall"
-	"time"
 
 	"github.com/karrick/godirwalk"
+	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/kv"
 )
 
+// TODO
+// add in KV store aspect to build out the package contents...
+// use that to build out the excell report too...
+// use the KV store to pull and build the packages...
+
 func main() {
+	kv.InitKV()
+
 	dirToIndexPtr := flag.String("dir", ".", "directory to index")
 
 	flag.Parse()
@@ -28,6 +35,26 @@ func main() {
 		fmt.Fprintf(os.Stderr, "%s\n", err)
 		os.Exit(1)
 	}
+
+	// TODO put in a range of processeors here
+	// print
+
+	f := kv.GetEntries()
+
+	for x := range f {
+		log.Println(f[x])
+	}
+
+	// build excell
+	//x := report.InitNotebook()
+	//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
+	//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
+	//row, _ = report.WriteNotebookRow(row, x, "notvalid", projname, file, "")
+	//report.SaveNotebook(x)
+
+	// build graph
+
+	// build packages
 }
 
 func projDir(de *godirwalk.Dirent, osPathname string) {
@@ -41,7 +68,6 @@ func projDir(de *godirwalk.Dirent, osPathname string) {
 }
 
 func fileIndex(projname string, de *godirwalk.Dirent, osPathname string) {
-
 	// pathElements := strings.Split(osPathname, "/")
 	// fmt.Println(pathElements[6:(len(pathElements - 1))])
 
@@ -68,7 +94,6 @@ func fileIndex(projname string, de *godirwalk.Dirent, osPathname string) {
 }
 
 func asignPredicate(projname, osPathname string) {
-
 	// fmt.Printf("Checking %s \n", osPathname)
 
 	//  the switch is on the directory name
@@ -76,24 +101,30 @@ func asignPredicate(projname, osPathname string) {
 	// path left to check on...
 
 	dir, file := filepath.Split(osPathname)
+	//x := report.InitNotebook()
+	//row := 1
 
 	// Deal with root special
 	if dir == "/" {
 		// fmt.Printf("File in / : %s \n", file)
 		// *mathch* these:  -metadata "metadata format Dtube Label_" "SRF"
 		if caseInsenstiveContains(file, "-metadata") {
-			fmt.Printf("%s: ROOT -metadata:  %s \n", projname, file)
+			kv.NewFileEntry("valid", projname, file, "-metadata")
+			//kv.NewFileEntry("valid", projname, file, "-metadata")
+			//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
 		}
 		if caseInsenstiveContains(file, "metadata format Dtube Label_") {
-			fmt.Printf("%s: ROOT DTUBE:  %s \n", projname, file)
+			//kv.NewFileEntry("valid", projname, file, "metadata format Dtube Label_")
+			kv.NewFileEntry("valid", projname, file, "metadata format Dtube Label_")
 		}
 		if caseInsenstiveContains(file, "SRF") {
-			fmt.Printf("%s: ROOT SRF:  %s \n", projname, file)
+			kv.NewFileEntry("valid", projname, file, "SRF")
+
 		}
 		fileext := strings.ToLower(filepath.Ext(file))
 		s := []string{".cml", ".car"}
 		if contains(s, fileext) {
-			fmt.Printf("%s: ROOT .car or .cml:  %s \n", projname, file)
+			kv.NewFileEntry("valid", projname, file, ".cml .car")
 		}
 		return
 	}
@@ -103,13 +134,16 @@ func asignPredicate(projname, osPathname string) {
 		fileext := strings.ToLower(filepath.Ext(osPathname))
 		s := []string{".bmp", ".jpeg", ".jpg", "tif", "tiff"}
 		if contains(s, fileext) {
-			fmt.Printf("%s: IMAGES: %s\n", projname, osPathname)
+			// fmt.Printf("%s: IMAGES: %s\n", projname, osPathname)
+			kv.NewFileEntry("valid", projname, osPathname, "Images")
+			//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
 		}
 	case caseInsenstiveContains(dir, "Images/rgb"):
 		fileext := strings.ToLower(filepath.Ext(osPathname))
 		s := []string{".csv"}
 		if contains(s, fileext) {
-			fmt.Printf("%s: IMAGES/RGB: %s\n", projname, osPathname)
+			// fmt.Printf("%s: IMAGES/RGB: %s\n", projname, osPathname)
+			kv.NewFileEntry("valid", projname, osPathname, "Images/RGB")
 		}
 	case caseInsenstiveContains(dir, "Geotek Data/whole-core data"):
 		fileext := strings.ToLower(filepath.Ext(osPathname))
@@ -118,7 +152,8 @@ func asignPredicate(projname, osPathname string) {
 			if caseInsenstiveContains(osPathname, "_HRMS") || caseInsenstiveContains(osPathname, "_XYZ") {
 				s := []string{".xls", ".xlsx"}
 				if contains(s, fileext) { // TODO  BLACKLIST Needed
-					fmt.Printf("%s: GEOTEK WhCr: %s\n", projname, osPathname)
+					// fmt.Printf("%s: GEOTEK WhCr: %s\n", projname, osPathname)
+					kv.NewFileEntry("valid", projname, osPathname, "GEOTEK WhCr")
 				}
 			}
 		}
@@ -127,21 +162,27 @@ func asignPredicate(projname, osPathname string) {
 			fileext := strings.ToLower(filepath.Ext(osPathname))
 			s := []string{".xls", ".xlsx"}
 			if contains(s, fileext) { // TODO  BLACKLIST Needed
-				fmt.Printf("%s: GEOTEK HiRez: %s\n", projname, osPathname)
+				// fmt.Printf("%s: GEOTEK HiRez: %s\n", projname, osPathname)
+				kv.NewFileEntry("valid", projname, osPathname, "GEOTEK HiRez")
 			}
 		}
 	case caseInsenstiveContains(dir, "ICD/"):
 		fileext := strings.ToLower(filepath.Ext(osPathname))
 		s := []string{".pdf"}
 		if contains(s, fileext) && !caseInsenstiveContains(file, "ICD sheet.pdf") {
-			fmt.Printf("%s: ICD: %s\n", projname, osPathname)
+			// fmt.Printf("%s: ICD: %s\n", projname, osPathname)
+			kv.NewFileEntry("valid", projname, osPathname, "ICD")
 		}
 	default:
 		// in the root...
-		fmt.Printf("%s: NOT INDEXED:  %s \n", projname, osPathname)
+		// fmt.Printf("%s: NOT INDEXED:  %s \n", projname, osPathname)
+		kv.NewFileEntry("notvalid", projname, osPathname, "")
+		//row, _ = report.WriteNotebookRow(row, x, "notvalid", projname, file, "")
 	}
 
-	// TODO...   assign the predicate and place all resutls in struct
+	//report.SaveNotebook(x)
+
+	// TODO...   assign the predicate and place all results in struct
 	// Then pretty report print the struct...
 
 	//   match in /
@@ -165,7 +206,6 @@ func asignPredicate(projname, osPathname string) {
 	// .pdf  -> icdFiles  (why the above)
 
 	// if .car only do metadata..  no inspection
-
 }
 
 func contains(slice []string, item string) bool {
@@ -188,16 +228,18 @@ func inApprovedList(projectName string) bool {
 
 // ageInYears gets the age of a file as a float64 decimal value
 func ageInYears(fp string) float64 {
-	fi, err := os.Stat(fp)
-	if err != nil {
-		fmt.Println(err)
-	}
-	stat := fi.Sys().(*syscall.Stat_t)
-	ctime := time.Unix(int64(stat.Ctimespec.Sec), int64(stat.Ctimespec.Nsec))
-	delta := time.Now().Sub(ctime)
-	years := delta.Hours() / 24 / 365
-	// fmt.Printf("Create: %v   making it %.2f  years old\n", ctime, years)
-	return years
+	// fi, err := os.Stat(fp)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// stat := fi.Sys().(*syscall.Stat_t)
+	// ctime := time.Unix(int64(stat.Ctimespec.Sec), int64(stat.Ctimespec.Nsec))
+	// delta := time.Now() //.Sub(ctime)
+	// years := delta.Hours() / 24 / 365
+	// // fmt.Printf("Create: %v   making it %.2f  years old\n", ctime, years)
+	// return years
+
+	return 2.0
 }
 
 func caseInsenstiveContains(a, b string) bool {
