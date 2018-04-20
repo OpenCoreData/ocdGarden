@@ -17,8 +17,8 @@ func main() {
 		"resources": []interface{}{
 			map[string]interface{}{
 				"name": "datatest1",
-				"path": "./data.csv",
-				//"path":   "./data/data.csv",
+				// "path": "./data.csv",
+				"path":   "./data/data.csv",
 				"format": "csv",
 				// "profile": "tabular-data-resource",
 			},
@@ -26,7 +26,7 @@ func main() {
 	}
 	pkg, err := datapackage.New(descriptor, ".", validator.InMemoryLoader())
 	if err != nil {
-		log.Println("in desciptor builder")
+		log.Println("in descriptor builder")
 		log.Println(err)
 		panic(err)
 	}

@@ -55,7 +55,7 @@ func main() {
 	}
 	pkg, err := datapackage.New(descriptor, ".", validator.InMemoryLoader())
 	if err != nil {
-		log.Println("in desciptor builder")
+		log.Println("in descriptor builder")
 		log.Println(err)
 		panic(err)
 	}
@@ -66,6 +66,8 @@ func main() {
 		log.Println(err)
 		panic(err)
 	}
+
+	// todo  rename package leveraging sha, mv package, delete old tmp directory and contents
 
 }
 

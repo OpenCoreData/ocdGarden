@@ -47,7 +47,7 @@ func main() {
 		log.Println(f[x])
 	}
 
-	// build excell
+	// build excel
 	x := report.InitNotebook()
 	for i := range f {
 		_, _ = report.WriteNotebookRow(i+1, x, f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement)

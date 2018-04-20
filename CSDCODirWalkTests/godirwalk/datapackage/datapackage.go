@@ -2,29 +2,34 @@ package datapackage
 
 import (
 	"fmt"
+
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/kv"
 )
 
-// BuildPakcage should use a pointer ...  :)
+// BuildPackage should use a pointer ...  :)
 func BuildPackage(f []kv.FileMeta) {
 	fmt.Println("package builder")
+
+	// Need to set the package name
+	// Need to set the package ID
+	// How will the content URL be define?
 
 	prjs := uniqueProjects(f)
 
 	// Loop on each unique project, find all the files for that project
 	// TODO  make a map to  map[projs]projFies   map[string][]string
+	pf := make(map[string][]string)
 	for p := range prjs {
-		fmt.Println(prjs[p])
 		uf := projFiles(f, prjs[p])
-		fmt.Println(uf)
+		pf[prjs[p]] = uf
 	}
 
-	// TODO..
-	// then for each one pull the unique fles..
-	// gather the files,
-	// build the manafest
-	// build the metadata
-	// assemble the package
+	fmt.Print(pf)
+
+	// Build a schema.org file
+	fmt.Println(BuildSchema("test"))
+
+	// Build a package  (gather files, build manifest, assemble)
 
 }
 
