@@ -10,24 +10,32 @@ import (
 
 	"github.com/karrick/godirwalk"
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/datapackage"
+	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/graph"
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/kv"
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/report"
 )
 
-// TODO
-// add in KV store aspect to build out the package contents...
-// use that to build out the excell report too...
-// use the KV store to pull and build the packages...
-
 func main() {
+	// Set up our log file for runs...
+	lf, err := os.OpenFile("logfile.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil {
+		log.Fatalf("error opening file: %v", err)
+	}
+	defer lf.Close()
+	log.SetOutput(lf)
+
+	log.Println("Begin index process")
 	kv.InitKV()
 
 	dirToIndexPtr := flag.String("dir", ".", "directory to index")
-
+	reportPtr := flag.Bool("report", false, "a bool for report build")
+	graphPtr := flag.Bool("graph", false, "a bool for graph building")
+	packagePtr := flag.Bool("package", false, "a bool for package building")
 	flag.Parse()
+
 	dirname := *dirToIndexPtr
 
-	err := godirwalk.Walk(dirname, &godirwalk.Options{
+	err = godirwalk.Walk(dirname, &godirwalk.Options{
 		Callback: func(osPathname string, de *godirwalk.Dirent) error {
 			projDir(de, osPathname)
 			return nil
@@ -38,27 +46,26 @@ func main() {
 		os.Exit(1)
 	}
 
-	// TODO put in a range of processeors here
-	// print
-
 	f := kv.GetEntries()
 
-	for x := range f {
-		log.Println(f[x])
-	}
-
 	// build excel
-	x := report.InitNotebook()
-	for i := range f {
-		_, _ = report.WriteNotebookRow(i+1, x, f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement)
+	if *reportPtr {
+		x := report.InitNotebook()
+		for i := range f {
+			_, _ = report.WriteNotebookRow(i+1, x, f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement)
+		}
+		report.SaveNotebook(x)
 	}
-	report.SaveNotebook(x)
 
 	// build graph
+	if *graphPtr {
+		graph.BuildGraph(f)
+	}
 
 	// build packages
-	datapackage.BuildPackage(f)
-
+	if *packagePtr {
+		datapackage.BuildPackage(f)
+	}
 }
 
 func projDir(de *godirwalk.Dirent, osPathname string) {

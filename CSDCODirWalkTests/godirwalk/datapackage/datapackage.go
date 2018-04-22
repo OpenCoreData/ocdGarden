@@ -1,14 +1,13 @@
 package datapackage
 
 import (
-	"fmt"
+	"log"
 
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/kv"
 )
 
 // BuildPackage should use a pointer ...  :)
 func BuildPackage(f []kv.FileMeta) {
-	fmt.Println("package builder")
 
 	// Need to set the package name
 	// Need to set the package ID
@@ -24,10 +23,10 @@ func BuildPackage(f []kv.FileMeta) {
 		pf[prjs[p]] = uf
 	}
 
-	fmt.Print(pf)
+	log.Print(pf)
 
 	// Build a schema.org file
-	fmt.Println(BuildSchema("test"))
+	log.Println(BuildSchema("test"))
 
 	// Build a package  (gather files, build manifest, assemble)
 

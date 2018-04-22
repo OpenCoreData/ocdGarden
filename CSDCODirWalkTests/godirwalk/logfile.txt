@@ -1,0 +1,477 @@
+2018/04/22 08:37:18 Begin index process
+2018/04/22 08:37:18 For doc /dir1a/file1a1 I am recording a new event f93473f2-efd0-4f1c-87b1-ef4b0325c042 
+2018/04/22 08:37:18 For doc /dir1a/skip I am recording a new event 15141573-d82c-480e-a370-fbb7d39657c0 
+2018/04/22 08:37:18 For doc /dir1a/z1a2 I am recording a new event f2abcb1f-e6de-4009-88b6-91923ee2b18e 
+2018/04/22 08:37:18 For doc /skip/file2b1 I am recording a new event 4b993c9a-cbef-4e71-af10-f0551b8a128c 
+2018/04/22 08:37:18 For doc /z2c/file2c1 I am recording a new event a57990ed-6377-4fbd-9074-a31056d2df61 
+2018/04/22 08:37:18 For doc /zzz/aaa.txt I am recording a new event e8fdca98-a35b-4579-8fc9-277609aafa74 
+2018/04/22 08:37:18 For doc /zzz/aaa.txt I am recording a new event ad03d129-94bf-4440-b4ab-49863dc93df8 
+2018/04/22 08:37:18 For doc /a2/a2a/a2a1.txt I am recording a new event 60e5079b-3799-4371-8865-12d80763d9fc 
+2018/04/22 08:37:18 For doc /a2/a2b.txt I am recording a new event 8d129bcb-d01d-4cd5-8c74-46035eb284d4 
+2018/04/22 08:37:18 In graph builder
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /skip/file2b1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2a/a2a1.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir3
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/skip
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /zzz/aaa.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir4
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /a2/a2b.txt
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir5
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/file1a1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /z2c/file2c1
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir2
+2018/04/22 08:37:18 A random string for the file resource uri, UUID?
+2018/04/22 08:37:18 /dir1a/z1a2
+2018/04/22 08:37:18 
+2018/04/22 08:37:18 dir1
+2018/04/22 08:37:18 map[dir3:[/zzz/aaa.txt] dir4:[/zzz/aaa.txt] dir1:[/dir1a/z1a2 /dir1a/file1a1 /dir1a/skip] dir2:[/z2c/file2c1 /skip/file2b1] dir5:[/a2/a2b.txt /a2/a2a/a2a1.txt]]
+2018/04/22 08:37:18 in the schema.org build function
+2018/04/22 08:37:18 {
+ "@context": {
+  "@vocab": "http://schema.org/",
+  "re3data": "http://example.org/re3data/0.1/"
+ },
+ "@id": "ID",
+ "@type": "Dataset",
+ "description": "The description of the data set",
+ "distribution": {
+  "@type": "DataDownload",
+  "contentUrl": "http://example.org/foo"
+ },
+ "keywords": "find some keywords for this section",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "name": "The name of the dataset",
+ "publisher": {
+  "@type": "Organization",
+  "description": "Description of CSDCO",
+  "name": "Name of the publisher",
+  "url": "CSDCO home page"
+ },
+ "spatialCoverage": {
+  "@type": "Place",
+  "geo": {
+   "@type": "GeoCoordinates",
+   "latitude": "45.0",
+   "longitude": "12.5"
+  }
+ },
+ "url": "",
+ "variableMeasured": null
+}

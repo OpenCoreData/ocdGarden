@@ -2,7 +2,6 @@ package datapackage
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 
 	"github.com/piprate/json-gold/ld"
@@ -140,7 +139,7 @@ func dsetBuilder(dm CSDCODataset) ([]byte, error) {
 
 	compactedDoc, err := proc.Compact(doc, context, options)
 	if err != nil {
-		fmt.Println("Error when compacting", err)
+		log.Println("Error when compacting", err)
 	}
 
 	return json.MarshalIndent(compactedDoc, "", " ")

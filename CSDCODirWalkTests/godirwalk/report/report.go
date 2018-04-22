@@ -51,7 +51,7 @@ func (v *Values) save(db *bolt.DB) error {
 // GenReport will generate the report type we wish
 func GenReport(message, projname, filename, facilityType string) {
 	v := Values{Message: message, Projname: projname, Filename: filename, FacilityType: facilityType}
-	// fmt.Printf("%s:%s type:%s status:%s \n", projname, filename, facilityType, message)
+	// log.Printf("%s:%s type:%s status:%s \n", projname, filename, facilityType, message)
 
 	t, err := template.New("t").Parse(rt)
 	if err != nil {
@@ -70,7 +70,7 @@ func InitNotebook() *excelize.File {
 func SaveNotebook(file *excelize.File) error {
 	err := file.SaveAs("./Book1.xlsx")
 	if err != nil {
-		fmt.Println(err)
+		log.Println(err)
 	}
 
 	return err
@@ -81,11 +81,11 @@ func SaveNotebook(file *excelize.File) error {
 // make a packageID that notes all the files in a given package  based on the projname likely
 func WriteNotebookRow(row int, xlsx *excelize.File, message, projname, filename, facilityType string) (int, error) {
 	v := Values{Message: message, Projname: projname, Filename: filename, FacilityType: facilityType}
-	fmt.Println(v)
+	//log.Println(v)
 
 	//nr := len(xlsx.GetRows("Sheet1")) + 1
 	sc := fmt.Sprintf("A%d", row)
-	fmt.Println(sc)
+	//log.Println(sc)
 
 	xlsx.SetSheetRow("Sheet1", sc, &[]interface{}{v.Filename, v.FacilityType, v.Message, v.Projname})
 

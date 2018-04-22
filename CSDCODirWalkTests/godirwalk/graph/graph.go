@@ -14,6 +14,9 @@ import (
 func BuildGraph(f []kv.FileMeta) string {
 	log.Println("In graph builder")
 
+	// TODO  look at ocdBulk and see how to leverage this!
+	// The above is where the old CSDCO graph is made
+
 	// make a graph
 	// build the triples
 	// connect to the main CSDCO graph  (from excel file)

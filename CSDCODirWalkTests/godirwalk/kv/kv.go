@@ -20,7 +20,7 @@ type FileMeta struct {
 // func NewFileEntry(docID, provFrag, remoteAddress, contentType string) error {
 func NewFileEntry(valid, projname, file, measurement string) error {
 	eventID := uuid.New().String()
-	fmt.Printf("For doc %s I am recording a new event %s \n", file, eventID)
+	log.Printf("For doc %s I am recording a new event %s \n", file, eventID)
 	// fmt.Printf("%s  %s  %s  %s \n", valid, projname, file, measurement)
 
 	// TODO
