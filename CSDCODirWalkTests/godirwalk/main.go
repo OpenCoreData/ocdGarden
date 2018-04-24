@@ -15,37 +15,72 @@ import (
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/report"
 )
 
+// TODO:  work old Tika path in somehow?
+// TODO: Add back in the age of file testing...
+
 func main() {
+	// Build the output directories we need
+	err := os.MkdirAll("./output/kvdata", os.ModePerm)
+	err = os.MkdirAll("./output/packages", os.ModePerm)
+	if err != nil {
+		log.Println("in make dir all")
+		panic(err)
+	}
+
 	// Set up our log file for runs...
-	lf, err := os.OpenFile("logfile.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	lf, err := os.OpenFile("output/logfile.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 		log.Fatalf("error opening file: %v", err)
 	}
 	defer lf.Close()
 	log.SetOutput(lf)
 
-	log.Println("Begin index process")
-	kv.InitKV()
-
-	dirToIndexPtr := flag.String("dir", ".", "directory to index")
+	// flags
+	dirToIndexPtr := flag.String("dir", "", "directory to index")
+	indexPtr := flag.Bool("index", false, "a bool for index build")
 	reportPtr := flag.Bool("report", false, "a bool for report build")
 	graphPtr := flag.Bool("graph", false, "a bool for graph building")
 	packagePtr := flag.Bool("package", false, "a bool for package building")
+	resetkvPtr := flag.Bool("resetkv", false, "a bool for reseting the KV store")
 	flag.Parse()
 
 	dirname := *dirToIndexPtr
 
-	err = godirwalk.Walk(dirname, &godirwalk.Options{
-		Callback: func(osPathname string, de *godirwalk.Dirent) error {
-			projDir(de, osPathname)
-			return nil
-		},
-	})
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "%s\n", err)
+	if dirname == "" || !*indexPtr {
+		fmt.Println("You must provide -index flag and a directory with -dir DIR/PATH")
+		log.Println("You must provide -index flag and a directory with -dir DIR/PATH")
 		os.Exit(1)
 	}
 
+	if *resetkvPtr { // TODO:  invert this so the default is to reset the KV store
+		if _, err := os.Stat("./output/kvdata/index.db"); err == nil {
+			err = kv.DeleteKV()
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "%s\n", err)
+			}
+		}
+
+	}
+
+	kv.InitKV()
+
+	// Index the files  // TODO  make this take a flag
+	if *indexPtr {
+		log.Println("Begin index process")
+
+		err = godirwalk.Walk(dirname, &godirwalk.Options{
+			Callback: func(osPathname string, de *godirwalk.Dirent) error {
+				projDir(de, osPathname, dirname)
+				return nil
+			},
+		})
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "%s\n", err)
+			os.Exit(1)
+		}
+	}
+
+	// Get the index results and work with them
 	f := kv.GetEntries()
 
 	// build excel
@@ -68,10 +103,14 @@ func main() {
 	}
 }
 
-func projDir(de *godirwalk.Dirent, osPathname string) {
+func projDir(de *godirwalk.Dirent, osPathname, dirname string) {
 	pathElements := strings.Split(osPathname, "/")
-	if len(pathElements) > 6 {
-		projname := pathElements[5]
+	// fmt.Println(pathElements)
+	argElements := strings.Split(dirname, "/")
+	// fmt.Println(argElements)
+
+	if len(pathElements) > len(argElements) {
+		projname := pathElements[len(argElements)]
 		if de.IsDir() != true {
 			fileIndex(projname, de, osPathname)
 		}
@@ -90,18 +129,6 @@ func fileIndex(projname string, de *godirwalk.Dirent, osPathname string) {
 	// fmt.Println(osPathname[si:])
 
 	asignPredicate(projname, osPathname[si:])
-
-	// getmd5  // use at UUID
-	// getUUID
-
-	// metadata
-	// makeDC // calls metadata
-	// makeSchemaOrg // calls metadata
-	// makeFDPackage
-
-	// tikaProcess
-	// textIndex   // calls tikaProcess
-	// graphIndex
 }
 
 func asignPredicate(projname, osPathname string) {
@@ -120,12 +147,9 @@ func asignPredicate(projname, osPathname string) {
 		// fmt.Printf("File in / : %s \n", file)
 		// *mathch* these:  -metadata "metadata format Dtube Label_" "SRF"
 		if caseInsenstiveContains(file, "-metadata") {
-			kv.NewFileEntry("valid", projname, file, "-metadata")
-			//kv.NewFileEntry("valid", projname, file, "-metadata")
-			//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
+			kv.NewFileEntry("valid", projname, file, "metadata")
 		}
 		if caseInsenstiveContains(file, "metadata format Dtube Label_") {
-			//kv.NewFileEntry("valid", projname, file, "metadata format Dtube Label_")
 			kv.NewFileEntry("valid", projname, file, "metadata format Dtube Label_")
 		}
 		if caseInsenstiveContains(file, "SRF") {
@@ -145,9 +169,7 @@ func asignPredicate(projname, osPathname string) {
 		fileext := strings.ToLower(filepath.Ext(osPathname))
 		s := []string{".bmp", ".jpeg", ".jpg", "tif", "tiff"}
 		if contains(s, fileext) {
-			// fmt.Printf("%s: IMAGES: %s\n", projname, osPathname)
 			kv.NewFileEntry("valid", projname, osPathname, "Images")
-			//row, _ = report.WriteNotebookRow(row, x, "valid", projname, file, "-metadata")
 		}
 	case caseInsenstiveContains(dir, "Images/rgb"):
 		fileext := strings.ToLower(filepath.Ext(osPathname))
@@ -190,8 +212,6 @@ func asignPredicate(projname, osPathname string) {
 		kv.NewFileEntry("notvalid", projname, osPathname, "")
 		//row, _ = report.WriteNotebookRow(row, x, "notvalid", projname, file, "")
 	}
-
-	//report.SaveNotebook(x)
 
 	// TODO...   assign the predicate and place all results in struct
 	// Then pretty report print the struct...
@@ -255,4 +275,16 @@ func ageInYears(fp string) float64 {
 
 func caseInsenstiveContains(a, b string) bool {
 	return strings.Contains(strings.ToUpper(a), strings.ToUpper(b))
+}
+
+func checkPath(path string) error {
+	if _, err := os.Stat(path); err != nil {
+		if os.IsNotExist(err) {
+			return err
+		} else {
+			return err
+		}
+	}
+
+	return nil
 }

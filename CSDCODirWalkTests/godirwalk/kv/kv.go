@@ -20,7 +20,7 @@ type FileMeta struct {
 // func NewFileEntry(docID, provFrag, remoteAddress, contentType string) error {
 func NewFileEntry(valid, projname, file, measurement string) error {
 	eventID := uuid.New().String()
-	log.Printf("For doc %s I am recording a new event %s \n", file, eventID)
+	log.Printf("proj: %s  File: %s ID: %s \n", projname, file, eventID)
 	// fmt.Printf("%s  %s  %s  %s \n", valid, projname, file, measurement)
 
 	// TODO
@@ -33,7 +33,7 @@ func NewFileEntry(valid, projname, file, measurement string) error {
 		log.Println("error in json marshaling")
 	}
 
-	db := getKVStoreRW()
+	db, _ := getKVStoreRW()
 
 	// Log the file
 	db.Update(func(tx *bolt.Tx) error {
@@ -78,32 +78,29 @@ func GetEntries() []FileMeta {
 	return IDs
 }
 
-func getKVStoreRW() *bolt.DB {
-	db, err := bolt.Open("./kvStores/index.db", 0666, nil)
+func getKVStoreRW() (*bolt.DB, error) {
+	db, err := bolt.Open("./output/kvdata/index.db", 0666, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
-	// defer db.Close()
 
-	return db
+	return db, err
 }
 
 func getKVStoreRO() *bolt.DB {
-	db, err := bolt.Open("./kvStores/index.db", 0666, &bolt.Options{ReadOnly: true})
+	db, err := bolt.Open("./output/kvdata/index.db", 0666, &bolt.Options{ReadOnly: true})
 	if err != nil {
 		log.Fatal(err)
 	}
-	// defer db.Close()
 
 	return db
 }
 
-// Init the KV store in case we are starting empty and need some buckets made
+// InitKV the KV store in case we are starting empty and need some buckets made
 // Call from the main program at run time...
 // report.GenReport("valid", projname, file, "metadata format Dtube Label_")
 func InitKV() error {
-
-	db := getKVStoreRW()
+	db, _ := getKVStoreRW()
 
 	err := db.Update(func(tx *bolt.Tx) error {
 		_, err := tx.CreateBucketIfNotExists([]byte("Assessment"))
@@ -114,7 +111,21 @@ func InitKV() error {
 	})
 
 	db.Close()
-
 	return err
+}
 
+// DeleteKV deletes the bucket
+func DeleteKV() error {
+	db, err := getKVStoreRW()
+
+	err = db.Update(func(tx *bolt.Tx) error {
+		err := tx.DeleteBucket([]byte("Assessment"))
+		if err != nil {
+			return fmt.Errorf("deleting error: %s", err)
+		}
+		return nil
+	})
+
+	db.Close()
+	return err
 }

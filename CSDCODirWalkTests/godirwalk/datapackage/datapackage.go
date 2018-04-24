@@ -21,12 +21,13 @@ func BuildPackage(f []kv.FileMeta) {
 	for p := range prjs {
 		uf := projFiles(f, prjs[p])
 		pf[prjs[p]] = uf
+		log.Printf("K: %s  V: %s \n", prjs[p], uf)
 	}
 
-	log.Print(pf)
+	log.Print(len(pf))
 
 	// Build a schema.org file
-	log.Println(BuildSchema("test"))
+	// log.Println(BuildSchema("test"))
 
 	// Build a package  (gather files, build manifest, assemble)
 

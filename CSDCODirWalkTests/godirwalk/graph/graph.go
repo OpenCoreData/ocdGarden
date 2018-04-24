@@ -18,8 +18,14 @@ func BuildGraph(f []kv.FileMeta) string {
 	// The above is where the old CSDCO graph is made
 
 	// make a graph
-	// build the triples
+	// build the triples, simple triples connecting package URI to project and holeid graphs.
+	// at this level nothing more needed, (some prov like stuff) since the triples for the dataset
+	// are in the package JSON-LD.
 	// connect to the main CSDCO graph  (from excel file)
+
+	// TODO  a simple graph connecting a package URI to the project URI  (nothing fancy needed here)
+	// Note the package will have a schame.org based JSON-LD with more details in it.
+	// DO I even need this one if I harvest from the package JSON-LD?
 
 	for i := range f {
 		log.Println("A random string for the file resource uri, UUID?")
@@ -29,7 +35,7 @@ func BuildGraph(f []kv.FileMeta) string {
 		log.Println(f[i].Measurement) // use schma.org mesTech ?
 		//  http://schema.org/measurementTechnique  "TEXT"
 
-		log.Println(f[i].ProjName) // a UUID for the project (already have one?)
+		log.Println(f[i].ProjName) // a UUID for the project (already have one?)  connection predicate?
 		// log.Println(f[i].Valid)  // ignore.. code use only
 	}
 

@@ -5,3 +5,6 @@ Oracle/OracleSimpleClient/outputHold/*
 bleveIndexer/MongoIndexing/csvw.bleve/*
 bleveIndexer/MonogIndexing/csvw.bleve/store
 Oracle/OracleSimpleClient/output/*
+CSDCODirWalkTests/godirwalk/output/pakcages/**
+CSDCODirWalkTests/godirwalk/output/kvdata/**
+CSDCODirWalkTests/godirwalk/output/logfile.txt

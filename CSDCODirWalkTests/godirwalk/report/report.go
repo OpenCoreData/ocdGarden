@@ -68,7 +68,7 @@ func InitNotebook() *excelize.File {
 }
 
 func SaveNotebook(file *excelize.File) error {
-	err := file.SaveAs("./Book1.xlsx")
+	err := file.SaveAs("./output/report.xlsx")
 	if err != nil {
 		log.Println(err)
 	}
@@ -84,10 +84,16 @@ func WriteNotebookRow(row int, xlsx *excelize.File, message, projname, filename,
 	//log.Println(v)
 
 	//nr := len(xlsx.GetRows("Sheet1")) + 1
-	sc := fmt.Sprintf("A%d", row)
-	//log.Println(sc)
-
-	xlsx.SetSheetRow("Sheet1", sc, &[]interface{}{v.Filename, v.FacilityType, v.Message, v.Projname})
+	hcell := fmt.Sprintf("A%d", row)
+	vcell := fmt.Sprintf("D%d", row)
+	xlsx.SetSheetRow("Sheet1", hcell, &[]interface{}{v.Projname, v.Filename, v.FacilityType, v.Message})
+	if v.Message != "valid" {
+		style, err := xlsx.NewStyle(`{"fill":{"type":"pattern","color":["#FFA07A"],"pattern":1}}`)
+		if err != nil {
+			fmt.Println(err)
+		}
+		xlsx.SetCellStyle("Sheet1", hcell, vcell, style)
+	}
 
 	//	return nil
 	return row + 1, nil

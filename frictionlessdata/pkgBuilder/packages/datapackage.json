@@ -1,0 +1,19 @@
+{
+  "profile": "data-package",
+  "resources": [
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "datatest1",
+      "path": "./data/data.csv",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population",
+      "path": "./data/population.csv",
+      "profile": "data-resource"
+    }
+  ]
+}
