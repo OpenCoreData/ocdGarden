@@ -18,8 +18,8 @@ func main() {
 			map[string]interface{}{
 				"name": "datatest1",
 				// "path": "./data.csv",
-				"path":   "./data/data.csv",
-				"format": "csv",
+				"path": "./data/data.csv",
+				//"format": "csv",
 				// "profile": "tabular-data-resource",
 			},
 		},
