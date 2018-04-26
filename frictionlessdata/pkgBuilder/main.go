@@ -7,28 +7,39 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"github.com/frictionlessdata/datapackage-go/datapackage"
 	"github.com/frictionlessdata/datapackage-go/validator"
-	//"github.com/frictionlessdata/datapackage-go/datapackage"
-	//"github.com/frictionlessdata/datapackage-go/validator"
 )
+
+// TODO  make all directories and filenames match regex:  "^([-a-z0-9._/])+$"
 
 func main() {
 	fmt.Println("Frictionless Data Package Bulder")
 	f := make(map[string][]string)
-	f["proj1"] = []string{"./dataVault/testproj1/data.csv", "./dataVault/testproj1/population.csv"}
-	f["proj2"] = []string{"./dataVault/testproj2/data.csv", "./dataVault/testproj2/subbin2-1/population.csv", "./dataVault/testproj2/subbin2-1/subsub/test.csv"}
-	pkgBuilder(f)
+
+	// f["proj1"] = []string{"./dataVault/testproj1/data.csv", "./dataVault/testproj1/population.csv"}
+	// f["proj2"] = []string{"./dataVault/testproj2/data.csv", "./dataVault/testproj2/subbin2-1/population.csv", "./dataVault/testproj2/subbin2-1/subsub/test.csv"}
+
+	// /media/fils/seagate/dataVault  (set by -dir)
+	f["testproj1"] = []string{"data.csv", "population.csv"}
+	f["testproj2"] = []string{"data.csv", "subbin2-1/population.csv", "subbin2-1/subsub/test.csv"}
+
+	packagedir := "/media/fils/seagate/packages"
+	vaultdir := "/media/fils/seagate/dataVault"
+	tempdir := "/media/fils/seagate/tmp"
+
+	pkgBuilder(f, vaultdir, tempdir, packagedir)
 }
 
 // TODO integrate with CSDCO walker code
-func pkgBuilder(f map[string][]string) {
+func pkgBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 	//fmt.Println(f)
 
 	// set up temp directory, copy files in, generate zip from that tmp directory
-	dir, err := ioutil.TempDir("tmp", "")
+	dir, err := ioutil.TempDir(tempdir, "")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,7 +48,6 @@ func pkgBuilder(f map[string][]string) {
 
 	pm := make(map[string][]string)
 
-	// test cycle through map..  then extend the copy file section
 	for k, v := range f {
 		fmt.Printf("Name for the package: %s\n", k)
 		projdir := fmt.Sprintf("%s/%s", dir, k)
@@ -45,36 +55,34 @@ func pkgBuilder(f map[string][]string) {
 		os.Mkdir(projdir, os.ModePerm)
 		os.Mkdir(projdatadir, os.ModePerm)
 
-		// TODO:  Need a map that holds the proj name (inside the temp dir)
 		fa := []string{}
 
 		for i := range v {
 			pdd := projdatadir
 			fn := filepath.Base(v[i])
 			d := filepath.Dir(v[i])
-			rel, err := filepath.Rel(dir, "dataVault")
-			rpd := len(strings.Split(rel, "/"))
-			//fmt.Printf("%d     %q: %q %v\n", rpd, "dataVault", rel, err)
-			//fmt.Printf("%s     %s      %s\n", pdd, dir, rel)
 
-			if rpd > 1 {
+			if len(strings.Split(d, "/")) > 1 {
+				fmt.Println(d)
 				dirsplit := strings.Split(d, "/")
-				sp := fmt.Sprintf("%s/%s", pdd, strings.Join(dirsplit[len(dirsplit)-(rpd-1):len(dirsplit)], "/")) // ref: https://github.com/golang/go/wiki/SliceTricks
+				fmt.Println(dirsplit)
+				sp := fmt.Sprintf("%s/%s", pdd, d)
 				pdd = sp
 			}
-			//fmt.Printf("Projdata dir is %s \n", pdd)
+
+			pdd = cleanstring(pdd)
+			fmt.Printf("Projdata dir is %s \n", pdd)
+
 			err = os.MkdirAll(pdd, os.ModePerm)
 			if err != nil {
 				log.Println("in make dir all")
 				panic(err)
 			}
-			err = copyFileContents(v[i], pdd+"/"+fn)
 
-			//r2, _ := filepath.Rel(d, "dataVault")
-			// fmt.Println("---------------------")
-			// fmt.Println(dir)
-			// fmt.Printf("%s \n", pdd+"/"+fn)
-			// fmt.Println(strings.TrimPrefix(pdd+"/"+fn, dir+"/"+k))
+			fqp := fmt.Sprintf("%s/%s/%s", vaultdir, k, v[i])
+			fn = cleanstring(fn)
+			err = copyFileContents(fqp, pdd+"/"+fn)
+
 			fa = append(fa, strings.TrimPrefix(pdd+"/"+fn, dir+"/"+k+"/"))
 
 			if err != nil {
@@ -82,16 +90,14 @@ func pkgBuilder(f map[string][]string) {
 				panic(err)
 			}
 		}
-
 		pm[k] = fa
-
 	}
 
 	fmt.Println(pm)
 
 	// loop on the new map from above and move in and generate the datapackage json and zip packages...
-
 	for i, j := range pm {
+		fmt.Println("-------------  loop start  ---------------------------")
 		fmt.Println(i)
 		fmt.Println(j)
 
@@ -114,15 +120,13 @@ func pkgBuilder(f map[string][]string) {
 
 		pkg, err := datapackage.New(descriptor, ".", validator.InMemoryLoader())
 		if err != nil {
-			log.Println("in descriptor builder")
 			log.Println(err)
 			panic(err)
 		}
 
-		zipfp := fmt.Sprintf("/tmp/package%s.zip", i)
+		zipfp := fmt.Sprintf("%s/%s.zip", packagedir, i)
 		err = pkg.Zip(zipfp)
 		if err != nil {
-			log.Println("in zip builder")
 			log.Println(err)
 			panic(err)
 		}
@@ -134,7 +138,7 @@ func pkgBuilder(f map[string][]string) {
 		}
 		fmt.Printf("dir check 1 %s \n", pwd)
 
-		err = os.Chdir("../../..")
+		err = os.Chdir("../../..") // TODO: need to replace with a explicate set directory.
 		fmt.Println("changing back up...")
 		if err != nil {
 			log.Println("chdir back up...")
@@ -149,14 +153,12 @@ func pkgBuilder(f map[string][]string) {
 		fmt.Printf("dir check 2 %s \n", pwd)
 
 		fmt.Println("-------------  loop end  ---------------------------")
-
 	}
 
 }
 
 // func makeDescriptor(f []string) ([]byte, error) {
 func makeDescriptor(f []string) (map[string]interface{}, error) {
-
 	var vma []interface{} //  was []map[string]interface{}  //
 
 	for i := range f {
@@ -195,7 +197,7 @@ func makeDescriptor(f []string) (map[string]interface{}, error) {
 }
 
 func copyFileContents(src, dst string) (err error) {
-	//fmt.Printf("Copy %s to %s\n", src, dst)
+	fmt.Printf("Copy %s to %s\n", src, dst)
 	in, err := os.Open(src)
 	if err != nil {
 		log.Println(err)
@@ -219,4 +221,16 @@ func copyFileContents(src, dst string) (err error) {
 	}
 	err = out.Sync()
 	return
+}
+
+func cleanstring(s string) string {
+	// Make a Regex to say we only want
+	reg, err := regexp.Compile("[^a-z0-9._/]+")
+	if err != nil {
+		log.Fatal(err)
+	}
+	sl := strings.ToLower(s)
+	processedString := reg.ReplaceAllString(sl, "")
+
+	return processedString
 }

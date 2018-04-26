@@ -1,13 +1,11 @@
 package datapackage
 
 import (
-	"log"
-
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/kv"
 )
 
 // BuildPackage should use a pointer ...  :)
-func BuildPackage(f []kv.FileMeta) {
+func BuildPackage(f []kv.FileMeta, dirname string) {
 
 	// Need to set the package name
 	// Need to set the package ID
@@ -21,15 +19,16 @@ func BuildPackage(f []kv.FileMeta) {
 	for p := range prjs {
 		uf := projFiles(f, prjs[p])
 		pf[prjs[p]] = uf
-		log.Printf("K: %s  V: %s \n", prjs[p], uf)
+		// log.Printf("K: %s  V: %s \n", prjs[p], uf)
 	}
 
-	log.Print(len(pf))
+	// log.Print(len(pf))
 
-	// Build a schema.org file
-	// log.Println(BuildSchema("test"))
+	packagedir := "/media/fils/seagate/packages"
+	vaultdir := dirname
+	tempdir := "/media/fils/seagate/tmp"
 
-	// Build a package  (gather files, build manifest, assemble)
+	PKGBuilder(pf, vaultdir, tempdir, packagedir)
 
 }
 

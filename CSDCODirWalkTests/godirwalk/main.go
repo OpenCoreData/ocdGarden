@@ -7,6 +7,8 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"syscall"
+	"time"
 
 	"github.com/karrick/godirwalk"
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/datapackage"
@@ -15,8 +17,9 @@ import (
 	"opencoredata.org/ocdGarden/CSDCODirWalkTests/godirwalk/report"
 )
 
-// TODO:  work old Tika path in somehow?
-// TODO: Add back in the age of file testing...
+// TODO: Work Tika flow back in to support discovery
+// TODO: Add back in the age of file testing... (out during testing to allow more files to get through)
+// TODO: ignore the .DS Store files, the code finds them..
 
 func main() {
 	// Build the output directories we need
@@ -52,7 +55,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	if *resetkvPtr { // TODO:  invert this so the default is to reset the KV store
+	// reset the KV store  TODO: (make this the default without a flag)
+	if *resetkvPtr {
 		if _, err := os.Stat("./output/kvdata/index.db"); err == nil {
 			err = kv.DeleteKV()
 			if err != nil {
@@ -61,10 +65,10 @@ func main() {
 		}
 
 	}
-
+	// init the KV store if new, skips if present...
 	kv.InitKV()
 
-	// Index the files  // TODO  make this take a flag
+	// Index the files
 	if *indexPtr {
 		log.Println("Begin index process")
 
@@ -92,22 +96,23 @@ func main() {
 		report.SaveNotebook(x)
 	}
 
+	// Get only files that are valid
+	w := kv.WhiteList()
+
 	// build graph
 	if *graphPtr {
-		graph.BuildGraph(f)
+		graph.BuildGraph(w)
 	}
 
 	// build packages
 	if *packagePtr {
-		datapackage.BuildPackage(f)
+		datapackage.BuildPackage(w, dirname)
 	}
 }
 
 func projDir(de *godirwalk.Dirent, osPathname, dirname string) {
 	pathElements := strings.Split(osPathname, "/")
-	// fmt.Println(pathElements)
 	argElements := strings.Split(dirname, "/")
-	// fmt.Println(argElements)
 
 	if len(pathElements) > len(argElements) {
 		projname := pathElements[len(argElements)]
@@ -118,15 +123,11 @@ func projDir(de *godirwalk.Dirent, osPathname, dirname string) {
 }
 
 func fileIndex(projname string, de *godirwalk.Dirent, osPathname string) {
-	// pathElements := strings.Split(osPathname, "/")
-	// fmt.Println(pathElements[6:(len(pathElements - 1))])
-
-	// fmt.Printf("\n %s %s %s \n", projname, de.Name(), osPathname)
-	// Get first index of projname
-	// remove to the left of that
-
 	si := strings.Index(osPathname, projname) + len(projname) // -1 to include the /
 	// fmt.Println(osPathname[si:])
+
+	// TODO  add back in age check here..  only index if creations time older
+	// fmt.Println(ageInYears(osPathname))
 
 	asignPredicate(projname, osPathname[si:])
 }
@@ -134,13 +135,10 @@ func fileIndex(projname string, de *godirwalk.Dirent, osPathname string) {
 func asignPredicate(projname, osPathname string) {
 	// fmt.Printf("Checking %s \n", osPathname)
 
-	//  the switch is on the directory name
-	//  so I need to remove the filename and have only the
-	// path left to check on...
+	// the switch is on the directory name
+	// so I need to remove the filename and have only the path left to check on...
 
 	dir, file := filepath.Split(osPathname)
-	//x := report.InitNotebook()
-	//row := 1
 
 	// Deal with root special
 	if dir == "/" {
@@ -213,9 +211,6 @@ func asignPredicate(projname, osPathname string) {
 		//row, _ = report.WriteNotebookRow(row, x, "notvalid", projname, file, "")
 	}
 
-	// TODO...   assign the predicate and place all results in struct
-	// Then pretty report print the struct...
-
 	//   match in /
 	// "-metadata"  metadata // ns: http://opencoredata.org/id/voc/csdco/v1/
 	// "metadata format Dtube Label_"  dtubeMetadata
@@ -249,6 +244,7 @@ func contains(slice []string, item string) bool {
 	return ok
 }
 
+// TODO:  just a place holder function to remind me abot this
 // Read into a string array and check for it in array
 func inApprovedList(projectName string) bool {
 	if projectName == "CAHO" {
@@ -259,18 +255,18 @@ func inApprovedList(projectName string) bool {
 
 // ageInYears gets the age of a file as a float64 decimal value
 func ageInYears(fp string) float64 {
-	// fi, err := os.Stat(fp)
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
-	// stat := fi.Sys().(*syscall.Stat_t)
-	// ctime := time.Unix(int64(stat.Ctimespec.Sec), int64(stat.Ctimespec.Nsec))
-	// delta := time.Now() //.Sub(ctime)
-	// years := delta.Hours() / 24 / 365
-	// // fmt.Printf("Create: %v   making it %.2f  years old\n", ctime, years)
-	// return years
+	fi, err := os.Stat(fp)
+	if err != nil {
+		fmt.Println(err)
+	}
+	stat := fi.Sys().(*syscall.Stat_t)
+	ctime := time.Unix(int64(stat.Ctim.Sec), int64(stat.Ctim.Nsec))
+	delta := time.Now().Sub(ctime)
+	years := delta.Hours() / 24 / 365
+	fmt.Printf("Create: %v   making it %.2f  years old\n", ctime, years)
+	return years
 
-	return 2.0
+	//return 2.0
 }
 
 func caseInsenstiveContains(a, b string) bool {

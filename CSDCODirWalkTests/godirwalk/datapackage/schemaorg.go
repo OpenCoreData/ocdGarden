@@ -50,12 +50,13 @@ type VariableMeasured struct {
 }
 
 // BuildSchema make a type Dataset JSON-LD for a given CSDCO project
+// TODO:  need to pass fileName fileURI projname datapakcage.json?  (to get things from it?)
 func BuildSchema(projname string) string {
 	log.Println("in the schema.org build function")
 
 	// FYI
 	// Data from the CSDCO graph:
-	//  Location Name,Location Type,Project,Location ID,
+	// Location Name,Location Type,Project,Location ID,
 	// Site,Hole,SiteHole,Original ID,Hole ID,Platform,
 	// Date,Water Depth (m),Country,State_Province,County_Region,
 	// PI,Lat,Long,Elevation,Position,Storage Location Working,
@@ -65,7 +66,7 @@ func BuildSchema(projname string) string {
 	dm := CSDCODataset{}
 
 	//  Associate with a PROJECT and with contained FILE IDs?
-	dm.ID = "ID" // need an ID approach for the PACKAGE  (proj + sha hash?)
+	dm.ID = "http://opencoredata.org/id/csdco/dataset/12345678" // need an ID approach for the PACKAGE  (proj + sha hash?)
 	dm.Description = "The description of the data set"
 	dm.Keywords = "find some keywords for this section"
 	dm.Name = "The name of the dataset" // same as ID?  plus .zip?
@@ -89,8 +90,8 @@ func dsetBuilder(dm CSDCODataset) ([]byte, error) {
 	// array of maps
 	var vma []map[string]interface{}
 
-	// we are basically going from struct to map so we can pass the expected
-	// type to the json-ld tools
+	// wont have VarMeas...  but might have MesTech
+	//
 	for _, v := range dm.VariableMeasured {
 		vm := make(map[string]interface{})
 		vm["@type"] = "PropertyValue"

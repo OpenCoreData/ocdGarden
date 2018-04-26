@@ -78,6 +78,41 @@ func GetEntries() []FileMeta {
 	return IDs
 }
 
+// WhiteList returns only files that are valid to be included
+func WhiteList() []FileMeta {
+	db := getKVStoreRO()
+	var IDs []FileMeta
+
+	err := db.View(func(tx *bolt.Tx) error {
+		b := tx.Bucket([]byte("Assessment"))
+		c := b.Cursor()
+		for k, v := c.First(); k != nil; k, v = c.Next() {
+			//log.Printf("key=%s, value=%s\n", k, v)
+			dat := FileMeta{}
+			if err := json.Unmarshal(v, &dat); err != nil {
+				panic(err)
+			}
+			if dat.Valid == "valid" {
+				IDs = append(IDs, dat)
+			}
+		}
+		return nil
+	})
+
+	if err != nil {
+		log.Println("Error reading file info from the KV store index.db")
+		log.Println(err)
+	}
+
+	err = db.Close()
+	if err != nil {
+		log.Println("Error closing database index.db")
+		log.Println(err)
+	}
+
+	return IDs
+}
+
 func getKVStoreRW() (*bolt.DB, error) {
 	db, err := bolt.Open("./output/kvdata/index.db", 0666, nil)
 	if err != nil {

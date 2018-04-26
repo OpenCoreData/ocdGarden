@@ -7,92 +7,185 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
+	"strings"
 
 	"github.com/frictionlessdata/datapackage-go/datapackage"
 	"github.com/frictionlessdata/datapackage-go/validator"
 )
 
 // PKGBuilder integrate with CSDCO walker code
-func PKGBuilder(f map[string][]string) {
-	fmt.Println("Frictionless Data Package Bulder")
-	fmt.Println(f)
+func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
+	//fmt.Println(f)
 
-	// TODO..  make the following a function and pass it a
-	// map like I use in the directory walk program
-
-	// TODO
 	// set up temp directory, copy files in, generate zip from that tmp directory
-	dir, err := ioutil.TempDir("output/packages", "")
+	dir, err := ioutil.TempDir(tempdir, "")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// defer os.RemoveAll(dir) // clean up
 
-	// make data directory inside temp
-	os.Mkdir(dir+"/data", os.ModePerm)
+	pm := make(map[string][]string)
 
-	// test cycle through map..  then extend the copy file section
 	for k, v := range f {
 		fmt.Printf("Name for the package: %s\n", k)
+		projdir := fmt.Sprintf("%s/%s", dir, k)
+		projdatadir := fmt.Sprintf("%s/%s/data", dir, k)
+		os.Mkdir(projdir, os.ModePerm)
+		os.Mkdir(projdatadir, os.ModePerm)
+
+		fa := []string{}
+
 		for i := range v {
+			pdd := projdatadir
 			fn := filepath.Base(v[i])
-			// copy files
-			err = copyFileContents(v[i], dir+"/data/"+fn)
+			d := filepath.Dir(v[i])
+
+			if len(strings.Split(d, "/")) > 1 {
+				fmt.Println(d)
+				dirsplit := strings.Split(d, "/")
+				fmt.Println(dirsplit)
+				sp := fmt.Sprintf("%s/%s", pdd, d)
+				pdd = sp
+			}
+
+			pdd = cleanstring(pdd)
+			fmt.Printf("Projdata dir is %s \n", pdd)
+
+			err = os.MkdirAll(pdd, os.ModePerm)
+			if err != nil {
+				log.Println("in make dir all")
+				panic(err)
+			}
+
+			fqp := fmt.Sprintf("%s/%s/%s", vaultdir, k, v[i])
+			fn = cleanstring(fn)
+			err = copyFileContents(fqp, pdd+"/"+fn)
+
+			fmt.Printf("------>>>>>>>   %s\n", strings.TrimPrefix(pdd+"/"+fn, dir+"/"+cleanstring(k)+"/"))
+			fa = append(fa, strings.TrimPrefix(pdd+"/"+fn, dir+"/"+cleanstring(k)+"/"))
+
 			if err != nil {
 				log.Println("in copy file")
 				panic(err)
 			}
 		}
+		pm[k] = fa
 	}
 
-	// change working directory
-	err = os.Chdir(dir)
-	log.Println(dir)
-	if err != nil {
-		log.Println("in change dir")
-		panic(err)
+	fmt.Println(BuildSchema("projname"))
+
+	for a, b := range pm {
+		fmt.Println(a)
+		fmt.Println(b)
 	}
 
-	// Build descriptior and zip file  TODO:  make this a function call to clean up this code
-	descriptor := map[string]interface{}{
-		"resources": []interface{}{
-			map[string]interface{}{
-				"name":   "datatest1",
-				"path":   "./data/data.csv",
-				"format": "csv",
-				// "profile": "tabular-data-resource",
-			},
-			map[string]interface{}{
-				"name":   "population",
-				"path":   "./data/population.csv",
-				"format": "csv",
-			},
-		},
-	}
-	pkg, err := datapackage.New(descriptor, ".", validator.InMemoryLoader())
-	if err != nil {
-		log.Println("in descriptor builder")
-		log.Println(err)
-		panic(err)
-	}
+	// loop on the new map from above and move in and generate the datapackage json and zip packages...
+	for i, j := range pm {
+		fmt.Println("-------------  loop start  ---------------------------")
+		fmt.Println(i)
+		fmt.Println(j)
 
-	err = pkg.Zip("../packages/package.zip")
-	if err != nil {
-		log.Println("in zip builder")
-		log.Println(err)
-		panic(err)
-	}
+		i = cleanstring(i)
 
-	err = os.Chdir("../../..")
-	if err != nil {
-		log.Println("in change dir")
-		panic(err)
+		projdir := fmt.Sprintf("%s/%s", dir, i)
+		// // change working directory
+		fmt.Printf("The projdir is %s\n", projdir)
+		err = os.Chdir(projdir)
+		log.Println(dir)
+		if err != nil {
+			log.Println("in change dir")
+			panic(err)
+		}
+
+		descriptor, err := makeDescriptor(j)
+		if err != nil {
+			log.Println("in make descriptor call")
+			panic(err)
+		}
+		fmt.Println(descriptor)
+
+		pkg, err := datapackage.New(descriptor, ".", validator.InMemoryLoader())
+		if err != nil {
+			log.Println(err)
+			panic(err)
+		}
+
+		zipfp := fmt.Sprintf("%s/%s.zip", packagedir, i)
+		err = pkg.Zip(zipfp)
+		if err != nil {
+			log.Println(err)
+			panic(err)
+		}
+
+		pwd, err := os.Getwd()
+		if err != nil {
+			fmt.Println(err)
+			os.Exit(1)
+		}
+		fmt.Printf("dir check 1 %s \n", pwd)
+
+		err = os.Chdir("../../..") // TODO: need to replace with a explicate set directory.
+		fmt.Println("changing back up...")
+		if err != nil {
+			log.Println("chdir back up...")
+			panic(err)
+		}
+
+		pwd, err = os.Getwd()
+		if err != nil {
+			fmt.Println(err)
+			os.Exit(1)
+		}
+		fmt.Printf("dir check 2 %s \n", pwd)
+
+		fmt.Println("-------------  loop end  ---------------------------")
 	}
 
 }
 
+// func makeDescriptor(f []string) ([]byte, error) {
+func makeDescriptor(f []string) (map[string]interface{}, error) {
+	var vma []interface{} //  was []map[string]interface{}  //
+
+	for i := range f {
+		vm := make(map[string]interface{})
+		vm["name"] = filepath.Base(f[i]) // base name only  (might be dups in different sub dirs
+		vm["path"] = f[i]                // tmp + data + path
+		// vm["format"] = "file" //  remove?  replace with something else from spec...
+		vma = append(vma, vm)
+	}
+
+	descriptor := map[string]interface{}{
+		"resources": vma,
+	}
+
+	// OLD
+	// descriptor = map[string]interface{}{
+	// 	"resources": []interface{}{
+	// 		map[string]interface{}{
+	// 			"name":   "datatest1",
+	// 			"path":   "./data/data.csv",
+	// 			"format": "csv",
+	// 			// "profile": "tabular-data-resource",
+	// 		},
+	// 		map[string]interface{}{
+	// 			"name":   "population",
+	// 			"path":   "./data/population.csv",
+	// 			"format": "csv",
+	// 		},
+	// 	},
+	// }
+
+	// j, _ := json.MarshalIndent(descriptor, "", " ")
+	// fmt.Println(string(j))
+
+	return descriptor, nil
+}
+
 func copyFileContents(src, dst string) (err error) {
+	fmt.Printf("Copy %s to %s\n", src, dst)
 	in, err := os.Open(src)
 	if err != nil {
 		log.Println(err)
@@ -116,4 +209,16 @@ func copyFileContents(src, dst string) (err error) {
 	}
 	err = out.Sync()
 	return
+}
+
+func cleanstring(s string) string {
+	// Make a Regex to say we only want
+	reg, err := regexp.Compile("[^a-z0-9._/]+")
+	if err != nil {
+		log.Fatal(err)
+	}
+	sl := strings.ToLower(s)
+	processedString := reg.ReplaceAllString(sl, "")
+
+	return processedString
 }
