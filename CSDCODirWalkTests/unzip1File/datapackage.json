@@ -1,0 +1,365 @@
+{
+  "profile": "data-package",
+  "resources": [
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a6l1.pdf",
+      "path": "data//icd/will08kirc081a6l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08metadata.xls",
+      "path": "data/will08metadata.xls",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a4l1_a.bmp",
+      "path": "data//images/will08kirc081a4l1_a.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b2l1_w.bmp",
+      "path": "data//images/will08kirc081b2l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a2l1_w.bmp",
+      "path": "data//images/will08kirc081a2l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a9l1.pdf",
+      "path": "data//icd/will08kirc081a9l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b7l1_w.bmp",
+      "path": "data//images/will08kirc081b7l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b6l1_w.bmp",
+      "path": "data//images/will08kirc081b6l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a13l1.pdf",
+      "path": "data//icd/will08kirc081a13l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b9l1.pdf",
+      "path": "data//icd/will08kirc081b9l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b3l1_w.bmp",
+      "path": "data//images/will08kirc081b3l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b3l1.pdf",
+      "path": "data//icd/will08kirc081b3l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a7l1.pdf",
+      "path": "data//icd/will08kirc081a7l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a13l1_w.bmp",
+      "path": "data//images/will08kirc081a13l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b10l1.pdf",
+      "path": "data//icd/will08kirc081b10l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a3l1.pdf",
+      "path": "data//icd/will08kirc081a3l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a14l1_w.bmp",
+      "path": "data//images/will08kirc081a14l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b9l1_w.bmp",
+      "path": "data//images/will08kirc081b9l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a6l1_a.bmp",
+      "path": "data//images/will08kirc081a6l1_a.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a6l1_w.bmp",
+      "path": "data//images/will08kirc081a6l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b6l1.pdf",
+      "path": "data//icd/will08kirc081b6l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a1l1_a.bmp",
+      "path": "data//images/will08kirc081a1l1_a.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a3l1_w.bmp",
+      "path": "data//images/will08kirc081a3l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b5l1_w.bmp",
+      "path": "data//images/will08kirc081b5l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a12l1_w.bmp",
+      "path": "data//images/will08kirc081a12l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a14l1.pdf",
+      "path": "data//icd/will08kirc081a14l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b12l1.pdf",
+      "path": "data//icd/will08kirc081b12l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b4l1_w.bmp",
+      "path": "data//images/will08kirc081b4l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b1l1.pdf",
+      "path": "data//icd/will08kirc081b1l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a5l1_a.bmp",
+      "path": "data//images/will08kirc081a5l1_a.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a2l1.pdf",
+      "path": "data//icd/will08kirc081a2l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a5l1_w.bmp",
+      "path": "data//images/will08kirc081a5l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a11l1.pdf",
+      "path": "data//icd/will08kirc081a11l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b2l1.pdf",
+      "path": "data//icd/will08kirc081b2l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a1l1_w.bmp",
+      "path": "data//images/will08kirc081a1l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b8l1_w.bmp",
+      "path": "data//images/will08kirc081b8l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a3l1_a.bmp",
+      "path": "data//images/will08kirc081a3l1_a.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a4l1_w.bmp",
+      "path": "data//images/will08kirc081a4l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a9l1_w.bmp",
+      "path": "data//images/will08kirc081a9l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a10l1.pdf",
+      "path": "data//icd/will08kirc081a10l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a8l1.pdf",
+      "path": "data//icd/will08kirc081a8l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a1l1.pdf",
+      "path": "data//icd/will08kirc081a1l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a11l1_w.bmp",
+      "path": "data//images/will08kirc081a11l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a10l1_w.bmp",
+      "path": "data//images/will08kirc081a10l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a2l1_a.bmp",
+      "path": "data//images/will08kirc081a2l1_a.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a7l1_w.bmp",
+      "path": "data//images/will08kirc081a7l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a12l1.pdf",
+      "path": "data//icd/will08kirc081a12l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b11l1_w.bmp",
+      "path": "data//images/will08kirc081b11l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a4l1.pdf",
+      "path": "data//icd/will08kirc081a4l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b1l1_w.bmp",
+      "path": "data//images/will08kirc081b1l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b5l1.pdf",
+      "path": "data//icd/will08kirc081b5l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a8l1_w.bmp",
+      "path": "data//images/will08kirc081a8l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b11l1.pdf",
+      "path": "data//icd/will08kirc081b11l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08_hrms_20080820.xls",
+      "path": "data//geotekdata/highresolutionmsdata/will08_hrms_20080820/will08_hrms_20080820.xls",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b10l1_w.bmp",
+      "path": "data//images/will08kirc081b10l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b4l1.pdf",
+      "path": "data//icd/will08kirc081b4l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b7l1.pdf",
+      "path": "data//icd/will08kirc081b7l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b8l1.pdf",
+      "path": "data//icd/will08kirc081b8l1.pdf",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081b12l1_w.bmp",
+      "path": "data//images/will08kirc081b12l1_w.bmp",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "will08kirc081a5l1.pdf",
+      "path": "data//icd/will08kirc081a5l1.pdf",
+      "profile": "data-resource"
+    }
+  ]
+}

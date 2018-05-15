@@ -49,12 +49,6 @@ func main() {
 
 	dirname := *dirToIndexPtr
 
-	if dirname == "" || !*indexPtr {
-		fmt.Println("You must provide -index flag and a directory with -dir DIR/PATH")
-		log.Println("You must provide -index flag and a directory with -dir DIR/PATH")
-		os.Exit(1)
-	}
-
 	// reset the KV store  TODO: (make this the default without a flag)
 	if *resetkvPtr {
 		if _, err := os.Stat("./output/kvdata/index.db"); err == nil {
@@ -70,6 +64,11 @@ func main() {
 
 	// Index the files
 	if *indexPtr {
+		if dirname == "" {
+			fmt.Println("You must provide a directory with -dir DIR/PATH")
+			log.Println("You must provide a directory with -dir DIR/PATH")
+			os.Exit(1)
+		}
 		log.Println("Begin index process")
 
 		err = godirwalk.Walk(dirname, &godirwalk.Options{
@@ -88,12 +87,26 @@ func main() {
 	f := kv.GetEntries()
 
 	// build excel
+	// if *reportPtr {
+	// 	x := report.InitNotebook()
+	// 	flen := len(f)
+	// 	for i := range f {
+	// 		_, _ = report.WriteNotebookRow(i+1, x, f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement)
+	// 		log.Printf("Report line %d / %d \n", i, flen)
+	// 	}
+	// 	report.SaveNotebook(x)
+	// }
+
+	// build csv
 	if *reportPtr {
-		x := report.InitNotebook()
+		flen := len(f)
+
+		rows := make([][]string, flen)
 		for i := range f {
-			_, _ = report.WriteNotebookRow(i+1, x, f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement)
+			rows[i] = []string{f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement}
+			log.Printf("Report line %d / %d \n", i, flen)
 		}
-		report.SaveNotebook(x)
+		report.CSVReport("report.csv", rows)
 	}
 
 	// Get only files that are valid

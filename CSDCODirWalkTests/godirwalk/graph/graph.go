@@ -11,6 +11,12 @@ import (
 )
 
 // BuildGraph generates the graph of file structured data
+// The only real goal here is to associate the UID of a datapackage with the
+// UID of a CSDCO project.
+// The project graph will hold the project level metadata and the (and holeid level)
+// and the schema.org JSON-LD holds the dataset level structured data.
+// These triples are simply to connect the two.  This could really be placed in the
+// schema.org JSON-LD too and avoid this step.
 func BuildGraph(f []kv.FileMeta) string {
 	log.Println("In graph builder")
 

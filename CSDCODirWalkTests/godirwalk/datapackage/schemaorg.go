@@ -2,38 +2,45 @@ package datapackage
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 
 	"github.com/piprate/json-gold/ld"
 )
 
+// http://opencoredata.org/collections/csdco/project/MBGLH
+// or
+// http://opencoredata.org/collections/csdco/project/LAUCA
+// http://opencoredata.org/id/csdco/dataset/
+// http://opencoredata.org/id/ocd/dataset/
+
 // VoidDataset is a struct to hold items from a VOiD file that
 // describe a dataset  https://developers.google.com/search/docs/data-types/datasets
 type CSDCODataset struct {
-	ID                 string
-	URL                string // type URL: Location of a page describing the dataset.
+	ID                 string // simple UUID
+	URL                string // http://opencoredata.org/id/csdco/dataset/
 	Description        string // A short summary describing a dataset.
 	Keywords           string // Keywords summarizing the dataset.
-	Name               string // A descriptive name of a dataset (e.g., “Snow depth in Northern Hemisphere”)
-	ContentURL         string
+	Name               string // CSDCO Project X dataset Y
+	ContentURL         string // http://opencoredata.org/api/v1/documents/download/PROJNAME.csv
 	AccrualPeriodicity string
 	Issued             string
-	License            string
-	Publisher          string // Person, Org The name of the dataset creator (person or organization).
-	Title              string
-	DataDump           string
-	Source             string
-	LandingPage        string
-	DownloadURL        string
-	MediaType          string
-	SameAs             string             // type URL: Other URLs that can be used to access the dataset page.
-	Version            string             // The version number for this dataset.
+	License            string             // CC zero
+	Publisher          string             // CSDCO RE3 DOI
+	Title              string             // same as name?
+	DataDump           string             // ????
+	Source             string             // CSDCO Project X
+	LandingPage        string             // as opposed to URL above?
+	DownloadURL        string             // as opposed to conenturl above?
+	MediaType          string             // zip file application/zip
+	SameAs             string             // not used, but might be with Carp Lake
+	Version            string             // 0.1.1
 	VariableMeasured   []VariableMeasured // What does the dataset measure? (e.g., temperature, pressure)
-	PublisherDesc      string
-	PublisherName      string
-	PublisherURL       string
-	Latitude           string
-	Longitude          string
+	PublisherDesc      string             // CSDCO desc
+	PublisherName      string             // CSDCO name
+	PublisherURL       string             // CSDCO URL
+	Latitude           string             //  can't be used?   or is there _one_ for the project?
+	Longitude          string             //  "    "    "    "   "
 }
 
 // TODO
@@ -51,7 +58,7 @@ type VariableMeasured struct {
 
 // BuildSchema make a type Dataset JSON-LD for a given CSDCO project
 // TODO:  need to pass fileName fileURI projname datapakcage.json?  (to get things from it?)
-func BuildSchema(projname string) string {
+func BuildSchema(projname, workingdir, shavalue string) string {
 	log.Println("in the schema.org build function")
 
 	// FYI
@@ -63,23 +70,30 @@ func BuildSchema(projname string) string {
 	// Storage Location Archive,Sample Type,Comment,mblf T,mblf B,
 	// Metadata Source
 
+	//ocg := ocdGraphCall  // returns a CSDCOProject{} struct
+
 	dm := CSDCODataset{}
 
 	//  Associate with a PROJECT and with contained FILE IDs?
-	dm.ID = "http://opencoredata.org/id/csdco/dataset/12345678" // need an ID approach for the PACKAGE  (proj + sha hash?)
-	dm.Description = "The description of the data set"
-	dm.Keywords = "find some keywords for this section"
-	dm.Name = "The name of the dataset" // same as ID?  plus .zip?
-	dm.ContentURL = "http://example.org/foo"
-	dm.PublisherDesc = "Description of CSDCO"
-	dm.PublisherName = "Name of the publisher"
-	dm.PublisherURL = "CSDCO home page"
-	dm.Latitude = "45.0"  // from graph
-	dm.Longitude = "12.5" // from graph
+	dm.ID = fmt.Sprintf("http://opencoredata.org/pkg/id/%s", shavalue) // need an ID approach for the PACKAGE  (proj + sha hash?)
+	dm.Description = fmt.Sprintf("A CSDCO data package for  project %s (%s)", projname, workingdir)
+	dm.Keywords = "CSDCO, Continental Scientific Drilling"
+	dm.Name = fmt.Sprintf("%s.zip", shavalue)
+	dm.ContentURL = fmt.Sprintf("http://opencoredata.org/pkg/id/%s.zip", shavalue)
+	dm.PublisherDesc = "Continental Scientific Drilling Coordination Office"
+	dm.PublisherName = "CSDCO"
+	dm.PublisherURL = "https://csdco.umn.edu/"
+	dm.Latitude = "0.0"  // from graph  ocg.lat
+	dm.Longitude = "0.0" // from graph  ocg.long
 
 	schemaorg, _ := dsetBuilder(dm)
 
 	return string(schemaorg)
+}
+
+func ocdGraphCall() {
+
+	// make a SPARQL call to opencore to get info about a project.
 }
 
 func dsetBuilder(dm CSDCODataset) ([]byte, error) {
@@ -91,7 +105,8 @@ func dsetBuilder(dm CSDCODataset) ([]byte, error) {
 	var vma []map[string]interface{}
 
 	// wont have VarMeas...  but might have MesTech
-	//
+	// ..   really we would just sappend into the description of the dataset the
+	// file types present
 	for _, v := range dm.VariableMeasured {
 		vm := make(map[string]interface{})
 		vm["@type"] = "PropertyValue"
@@ -105,7 +120,7 @@ func dsetBuilder(dm CSDCODataset) ([]byte, error) {
 	doc := map[string]interface{}{
 		"@type": "Dataset",
 		"@id":   dm.ID,
-		"http://schema.org/url":         dm.URL,
+		"http://schema.org/url":         dm.ID,
 		"http://schema.org/description": dm.Description,
 		"http://schema.org/keywords":    dm.Keywords,
 		"http://schema.org/license":     "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -113,6 +128,7 @@ func dsetBuilder(dm CSDCODataset) ([]byte, error) {
 		"http://schema.org/distribution": map[string]interface{}{
 			"@type": "DataDownload",
 			"http://schema.org/contentUrl": dm.ContentURL,
+			"http://schema.org/fileFormat": "application/vnd.datapackage+json",
 		},
 		"http://schema.org/publisher": map[string]interface{}{
 			"@type": "Organization",

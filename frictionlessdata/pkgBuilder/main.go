@@ -81,7 +81,8 @@ func pkgBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 
 			fqp := fmt.Sprintf("%s/%s/%s", vaultdir, k, v[i])
 			fn = cleanstring(fn)
-			err = copyFileContents(fqp, pdd+"/"+fn)
+			// err = copyFileContents(fqp, pdd+"/"+fn)
+			err = copyBySymLink(fqp, pdd+"/"+fn)
 
 			fa = append(fa, strings.TrimPrefix(pdd+"/"+fn, dir+"/"+k+"/"))
 
@@ -221,6 +222,12 @@ func copyFileContents(src, dst string) (err error) {
 	}
 	err = out.Sync()
 	return
+}
+
+func copyBySymLink(src, dst string) (err error) {
+	fmt.Printf("Sym Link %s to %s\n", src, dst)
+	os.Symlink(src, dst)
+	return nil
 }
 
 func cleanstring(s string) string {

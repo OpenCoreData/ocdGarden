@@ -7,14 +7,11 @@ import (
 // BuildPackage should use a pointer ...  :)
 func BuildPackage(f []kv.FileMeta, dirname string) {
 
-	// Need to set the package name
-	// Need to set the package ID
-	// How will the content URL be define?
+	// Need to set the package name, set the package ID, define content URI
 
 	prjs := uniqueProjects(f)
 
-	// Loop on each unique project, find all the files for that project
-	// TODO  make a map to  map[projs]projFies   map[string][]string
+	// Make a map to  map[projs]projFies   map[string][]string
 	pf := make(map[string][]string)
 	for p := range prjs {
 		uf := projFiles(f, prjs[p])
@@ -22,14 +19,11 @@ func BuildPackage(f []kv.FileMeta, dirname string) {
 		// log.Printf("K: %s  V: %s \n", prjs[p], uf)
 	}
 
-	// log.Print(len(pf))
-
 	packagedir := "/media/fils/seagate/packages"
 	vaultdir := dirname
 	tempdir := "/media/fils/seagate/tmp"
 
 	PKGBuilder(pf, vaultdir, tempdir, packagedir)
-
 }
 
 func projFiles(f []kv.FileMeta, prj string) []string {
