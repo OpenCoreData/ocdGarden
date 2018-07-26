@@ -21,6 +21,10 @@ import (
 // TODO: Add back in the age of file testing... (out during testing to allow more files to get through)
 // TODO: ignore the .DS Store files, the code finds them..
 
+// Examples calls
+// godirwalk -dir="foo/bar" -index -report
+// godirwalk -dir="foo/bar" -package  (package from index already in KV store)
+
 func main() {
 	// Build the output directories we need
 	err := os.MkdirAll("./output/kvdata", os.ModePerm)
@@ -38,10 +42,10 @@ func main() {
 	defer lf.Close()
 	log.SetOutput(lf)
 
-	// flags
+	// command line flags
 	dirToIndexPtr := flag.String("dir", "", "directory to index")
-	indexPtr := flag.Bool("index", false, "a bool for index build")
-	reportPtr := flag.Bool("report", false, "a bool for report build")
+	indexPtr := flag.Bool("index", false, "a bool for index building")
+	reportPtr := flag.Bool("report", false, "a bool for report building")
 	graphPtr := flag.Bool("graph", false, "a bool for graph building")
 	packagePtr := flag.Bool("package", false, "a bool for package building")
 	resetkvPtr := flag.Bool("resetkv", false, "a bool for reseting the KV store")
@@ -57,7 +61,6 @@ func main() {
 				fmt.Fprintf(os.Stderr, "%s\n", err)
 			}
 		}
-
 	}
 	// init the KV store if new, skips if present...
 	kv.InitKV()
@@ -84,18 +87,7 @@ func main() {
 	}
 
 	// Get the index results and work with them
-	f := kv.GetEntries()
-
-	// build excel
-	// if *reportPtr {
-	// 	x := report.InitNotebook()
-	// 	flen := len(f)
-	// 	for i := range f {
-	// 		_, _ = report.WriteNotebookRow(i+1, x, f[i].Valid, f[i].ProjName, f[i].File, f[i].Measurement)
-	// 		log.Printf("Report line %d / %d \n", i, flen)
-	// 	}
-	// 	report.SaveNotebook(x)
-	// }
+	f := kv.GetEntries() // this is ALL entries.. we need these for the "report" to check whitelist process
 
 	// build csv
 	if *reportPtr {
@@ -137,10 +129,7 @@ func projDir(de *godirwalk.Dirent, osPathname, dirname string) {
 
 func fileIndex(projname string, de *godirwalk.Dirent, osPathname string) {
 	si := strings.Index(osPathname, projname) + len(projname) // -1 to include the /
-	// fmt.Println(osPathname[si:])
-
-	// TODO  add back in age check here..  only index if creations time older
-	// fmt.Println(ageInYears(osPathname))
+	// fmt.Println(ageInYears(osPathname)) // TODO  add back in age check here..  only index if creations time older
 
 	asignPredicate(projname, osPathname[si:])
 }
@@ -148,9 +137,7 @@ func fileIndex(projname string, de *godirwalk.Dirent, osPathname string) {
 func asignPredicate(projname, osPathname string) {
 	// fmt.Printf("Checking %s \n", osPathname)
 
-	// the switch is on the directory name
-	// so I need to remove the filename and have only the path left to check on...
-
+	// the switch is on the directory name so I need to remove the filename and have only the path left to check on...
 	dir, file := filepath.Split(osPathname)
 
 	// Deal with root special
@@ -257,8 +244,7 @@ func contains(slice []string, item string) bool {
 	return ok
 }
 
-// TODO:  just a place holder function to remind me abot this
-// Read into a string array and check for it in array
+// TODO:  just a place holder function to remind me abot this, Read into a string array and check for it in array
 func inApprovedList(projectName string) bool {
 	if projectName == "CAHO" {
 		return true

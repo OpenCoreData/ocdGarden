@@ -1,7 +1,7 @@
 package datapackage
 
 import (
-	"crypto/sha256"
+	// "crypto/sha256"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -13,9 +13,11 @@ import (
 
 	"github.com/frictionlessdata/datapackage-go/datapackage"
 	"github.com/frictionlessdata/datapackage-go/validator"
+	"github.com/minio/sha256-simd" // faster simd version of sha256 https://github.com/minio/sha256-simd
 )
 
 // PKGBuilder integrate with CSDCO walker code
+// f is a map of project names (string), with project files ([]string)
 func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 	//fmt.Println(f)
 
@@ -29,6 +31,7 @@ func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 
 	pm := make(map[string][]string)
 
+	// copy data files  (long when not a symlink!!!!!)
 	for k, v := range f {
 		fmt.Printf("Name for the package: %s\n", k)
 		projdir := fmt.Sprintf("%s/%s", dir, k)
@@ -62,11 +65,13 @@ func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 
 			fqp := fmt.Sprintf("%s/%s/%s", vaultdir, k, v[i])
 			fn = cleanstring(fn)
-			//err = copyFileContents(fqp, pdd+"/"+fn)
-			err = copyBySymLink(fqp, pdd+"/"+fn)
+
+			err = copyFileContents(fqp, pdd+"/"+fn) // PAINFULLY slow..  needed in some cases like net mounted CIFS
+			// err = copyBySymLink(fqp, pdd+"/"+fn) // nice and fast
 
 			fmt.Printf("------>>>>>>>   %s\n", strings.TrimPrefix(pdd+"/"+fn, dir+"/"+cleanstring(k)+"/"))
-			fa = append(fa, strings.TrimPrefix(pdd+"/"+fn, dir+"/"+cleanstring(k)+"/"))
+
+			fa = append(fa, strings.TrimPrefix(pdd+"/"+fn, dir+"/"+cleanstring(k)+"/")) // TODO.. if clean string starts with / then remove is...
 
 			if err != nil {
 				log.Println("in copy file")
@@ -76,10 +81,11 @@ func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 		pm[k] = fa
 	}
 
-	// At this point the fles are copied into the project data directory..   can I calcualte a hash now?
+	// At this point the files are copied into the project data directory..   can I calculate a hash now?
 	// shaval = calcSha(directory)   // takes a directory, reads all files and and generates the final sha value..
 	// be sure to use io.Writer for this...
 
+	// Metadata loop
 	// loop on pm, build a schema.org, put it into the temp dir, add it's path to the value array....
 	m := make(map[string]string)
 	for a, _ := range pm {
@@ -100,8 +106,8 @@ func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 			panic(err)
 		}
 
-		sv := shaDataDir("./data")
-		m[cleanstring(a)] = sv // TODO..  add this a map of a[sv] to use later for naming the file..
+		sv := shaDataDir("./data") // this process is SLOW..  all bytes have to be read to be calculated
+		m[cleanstring(a)] = sv     // TODO..  add this a map of a[sv] to use later for naming the file..
 
 		// make a file..
 		d1 := []byte(BuildSchema(dirProjName(a), a, sv))
@@ -126,7 +132,7 @@ func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 		i = cleanstring(i) // really want i to be some a hash or PID
 
 		// Append in to the j array the presence of the schemaorg.json file
-		j = append(j, "./metadata/schemaorg.json")
+		j = append(j, "metadata/schemaorg.json")
 
 		projdir := fmt.Sprintf("%s/%s", dir, i)
 		// // change working directory
@@ -154,8 +160,8 @@ func PKGBuilder(f map[string][]string, vaultdir, tempdir, packagedir string) {
 		zipfp := fmt.Sprintf("%s/%s.zip", packagedir, i)
 		err = pkg.Zip(zipfp)
 		if err != nil {
-			log.Println(err)
-			panic(err)
+			log.Printf("Error in the call to pkg.Zip %v \n", err)
+			//panic(err)  just error and move on..  see how far we get...
 		}
 
 		// TODO..  now change the name to be the shavalue .zip
@@ -198,8 +204,13 @@ func makeDescriptor(f []string) (map[string]interface{}, error) {
 
 	for i := range f {
 		vm := make(map[string]interface{})
-		vm["name"] = filepath.Base(f[i]) // base name only  (might be dups in different sub dirs
-		vm["path"] = f[i]                // tmp + data + path
+		vm["name"] = filepath.Base(f[i]) // base name only  (might be dups in different sub dirs?
+		path := f[i]
+		// remove leading / if it exist...  ???  added later..  check for a regression issue
+		if strings.HasPrefix(path, "data//") {
+			path = strings.Replace(path, "data//", "data/", 1)
+		}
+		vm["path"] = path // tmp + data + path  (need to strip any ./ or / at the start..)
 		// vm["format"] = "file" //  remove?  replace with something else from spec...
 		vma = append(vma, vm)
 	}
@@ -238,7 +249,7 @@ func copyFileContents(src, dst string) (err error) {
 		log.Println(err)
 		return
 	}
-	defer in.Close()
+	// defer in.Close()
 	out, err := os.Create(dst)
 	if err != nil {
 		log.Println(err)
@@ -255,6 +266,7 @@ func copyFileContents(src, dst string) (err error) {
 		return
 	}
 	err = out.Sync()
+	in.Close()
 	return
 }
 
@@ -284,24 +296,22 @@ func dirProjName(s string) string {
 }
 
 func shaDataDir(s string) string {
-
 	h := sha256.New()
 
-	fileList := make([]string, 0)
 	e := filepath.Walk(s, func(path string, f os.FileInfo, err error) error {
 		if !f.IsDir() {
-			fileList = append(fileList, path)
 			fmt.Printf("In Sha with a file %s \n", path)
 
 			f, err := os.Open(path)
 			if err != nil {
 				log.Print(err)
 			}
-			defer f.Close()
+			//defer f.Close()
 
-			if _, err := io.Copy(h, f); err != nil {
+			if _, err := io.Copy(h, f); err != nil { // leverage io.Copy to steam build the hash
 				log.Print(err)
 			}
+			f.Close()
 		}
 		return err
 	})

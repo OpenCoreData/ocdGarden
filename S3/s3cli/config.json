@@ -1,0 +1,8 @@
+{
+	"minio": {
+		"endpoint":  "oss.opencoredata.org",
+		"accessKeyID": "AKIAIOSFODNN7JASUINM",
+		"secretAccessKey": "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"
+	}
+}
+

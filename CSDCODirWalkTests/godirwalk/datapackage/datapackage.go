@@ -19,9 +19,9 @@ func BuildPackage(f []kv.FileMeta, dirname string) {
 		// log.Printf("K: %s  V: %s \n", prjs[p], uf)
 	}
 
-	packagedir := "/media/fils/seagate/packages"
+	packagedir := "/swadm/mnt/ocd/packages"
 	vaultdir := dirname
-	tempdir := "/media/fils/seagate/tmp"
+	tempdir := "/swadm/mnt/ocd/tmp"
 
 	PKGBuilder(pf, vaultdir, tempdir, packagedir)
 }
