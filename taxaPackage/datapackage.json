@@ -1,0 +1,16 @@
+{
+    "profile" : "data-package",
+    "resources": [
+      {
+        "path": "data/210_1276A_JanusPaleoOccurrence_repVXsVi.csv",
+        "mediatype": "application/csv",
+        "name": "210_1276A_JanusPaleoOccurrence_repVXsVi.csv"
+      },
+      {
+        "path": "metadata/schemaorg.json",
+        "name": "schema.org",
+        "mediatype": "application/ld+json"
+      }
+    ]
+  }
+

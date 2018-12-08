@@ -85,15 +85,11 @@ func BuildSchema(projname, workingdir, shavalue string) string {
 	dm.PublisherURL = "https://csdco.umn.edu/"
 	dm.Latitude = "0.0"  // from graph  ocg.lat
 	dm.Longitude = "0.0" // from graph  ocg.long
+	// TODO   dm.Project = projname
 
 	schemaorg, _ := dsetBuilder(dm)
 
 	return string(schemaorg)
-}
-
-func ocdGraphCall() {
-
-	// make a SPARQL call to opencore to get info about a project.
 }
 
 func dsetBuilder(dm CSDCODataset) ([]byte, error) {
@@ -117,6 +113,7 @@ func dsetBuilder(dm CSDCODataset) ([]byte, error) {
 		vma = append(vma, vm)
 	}
 
+	// Add project name to schema.org
 	doc := map[string]interface{}{
 		"@type": "Dataset",
 		"@id":   dm.ID,
@@ -147,6 +144,7 @@ func dsetBuilder(dm CSDCODataset) ([]byte, error) {
 		"http://schema.org/variableMeasured": vma,
 	}
 
+	// add CSDCO voc to context
 	context := map[string]interface{}{
 		"@context": map[string]interface{}{
 			"@vocab":  "http://schema.org/",

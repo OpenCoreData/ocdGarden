@@ -163,11 +163,11 @@ func asignPredicate(projname, osPathname string) {
 	}
 
 	switch {
-	case caseInsenstiveContains(dir, "Images"):
+	case caseInsenstiveContains(dir, "Images"): // TODO..   this should not descend into sub-folders, ?  do not do as substring match
 		fileext := strings.ToLower(filepath.Ext(osPathname))
 		s := []string{".bmp", ".jpeg", ".jpg", "tif", "tiff"}
 		if contains(s, fileext) {
-			kv.NewFileEntry("valid", projname, osPathname, "Images")
+			kv.NewFileEntry("valid", projname, osPathname, "Images") //  TODO  all NewFileEntry calls should use class URI, not name like "Images"
 		}
 	case caseInsenstiveContains(dir, "Images/rgb"):
 		fileext := strings.ToLower(filepath.Ext(osPathname))
@@ -180,8 +180,8 @@ func asignPredicate(projname, osPathname string) {
 		fileext := strings.ToLower(filepath.Ext(osPathname))
 		blkList := []string{".raw", ".dat", ".out", ".cal"}
 		if !contains(blkList, fileext) {
-			if caseInsenstiveContains(osPathname, "_HRMS") || caseInsenstiveContains(osPathname, "_XYZ") {
-				s := []string{".xls", ".xlsx"}
+			if caseInsenstiveContains(osPathname, "_MSCL") {
+				s := []string{".xls", ".xlsx", ".csv"}
 				if contains(s, fileext) { // TODO  BLACKLIST Needed
 					// fmt.Printf("%s: GEOTEK WhCr: %s\n", projname, osPathname)
 					kv.NewFileEntry("valid", projname, osPathname, "GEOTEK WhCr")
@@ -191,7 +191,7 @@ func asignPredicate(projname, osPathname string) {
 	case caseInsenstiveContains(dir, "Geotek Data/high-resolution MS data"):
 		if caseInsenstiveContains(osPathname, "_HRMS") || caseInsenstiveContains(osPathname, "_XYZ") {
 			fileext := strings.ToLower(filepath.Ext(osPathname))
-			s := []string{".xls", ".xlsx"}
+			s := []string{".xls", ".xlsx", ".csv"}
 			if contains(s, fileext) { // TODO  BLACKLIST Needed
 				// fmt.Printf("%s: GEOTEK HiRez: %s\n", projname, osPathname)
 				kv.NewFileEntry("valid", projname, osPathname, "GEOTEK HiRez")
