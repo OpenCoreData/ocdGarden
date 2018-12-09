@@ -5,7 +5,7 @@
   "title": "IODP taxa test title",
 
   "dialect": {
-    "delimiter": "  ",
+    "delimiter": "\t",
     "doubleQuote": true,
     "header": true
   },
