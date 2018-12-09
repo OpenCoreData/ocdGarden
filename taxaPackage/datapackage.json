@@ -3,12 +3,12 @@
   "resources": [
     {
       "path": "metadata/schemaorg.json",
-      "name": "schema.org",
+      "name": "schemaorg",
       "mediatype": "application/ld+json"
     },
     {
       "profile": "tabular-data-resource", 
-      "name": "2101276AJanusPaleoOccurrencerepVXsVi", 
+      "name": "2101276ajanuspaleooccurrencerepvxsvi", 
       "encoding": "utf-8", 
       "format": "csv", 
       "mediatype": "text/csv", 
