@@ -3,6 +3,13 @@
   "hash": "6ff68c0d91b13546191daa9e59eb7b87",
   "name": "iodptaxatest",
   "title": "IODP taxa test title",
+
+  "dialect": {
+    "delimiter": "tab",
+    "doubleQuote": true,
+    "header": true
+  },
+
   "resources": [{
     "profile": "tabular-data-resource",
     "name": "2101276ajanuspaleooccurrencerepvxsvi",
