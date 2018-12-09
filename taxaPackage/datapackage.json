@@ -185,7 +185,7 @@
   ],
   "views": [{
     "name": "table-1",
-    "resources": ["2101276ajanuspaleooccurrencerepvxsvi"],
+    "resources": ["resource-2"],
     "specType": "table"
   }]
 }
