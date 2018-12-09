@@ -3,9 +3,8 @@
   "hash": "6ff68c0d91b13546191daa9e59eb7b87",
   "name": "iodptaxatest",
   "title": "Janus Paleo Occurance for Leg 210 Site 1276 Hole A (210_1276A)",
-
   "dialect": {
-    "delimiter": "\t",
+    "delimiter": ",",
     "doubleQuote": true,
     "header": true
   },
