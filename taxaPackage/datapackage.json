@@ -1,16 +1,185 @@
 {
-    "profile" : "data-package",
-    "resources": [
-      {
-        "path": "data/210_1276A_JanusPaleoOccurrence_repVXsVi.csv",
-        "mediatype": "application/csv",
-        "name": "2101276AJanusPaleoOccurrencerepVXsVi.csv"
-      },
-      {
-        "path": "metadata/schemaorg.json",
-        "name": "schema.org",
-        "mediatype": "application/ld+json"
+  "profile": "tabular-data-package", 
+  "resources": [
+    {
+      "path": "metadata/schemaorg.json",
+      "name": "schema.org",
+      "mediatype": "application/ld+json"
+    },
+    {
+      "profile": "tabular-data-resource", 
+      "name": "2101276AJanusPaleoOccurrencerepVXsVi", 
+      "encoding": "utf-8", 
+      "format": "csv", 
+      "mediatype": "text/csv", 
+      "path": "data/210_1276A_JanusPaleoOccurrence_repVXsVi.csv", 
+      "schema": {
+        "fields": [
+          {
+            "type": "integer", 
+            "name": "Leg", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Site", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Hole", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Core", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Core_type", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Section_number", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Section_type", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Top_cm", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Bot_cm", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Depth_mbsf", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Fossil_group", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Fossil_group_name", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Taxon_id", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Genus_subgenus", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Species_subspecies", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Contaminated_reworked", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Taxon_relative_abundance", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Taxon_numeric_abundance", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Taxon_percent_abundance", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Presence_absence_flag", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Sample_geologic_age_old", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Sample_geologic_age_young", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Sample_zone_old", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Sample_zone_young", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Sample_group_abundance", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Sample_preservation", 
+            "format": "default"
+          }, 
+          {
+            "type": "integer", 
+            "name": "Sample_id", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Location", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Post_cruise_flag", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Scientist_last_name", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Scientist_first_name", 
+            "format": "default"
+          }, 
+          {
+            "type": "string", 
+            "name": "Taxon_comment", 
+            "format": "default"
+          }
+        ], 
+        "missingValues": [
+          ""
+        ]
       }
-    ]
-  }
-
+    }
+  ]
+}
