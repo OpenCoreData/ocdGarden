@@ -1,10 +1,9 @@
 {
-  "profile": "tabular-data-package", 
   "resources": [
     {
       "path": "metadata/schemaorg.json",
       "name": "schemaorg",
-      "mediatype": "application/ld+json"
+      "mediatype": "application/json"
     },
     {
       "profile": "tabular-data-resource", 
