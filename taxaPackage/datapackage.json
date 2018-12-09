@@ -1,184 +1,191 @@
 {
-  "resources": [
-    {
+  "profile": "data-package",
+  "hash": "6ff68c0d91b13546191daa9e59eb7b87",
+  "name": "bariumvub_mulvfs",
+  "title": "Barium VUB - Dissolved Ba; particulate Ba, Sr, Ca, Al from MULVFS from VERTIGO cruises KM0414, ZHNG09RR from the Hawaiian Islands HOT Site, NW SubArctic Pacific Ocean K2 Site, 2004-2005 (VERTIGO project)",
+  "resources": [{
       "path": "metadata/schemaorg.json",
       "name": "schemaorg",
       "mediatype": "application/json"
     },
     {
-      "profile": "tabular-data-resource", 
-      "name": "2101276ajanuspaleooccurrencerepvxsvi", 
-      "encoding": "utf-8", 
-      "format": "csv", 
-      "mediatype": "text/csv", 
-      "path": "data/210_1276A_JanusPaleoOccurrence_repVXsVi.csv", 
+      "profile": "tabular-data-resource",
+      "name": "2101276ajanuspaleooccurrencerepvxsvi",
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "path": "data/210_1276A_JanusPaleoOccurrence_repVXsVi.csv",
       "schema": {
-        "fields": [
-          {
-            "type": "integer", 
-            "name": "Leg", 
+        "fields": [{
+            "type": "integer",
+            "name": "Leg",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Site", 
+            "type": "integer",
+            "name": "Site",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Hole", 
+            "type": "string",
+            "name": "Hole",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Core", 
+            "type": "integer",
+            "name": "Core",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Core_type", 
+            "type": "string",
+            "name": "Core_type",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Section_number", 
+            "type": "integer",
+            "name": "Section_number",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Section_type", 
+            "type": "string",
+            "name": "Section_type",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Top_cm", 
+            "type": "integer",
+            "name": "Top_cm",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Bot_cm", 
+            "type": "integer",
+            "name": "Bot_cm",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Depth_mbsf", 
+            "type": "integer",
+            "name": "Depth_mbsf",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Fossil_group", 
+            "type": "integer",
+            "name": "Fossil_group",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Fossil_group_name", 
+            "type": "string",
+            "name": "Fossil_group_name",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Taxon_id", 
+            "type": "integer",
+            "name": "Taxon_id",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Genus_subgenus", 
+            "type": "string",
+            "name": "Genus_subgenus",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Species_subspecies", 
+            "type": "string",
+            "name": "Species_subspecies",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Contaminated_reworked", 
+            "type": "string",
+            "name": "Contaminated_reworked",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Taxon_relative_abundance", 
+            "type": "string",
+            "name": "Taxon_relative_abundance",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Taxon_numeric_abundance", 
+            "type": "string",
+            "name": "Taxon_numeric_abundance",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Taxon_percent_abundance", 
+            "type": "string",
+            "name": "Taxon_percent_abundance",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Presence_absence_flag", 
+            "type": "string",
+            "name": "Presence_absence_flag",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Sample_geologic_age_old", 
+            "type": "string",
+            "name": "Sample_geologic_age_old",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Sample_geologic_age_young", 
+            "type": "string",
+            "name": "Sample_geologic_age_young",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Sample_zone_old", 
+            "type": "string",
+            "name": "Sample_zone_old",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Sample_zone_young", 
+            "type": "string",
+            "name": "Sample_zone_young",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Sample_group_abundance", 
+            "type": "string",
+            "name": "Sample_group_abundance",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Sample_preservation", 
+            "type": "string",
+            "name": "Sample_preservation",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Sample_id", 
+            "type": "integer",
+            "name": "Sample_id",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Location", 
+            "type": "string",
+            "name": "Location",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Post_cruise_flag", 
+            "type": "string",
+            "name": "Post_cruise_flag",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Scientist_last_name", 
+            "type": "string",
+            "name": "Scientist_last_name",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Scientist_first_name", 
+            "type": "string",
+            "name": "Scientist_first_name",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Taxon_comment", 
+            "type": "string",
+            "name": "Taxon_comment",
             "format": "default"
           }
-        ], 
+        ],
         "missingValues": [
           ""
         ]
       }
     }
-  ]
+  ],
+  "views": [{
+    "name": "table-1",
+    "resources": ["2101276ajanuspaleooccurrencerepvxsvi"],
+    "specType": "table"
+  }]
 }
