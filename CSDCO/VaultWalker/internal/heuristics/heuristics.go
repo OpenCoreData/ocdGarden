@@ -1,12 +1,13 @@
 package heuristics
 
 type HTest struct {
-	DirPattern  string
-	FilePattern []string
-	FileExts    []string
-	BlackList   []string
-	Comment     string
-	URI         string
+	DirPattern    string
+	FilePattern   []string
+	IgnorePattern []string
+	FileExts      []string
+	BlackList     []string
+	Comment       string
+	URI           string
 }
 
 // CSDCOHTs a set of tests to do on directory and file path/extensions.
@@ -55,11 +56,12 @@ func CSDCOHTs() []HTest {
 			Comment:     "RGB Image Data",
 			URI:         "http://opencoredata.org/voc/csdco/v1/RGBData"},
 		HTest{DirPattern: "Geotek Data/whole-core data",
-			FilePattern: []string{"_MSCL"},
-			FileExts:    []string{".raw", ".dat", ".out", ".cal"},
-			BlackList:   []string{".xls", ".xlsx", ".csv"}, // what is the point of a black list?  I only validate on FileExts found???
-			Comment:     "GEOTEK WhCr",
-			URI:         "ihttp://opencoredata.org/voc/csdco/v1/WholeCoreData"},
+			FilePattern:   []string{"_MSCL"},
+			IgnorePattern: []string{"other data"},
+			FileExts:      []string{".xls", ".xlsx", ".csv"}, // what is the point of a black list?  I only validate on FileExts found???
+			BlackList:     []string{".raw", ".dat", ".out", ".cal"},
+			Comment:       "GEOTEK WhCr",
+			URI:           "http://opencoredata.org/voc/csdco/v1/WholeCoreData"},
 		HTest{DirPattern: "Geotek Data/high-resolution MS data",
 			FilePattern: []string{"_HRMS", "_XYZ"},
 			FileExts:    []string{".xls", ".xlsx", ".csv"},
