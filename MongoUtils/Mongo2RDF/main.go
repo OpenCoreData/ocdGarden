@@ -25,7 +25,7 @@ func main() {
 	abstracts(session)
 	// csvwmeta(session)  // change this to use jsongold approach
 	// schemaorg(session) // change this to use jsongold approach
-	// featuresAbsGeoJSON(session)
+	featuresAbsGeoJSON(session)
 
 }
 
@@ -45,84 +45,84 @@ func featuresAbsGeoJSON(session *mgo.Session) {
 	// Loop on documents
 	for _, item := range features {
 
-		SPOIRI(item.Uri, "a", "http://opencoredata.org/id/voc/janus/v1/Feature")
+		SPOIRI(item.Uri, "a", "http://opencoredata.org/voc/janus/v1/Feature")
 
 		if item.Type != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/type", item.Type))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Type", item.Type))
 		}
 		if item.Hole != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/hole", item.Hole))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Hole", item.Hole))
 		}
 		if item.Expedition != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/expedition", item.Expedition))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Expedition", item.Expedition))
 		}
 		if item.Site != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/site", item.Site))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Site", item.Site))
 		}
 		if item.Program != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/program", item.Program))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Program", item.Program))
 		}
 		if item.Waterdepth != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/waterdepth", item.Waterdepth))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Waterdepth", item.Waterdepth))
 		}
 		if item.CoreCount != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/corecount", item.CoreCount))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Corecount", item.CoreCount))
 		}
 		if item.Initialreportvolume != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/initialreportvolume", item.Initialreportvolume))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Initialreportvolume", item.Initialreportvolume))
 		}
 		if item.Coredata != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/coredata", item.Coredata))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Coredata", item.Coredata))
 		}
 		if item.Logdata != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/logdata", item.Logdata))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Logdata", item.Logdata))
 		}
 		if item.Geom != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/geom", item.Geom))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Geom", item.Geom))
 		}
 		if item.Scientificprospectus != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/scientificprospectus", item.Scientificprospectus))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Scientificprospectus", item.Scientificprospectus))
 		}
 		if item.CoreRecovery != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/corerecovery", item.CoreRecovery))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Corerecovery", item.CoreRecovery))
 		}
 		if item.Penetration != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/penetration", item.Penetration))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Penetration", item.Penetration))
 		}
 		if item.Scientificreportvolume != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/scientificreportvolume", item.Scientificreportvolume))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Scientificreportvolume", item.Scientificreportvolume))
 		}
 		if item.Expeditionsite != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/expeditionsite", item.Expeditionsite))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Expeditionsite", item.Expeditionsite))
 		}
 		if item.Preliminaryreport != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/preliminaryreport", item.Preliminaryreport))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Preliminaryreport", item.Preliminaryreport))
 		}
 		if item.CoreInterval != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/coreinterval", item.CoreInterval))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Coreinterval", item.CoreInterval))
 		}
 		if item.PercentRecovery != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/percentrecovery", item.PercentRecovery))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Percentrecovery", item.PercentRecovery))
 		}
 		if item.Drilled != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/drilled", item.Drilled))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Drilled", item.Drilled))
 		}
 		if item.Vcdata != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/vcdata", item.Vcdata))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/VCdata", item.Vcdata))
 		}
 		if item.Note != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/note", item.Note))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Note", item.Note))
 		}
 		if item.Prcoeedingreport != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/prcoeedingreport", item.Prcoeedingreport))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Prcoeedingreport", item.Prcoeedingreport))
 		}
 		if item.Abstract != "" {
-			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/id/voc/janus/v1/abstract", stripCtlAndExtFromUnicode(item.Abstract)))
+			tr = append(tr, SPOLiteral(item.Uri, "http://opencoredata.org/voc/janus/v1/Abstract", stripCtlAndExtFromUnicode(item.Abstract)))
 		}
 
 	}
 
-	writeFile("./output/featuresAbsGeoJSON.nt", tr)
+	writeFile("./output/janusAbstracts.nt", tr)
 
 }
 
@@ -278,7 +278,7 @@ func abstracts(session *mgo.Session) {
 
 	}
 
-	writeFile("./output/abstracts.nt", tr)
+	writeFile("./output/csdcoAbstracts.nt", tr)
 
 }
 

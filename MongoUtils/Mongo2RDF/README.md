@@ -33,4 +33,4 @@ Existing RDF graphs
 * csdcoProjects.nt.gz
 * geoLinkVoid.ttl.gz
 * janusAmpNew.ttl.gz
-* seas.ttl.gz
+* seas.ttl.gzdocker run --name mongodb -d -p 27017:27017 -v /home/fils/Data/OCDDataVolumes/mongo/datadir/:/data/db mongo:latest
