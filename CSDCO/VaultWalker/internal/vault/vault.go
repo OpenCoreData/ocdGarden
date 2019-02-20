@@ -51,7 +51,7 @@ func (v *VaultHoldings) PrjFiles(t string) VaultHoldings {
 
 	for _, item := range v.Holdings {
 		p := item.Project
-		if strings.Contains(p, t) {
+		if strings.Contains(p, t) { // I could also skip dot files here too..  rather than in main..
 			pi = append(pi, item)
 		}
 	}

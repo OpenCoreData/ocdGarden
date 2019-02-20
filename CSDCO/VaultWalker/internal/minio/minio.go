@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"../../pkg/utils"
 	minio "github.com/minio/minio-go"
+	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/pkg/utils"
 	// faster simd version of sha256 https://github.com/minio/sha256-simd
 )
 

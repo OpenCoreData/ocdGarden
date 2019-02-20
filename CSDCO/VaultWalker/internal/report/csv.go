@@ -7,7 +7,7 @@ import (
 	"os"
 	"regexp"
 
-	"../vault/"
+	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/internal/vault"
 )
 
 // CSVReport genreate the CSV version of the report

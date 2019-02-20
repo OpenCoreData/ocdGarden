@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"../heuristics"
-	"../vault"
+	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/internal/heuristics"
+	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/internal/vault"
 )
 
 // PathInspection function
