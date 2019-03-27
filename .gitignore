@@ -1,3 +1,12 @@
+*.ttl
+!spec/*.ttl
+*.n3
+!spec/*.n3
+*.nt
+!spec/*.nt
+*.nq
+!spec/*.nq
+store
 setenv.sh
 .vscode
 .gitignore
