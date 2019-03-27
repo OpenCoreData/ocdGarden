@@ -8,4 +8,3 @@ It will be assigned a DOI for future reference and citation.
 https://data.okfn.org/tools/view?url=https%3A%2F%2Fraw.githubusercontent.com%2FOpenCoreData%2FocdGarden%2Fmaster%2FtaxaPackage%2Fdatapackage.json#resource-2101276ajanuspaleooccurrencerepvxsvi
 
 
-

@@ -25,13 +25,15 @@ func RDFGraph(item vault.VaultItem, shaval string, ub *utils.Buffer) int {
 
 	guid := xid.New()
 	s := fmt.Sprintf("http://opencoredata.org/id/do/%s", guid)
-	d := "....." // distribution URL
+	d := fmt.Sprintf("http://opencoredata.org/id/dx/%s", guid) // distribution URL
 
-	_ = iiTriple(s, "http://www.w3.org/1999/02/22-rdf-syntax-ns#", item.TypeURI, ctx, &b)
+	_ = iiTriple(s, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", item.TypeURI, ctx, &b)
 	_ = iiTriple(s, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://www.w3.org/ns/dcat#Dataset", ctx, &b)
 	_ = iiTriple(s, "http://purl.org/dc/terms/type", "http://purl.org/dc/dcmitype/Dataset", ctx, &b)
 	_ = iiTriple(s, "http://www.w3.org/ns/dcat#distribution", d, ctx, &b)
 	//  _ = iiTriple(s, "", "", ctx, &b)  //  should we add in a landing page?
+	// _ = iiTriple(s, "http://www.w3.org/2000/01/rdf-schema#seeAlso". "cruise URI" )
+	//  If there is an inbox, would need to look here...   (some generic manner to do this?)
 
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Project", item.Project, ctx, &b)
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Type", item.Type, ctx, &b)

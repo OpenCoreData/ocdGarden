@@ -1,0 +1,59 @@
+{
+  "profile": "data-package",
+  "resources": [
+    {
+      "encoding": "utf-8",
+      "name": "mvapmetadata.xls",
+      "path": "data/mvapmetadata.xls",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "mvapbtp171a1p1w_light.jpg",
+      "path": "data/images/mvapbtp171a1p1w_light.jpg",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "metadataformatdtubelabel_mvap.xls",
+      "path": "data/metadataformatdtubelabel_mvap.xls",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "mvap_xyz.xlsx",
+      "path": "data/geotekdata/highresolutionmsdata/mvap_xyz.xlsx",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "mvapcco171a1p1w.jpg",
+      "path": "data/images/mvapcco171a1p1w.jpg",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "mvapcco171a2p1w.jpg",
+      "path": "data/images/mvapcco171a2p1w.jpg",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "mvapbtp171a1p1w.jpg",
+      "path": "data/images/mvapbtp171a1p1w.jpg",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "mvapcco171a1p1w_lighter.jpg",
+      "path": "data/images/mvapcco171a1p1w_lighter.jpg",
+      "profile": "data-resource"
+    },
+    {
+      "encoding": "utf-8",
+      "name": "schemaorg.json",
+      "path": "metadata/schemaorg.json",
+      "profile": "data-resource"
+    }
+  ]
+}

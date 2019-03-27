@@ -85,7 +85,6 @@ func mimeByType(e string) string {
 	t := mime.TypeByExtension(e)
 	if t == "" {
 		t = "application/octet-stream"
-
 	}
 	return t
 }
