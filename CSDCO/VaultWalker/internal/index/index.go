@@ -56,9 +56,16 @@ func PathInspection(d, f string) (vault.VaultItem, error) {
 		return vault.VaultItem{}, errors.New("Do not index the root directory files")
 	}
 
+	// don't index directories with given prefix
+	if strings.HasPrefix(proj, "!") {
+		fmt.Println("Proj test _: Project marked for skipping")
+		return vault.VaultItem{}, errors.New("Do not index projects that start with _")
+	}
+
 	// get extension
 	fe := filepath.Ext(f)
 
+	// Typing..  look for type and info about f in directory d for  project proj
 	t, uri, err := fileType(d, proj, f)
 	if err != nil {
 		// v := vault.VaultItem{Name: f, Type: nil, Public: false, Project: p}
@@ -99,27 +106,40 @@ func fileType(d, proj, f string) (string, string, error) {
 	dir, _ := filepath.Split(f)
 
 	for i := range tests {
-		// fmt.Println("Starting a file test")
-		// fmt.Printf("Test: %s %s \n", tests[i].FileExts, tests[i].Comment)
-		// fmt.Printf("Directory Test base: %s\n", d)
-		// fmt.Printf("Directory Test proj: %s\n", proj)
-		// fmt.Printf("Directory Test: %s %s \n", dir, tests[i].DirPattern)
-		_ = caselessPrefix(d, proj, dir, tests[i].DirPattern)
 
-		if caselessContains(dir, tests[i].DirPattern) {
-			if caselessContainsSlice(f, tests[i].FilePattern) {
-				fileext := strings.ToLower(filepath.Ext(f))
-				s := tests[i].FileExts
-				if contains(s, fileext) {
-					fmt.Printf("%s == %s\n", f, tests[i].Comment) //  TODO  all NewFileEntry calls should use class URI, not name like "Images"
-					t = tests[i].Comment
-					uri = tests[i].URI
+		// if caselessPrefix(d, proj, dir, tests[i].DirPattern) {
+		if caselessContains(dir, tests[i].DirPattern) { // TODO should become caselessPrefix(d, proj, dir, tests[i].DirPattern)
+			if fileInDir(d, proj, tests[i].DirPattern, f) {
+				if caselessContainsSlice(f, tests[i].FilePattern) {
+					fileext := strings.ToLower(filepath.Ext(f))
+					s := tests[i].FileExts
+					if contains(s, fileext) {
+						fmt.Printf("%s == %s\n", f, tests[i].Comment) //  TODO  all NewFileEntry calls should use class URI, not name like "Images"
+						t = tests[i].Comment
+						uri = tests[i].URI
+					}
 				}
 			}
 		}
 	}
 
 	return t, uri, err
+}
+
+func fileInDir(d, proj, dp, f string) bool {
+	a := fmt.Sprintf("%s/%s/%s", d, proj, dp)
+	b := fmt.Sprintf("%s/", filepath.Dir(f))
+
+	i := strings.Compare(a, b)
+	e := false
+	if i == 0 {
+		e = true
+	}
+
+	// fmt.Printf("%t :: fileInDir %s  and %s \n", e, a, b)
+	// fmt.Printf("%t :: fileInDir: %s is in %s \n", e, f, a)
+
+	return e
 }
 
 func caselessContainsSlice(a string, b []string) bool {
@@ -140,8 +160,9 @@ func caselessContains(a, b string) bool {
 func caselessPrefix(base, proj, a, b string) bool {
 	pref := fmt.Sprintf("%s/%s/", base, proj)
 	atl := strings.TrimLeft(a, pref)
-	fmt.Printf("Directory Test: In base %s in proj %s test if  %s has prefix %s result: %t \n", base, proj, strings.ToUpper(atl), strings.ToUpper(b),
-		strings.HasPrefix(strings.ToUpper(atl), strings.ToUpper(b)))
+	// fmt.Printf("Directory Test: %s\n", a)
+	// fmt.Printf("Directory Test: In base %s in proj %s test if  %s has prefix %s result: %t \n", base, proj, strings.ToUpper(atl), strings.ToUpper(b),
+	// strings.HasPrefix(strings.ToUpper(atl), strings.ToUpper(b)))
 	return strings.HasPrefix(strings.ToUpper(atl), strings.ToUpper(b))
 }
 
