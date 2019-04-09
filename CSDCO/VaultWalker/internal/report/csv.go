@@ -33,7 +33,7 @@ func CSVReport(name string, vh vault.VaultHoldings) {
 	var rows [][]string
 
 	// comment out to remove headers
-	headers := []string{"Project", "Type", "FileName", "FileExt", "Parent Directory", "Relative Path", "Voc URI"}
+	headers := []string{"Project", "Type", "FileName", "FileExt", "Parent Directory", "Relative Path", "Voc URI", "Age"}
 	rows = append(rows, headers)
 
 	for _, item := range vh.Holdings {
@@ -46,7 +46,8 @@ func CSVReport(name string, vh vault.VaultHoldings) {
 				item.FileExt,
 				item.ParentDir,
 				item.RelativePath,
-				item.TypeURI}
+				item.TypeURI,
+				fmt.Sprintf("%.2f", item.Age)}
 			rows = append(rows, sa)
 		}
 	}

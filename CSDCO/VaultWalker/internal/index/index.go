@@ -1,18 +1,21 @@
 package index
 
 import (
+	"errors"
 	"fmt"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+	"syscall"
+	"time"
 
 	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/internal/heuristics"
 	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/internal/vault"
 )
 
 // PathInspection function
-func PathInspection(d, f string) vault.VaultItem {
+func PathInspection(d, f string) (vault.VaultItem, error) {
 	var proj, rel, dir, file string
 
 	// or is dir?   might not work since I have strings
@@ -28,33 +31,56 @@ func PathInspection(d, f string) vault.VaultItem {
 
 	pathElements := strings.Split(f, "/")
 	argElements := strings.Split(d, "/")
+	// fmt.Printf("Proj test: %v, %v \n", pathElements, argElements)
 	if len(pathElements) > len(argElements) {
 		proj = pathElements[len(argElements)]
 	} else {
 		proj = "/"
 	}
 
+	// don't index the / of the request
+	// TODO  Add the black list check here leveraging caselessContainsSlice
+	if proj == "/" {
+		fmt.Println("Proj test root: in the root dir")
+		return vault.VaultItem{}, errors.New("Do not index the root directory of projects")
+	}
+
+	// don't index files in the / of the request
+	fi, err := os.Stat(fmt.Sprintf("%s/%s", d, proj))
+	if err != nil {
+		fmt.Printf("Proj test error: %s \n", err)
+		return vault.VaultItem{}, err
+	}
+	if !fi.IsDir() {
+		fmt.Printf("Proj test isDir: %s is a file \n", f)
+		return vault.VaultItem{}, errors.New("Do not index the root directory files")
+	}
+
+	// get extension
 	fe := filepath.Ext(f)
 
-	t, uri, err := fileType(f)
+	t, uri, err := fileType(d, proj, f)
 	if err != nil {
 		// v := vault.VaultItem{Name: f, Type: nil, Public: false, Project: p}
 		log.Println(err)
 	}
 
+	a := ageInYears(f)
+
 	// TODO  Public is just set true.  so obviously meaningless..
 	//  It's a place holder in case we need moratorium flags
 	// Type == Unknown is really the "do no index flag"...   this is confusing..  need to resolve this in the code
 	v := vault.VaultItem{Name: f, Type: t, Public: true, Project: proj,
-		RelativePath: rel, FileName: file, ParentDir: dir, FileExt: fe, TypeURI: uri}
-	return v
+		RelativePath: rel, FileName: file, ParentDir: dir, FileExt: fe, TypeURI: uri, Age: a}
+
+	return v, nil // proj == / then don't return it though..   need to return error since I can't return a nil struct
 }
 
-func fileType(f string) (string, string, error) {
+func fileType(d, proj, f string) (string, string, error) {
 	// if directory.. note and get out
 	// CAUTION: by not calling "open" on the file to "lock" it , this
 	// code risks the type changing during the code operation....  the
-	// odds of this are VERY low...
+	// odds of this are VERY VERY low however...
 	fi, err := os.Stat(f)
 	if err != nil {
 		panic(err) // don't panic..   deal with this..
@@ -62,6 +88,10 @@ func fileType(f string) (string, string, error) {
 	if fi.IsDir() {
 		return "Directory", "", nil
 	}
+
+	// print the mod time stamp
+	// fmt.Println(fi.ModTime().String())
+	// fmt.Println(ageInYears(f)) // sys call function for age to get creation time (windows cifs only...  linux fs will not store)
 
 	t := "Unknown" // by default..  we don't know what the file is  (could also return an error type for this)
 	uri := ""
@@ -71,6 +101,11 @@ func fileType(f string) (string, string, error) {
 	for i := range tests {
 		// fmt.Println("Starting a file test")
 		// fmt.Printf("Test: %s %s \n", tests[i].FileExts, tests[i].Comment)
+		// fmt.Printf("Directory Test base: %s\n", d)
+		// fmt.Printf("Directory Test proj: %s\n", proj)
+		// fmt.Printf("Directory Test: %s %s \n", dir, tests[i].DirPattern)
+		_ = caselessPrefix(d, proj, dir, tests[i].DirPattern)
+
 		if caselessContains(dir, tests[i].DirPattern) {
 			if caselessContainsSlice(f, tests[i].FilePattern) {
 				fileext := strings.ToLower(filepath.Ext(f))
@@ -93,12 +128,21 @@ func caselessContainsSlice(a string, b []string) bool {
 		t = strings.Contains(strings.ToUpper(a), strings.ToUpper(b[i]))
 		// fmt.Printf("Tested %s against %s and got %t\n", a, b[i], t)
 	}
-
 	return t
 }
 
 func caselessContains(a, b string) bool {
 	return strings.Contains(strings.ToUpper(a), strings.ToUpper(b))
+}
+
+// Test if a has prefix b    /dir1/dir2/dir3/filex  has /dir1/dir2
+// To do this I need the base directory to remove from a
+func caselessPrefix(base, proj, a, b string) bool {
+	pref := fmt.Sprintf("%s/%s/", base, proj)
+	atl := strings.TrimLeft(a, pref)
+	fmt.Printf("Directory Test: In base %s in proj %s test if  %s has prefix %s result: %t \n", base, proj, strings.ToUpper(atl), strings.ToUpper(b),
+		strings.HasPrefix(strings.ToUpper(atl), strings.ToUpper(b)))
+	return strings.HasPrefix(strings.ToUpper(atl), strings.ToUpper(b))
 }
 
 func contains(slice []string, item string) bool {
@@ -109,4 +153,26 @@ func contains(slice []string, item string) bool {
 
 	_, ok := set[item]
 	return ok
+}
+
+// ageInYears gets the age of a file as a float64 decimal value
+func ageInYears(fp string) float64 {
+	fi, err := os.Stat(fp)
+	if err != nil {
+		fmt.Println(err)
+	}
+	stat := fi.Sys().(*syscall.Stat_t)
+	// ctime := time.Unix(int64(stat.Ctim.Sec), int64(stat.Ctim.Nsec))
+	ctime := time.Unix(int64(stat.Mtim.Sec), int64(stat.Mtim.Nsec))
+	delta := time.Now().Sub(ctime)
+	years := delta.Hours() / 24 / 365
+	// fmt.Printf("Create: %v   making it %.2f  years old\n", ctime, years)
+	return round2(years, 0.01)
+}
+
+func round2(x, unit float64) float64 {
+	if x > 0 {
+		return float64(int64(x/unit+0.5)) * unit
+	}
+	return float64(int64(x/unit-0.5)) * unit
 }

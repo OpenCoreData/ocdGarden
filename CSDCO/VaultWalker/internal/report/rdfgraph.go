@@ -12,6 +12,9 @@ import (
 	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/pkg/utils"
 )
 
+// TODO
+// schema.org/DataDownload
+
 // RDFGraph (item, shaval, *rdf)
 // In this approach each object gets a named graph.  Perhaps this is not
 // needed since each data graph also has a sha ID with it?  Which is all we really
