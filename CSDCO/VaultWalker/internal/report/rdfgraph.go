@@ -41,17 +41,18 @@ func RDFGraph(item vault.VaultItem, shaval string, ub *utils.Buffer) int {
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Project", item.Project, ctx, &b)
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Type", item.Type, ctx, &b)
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/FileName", item.FileName, ctx, &b)
+	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/FileAge", fmt.Sprintf("%f", item.Age), ctx, &b)
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/FileExt", item.FileExt, ctx, &b)
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/SHAHash", shaval, ctx, &b)
 	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Mime", t, ctx, &b)
 
 	_ = iiTriple(d, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://www.w3.org/ns/dcat#Distribution", ctx, &b)
 	_ = iiTriple(d, "http://purl.org/dc/terms/license", "http://example.com/cc0.html", ctx, &b)
-	_ = iiTriple(d, "http://www.w3.org/ns/dcat#downloadURL", "http://opencoredata.org/dx/doc/XYZ.csv", ctx, &b)
-	_ = iiTriple(d, "http://www.w3.org/ns/dcat#mediaType", "https://www.iana.org/assignments/media-types/text/csv", ctx, &b)
+	_ = iiTriple(d, "http://www.w3.org/ns/dcat#downloadURL", s, ctx, &b)
+	// _ = iiTriple(d, "http://www.w3.org/ns/dcat#mediaType", "https://www.iana.org/assignments/media-types/text/csv", ctx, &b)
 
-	_ = ilTriple(d, "http://purl.org/dc/terms/title", "Title info here", ctx, &b)
-	_ = ilTriple(d, "http://purl.org/dc/terms/description", "Description info here", ctx, &b)
+	_ = ilTriple(d, "http://purl.org/dc/terms/title", fmt.Sprintf("Digital object %s for CSDCO project %s", item.FileName, item.Project), ctx, &b)
+	// _ = ilTriple(d, "http://purl.org/dc/terms/description", "Description info here", ctx, &b)
 
 	len, err := ub.Write([]byte(b.String()))
 	if err != nil {
@@ -70,7 +71,10 @@ func iiTriple(s, p, o string, c rdf.Context, b *strings.Builder) error {
 	q := rdf.Quad{t, c}
 
 	qs := q.Serialize(rdf.NQuads)
-	fmt.Fprintf(b, "%s", qs)
+	if s != "" && p != "" && o != "" {
+		fmt.Fprintf(b, "%s", qs)
+	}
+
 	return err
 }
 
@@ -83,6 +87,9 @@ func ilTriple(s, p, o string, c rdf.Context, b *strings.Builder) error {
 	q := rdf.Quad{t, c}
 
 	qs := q.Serialize(rdf.NQuads)
-	fmt.Fprintf(b, "%s", qs)
+	if s != "" && p != "" && o != "" {
+		fmt.Fprintf(b, "%s", qs)
+	}
+
 	return err
 }

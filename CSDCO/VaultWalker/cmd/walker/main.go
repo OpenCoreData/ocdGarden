@@ -86,9 +86,12 @@ func main() {
 				var n int64
 				var l int
 				// If the type is unknown, if it is a dir or starts with a . then skip it..
-				if pf.Holdings[k].Type != "Unknown" && pf.Holdings[k].Type != "Directory" && !strings.HasPrefix(pf.Holdings[k].FileName, ".") {
+				if pf.Holdings[k].Type != "Exclude" && pf.Holdings[k].Type != "Directory" && !strings.HasPrefix(pf.Holdings[k].FileName, ".") {
 					shaval := utils.SHAFile(pf.Holdings[k].Name)
-					l = report.RDFGraph(pf.Holdings[k], shaval, &b) // need to expand the object graph
+
+					if pf.Holdings[k].Age > 2.00 {
+						l = report.RDFGraph(pf.Holdings[k], shaval, &b) // need to expand the object graph
+					}
 
 					if uploadVal && pf.Holdings[k].Age > 2.00 {
 						n, err = minio.LoadToMinio(pf.Holdings[k].Name, "csdco", pf.Holdings[k].FileName, pf.Holdings[k].Project, pf.Holdings[k].Type, pf.Holdings[k].FileExt, shaval, mc)
@@ -109,7 +112,7 @@ func main() {
 		wg.Wait()
 	}
 
-	log.Println(b.Len())
+	//log.Println(b.Len())
 	utils.WriteRDF(b.String())
 }
 

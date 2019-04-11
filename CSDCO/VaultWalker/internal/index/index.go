@@ -41,24 +41,24 @@ func PathInspection(d, f string) (vault.VaultItem, error) {
 	// don't index the / of the request
 	// TODO  Add the black list check here leveraging caselessContainsSlice
 	if proj == "/" {
-		fmt.Println("Proj test root: in the root dir")
+		// fmt.Println("Proj test root: in the root dir")
 		return vault.VaultItem{}, errors.New("Do not index the root directory of projects")
 	}
 
 	// don't index files in the / of the request
 	fi, err := os.Stat(fmt.Sprintf("%s/%s", d, proj))
 	if err != nil {
-		fmt.Printf("Proj test error: %s \n", err)
+		// fmt.Printf("Proj test error: %s \n", err)
 		return vault.VaultItem{}, err
 	}
 	if !fi.IsDir() {
-		fmt.Printf("Proj test isDir: %s is a file \n", f)
+		// fmt.Printf("Proj test isDir: %s is a file \n", f)
 		return vault.VaultItem{}, errors.New("Do not index the root directory files")
 	}
 
 	// don't index directories with given prefix
 	if strings.HasPrefix(proj, "!") {
-		fmt.Println("Proj test _: Project marked for skipping")
+		// fmt.Println("Proj test _: Project marked for skipping")
 		return vault.VaultItem{}, errors.New("Do not index projects that start with _")
 	}
 
@@ -100,21 +100,20 @@ func fileType(d, proj, f string) (string, string, error) {
 	// fmt.Println(fi.ModTime().String())
 	// fmt.Println(ageInYears(f)) // sys call function for age to get creation time (windows cifs only...  linux fs will not store)
 
-	t := "Unknown" // by default..  we don't know what the file is  (could also return an error type for this)
+	t := "Exclude" // by default..  we don't know what the file is  (could also return an error type for this)
 	uri := ""
 	tests := heuristics.CSDCOHTs()
 	dir, _ := filepath.Split(f)
 
 	for i := range tests {
-
-		// if caselessPrefix(d, proj, dir, tests[i].DirPattern) {
-		if caselessContains(dir, tests[i].DirPattern) { // TODO should become caselessPrefix(d, proj, dir, tests[i].DirPattern)
+		if caselessPrefix(d, proj, dir, tests[i].DirPattern) {
+			// if caselessContains(dir, tests[i].DirPattern) { // TODO should become caselessPrefix(d, proj, dir, tests[i].DirPattern)
 			if fileInDir(d, proj, tests[i].DirPattern, f) {
 				if caselessContainsSlice(f, tests[i].FilePattern) {
 					fileext := strings.ToLower(filepath.Ext(f))
 					s := tests[i].FileExts
 					if contains(s, fileext) {
-						fmt.Printf("%s == %s\n", f, tests[i].Comment) //  TODO  all NewFileEntry calls should use class URI, not name like "Images"
+						// fmt.Printf("%s == %s\n", f, tests[i].Comment) //  TODO  all NewFileEntry calls should use class URI, not name like "Images"
 						t = tests[i].Comment
 						uri = tests[i].URI
 					}
@@ -136,8 +135,7 @@ func fileInDir(d, proj, dp, f string) bool {
 		e = true
 	}
 
-	// fmt.Printf("%t :: fileInDir %s  and %s \n", e, a, b)
-	// fmt.Printf("%t :: fileInDir: %s is in %s \n", e, f, a)
+	// fmt.Printf("%t :: fileInDir: %s is in %s, %b \n", e, f, a, b)
 
 	return e
 }
@@ -146,8 +144,9 @@ func caselessContainsSlice(a string, b []string) bool {
 	t := true // default to true so that 0 len string array is NOT a test.
 	for i := range b {
 		t = strings.Contains(strings.ToUpper(a), strings.ToUpper(b[i]))
-		// fmt.Printf("Tested %s against %s and got %t\n", a, b[i], t)
+		// 	fmt.Printf("CCS Tested %s against %s and got %t\n", a, b[i], t)
 	}
+	// fmt.Printf("CSS called, returning %t for %s \n", t, a)
 	return t
 }
 
@@ -159,8 +158,10 @@ func caselessContains(a, b string) bool {
 // To do this I need the base directory to remove from a
 func caselessPrefix(base, proj, a, b string) bool {
 	pref := fmt.Sprintf("%s/%s/", base, proj)
-	atl := strings.TrimLeft(a, pref)
+	// fmt.Printf("Directory Test: %s\n", pref)
 	// fmt.Printf("Directory Test: %s\n", a)
+	atl := strings.TrimPrefix(a, pref)
+	// fmt.Printf("Directory Test: %s\n", atl)
 	// fmt.Printf("Directory Test: In base %s in proj %s test if  %s has prefix %s result: %t \n", base, proj, strings.ToUpper(atl), strings.ToUpper(b),
 	// strings.HasPrefix(strings.ToUpper(atl), strings.ToUpper(b)))
 	return strings.HasPrefix(strings.ToUpper(atl), strings.ToUpper(b))

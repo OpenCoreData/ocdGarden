@@ -25,7 +25,6 @@ func SHAFile(s string) string {
 	if err != nil {
 		log.Print(err)
 	}
-	//defer f.Close()
 	if _, err := io.Copy(h, f); err != nil { // leverage io.Copy to steam build the hash
 		log.Print(err)
 	}
