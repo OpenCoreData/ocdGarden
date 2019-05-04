@@ -1,0 +1,176 @@
+Project,Type,FileName,FileExt,Parent Directory,Relative Path,Voc URI,Age
+_TEST2,Exclude,CAHO-metadata.xls,.xls,_TEST2/,_TEST2/CAHO-metadata.xls,,5.85
+_TEST2,Exclude,Copy of Munoz_LacCoreMetadata-1.xls,.xls,_TEST2/,_TEST2/Copy of Munoz_LacCoreMetadata-1.xls,,7.94
+_TEST2,Exclude,CAHO_HRMS.csv,.csv,_TEST2/Data/corewall/,_TEST2/Data/corewall/CAHO_HRMS.csv,,6.91
+_TEST2,Exclude,caho.cml,.cml,_TEST2/Data/corewall/,_TEST2/Data/corewall/caho.cml,,6.91
+_TEST2,Exclude,DougsFile.txt,.txt,_TEST2/,_TEST2/DougsFile.txt,,2.06
+_TEST2,Exclude,CAHO_HRMS.xls,.xls,_TEST2/Geotek Data/high-resolution MS data/,_TEST2/Geotek Data/high-resolution MS data/CAHO_HRMS.xls,,7.93
+_TEST2,Exclude,CAHO_HRMS.xls,.xls,_TEST2/Geotek Data/high-resolution MS data/CAHO_HRMS_20110601_part1/,_TEST2/Geotek Data/high-resolution MS data/CAHO_HRMS_20110601_part1/CAHO_HRMS.xls,,7.93
+_TEST2,Exclude,CAHO_HRMS_20110601_part1.CSV,.CSV,_TEST2/Geotek Data/high-resolution MS data/CAHO_HRMS_20110601_part1/,_TEST2/Geotek Data/high-resolution MS data/CAHO_HRMS_20110601_part1/CAHO_HRMS_20110601_part1.CSV,,7.93
+_TEST2,Exclude,CAHO_HRMS_20110601_part1.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_HRMS_20110601_part1/,_TEST2/Geotek Data/high-resolution MS data/CAHO_HRMS_20110601_part1/CAHO_HRMS_20110601_part1.xml,,7.93
+_TEST2,Exclude,CAHO_XYZ.xlsx,.xlsx,_TEST2/Geotek Data/high-resolution MS data/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ.xlsx,,6.89
+_TEST2,Exclude,CAHO_XYZ_20120605_part1.bk,.bk,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part1/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part1/CAHO_XYZ_20120605_part1.bk,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part1.csv,.csv,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part1/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part1/CAHO_XYZ_20120605_part1.csv,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part1.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part1/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part1/CAHO_XYZ_20120605_part1.xml,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part2.bk,.bk,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part2/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part2/CAHO_XYZ_20120605_part2.bk,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part2.csv,.csv,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part2/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part2/CAHO_XYZ_20120605_part2.csv,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part2.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part2/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part2/CAHO_XYZ_20120605_part2.xml,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part3.bk,.bk,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part3/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part3/CAHO_XYZ_20120605_part3.bk,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part3.csv,.csv,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part3/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part3/CAHO_XYZ_20120605_part3.csv,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part3.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part3/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part3/CAHO_XYZ_20120605_part3.xml,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part4.bk,.bk,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part4/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part4/CAHO_XYZ_20120605_part4.bk,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part4.csv,.csv,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part4/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part4/CAHO_XYZ_20120605_part4.csv,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part4.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part4/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part4/CAHO_XYZ_20120605_part4.xml,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part5.bk,.bk,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part5/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part5/CAHO_XYZ_20120605_part5.bk,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part5.csv,.csv,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part5/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part5/CAHO_XYZ_20120605_part5.csv,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120605_part5.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part5/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120605_part5/CAHO_XYZ_20120605_part5.xml,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120606_part6.bk,.bk,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part6/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part6/CAHO_XYZ_20120606_part6.bk,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120606_part6.csv,.csv,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part6/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part6/CAHO_XYZ_20120606_part6.csv,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120606_part6.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part6/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part6/CAHO_XYZ_20120606_part6.xml,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120606_part7.bk,.bk,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part7/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part7/CAHO_XYZ_20120606_part7.bk,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120606_part7.csv,.csv,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part7/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part7/CAHO_XYZ_20120606_part7.csv,,6.91
+_TEST2,Exclude,CAHO_XYZ_20120606_part7.xml,.xml,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part7/,_TEST2/Geotek Data/high-resolution MS data/CAHO_XYZ_20120606_part7/CAHO_XYZ_20120606_part7.xml,,6.91
+_TEST2,Exclude,CAHO12_MSCL.xls,.xls,_TEST2/Geotek Data/whole-core data/,_TEST2/Geotek Data/whole-core data/CAHO12_MSCL.xls,,6.89
+_TEST2,Exclude,CAHO_GRAS11_20110601_part1.cal,.cal,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/CAHO_GRAS11_20110601_part1.cal,,7.93
+_TEST2,Exclude,CAHO_GRAS11_20110601_part1.dat,.dat,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/CAHO_GRAS11_20110601_part1.dat,,7.93
+_TEST2,Exclude,CAHO_GRAS11_20110601_part1.out,.out,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/CAHO_GRAS11_20110601_part1.out,,7.93
+_TEST2,Exclude,CAHO_GRAS11_20110601_part1.raw,.raw,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/,_TEST2/Geotek Data/whole-core data/CAHO_GRAS11_20110601_part1/CAHO_GRAS11_20110601_part1.raw,,7.93
+_TEST2,Exclude,CAHO_MSCL.xls,.xls,_TEST2/Geotek Data/whole-core data/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL.xls,,7.93
+_TEST2,Exclude,CAHO_MSCL_20120605_part1.cal,.cal,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/CAHO_MSCL_20120605_part1.cal,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120605_part1.dat,.dat,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/CAHO_MSCL_20120605_part1.dat,,6.89
+_TEST2,Exclude,CAHO_MSCL_20120605_part1.out,.out,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/CAHO_MSCL_20120605_part1.out,,6.89
+_TEST2,Exclude,CAHO_MSCL_20120605_part1.raw,.raw,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120605_part1/CAHO_MSCL_20120605_part1.raw,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120606_part2.cal,.cal,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part2/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part2/CAHO_MSCL_20120606_part2.cal,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120606_part2.dat,.dat,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part2/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part2/CAHO_MSCL_20120606_part2.dat,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120606_part2.raw,.raw,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part2/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part2/CAHO_MSCL_20120606_part2.raw,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120606_part3.cal,.cal,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/CAHO_MSCL_20120606_part3.cal,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120606_part3.dat,.dat,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/CAHO_MSCL_20120606_part3.dat,,6.89
+_TEST2,Exclude,CAHO_MSCL_20120606_part3.out,.out,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/CAHO_MSCL_20120606_part3.out,,6.89
+_TEST2,Exclude,CAHO_MSCL_20120606_part3.raw,.raw,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part3/CAHO_MSCL_20120606_part3.raw,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120606_part4.cal,.cal,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/CAHO_MSCL_20120606_part4.cal,,6.91
+_TEST2,Exclude,CAHO_MSCL_20120606_part4.dat,.dat,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/CAHO_MSCL_20120606_part4.dat,,6.89
+_TEST2,Exclude,CAHO_MSCL_20120606_part4.out,.out,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/CAHO_MSCL_20120606_part4.out,,6.89
+_TEST2,Exclude,CAHO_MSCL_20120606_part4.raw,.raw,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/,_TEST2/Geotek Data/whole-core data/CAHO_MSCL_20120606_part4/CAHO_MSCL_20120606_part4.raw,,6.91
+_TEST2,ICD,CAHO-GRAS11-1A-1L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-GRAS11-1A-1L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-GRAS11-1A-2L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-GRAS11-1A-2L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-GRAS11-1B-1L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-GRAS11-1B-1L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-GRAS11-1B-2L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-GRAS11-1B-2L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-GRAS11-2A-1L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-GRAS11-2A-1L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-GRAS11-2A-2L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-GRAS11-2A-2L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-HORM11-2A-1L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-HORM11-2A-1L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-HORM11-2A-2L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-HORM11-2A-2L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-HORM11-2B-1L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-HORM11-2B-1L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,ICD,CAHO-HORM11-2C-1L-1.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/CAHO-HORM11-2C-1L-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-1L-1_BOTTOM.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-1A-1L-1_BOTTOM.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-1L-1_TOP.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-1A-1L-1_TOP.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-2L_AP4.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-1A-2L_AP4.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-2L_AP5.6.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-1A-2L_AP5.6.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1B-1L-1.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-1B-1L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1B-2L-1.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-1B-2L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-1L-1_BOTTOM.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-2A-1L-1_BOTTOM.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-1L-1_TOP.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-2A-1L-1_TOP.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-2L-1.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-GRAS11-2A-2L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM11-2A-1L-1.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM11-2A-1L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM11-2A-2L-1.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM11-2A-2L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM11-2B-1L-1.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM11-2B-1L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM11-2C-1L-1.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM11-2C-1L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM12-2A-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-2A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-2A-2L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-2A-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-3A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-2L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-3A-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-3L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-3A-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-4L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-3A-4L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-3B-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-2L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-3B-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-3L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-3B-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-2L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4A-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-3L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4A-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-4L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4A-4L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-5L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4A-5L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-6L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4A-6L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4B-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-2L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4B-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-3L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4B-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-4L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4B-4L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-5L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4B-5L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4C-1B-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-HORM12-4C-1B-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-MORD12-1A-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-MORD12-1A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-MORD12-2A-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-MORD12-2A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-MORD12-4A-1L-1-W.jpg,.jpg,_TEST2/ICD/ICD jpeg/,_TEST2/ICD/ICD jpeg/CAHO-MORD12-4A-1L-1-W.jpg,,6.91
+_TEST2,ICD,ICD sheet.pdf,.pdf,_TEST2/ICD/,_TEST2/ICD/ICD sheet.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,8.92
+_TEST2,Exclude,CAHO-GRAS11-1A-1L-1_BOTTOM.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-1A-1L-1_BOTTOM.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-1L-1_TOP.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-1A-1L-1_TOP.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-2L_AP4.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-1A-2L_AP4.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-2L_AP5.6.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-1A-2L_AP5.6.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1B-1L-1.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-1B-1L-1.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1B-2L-1.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-1B-2L-1.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-1L-1_BOTTOM.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-2A-1L-1_BOTTOM.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-1L-1_TOP.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-2A-1L-1_TOP.tif,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-2L-1.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-GRAS11-2A-2L-1.tif,,7.93
+_TEST2,Exclude,CAHO-HORM11-2A-1L-1.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM11-2A-1L-1.tif,,7.93
+_TEST2,Exclude,CAHO-HORM11-2A-2L-1.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM11-2A-2L-1.tif,,7.93
+_TEST2,Exclude,CAHO-HORM11-2B-1L-1.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM11-2B-1L-1.tif,,7.93
+_TEST2,Exclude,CAHO-HORM11-2C-1L-1.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM11-2C-1L-1.tif,,7.93
+_TEST2,Exclude,CAHO-HORM12-2A-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-2A-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-2A-2L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-2A-2L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-3A-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-2L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-3A-2L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-3L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-3A-3L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-4L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-3A-4L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-3B-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-2L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-3B-2L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-3L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-3B-3L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4A-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-2L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4A-2L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-3L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4A-3L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-4L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4A-4L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-5L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4A-5L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-6L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4A-6L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4B-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-2L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4B-2L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-3L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4B-3L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-4L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4B-4L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-5L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4B-5L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-HORM12-4C-1B-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-HORM12-4C-1B-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-MORD12-1A-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-MORD12-1A-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-MORD12-2A-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-MORD12-2A-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-MORD12-4A-1L-1-W.tif,.tif,_TEST2/Images/,_TEST2/Images/CAHO-MORD12-4A-1L-1-W.tif,,6.91
+_TEST2,Exclude,CAHO-GRAS11-1A-1L-1_BOTTOM.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-1A-1L-1_BOTTOM.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-1L-1_TOP.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-1A-1L-1_TOP.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1A-2L_AP4.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-1A-2L_AP4.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1B-1L-1.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-1B-1L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-1B-2L-1.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-1B-2L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-1L-1_BOTTOM.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-2A-1L-1_BOTTOM.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-1L-1_TOP.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-2A-1L-1_TOP.jpg,,7.93
+_TEST2,Exclude,CAHO-GRAS11-2A-2L-1.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-GRAS11-2A-2L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM11-2A-2L-1.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM11-2A-2L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM11-2B-1L-1.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM11-2B-1L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM11-2C-1L-1.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM11-2C-1L-1.jpg,,7.93
+_TEST2,Exclude,CAHO-HORM12-2A-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-2A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-3A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-2L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-3A-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-3L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-3A-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3A-4L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-3A-4L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-3B-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-2L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-3B-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-3B-3L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-3B-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-2L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4A-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-3L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4A-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-4L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4A-4L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-5L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4A-5L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4A-6L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4A-6L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4B-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-2L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4B-2L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-3L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4B-3L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-4L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4B-4L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-HORM12-4B-5L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-HORM12-4B-5L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-MORD12-1A-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-MORD12-1A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-MORD12-2A-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-MORD12-2A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,CAHO-MORD12-4A-1L-1-W.jpg,.jpg,_TEST2/Images/JPEG/,_TEST2/Images/JPEG/CAHO-MORD12-4A-1L-1-W.jpg,,6.91
+_TEST2,Exclude,LacCoreMetadataForm_CAHO-2013.xls,.xls,_TEST2/,_TEST2/LacCoreMetadataForm_CAHO-2013.xls,,5.86
+_TEST2,Exclude,LacCoreMetadataForm_Munoz.xls,.xls,_TEST2/,_TEST2/LacCoreMetadataForm_Munoz.xls,,6.93
+_TEST2,Exclude,metadata format Dtube Label_CAHO-bad lat long.xls,.xls,_TEST2/,_TEST2/metadata format Dtube Label_CAHO-bad lat long.xls,,6.91
+_TEST2,Exclude,metadata format Dtube Label_CAHO12- bad lat long.xls,.xls,_TEST2/,_TEST2/metadata format Dtube Label_CAHO12- bad lat long.xls,,5.86
+_TEST2,Exclude,metadata format Dtube Label_CAHO13.xls,.xls,_TEST2/,_TEST2/metadata format Dtube Label_CAHO13.xls,,5.86

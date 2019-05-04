@@ -5,6 +5,7 @@ import (
 	"sync"
 )
 
+// Buffer is my thread safe buffer
 type Buffer struct {
 	b bytes.Buffer
 	m sync.Mutex
@@ -28,6 +29,7 @@ func (b *Buffer) String() string {
 	return b.b.String()
 }
 
+// Len returns the buffer length in int
 func (b *Buffer) Len() int {
 	b.m.Lock()
 	defer b.m.Unlock()

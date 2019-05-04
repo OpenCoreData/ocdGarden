@@ -1,0 +1,29 @@
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.schema.org/DigitalDocument> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/description> "Digital object of type ICD named YNP2-DLY09-1B-4L-1.pdf for CSDCO project YNP2" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/isRelatedTo> "YNP2" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/name> "YNP2-DLY09-1B-4L-1.pdf" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/dateCreated> "2009-06-04" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/encodingFormat> "application/pdf" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/additionType> <http://opencoredata.org/voc/csdco/v1/ICDFiles> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/license> <http://example.com/cc0.html> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/url> <http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/bis97c7tr9b0csqjnbi0> <http://schema.org/identifier> _:bbis97c7tr9b0csqjnbi0 <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+_:bbis97c7tr9b0csqjnbi0 <http://schema.org/propertyID> "SHA256" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+_:bbis97c7tr9b0csqjnbi0 <http://schema.org/value> "000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+_:bbis97c7tr9b0csqjnbi0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+
+
+
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.schema.org/DigitalDocument> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/description> "Digital object of type ICD named YNP2-DLY09-1B-4L-1.pdf for CSDCO project YNP2" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/isRelatedTo> "YNP2" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/name> "YNP2-DLY09-1B-4L-1.pdf" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/dateCreated> "2009-06-04" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/encodingFormat> "application/pdf" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/additionType> <http://opencoredata.org/voc/csdco/v1/ICDFiles> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/license> <http://example.com/cc0.html> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/url> <http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+<http://opencoredata.org/id/do/biscb87tr9b0csqkj030> <http://schema.org/identifier> _:bbiscb87tr9b0csqkj030 <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+_:bbiscb87tr9b0csqkj030 <http://schema.org/propertyID> "SHA256" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+_:bbiscb87tr9b0csqkj030 <http://schema.org/value> "000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c" <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .
+_:bbiscb87tr9b0csqkj030 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> <http://opencoredata.org/objectgraph/id/000003a5ee30630237ae9690fd10a576b8bfb3d6c3e2ce541924522ef5b69f2c> .

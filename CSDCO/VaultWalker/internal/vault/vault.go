@@ -19,6 +19,7 @@ type VaultItem struct {
 	FileExt      string
 	TypeURI      string
 	Age          float64
+	DateCreated  string
 }
 
 // Prjs returns all unique projets in
@@ -52,7 +53,8 @@ func (v *VaultHoldings) PrjFiles(t string) VaultHoldings {
 
 	for _, item := range v.Holdings {
 		p := item.Project
-		if strings.Contains(p, t) { // I could also skip dot files here too..  rather than in main..
+		// This line is an ERROR....     if strings.Contains(p, t) { // I could also skip dot files here too..  rather than in main..
+		if strings.Compare(p, t) == 0 { // I could also skip dot files here too..  rather than in main..
 			pi = append(pi, item)
 		}
 	}

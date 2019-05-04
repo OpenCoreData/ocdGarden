@@ -1,455 +1,455 @@
 Project,Type,FileName,FileExt,Parent Directory,Relative Path,Voc URI,Age
-3RPD,Corelyzer files,3RPD.cml,.cml,3RPD/Data/Corelyzer/,3RPD/Data/Corelyzer/3RPD.cml,http://opencoredata.org/voc/csdco/v1/CML,2.13
-3RPD,Corelyzer files,3RPD_MSCL.xml,.xml,3RPD/Data/Corelyzer/,3RPD/Data/Corelyzer/3RPD_MSCL.xml,http://opencoredata.org/voc/csdco/v1/CML,2.13
-3RPD,Corelyzer files,3RPD_MSCL2.xml,.xml,3RPD/Data/Corelyzer/,3RPD/Data/Corelyzer/3RPD_MSCL2.xml,http://opencoredata.org/voc/csdco/v1/CML,2.13
-3RPD,Exclude,Review of project 3RPD.docx,.docx,3RPD/Data/Project report/,3RPD/Data/Project report/Review of project 3RPD.docx,,1.63
-3RPD,Exclude,Review of project 3RPD.pdf,.pdf,3RPD/Data/Project report/,3RPD/Data/Project report/Review of project 3RPD.pdf,,1.83
-3RPD,Exclude,SRF_3RPD_Stefanova_20170516.xls,.xls,3RPD/Data/Sampling/,3RPD/Data/Sampling/SRF_3RPD_Stefanova_20170516.xls,,1.90
-3RPD,Exclude,1A-1P-1_14cm_greysand10pp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand10pp.tif,,2.13
-3RPD,Exclude,1A-1P-1_14cm_greysand10xp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand10xp.tif,,2.13
-3RPD,Exclude,1A-1P-1_14cm_greysand40pp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand40pp.tif,,2.13
-3RPD,Exclude,1A-1P-1_14cm_greysand40xp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand40xp.tif,,2.13
-3RPD,Exclude,1A-1P-1_20cm_chunkypeatpp10.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatpp10.tif,,2.13
-3RPD,Exclude,1A-1P-1_20cm_chunkypeatpp40.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatpp40.tif,,2.13
-3RPD,Exclude,1A-1P-1_20cm_chunkypeatxp10.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatxp10.tif,,2.13
-3RPD,Exclude,1A-1P-1_20cm_chunkypeatxp40.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatxp40.tif,,2.13
-3RPD,Exclude,1B-1L-1_14cm_greyveinpp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_14cm_greyveinpp.tif,,2.13
-3RPD,Exclude,1B-1L-1_14cm_greyveinxp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_14cm_greyveinxp.tif,,2.13
-3RPD,Exclude,1B-1L-1_14cm_test.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_14cm_test.tif,,2.13
-3RPD,Exclude,1B-1L-1_35cm_chunkypeat10.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_35cm_chunkypeat10.tif,,2.13
-3RPD,Exclude,1B-1L-1_35cm_chunkypeat40.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_35cm_chunkypeat40.tif,,2.13
-3RPD,Exclude,1B-1L-1_3cm_organicblobpp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_3cm_organicblobpp.tif,,2.13
-3RPD,Exclude,1B-1L-1_3cm_organicblobppcorrect.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_3cm_organicblobppcorrect.tif,,2.13
-3RPD,Exclude,1B-1L-1_3cm_organicblobxp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_3cm_organicblobxp.tif,,2.13
-3RPD,Exclude,3RPD SmearSlideTable_final.xlsx,.xlsx,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/3RPD SmearSlideTable_final.xlsx,,1.83
-3RPD,Exclude,3RPD SmearSlideTable_print.pdf,.pdf,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/3RPD SmearSlideTable_print.pdf,,1.83
-3RPD,Exclude,3RPD SmearSlideTable_print.xlsx,.xlsx,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/3RPD SmearSlideTable_print.xlsx,,1.83
-3RPD,Exclude,._.DS_Store,.DS_Store,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/._.DS_Store,,1.83
-3RPD,Exclude,._1A-2L-1 5 cm Fe phases 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/._1A-2L-1 5 cm Fe phases 400X pp.tif,,1.84
-3RPD,Exclude,._1B-1L-1_29cm qtz and fldspr_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/._1B-1L-1_29cm qtz and fldspr_cp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif,,1.96
-3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.cal.xml,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.eax,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.cal.xml,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.eax,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.cal.xml,,1.95
-3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.eax,,1.95
-3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.cal.xml,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.eax,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.cal.xml,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.eax,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 20 feld silt.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 20 feld silt.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 feld silt.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 20 spicule closeup.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif,,1.95
-3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.cal.xml,,1.95
-3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.eax,,1.95
-3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.cal.xml,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.eax,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.cal.xml,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.eax,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif,,1.96
-3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.cal.xml,,1.96
-3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.eax,,1.96
-3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.cal.xml,,1.96
-3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.eax,,1.96
-3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.cal.xml,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.eax,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.cal.xml,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.eax,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif,,1.95
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif,,1.95
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.anx,,1.95
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.sbx,,1.95
-3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.thb,,1.95
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.anx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.eax,,1.88
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.sbx,,1.96
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.thb,,1.96
-3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.anx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.eax,,1.88
-3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.sbx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.thb,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.anx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.eax,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.sbx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.thb,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.anx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.eax,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.sbx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.thb,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.anx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.eax,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.sbx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.thb,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.anx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.eax,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.sbx,,1.88
-3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.thb,,1.88
-3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg,,1.88
-3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.anx,,1.88
-3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.cal.xml,,1.88
-3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.eax,,1.88
-3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.sbx,,1.88
-3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1 35 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg,,1.87
-3RPD,Exclude,1B-1L-1 35 cm peat.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.anx,,1.87
-3RPD,Exclude,1B-1L-1 35 cm peat.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.cal.xml,,1.87
-3RPD,Exclude,1B-1L-1 35 cm peat.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.eax,,1.87
-3RPD,Exclude,1B-1L-1 35 cm peat.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.sbx,,1.87
-3RPD,Exclude,1B-1L-1 35 cm peat.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.thb,,1.87
-3RPD,Exclude,1B-1L-1 39 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg,,1.87
-3RPD,Exclude,1B-1L-1 39 cm peat.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.anx,,1.87
-3RPD,Exclude,1B-1L-1 39 cm peat.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.cal.xml,,1.87
-3RPD,Exclude,1B-1L-1 39 cm peat.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.eax,,1.87
-3RPD,Exclude,1B-1L-1 39 cm peat.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.sbx,,1.87
-3RPD,Exclude,1B-1L-1 39 cm peat.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.thb,,1.87
-3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.cal.xml,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.eax,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.thb,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.anx,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.cal.xml,,1.87
-3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.eax,,1.87
-3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.sbx,,1.88
-3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.thb,,1.88
-3RPD,Exclude,._.DS_Store,.DS_Store,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._.DS_Store,,1.83
-3RPD,Exclude,._1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 20 chrysos 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 chrysos 400X.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 20 large phytos 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 large phytos 630X.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 20 peat abundant spicules 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 peat abundant spicules 630X.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 20 silty fibrous peat 100X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 silty fibrous peat 100X pp.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 20 silty fibrous peat 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 silty fibrous peat 400X.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 30 cm fibrous peat 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 30 cm fibrous peat 400Xpp.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 30 cm phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 30 cm phytos in situ.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 5 cm Fe phases 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm Fe phases 400X pp.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 5 cm prismatic tourmaline.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm prismatic tourmaline.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 5 cm sand garnet 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm sand garnet 400X pp.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,,1.83
-3RPD,Exclude,._1A-2L-1 5 cm well rounded qtzfld scaled.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm well rounded qtzfld scaled.jpg,,1.83
-3RPD,Exclude,._1A-2L-1_25cm 400X peat phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1_25cm 400X peat phytos in situ.jpg,,1.83
-3RPD,Exclude,._1A-2L-1_25cm 400X spicules.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1_25cm 400X spicules.jpg,,1.83
-3RPD,Exclude,._1B-1L-1 35 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1 35 cm peat.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_22_5cm 100X biotite pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_22_5cm 100X biotite pp.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_22_5cm 100X typic sand_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_22_5cm 100X typic sand_pp.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_24cm 100X ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_24cm 100X ferric agg_pp.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_24cm 100X sand example.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_24cm 100X sand example.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_24cm 40X rounded sand_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_24cm 40X rounded sand_cp.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_27cm qtz and fld w incl_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_27cm qtz and fld w incl_cp.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_27cm qtz and fld w incl_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_27cm qtz and fld w incl_pp.jpg,,1.83
-3RPD,Exclude,._1B-1L-1_35cm_chunkypeat40.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_35cm_chunkypeat40.jpg,,1.83
-3RPD,Exclude,._smear slide map.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._smear slide map.ai,,1.83
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 20 chrysos 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 chrysos 400X.jpg,,1.84
-3RPD,Exclude,1A-2L-1 20 large phytos 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 large phytos 630X.jpg,,1.84
-3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 peat abundant spicules 630X.jpg,,1.84
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 silty fibrous peat 100X pp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 silty fibrous peat 400X.jpg,,1.84
-3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 30 cm fibrous peat 400Xpp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 30 cm phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 30 cm phytos in situ.jpg,,1.84
-3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm Fe phases 400X pp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 5 cm prismatic tourmaline.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm prismatic tourmaline.jpg,,1.84
-3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm sand garnet 400X pp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,,1.84
-3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm well rounded qtzfld scaled.jpg,,1.84
-3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1_25cm 400X peat phytos in situ.jpg,,1.84
-3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1_25cm 400X spicules.jpg,,1.84
-3RPD,Exclude,1B-1L-1 35 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1 35 cm peat.jpg,,1.84
-3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_22_5cm 100X biotite pp.jpg,,1.84
-3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_22_5cm 100X typic sand_pp.jpg,,1.84
-3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,,1.84
-3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_24cm 100X ferric agg_pp.jpg,,1.84
-3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_24cm 100X sand example.jpg,,1.84
-3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_24cm 40X rounded sand_cp.jpg,,1.84
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_27cm qtz and fld w incl_cp.jpg,,1.84
-3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_27cm qtz and fld w incl_pp.jpg,,1.84
-3RPD,Exclude,1B-1L-1_35cm_chunkypeat40.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_35cm_chunkypeat40.jpg,,1.84
-3RPD,Exclude,smear slide map.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/smear slide map.ai,,1.84
-3RPD,Exclude,._Accessory minerals,._Accessory minerals,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals,,1.83
-3RPD,Exclude,._Accessory minerals.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals.ai,,1.83
-3RPD,Exclude,._Accessory minerals.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals.pdf,,1.83
-3RPD,Exclude,._Accessory minerals_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals_smaller.pdf,,1.83
-3RPD,Exclude,._App_A_ smear slide highlights.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._App_A_ smear slide highlights.pdf,,1.83
-3RPD,Exclude,._Figure 1_smear slide map_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Figure 1_smear slide map_smaller.pdf,,1.83
-3RPD,Exclude,._Peat components.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Peat components.ai,,1.83
-3RPD,Exclude,._Peat components.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Peat components.pdf,,1.83
-3RPD,Exclude,._Peat components_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Peat components_smaller.pdf,,1.83
-3RPD,Exclude,._smear slide map.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._smear slide map.pdf,,1.83
-3RPD,Exclude,._typic sand.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._typic sand.ai,,1.83
-3RPD,Exclude,._typic sand.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._typic sand.pdf,,1.83
-3RPD,Exclude,._typic sand_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._typic sand_smaller.pdf,,1.83
-3RPD,Exclude,,,,,,1.84
-3RPD,Exclude,Accessory minerals.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Accessory minerals.ai,,1.83
-3RPD,Exclude,Accessory minerals.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Accessory minerals.pdf,,1.83
-3RPD,Exclude,Accessory minerals_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Accessory minerals_smaller.pdf,,1.83
-3RPD,Exclude,App_A_ smear slide highlights.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/App_A_ smear slide highlights.pdf,,1.83
-3RPD,Exclude,Figure 1_smear slide map_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Figure 1_smear slide map_smaller.pdf,,1.83
-3RPD,Exclude,Peat components.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Peat components.ai,,1.83
-3RPD,Exclude,Peat components.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Peat components.pdf,,1.83
-3RPD,Exclude,Peat components_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Peat components_smaller.pdf,,1.83
-3RPD,Exclude,smear slide map.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/smear slide map.pdf,,1.83
-3RPD,Exclude,typic sand.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/typic sand.ai,,1.83
-3RPD,Exclude,typic sand.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/typic sand.pdf,,1.83
-3RPD,Exclude,typic sand_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/typic sand_smaller.pdf,,1.83
-3RPD,Exclude,Thumbs.db,.db,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/Thumbs.db,,0.54
-3RPD,Exclude,Thumbs.db,.db,3RPD/Data/,3RPD/Data/Thumbs.db,,0.54
-3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-1P-1-W.jpg,,2.13
-3RPD,ICD,3RPD-NWM17-1A-1P-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-1P-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.58
-3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-2L-1-W.jpg,,2.13
-3RPD,ICD,3RPD-NWM17-1A-2L-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-2L-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.58
-3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-3L-1-W.jpg,,2.13
-3RPD,ICD,3RPD-NWM17-1A-3L-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-3L-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.58
-3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1B-1L-1-W.jpg,,2.13
-3RPD,ICD,3RPD-NWM17-1B-1L-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1B-1L-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.58
-3RPD,ICD,3RPD_ICD_tabular.xls,.xls,3RPD/ICD/,3RPD/ICD/3RPD_ICD_tabular.xls,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.58
-3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1A-1P-1-W.xml,,2.13
-3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1A-2L-1-W.xml,,2.13
-3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1A-3L-1-W.xml,,2.13
-3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1B-1L-1-W.xml,,2.13
-3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1A-1P-1-W.jpg,,2.13
-3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1A-2L-1-W.jpg,,2.13
-3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1A-3L-1-W.jpg,,2.13
-3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1B-1L-1-W.jpg,,2.13
-3RPD,Exclude,project.properties,.properties,3RPD/ICD/3RPD_PSICAT project/,3RPD/ICD/3RPD_PSICAT project/project.properties,,2.13
-3RPD,Exclude,Marks_basic_symbols_1_17.jar,.jar,3RPD/ICD/3RPD_PSICAT project/schemes/,3RPD/ICD/3RPD_PSICAT project/schemes/Marks_basic_symbols_1_17.jar,,2.13
-3RPD,Exclude,lithologies_general_1_19_17.jar,.jar,3RPD/ICD/3RPD_PSICAT project/schemes/,3RPD/ICD/3RPD_PSICAT project/schemes/lithologies_general_1_19_17.jar,,2.13
-3RPD,Images,3RPD-NWM17-1A-1P-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1A-1P-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.13
-3RPD,Images,3RPD-NWM17-1A-2L-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1A-2L-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.13
-3RPD,Images,3RPD-NWM17-1A-3L-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1A-3L-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.13
-3RPD,Images,3RPD-NWM17-1B-1L-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1B-1L-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.13
-3RPD,Exclude,Thumbs.db,.db,3RPD/Images/,3RPD/Images/Thumbs.db,,0.58
-3RPD,RGB Image Data,3RPD-NWM17-1A-1P-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1A-1P-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.13
-3RPD,RGB Image Data,3RPD-NWM17-1A-2L-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1A-2L-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.13
-3RPD,RGB Image Data,3RPD-NWM17-1A-3L-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1A-3L-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.13
-3RPD,RGB Image Data,3RPD-NWM17-1B-1L-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1B-1L-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.13
-3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1A-1P-1-W.tif,,2.13
-3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1A-2L-1-W.tif,,2.13
-3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1A-3L-1-W.tif,,2.13
-3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1B-1L-1-W.tif,,2.13
-3RPD,Geotek MSCL-S,3RPD_MSCL-S.csv,.csv,3RPD/MSCL/MSCL-S/,3RPD/MSCL/MSCL-S/3RPD_MSCL-S.csv,http://opencoredata.org/voc/csdco/v1/WholeCoreData,2.13
-3RPD,Exclude,._3RPD_MSCL_20170110_part1.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/._3RPD_MSCL_20170110_part1.out,,2.24
-3RPD,Exclude,._3RPD_MSCL_20170110_part1.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/._3RPD_MSCL_20170110_part1.raw,,2.24
-3RPD,Exclude,3RPD_MSCL_20170110_part1.cal,.cal,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.cal,,2.25
-3RPD,Exclude,3RPD_MSCL_20170110_part1.dat,.dat,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.dat,,2.24
-3RPD,Exclude,3RPD_MSCL_20170110_part1.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.out,,2.24
-3RPD,Exclude,3RPD_MSCL_20170110_part1.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.raw,,2.24
-3RPD,Exclude,default.vsf,.vsf,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/default.vsf,,2.25
-3RPD,Exclude,._3RPD_MSCL_20170111_part2.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/._3RPD_MSCL_20170111_part2.out,,2.24
-3RPD,Exclude,._3RPD_MSCL_20170111_part2.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/._3RPD_MSCL_20170111_part2.raw,,2.24
-3RPD,Exclude,3RPD_MSCL_20170111_part2.cal,.cal,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.cal,,2.24
-3RPD,Exclude,3RPD_MSCL_20170111_part2.dat,.dat,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.dat,,2.24
-3RPD,Exclude,3RPD_MSCL_20170111_part2.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.out,,2.24
-3RPD,Exclude,3RPD_MSCL_20170111_part2.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.raw,,2.24
-3RPD,Geotek MSCL-XYZ,3RPD_MSCL-XYZ.csv,.csv,3RPD/MSCL/MSCL-XYZ/,3RPD/MSCL/MSCL-XYZ/3RPD_MSCL-XYZ.csv,http://opencoredata.org/voc/csdco/v1/SplitCoreData,2.13
-3RPD,Exclude,3RPD_XYZ_20170221_part1.bk,.bk,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/3RPD_XYZ_20170221_part1.bk,,2.13
-3RPD,Exclude,3RPD_XYZ_20170221_part1.csv,.csv,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/3RPD_XYZ_20170221_part1.csv,,2.13
-3RPD,Exclude,3RPD_XYZ_20170221_part1.xml,.xml,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/3RPD_XYZ_20170221_part1.xml,,2.13
-3RPD,Exclude,3RPD-metadata.xls,.xls,3RPD/Metadata/,3RPD/Metadata/3RPD-metadata.xls,,2.21
-3RPD,Exclude,Copy of LacCoreMetadataForm-3RPD-NWM17.xls,.xls,3RPD/Metadata/,3RPD/Metadata/Copy of LacCoreMetadataForm-3RPD-NWM17.xls,,2.21
-3RPD,Exclude,metadata format Dtube Label_3RPD.xls,.xls,3RPD/Metadata/,3RPD/Metadata/metadata format Dtube Label_3RPD.xls,,2.21
+3RPD,Corelyzer files,3RPD.cml,.cml,3RPD/Data/Corelyzer/,3RPD/Data/Corelyzer/3RPD.cml,http://opencoredata.org/voc/csdco/v1/CML,2.20
+3RPD,Corelyzer files,3RPD_MSCL.xml,.xml,3RPD/Data/Corelyzer/,3RPD/Data/Corelyzer/3RPD_MSCL.xml,http://opencoredata.org/voc/csdco/v1/CML,2.20
+3RPD,Corelyzer files,3RPD_MSCL2.xml,.xml,3RPD/Data/Corelyzer/,3RPD/Data/Corelyzer/3RPD_MSCL2.xml,http://opencoredata.org/voc/csdco/v1/CML,2.20
+3RPD,Exclude,Review of project 3RPD.docx,.docx,3RPD/Data/Project report/,3RPD/Data/Project report/Review of project 3RPD.docx,,1.69
+3RPD,Exclude,Review of project 3RPD.pdf,.pdf,3RPD/Data/Project report/,3RPD/Data/Project report/Review of project 3RPD.pdf,,1.89
+3RPD,Exclude,SRF_3RPD_Stefanova_20170516.xls,.xls,3RPD/Data/Sampling/,3RPD/Data/Sampling/SRF_3RPD_Stefanova_20170516.xls,,1.96
+3RPD,Exclude,1A-1P-1_14cm_greysand10pp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand10pp.tif,,2.20
+3RPD,Exclude,1A-1P-1_14cm_greysand10xp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand10xp.tif,,2.20
+3RPD,Exclude,1A-1P-1_14cm_greysand40pp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand40pp.tif,,2.20
+3RPD,Exclude,1A-1P-1_14cm_greysand40xp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_14cm_greysand40xp.tif,,2.20
+3RPD,Exclude,1A-1P-1_20cm_chunkypeatpp10.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatpp10.tif,,2.20
+3RPD,Exclude,1A-1P-1_20cm_chunkypeatpp40.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatpp40.tif,,2.20
+3RPD,Exclude,1A-1P-1_20cm_chunkypeatxp10.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatxp10.tif,,2.20
+3RPD,Exclude,1A-1P-1_20cm_chunkypeatxp40.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1A-1P-1_20cm_chunkypeatxp40.tif,,2.20
+3RPD,Exclude,1B-1L-1_14cm_greyveinpp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_14cm_greyveinpp.tif,,2.20
+3RPD,Exclude,1B-1L-1_14cm_greyveinxp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_14cm_greyveinxp.tif,,2.20
+3RPD,Exclude,1B-1L-1_14cm_test.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_14cm_test.tif,,2.20
+3RPD,Exclude,1B-1L-1_35cm_chunkypeat10.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_35cm_chunkypeat10.tif,,2.20
+3RPD,Exclude,1B-1L-1_35cm_chunkypeat40.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_35cm_chunkypeat40.tif,,2.20
+3RPD,Exclude,1B-1L-1_3cm_organicblobpp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_3cm_organicblobpp.tif,,2.20
+3RPD,Exclude,1B-1L-1_3cm_organicblobppcorrect.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_3cm_organicblobppcorrect.tif,,2.20
+3RPD,Exclude,1B-1L-1_3cm_organicblobxp.tif,.tif,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/1B-1L-1_3cm_organicblobxp.tif,,2.20
+3RPD,Exclude,3RPD SmearSlideTable_final.xlsx,.xlsx,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/3RPD SmearSlideTable_final.xlsx,,1.90
+3RPD,Exclude,3RPD SmearSlideTable_print.pdf,.pdf,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/3RPD SmearSlideTable_print.pdf,,1.89
+3RPD,Exclude,3RPD SmearSlideTable_print.xlsx,.xlsx,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/3RPD SmearSlideTable_print.xlsx,,1.89
+3RPD,Exclude,._.DS_Store,.DS_Store,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/._.DS_Store,,1.90
+3RPD,Exclude,._1A-2L-1 5 cm Fe phases 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/._1A-2L-1 5 cm Fe phases 400X pp.tif,,1.90
+3RPD,Exclude,._1B-1L-1_29cm qtz and fldspr_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/._1B-1L-1_29cm qtz and fldspr_cp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif,,2.02
+3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 10 cm spicules in sand 400X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 cm spicules in sand 400X pp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xcp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 10 qtz with overgrowth 100Xpp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 chrysos 400X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 chrysos 400X.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X cp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X cp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt 400X real.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt 400X real.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 20 feld silt.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 20 feld silt.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 feld silt.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 feld silt.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 large phytos 630X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 large phytos 630X.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 peat abundant spicules 630X.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 100X pp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 silty fibrous peat 400X.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 20 spicule closeup.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif,,2.02
+3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 20 spicule closeup.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 20 spicule closeup.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 100Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 100Xpp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm fibrous peat 400Xpp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif,,2.02
+3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 30 cm phytos in situ.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 30 cm phytos in situ.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm Fe phases 400X pp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X cp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X cp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.cal.xml,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.eax,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm sand garnet 400X pp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xcp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xcp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac 400Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac 400Xpp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm silt frac orgs 400Xpp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE cp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm unidentified euhedra HUGE.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm unidentified euhedra HUGE.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld 100Xcp.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld sand.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld sand.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif,.tif,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.anx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.eax,,1.95
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.sbx,,2.02
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.tif.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1 5 cm well rounded qtzfld scaled.tif.thb,,2.02
+3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.anx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.eax,,1.95
+3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.sbx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 100X peat.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 100X peat.jpg.thb,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.anx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.eax,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.sbx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat jpg.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat jpg.jpg.thb,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.anx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.eax,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.sbx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat phytos in situ.jpg.thb,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.anx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.eax,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.sbx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X peat with phyto.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X peat with phyto.jpg.thb,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.anx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.eax,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.sbx,,1.95
+3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_25cm 400X spicules.jpg.thb,,1.95
+3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg,,1.95
+3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.anx,,1.95
+3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.cal.xml,,1.95
+3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.eax,,1.95
+3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.sbx,,1.95
+3RPD,Exclude,1A-2L-1_30cm 400X peat phytos in situ0001.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1A-2L-1_30cm 400X peat phytos in situ0001.jpg.thb,,1.95
+3RPD,Exclude,1B-1L-1 35 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg,,1.94
+3RPD,Exclude,1B-1L-1 35 cm peat.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1 35 cm peat.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1 35 cm peat.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1 35 cm peat.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1 35 cm peat.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 35 cm peat.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1 39 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg,,1.94
+3RPD,Exclude,1B-1L-1 39 cm peat.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1 39 cm peat.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1 39 cm peat.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1 39 cm peat.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1 39 cm peat.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1 39 cm peat.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X biotite pp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 100X typic sand_pp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_22_5cm 400X qtz inclusion pp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X ferric agg_pp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand example_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand example_cp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg,,1.95
+3RPD,Exclude,1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 100X sand weird ferric agg_pp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_24cm 40X rounded sand_cp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_cp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_27cm qtz and fld w incl_pp.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fld.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fld.jpg.thb,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.anx,.anx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.anx,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.cal.xml,.xml,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.cal.xml,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.eax,.eax,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.eax,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.sbx,.sbx,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.sbx,,1.94
+3RPD,Exclude,1B-1L-1_29cm qtz and fldspr_cp.jpg.thb,.thb,3RPD/Data/Smear Slides/3RPD petro photos/,3RPD/Data/Smear Slides/3RPD petro photos/1B-1L-1_29cm qtz and fldspr_cp.jpg.thb,,1.94
+3RPD,Exclude,._.DS_Store,.DS_Store,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._.DS_Store,,1.90
+3RPD,Exclude,._1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 20 chrysos 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 chrysos 400X.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 20 large phytos 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 large phytos 630X.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 20 peat abundant spicules 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 peat abundant spicules 630X.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 20 silty fibrous peat 100X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 silty fibrous peat 100X pp.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 20 silty fibrous peat 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 20 silty fibrous peat 400X.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 30 cm fibrous peat 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 30 cm fibrous peat 400Xpp.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 30 cm phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 30 cm phytos in situ.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 5 cm Fe phases 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm Fe phases 400X pp.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 5 cm prismatic tourmaline.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm prismatic tourmaline.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 5 cm sand garnet 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm sand garnet 400X pp.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,,1.90
+3RPD,Exclude,._1A-2L-1 5 cm well rounded qtzfld scaled.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1 5 cm well rounded qtzfld scaled.jpg,,1.90
+3RPD,Exclude,._1A-2L-1_25cm 400X peat phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1_25cm 400X peat phytos in situ.jpg,,1.90
+3RPD,Exclude,._1A-2L-1_25cm 400X spicules.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1A-2L-1_25cm 400X spicules.jpg,,1.90
+3RPD,Exclude,._1B-1L-1 35 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1 35 cm peat.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_22_5cm 100X biotite pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_22_5cm 100X biotite pp.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_22_5cm 100X typic sand_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_22_5cm 100X typic sand_pp.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_24cm 100X ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_24cm 100X ferric agg_pp.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_24cm 100X sand example.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_24cm 100X sand example.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_24cm 40X rounded sand_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_24cm 40X rounded sand_cp.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_27cm qtz and fld w incl_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_27cm qtz and fld w incl_cp.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_27cm qtz and fld w incl_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_27cm qtz and fld w incl_pp.jpg,,1.90
+3RPD,Exclude,._1B-1L-1_35cm_chunkypeat40.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._1B-1L-1_35cm_chunkypeat40.jpg,,1.90
+3RPD,Exclude,._smear slide map.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/._smear slide map.ai,,1.90
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 10 qtz with overgrowth 100Xcp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 10 qtz with overgrowth 100Xpp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 20 chrysos 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 chrysos 400X.jpg,,1.90
+3RPD,Exclude,1A-2L-1 20 large phytos 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 large phytos 630X.jpg,,1.90
+3RPD,Exclude,1A-2L-1 20 peat abundant spicules 630X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 peat abundant spicules 630X.jpg,,1.90
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 100X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 silty fibrous peat 100X pp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 20 silty fibrous peat 400X.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 20 silty fibrous peat 400X.jpg,,1.90
+3RPD,Exclude,1A-2L-1 30 cm fibrous peat 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 30 cm fibrous peat 400Xpp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 30 cm phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 30 cm phytos in situ.jpg,,1.90
+3RPD,Exclude,1A-2L-1 5 cm Fe phases 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm Fe phases 400X pp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 5 cm prismatic tourmaline.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm prismatic tourmaline.jpg,,1.90
+3RPD,Exclude,1A-2L-1 5 cm sand garnet 400X pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm sand garnet 400X pp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm silt frac orgs 400Xpp.jpg,,1.90
+3RPD,Exclude,1A-2L-1 5 cm well rounded qtzfld scaled.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1 5 cm well rounded qtzfld scaled.jpg,,1.90
+3RPD,Exclude,1A-2L-1_25cm 400X peat phytos in situ.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1_25cm 400X peat phytos in situ.jpg,,1.90
+3RPD,Exclude,1A-2L-1_25cm 400X spicules.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1A-2L-1_25cm 400X spicules.jpg,,1.90
+3RPD,Exclude,1B-1L-1 35 cm peat.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1 35 cm peat.jpg,,1.90
+3RPD,Exclude,1B-1L-1_22_5cm 100X biotite pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_22_5cm 100X biotite pp.jpg,,1.90
+3RPD,Exclude,1B-1L-1_22_5cm 100X typic sand_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_22_5cm 100X typic sand_pp.jpg,,1.90
+3RPD,Exclude,1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_22_5cm 400X qtz inclusion cp.jpg,,1.90
+3RPD,Exclude,1B-1L-1_24cm 100X ferric agg_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_24cm 100X ferric agg_pp.jpg,,1.90
+3RPD,Exclude,1B-1L-1_24cm 100X sand example.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_24cm 100X sand example.jpg,,1.90
+3RPD,Exclude,1B-1L-1_24cm 40X rounded sand_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_24cm 40X rounded sand_cp.jpg,,1.90
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_cp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_27cm qtz and fld w incl_cp.jpg,,1.90
+3RPD,Exclude,1B-1L-1_27cm qtz and fld w incl_pp.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_27cm qtz and fld w incl_pp.jpg,,1.90
+3RPD,Exclude,1B-1L-1_35cm_chunkypeat40.jpg,.jpg,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/1B-1L-1_35cm_chunkypeat40.jpg,,1.90
+3RPD,Exclude,smear slide map.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/smear slide map.ai,,1.90
+3RPD,Exclude,._Accessory minerals,._Accessory minerals,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals,,1.90
+3RPD,Exclude,._Accessory minerals.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals.ai,,1.90
+3RPD,Exclude,._Accessory minerals.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals.pdf,,1.90
+3RPD,Exclude,._Accessory minerals_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Accessory minerals_smaller.pdf,,1.90
+3RPD,Exclude,._App_A_ smear slide highlights.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._App_A_ smear slide highlights.pdf,,1.90
+3RPD,Exclude,._Figure 1_smear slide map_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Figure 1_smear slide map_smaller.pdf,,1.90
+3RPD,Exclude,._Peat components.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Peat components.ai,,1.90
+3RPD,Exclude,._Peat components.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Peat components.pdf,,1.90
+3RPD,Exclude,._Peat components_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._Peat components_smaller.pdf,,1.90
+3RPD,Exclude,._smear slide map.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._smear slide map.pdf,,1.90
+3RPD,Exclude,._typic sand.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._typic sand.ai,,1.90
+3RPD,Exclude,._typic sand.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._typic sand.pdf,,1.90
+3RPD,Exclude,._typic sand_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/._typic sand_smaller.pdf,,1.90
+3RPD,Exclude,,,,,,1.90
+3RPD,Exclude,Accessory minerals.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Accessory minerals.ai,,1.90
+3RPD,Exclude,Accessory minerals.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Accessory minerals.pdf,,1.90
+3RPD,Exclude,Accessory minerals_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Accessory minerals_smaller.pdf,,1.90
+3RPD,Exclude,App_A_ smear slide highlights.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/App_A_ smear slide highlights.pdf,,1.90
+3RPD,Exclude,Figure 1_smear slide map_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Figure 1_smear slide map_smaller.pdf,,1.89
+3RPD,Exclude,Peat components.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Peat components.ai,,1.90
+3RPD,Exclude,Peat components.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Peat components.pdf,,1.90
+3RPD,Exclude,Peat components_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/Peat components_smaller.pdf,,1.90
+3RPD,Exclude,smear slide map.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/smear slide map.pdf,,1.89
+3RPD,Exclude,typic sand.ai,.ai,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/typic sand.ai,,1.90
+3RPD,Exclude,typic sand.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/typic sand.pdf,,1.90
+3RPD,Exclude,typic sand_smaller.pdf,.pdf,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/,3RPD/Data/Smear Slides/3RPD petro photos/processesd/summary graphics/typic sand_smaller.pdf,,1.90
+3RPD,Exclude,Thumbs.db,.db,3RPD/Data/Smear Slides/,3RPD/Data/Smear Slides/Thumbs.db,,0.60
+3RPD,Exclude,Thumbs.db,.db,3RPD/Data/,3RPD/Data/Thumbs.db,,0.60
+3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-1P-1-W.jpg,,2.20
+3RPD,ICD,3RPD-NWM17-1A-1P-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-1P-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.64
+3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-2L-1-W.jpg,,2.20
+3RPD,ICD,3RPD-NWM17-1A-2L-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-2L-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.64
+3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-3L-1-W.jpg,,2.20
+3RPD,ICD,3RPD-NWM17-1A-3L-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1A-3L-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.64
+3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.jpg,.jpg,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1B-1L-1-W.jpg,,2.20
+3RPD,ICD,3RPD-NWM17-1B-1L-1-W.pdf,.pdf,3RPD/ICD/,3RPD/ICD/3RPD-NWM17-1B-1L-1-W.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.64
+3RPD,ICD,3RPD_ICD_tabular.xls,.xls,3RPD/ICD/,3RPD/ICD/3RPD_ICD_tabular.xls,http://opencoredata.org/voc/csdco/v1/ICDFiles,0.64
+3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1A-1P-1-W.xml,,2.20
+3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1A-2L-1-W.xml,,2.20
+3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1A-3L-1-W.xml,,2.20
+3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.xml,.xml,3RPD/ICD/3RPD_PSICAT project/data/,3RPD/ICD/3RPD_PSICAT project/data/3RPD-NWM17-1B-1L-1-W.xml,,2.20
+3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1A-1P-1-W.jpg,,2.20
+3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1A-2L-1-W.jpg,,2.20
+3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1A-3L-1-W.jpg,,2.20
+3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.jpg,.jpg,3RPD/ICD/3RPD_PSICAT project/images/,3RPD/ICD/3RPD_PSICAT project/images/3RPD-NWM17-1B-1L-1-W.jpg,,2.20
+3RPD,Exclude,project.properties,.properties,3RPD/ICD/3RPD_PSICAT project/,3RPD/ICD/3RPD_PSICAT project/project.properties,,2.20
+3RPD,Exclude,Marks_basic_symbols_1_17.jar,.jar,3RPD/ICD/3RPD_PSICAT project/schemes/,3RPD/ICD/3RPD_PSICAT project/schemes/Marks_basic_symbols_1_17.jar,,2.20
+3RPD,Exclude,lithologies_general_1_19_17.jar,.jar,3RPD/ICD/3RPD_PSICAT project/schemes/,3RPD/ICD/3RPD_PSICAT project/schemes/lithologies_general_1_19_17.jar,,2.20
+3RPD,Images,3RPD-NWM17-1A-1P-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1A-1P-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.20
+3RPD,Images,3RPD-NWM17-1A-2L-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1A-2L-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.20
+3RPD,Images,3RPD-NWM17-1A-3L-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1A-3L-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.20
+3RPD,Images,3RPD-NWM17-1B-1L-1-W.jpg,.jpg,3RPD/Images/,3RPD/Images/3RPD-NWM17-1B-1L-1-W.jpg,http://opencoredata.org/voc/csdco/v1/Image,2.20
+3RPD,Exclude,Thumbs.db,.db,3RPD/Images/,3RPD/Images/Thumbs.db,,0.65
+3RPD,RGB Image Data,3RPD-NWM17-1A-1P-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1A-1P-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.20
+3RPD,RGB Image Data,3RPD-NWM17-1A-2L-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1A-2L-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.20
+3RPD,RGB Image Data,3RPD-NWM17-1A-3L-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1A-3L-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.20
+3RPD,RGB Image Data,3RPD-NWM17-1B-1L-1-W.csv,.csv,3RPD/Images/rgb/,3RPD/Images/rgb/3RPD-NWM17-1B-1L-1-W.csv,http://opencoredata.org/voc/csdco/v1/RGBData,2.20
+3RPD,Exclude,3RPD-NWM17-1A-1P-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1A-1P-1-W.tif,,2.20
+3RPD,Exclude,3RPD-NWM17-1A-2L-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1A-2L-1-W.tif,,2.20
+3RPD,Exclude,3RPD-NWM17-1A-3L-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1A-3L-1-W.tif,,2.20
+3RPD,Exclude,3RPD-NWM17-1B-1L-1-W.tif,.tif,3RPD/Images/tiff/,3RPD/Images/tiff/3RPD-NWM17-1B-1L-1-W.tif,,2.20
+3RPD,Geotek MSCL-S,3RPD_MSCL-S.csv,.csv,3RPD/MSCL/MSCL-S/,3RPD/MSCL/MSCL-S/3RPD_MSCL-S.csv,http://opencoredata.org/voc/csdco/v1/WholeCoreData,2.20
+3RPD,Exclude,._3RPD_MSCL_20170110_part1.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/._3RPD_MSCL_20170110_part1.out,,2.31
+3RPD,Exclude,._3RPD_MSCL_20170110_part1.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/._3RPD_MSCL_20170110_part1.raw,,2.31
+3RPD,Exclude,3RPD_MSCL_20170110_part1.cal,.cal,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.cal,,2.31
+3RPD,Exclude,3RPD_MSCL_20170110_part1.dat,.dat,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.dat,,2.31
+3RPD,Exclude,3RPD_MSCL_20170110_part1.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.out,,2.31
+3RPD,Exclude,3RPD_MSCL_20170110_part1.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/3RPD_MSCL_20170110_part1.raw,,2.31
+3RPD,Exclude,default.vsf,.vsf,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170110_part1/default.vsf,,2.31
+3RPD,Exclude,._3RPD_MSCL_20170111_part2.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/._3RPD_MSCL_20170111_part2.out,,2.31
+3RPD,Exclude,._3RPD_MSCL_20170111_part2.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/._3RPD_MSCL_20170111_part2.raw,,2.31
+3RPD,Exclude,3RPD_MSCL_20170111_part2.cal,.cal,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.cal,,2.31
+3RPD,Exclude,3RPD_MSCL_20170111_part2.dat,.dat,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.dat,,2.31
+3RPD,Exclude,3RPD_MSCL_20170111_part2.out,.out,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.out,,2.31
+3RPD,Exclude,3RPD_MSCL_20170111_part2.raw,.raw,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/,3RPD/MSCL/MSCL-S/Other data/3RPD_MSCL_20170111_part2/3RPD_MSCL_20170111_part2.raw,,2.31
+3RPD,Geotek MSCL-XYZ,3RPD_MSCL-XYZ.csv,.csv,3RPD/MSCL/MSCL-XYZ/,3RPD/MSCL/MSCL-XYZ/3RPD_MSCL-XYZ.csv,http://opencoredata.org/voc/csdco/v1/SplitCoreData,2.20
+3RPD,Exclude,3RPD_XYZ_20170221_part1.bk,.bk,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/3RPD_XYZ_20170221_part1.bk,,2.20
+3RPD,Exclude,3RPD_XYZ_20170221_part1.csv,.csv,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/3RPD_XYZ_20170221_part1.csv,,2.20
+3RPD,Exclude,3RPD_XYZ_20170221_part1.xml,.xml,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/,3RPD/MSCL/MSCL-XYZ/Other data/3RPD_XYZ_20170221_part1/3RPD_XYZ_20170221_part1.xml,,2.20
+3RPD,Exclude,3RPD-metadata.xls,.xls,3RPD/Metadata/,3RPD/Metadata/3RPD-metadata.xls,,2.28
+3RPD,Exclude,Copy of LacCoreMetadataForm-3RPD-NWM17.xls,.xls,3RPD/Metadata/,3RPD/Metadata/Copy of LacCoreMetadataForm-3RPD-NWM17.xls,,2.28
+3RPD,Exclude,metadata format Dtube Label_3RPD.xls,.xls,3RPD/Metadata/,3RPD/Metadata/metadata format Dtube Label_3RPD.xls,,2.28

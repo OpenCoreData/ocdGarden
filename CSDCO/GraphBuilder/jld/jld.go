@@ -3,7 +3,7 @@ package jld
 import (
 	"log"
 
-	"opencoredata.org/ocdGarden/CSDCOGraphBuilder/utils"
+	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/utils"
 )
 
 type CSDCODataset struct {

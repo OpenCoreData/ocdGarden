@@ -1,0 +1,414 @@
+Project,Type,FileName,FileExt,Parent Directory,Relative Path,Voc URI,Age
+NAPALM (Walker),Exclude,Supplies.xlsx,.xlsx,NAPALM (Walker)/Data/,NAPALM (Walker)/Data/Supplies.xlsx,,5.26
+NAPALM (Walker),Exclude,NAPALM_XYZ.csv,.csv,NAPALM (Walker)/Geotek Data/high-resolution MS data/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ.csv,,5.26
+NAPALM (Walker),Exclude,NAPALM_XYZ.xlsx,.xlsx,NAPALM (Walker)/Geotek Data/high-resolution MS data/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ.xlsx,,5.26
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140115_part1.bk,.bk,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140115_part1/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140115_part1/NAPALM_XYZ_20140115_part1.bk,,5.30
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140115_part1.csv,.csv,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140115_part1/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140115_part1/NAPALM_XYZ_20140115_part1.csv,,5.28
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140115_part1.xml,.xml,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140115_part1/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140115_part1/NAPALM_XYZ_20140115_part1.xml,,5.30
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140116_part2.bk,.bk,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140116_part2/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140116_part2/NAPALM_XYZ_20140116_part2.bk,,5.30
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140116_part2.csv,.csv,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140116_part2/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140116_part2/NAPALM_XYZ_20140116_part2.csv,,5.28
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140116_part2.xml,.xml,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140116_part2/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140116_part2/NAPALM_XYZ_20140116_part2.xml,,5.30
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140117_part3.bk,.bk,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140117_part3/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140117_part3/NAPALM_XYZ_20140117_part3.bk,,5.29
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140117_part3.csv,.csv,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140117_part3/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140117_part3/NAPALM_XYZ_20140117_part3.csv,,5.28
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140117_part3.xml,.xml,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140117_part3/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140117_part3/NAPALM_XYZ_20140117_part3.xml,,5.29
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140121_part4.bk,.bk,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140121_part4/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140121_part4/NAPALM_XYZ_20140121_part4.bk,,5.28
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140121_part4.csv,.csv,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140121_part4/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140121_part4/NAPALM_XYZ_20140121_part4.csv,,5.28
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140121_part4.xml,.xml,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140121_part4/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140121_part4/NAPALM_XYZ_20140121_part4.xml,,5.28
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140128_part5.bk,.bk,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140128_part5/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140128_part5/NAPALM_XYZ_20140128_part5.bk,,5.26
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140128_part5.csv,.csv,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140128_part5/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140128_part5/NAPALM_XYZ_20140128_part5.csv,,5.26
+NAPALM (Walker),Exclude,NAPALM_XYZ_20140128_part5.xml,.xml,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140128_part5/,NAPALM (Walker)/Geotek Data/high-resolution MS data/NAPALM_XYZ_20140128_part5/NAPALM_XYZ_20140128_part5.xml,,5.26
+NAPALM (Walker),Exclude,NAPALM_MSCL.xls,.xls,NAPALM (Walker)/Geotek Data/whole-core data/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL.xls,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part1.cal,.cal,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/NAPALM_MSCL_20131025_part1.cal,,5.53
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part1.dat,.dat,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/NAPALM_MSCL_20131025_part1.dat,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part1.out,.out,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/NAPALM_MSCL_20131025_part1.out,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part1.raw,.raw,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/NAPALM_MSCL_20131025_part1.raw,,5.52
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part2.raw,.raw,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/NAPALM_MSCL_20131025_part2.raw,,5.51
+NAPALM (Walker),Exclude,bkgnd_03L468.spc,.spc,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part1/bkgnd_03L468.spc,,7.07
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part2.cal,.cal,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/NAPALM_MSCL_20131025_part2.cal,,5.52
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part2.dat,.dat,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/NAPALM_MSCL_20131025_part2.dat,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part2.out,.out,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/NAPALM_MSCL_20131025_part2.out,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part2.raw,.raw,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part2/NAPALM_MSCL_20131025_part2.raw,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part3.cal,.cal,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/NAPALM_MSCL_20131025_part3.cal,,5.51
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part3.dat,.dat,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/NAPALM_MSCL_20131025_part3.dat,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part3.out,.out,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/NAPALM_MSCL_20131025_part3.out,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131025_part3.raw,.raw,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131025_part3/NAPALM_MSCL_20131025_part3.raw,,5.51
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131030_part4.cal,.cal,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/NAPALM_MSCL_20131030_part4.cal,,5.51
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131030_part4.dat,.dat,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/NAPALM_MSCL_20131030_part4.dat,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131030_part4.out,.out,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/NAPALM_MSCL_20131030_part4.out,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131030_part4.raw,.raw,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131030_part4/NAPALM_MSCL_20131030_part4.raw,,5.50
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131104_part5.cal,.cal,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/NAPALM_MSCL_20131104_part5.cal,,5.50
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131104_part5.dat,.dat,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/NAPALM_MSCL_20131104_part5.dat,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131104_part5.out,.out,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/NAPALM_MSCL_20131104_part5.out,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131104_part5.raw,.raw,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131104_part5/NAPALM_MSCL_20131104_part5.raw,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131106_part6.cal,.cal,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/NAPALM_MSCL_20131106_part6.cal,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131106_part6.dat,.dat,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/NAPALM_MSCL_20131106_part6.dat,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131106_part6.out,.out,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/NAPALM_MSCL_20131106_part6.out,,5.49
+NAPALM (Walker),Exclude,NAPALM_MSCL_20131106_part6.raw,.raw,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/,NAPALM (Walker)/Geotek Data/whole-core data/NAPALM_MSCL_20131106_part6/NAPALM_MSCL_20131106_part6.raw,,5.49
+NAPALM (Walker),ICD,NAPALM-WALK13-101A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-101A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-102A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-102A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-103A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-103A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-104A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-104A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-105A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-105A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-10A-1K-1-W-darker.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-10A-1K-1-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-10A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-10A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-10A-1K-2-W-darker.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-10A-1K-2-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-10A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-10A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-10B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-10B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-1-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-11A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-2-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-11A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-3-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-3-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-11A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-4-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-4-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-11A-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-5-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-5-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-11A-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-6-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-6-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-11A-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11A-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-11B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-11B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W_darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-1-W_darker.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-2-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-3-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-4-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-4-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-5-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-5-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-6-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-6-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-7-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-7-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-7.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-7.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-8-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-8-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1A-1K-8.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1A-1K-8.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-1C-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-1C-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-203A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-203A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-204A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-204A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-205A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-205A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-1-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-2-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-3-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-4-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W_darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-4-W_darker.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2A-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-5-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-5-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2A-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-6-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-6-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2A-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-7-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W_darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-7-W_darker.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2A-1K-7.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2A-1K-7.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-2B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-2B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-301A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-301A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-302A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-302A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-303A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-303A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-304A-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-304A-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-1-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-3A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-2-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-3A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-3-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-3A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-4-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-4-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-3A-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-5-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-5-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-3A-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-6-W-darker.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-6-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-3A-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3A-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-3B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-3C-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3C-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-3C-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3C-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-3C-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3C-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-3C-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3C-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-3C-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3C-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-3C-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3C-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-3D-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-3D-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W--darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-1-W--darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-1-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-2-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-3-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-4-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-4-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4A-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-5-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-5-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4A-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-6-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-6-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4A-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-7-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-7-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4A-1K-7.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4A-1K-7.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-4B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-4B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-1-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-5A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-2-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-5A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-3-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-5A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-4-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-4-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-5A-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-5-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-5-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-5A-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-6-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-6-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-5A-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-7-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-7-W.jpg,,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-5A-1K-7.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5A-1K-7.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.29
+NAPALM (Walker),ICD,NAPALM-WALK13-5B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-5B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-1-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-6A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-2-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-6A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-3-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-6A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-4-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-4-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-6A-1K-4.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-4.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-5-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-5-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-6A-1K-5.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-5.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-6-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-6-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-6A-1K-6.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6A-1K-6.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-6B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-6B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-1-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-1-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-7A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-2darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-2-W-2darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-2-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-2-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-7A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-3-W-darker.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-3-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-3-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-3-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-7A-1K-3.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7A-1K-3.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-7B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-7B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-1-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-8A-1K-1-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-8A-1K-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-8A-1K-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-2-W.jpg,.jpg,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-8A-1K-2-W.jpg,,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-8A-1K-2.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-8A-1K-2.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),ICD,NAPALM-WALK13-8B-1G-1.pdf,.pdf,NAPALM (Walker)/ICD/,NAPALM (Walker)/ICD/NAPALM-WALK13-8B-1G-1.pdf,http://opencoredata.org/voc/csdco/v1/ICDFiles,5.30
+NAPALM (Walker),Exclude,NAPALM-metadata.xls,.xls,NAPALM (Walker)/,NAPALM (Walker)/NAPALM-metadata.xls,,5.19
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-10A-1K-1-W-darker.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-10A-1K-1-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-10A-1K-2-W-darker.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-10A-1K-2-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-2-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-3-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-3-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-4-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-4-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-5-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-5-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-6-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-11A-1K-6-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W_darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-1-W_darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-2-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-3-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-4-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-4-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-5-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-5-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-6-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-6-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-7-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-7-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-8-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-1A-1K-8-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-2-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-3-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-4-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W_darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-4-W_darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-5-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-5-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-6-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-6-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-7-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W_darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-2A-1K-7-W_darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-3A-1K-1-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-3A-1K-2-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-3A-1K-3-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-4-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-3A-1K-4-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-5-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-3A-1K-5-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-3A-1K-6-W-darker.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-3A-1K-6-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W--darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-1-W--darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-2-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-3-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-4-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-4-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-5-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-5-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-6-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-6-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-7-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-4A-1K-7-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-5A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-5A-1K-2-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-5A-1K-3-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-4-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-5A-1K-4-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-5-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-5A-1K-5-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-6-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-5A-1K-6-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-7-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-5A-1K-7-W.jpg,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-6A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-6A-1K-2-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-6A-1K-3-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-4-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-6A-1K-4-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-6A-1K-6-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-6A-1K-6-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-7A-1K-1-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-7A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-2darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-7A-1K-2-W-2darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-7A-1K-2-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-7A-1K-2-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-3-W-darker.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-7A-1K-3-W-darker.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-3-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-7A-1K-3-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-1-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-8A-1K-1-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-2-W.jpg,.jpg,NAPALM (Walker)/images/,NAPALM (Walker)/images/NAPALM-WALK13-8A-1K-2-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-10A-1K-1-W-darker.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-10A-1K-1-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-10A-1K-2-W-darker.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-10A-1K-2-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-2-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-3-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-3-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-4-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-4-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-5-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-5-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-6-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-11A-1K-6-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W_darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-1-W_darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-2-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-3-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-3-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-4-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-4-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-5-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-5-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-6-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-6-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-7-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-7-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-8-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-1A-1K-8-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-2-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-3-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-3-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-4-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W_darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-4-W_darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-5-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-5-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-6-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-6-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-7-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W_darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-2A-1K-7-W_darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-3A-1K-1-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-3A-1K-2-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-3-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-3A-1K-3-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-4-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-3A-1K-4-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-5-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-3A-1K-5-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-3A-1K-6-W-darker.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-3A-1K-6-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W--darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-1-W--darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-2-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-3-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-3-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-4-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-4-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-5-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-5-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-6-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-6-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-7-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-4A-1K-7-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-5A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-5A-1K-2-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-3-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-5A-1K-3-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-4-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-5A-1K-4-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-5-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-5A-1K-5-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-6-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-5A-1K-6-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-7-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-5A-1K-7-W.csv,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-6A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-6A-1K-2-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-3-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-6A-1K-3-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-4-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-6A-1K-4-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-5-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-6A-1K-5-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-6A-1K-6-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-6A-1K-6-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-7A-1K-1-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-7A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-2darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-7A-1K-2-W-2darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-darker.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-7A-1K-2-W-darker.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-7A-1K-2-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-1-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-8A-1K-1-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-2-W.csv,.csv,NAPALM (Walker)/images/rgb/,NAPALM (Walker)/images/rgb/NAPALM-WALK13-8A-1K-2-W.csv,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-10A-1K-1-W-darker.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-10A-1K-1-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-10A-1K-2-W-darker.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-10A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-10A-1K-2-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-2-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-3-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-3-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-4-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-4-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-4-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-5-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-5-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-5-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-6-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-11A-1K-6-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-11A-1K-6-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-1-W_darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-1-W_darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-2-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-3-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-4-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-4-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-5-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-5-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-6-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-6-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-7-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-7-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-1A-1K-8-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-1A-1K-8-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-2-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-3-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-4-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-4-W_darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-4-W_darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-5-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-5-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-6-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-6-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-7-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-2A-1K-7-W_darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-2A-1K-7-W_darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-3A-1K-1-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-3A-1K-2-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-3A-1K-3-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-4-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-3A-1K-4-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-5-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-3A-1K-5-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-3A-1K-6-W-darker.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-3A-1K-6-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-3A-1K-6-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W--darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-1-W--darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-2-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-3-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-4-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-4-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-5-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-5-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-6-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-6-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-7-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-4A-1K-7-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-4A-1K-7-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-5A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-5A-1K-2-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-5A-1K-3-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-4-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-5A-1K-4-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-5-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-5A-1K-5-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-6-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-5A-1K-6-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-5A-1K-7-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-5A-1K-7-W.tif,,5.29
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-2-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-3-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-4-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-4-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-5-W.jpg,.jpg,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-5-W.jpg,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-5-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-5-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-6-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-6A-1K-6-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-6A-1K-6-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-7A-1K-1-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-7A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-2darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-7A-1K-2-W-2darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-7A-1K-2-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-7A-1K-2-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-3-W-darker.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-7A-1K-3-W-darker.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-7A-1K-3-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-7A-1K-3-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-1-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-8A-1K-1-W.tif,,5.30
+NAPALM (Walker),Exclude,NAPALM-WALK13-8A-1K-2-W.tif,.tif,NAPALM (Walker)/images/tiff/,NAPALM (Walker)/images/tiff/NAPALM-WALK13-8A-1K-2-W.tif,,5.30
+NAPALM (Walker),Exclude,metadata format Dtube Label_NAPALM.xls,.xls,NAPALM (Walker)/,NAPALM (Walker)/metadata format Dtube Label_NAPALM.xls,,5.19

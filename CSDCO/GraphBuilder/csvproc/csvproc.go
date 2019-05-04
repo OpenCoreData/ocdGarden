@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/knakk/rdf"
-	"opencoredata.org/ocdGarden/CSDCOGraphBuilder/utils"
+	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/utils"
 )
 
 func BuildGraph() {

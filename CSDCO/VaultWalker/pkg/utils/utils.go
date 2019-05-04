@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
@@ -8,8 +9,10 @@ import (
 	"os"
 
 	"github.com/minio/sha256-simd"
+	"github.com/piprate/json-gold/ld"
 )
 
+// MimeByType matches file extensions to mimetype
 func MimeByType(e string) string {
 	t := mime.TypeByExtension(e)
 	if t == "" {
@@ -18,6 +21,25 @@ func MimeByType(e string) string {
 	return t
 }
 
+// NQToJSONLD converts NQ RDF to JSON-LD
+func NQToJSONLD(triples string) ([]byte, error) {
+	proc := ld.NewJsonLdProcessor()
+	options := ld.NewJsonLdOptions("")
+	// add the processing mode explicitly if you need JSON-LD 1.1 features
+	options.ProcessingMode = ld.JsonLd_1_1
+
+	doc, err := proc.FromRDF(triples, options)
+	if err != nil {
+		panic(err)
+	}
+
+	// ld.PrintDocument("JSON-LD output", doc)
+	b, err := json.MarshalIndent(doc, "", " ")
+
+	return b, err
+}
+
+// SHAFile returns the sha256 of the string
 func SHAFile(s string) string {
 	h := sha256.New()
 
@@ -49,17 +71,17 @@ func WriteRDF(rdf string) (int, error) {
 
 	f, err := os.OpenFile(fmt.Sprintf("%s/output/objectGraph.nq", RunDir), os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
 
 	fl, err := f.Write([]byte(rdf))
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
 
 	if err := f.Close(); err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
 
-	return fl, err // always nil,  we will never get here with FATAL..   leave for test..  but later remove to log only
+	return fl, err
 }

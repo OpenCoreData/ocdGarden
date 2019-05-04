@@ -72,13 +72,13 @@ func PathInspection(d, f string) (vault.VaultItem, error) {
 		log.Println(err)
 	}
 
-	a := ageInYears(f)
+	a, c := ageInYears(f)
 
 	// TODO  Public is just set true.  so obviously meaningless..
 	//  It's a place holder in case we need moratorium flags
 	// Type == Unknown is really the "do no index flag"...   this is confusing..  need to resolve this in the code
 	v := vault.VaultItem{Name: f, Type: t, Public: true, Project: proj,
-		RelativePath: rel, FileName: file, ParentDir: dir, FileExt: fe, TypeURI: uri, Age: a}
+		RelativePath: rel, FileName: file, ParentDir: dir, FileExt: fe, TypeURI: uri, Age: a, DateCreated: c.Format("2006-01-02")}
 
 	return v, nil // proj == / then don't return it though..   need to return error since I can't return a nil struct
 }
@@ -178,7 +178,7 @@ func contains(slice []string, item string) bool {
 }
 
 // ageInYears gets the age of a file as a float64 decimal value
-func ageInYears(fp string) float64 {
+func ageInYears(fp string) (float64, time.Time) {
 	fi, err := os.Stat(fp)
 	if err != nil {
 		fmt.Println(err)
@@ -189,7 +189,7 @@ func ageInYears(fp string) float64 {
 	delta := time.Now().Sub(ctime)
 	years := delta.Hours() / 24 / 365
 	// fmt.Printf("Create: %v   making it %.2f  years old\n", ctime, years)
-	return round2(years, 0.01)
+	return round2(years, 0.01), ctime
 }
 
 func round2(x, unit float64) float64 {

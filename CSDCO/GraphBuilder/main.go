@@ -1,9 +1,7 @@
 package main
 
 import (
-	"opencoredata.org/ocdGarden/CSDCOGraphBuilder/csvproc"
-	"opencoredata.org/ocdGarden/CSDCOGraphBuilder/igsnGraph"
-	"opencoredata.org/ocdGarden/CSDCOGraphBuilder/pkggrapher"
+	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/projgraph"
 )
 
 // "strconv"
@@ -15,8 +13,9 @@ import (
 //  plus a suffix for the core. And sections of cores will have as their unique
 //  identifier the Core ID plus a suffix for the section.
 func main() {
-	csvproc.BuildGraph()
-	pkggrapher.PKGGrapher()
-	igsnGraph.BuildGraph()
+	// csvproc.BuildGraph()
+	// pkggrapher.PKGGrapher()
+	// igsnGraph.BuildGraph()
+	projgraph.BuildProjGraph()
 	// pkgindexer.PKGIndex()
 }

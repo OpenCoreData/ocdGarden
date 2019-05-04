@@ -14,19 +14,19 @@ import (
 func CSVReport(name string, vh vault.VaultHoldings) {
 	reg, err := regexp.Compile("[^a-zA-Z0-9]+")
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 
 	}
 	s := reg.ReplaceAllString(name, "")
 
 	f, err := os.Create(fmt.Sprintf("./output/report_%s.csv", s))
 	if err != nil {
-		log.Fatalf("Cannot open '%s': %s\n", name, err.Error())
+		log.Printf("Cannot open '%s': %s\n", name, err.Error())
 	}
 	defer func() {
 		e := f.Close()
 		if e != nil {
-			log.Fatalf("Cannot close '%s': %s\n", name, e.Error())
+			log.Printf("Cannot close '%s': %s\n", name, e.Error())
 		}
 	}()
 

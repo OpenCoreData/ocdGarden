@@ -16,7 +16,7 @@ import (
 	"github.com/rs/xid"
 	"github.com/tidwall/gjson"
 	"github.com/tidwall/sjson"
-	"opencoredata.org/ocdGarden/CSDCOGraphBuilder/connectors"
+	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/connectors"
 )
 
 type Manifest struct {

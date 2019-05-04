@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/knakk/rdf"
-	"github.com/rs/xid"
 	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/internal/vault"
 
 	"opencoredata.org/ocdGarden/CSDCO/VaultWalker/pkg/utils"
@@ -19,40 +18,38 @@ import (
 // In this approach each object gets a named graph.  Perhaps this is not
 // needed since each data graph also has a sha ID with it?  Which is all we really
 // use in the graph IRI.   ???
-func RDFGraph(item vault.VaultItem, shaval string, ub *utils.Buffer) int {
+func RDFGraph(guid string, item vault.VaultItem, shaval string, ub *utils.Buffer) int {
 	var b strings.Builder
 
 	t := utils.MimeByType(item.FileExt)
 	newctx, _ := rdf.NewIRI(fmt.Sprintf("http://opencoredata.org/objectgraph/id/%s", shaval))
 	ctx := rdf.Context(newctx)
 
-	guid := xid.New()
-	s := fmt.Sprintf("http://opencoredata.org/id/do/%s", guid)
-	d := fmt.Sprintf("http://opencoredata.org/id/dx/%s", guid) // distribution URL
+	douri := fmt.Sprintf("http://opencoredata.org/id/do/%s", shaval) // before I was using the guid var value..  not sure why
 
-	_ = iiTriple(s, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", item.TypeURI, ctx, &b)
-	_ = iiTriple(s, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://www.w3.org/ns/dcat#Dataset", ctx, &b)
-	_ = iiTriple(s, "http://purl.org/dc/terms/type", "http://purl.org/dc/dcmitype/Dataset", ctx, &b)
-	_ = iiTriple(s, "http://www.w3.org/ns/dcat#distribution", d, ctx, &b)
-	//  _ = iiTriple(s, "", "", ctx, &b)  //  should we add in a landing page?
-	// _ = iiTriple(s, "http://www.w3.org/2000/01/rdf-schema#seeAlso". "cruise URI" )
-	//  If there is an inbox, would need to look here...   (some generic manner to do this?)
+	// guid := xid.New()                                          // Not sure why I was using xid here..
+	s := fmt.Sprintf("http://opencoredata.org/id/do/%s", guid) // before I was using the guid var value..  not sure why
 
-	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Project", item.Project, ctx, &b)
-	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Type", item.Type, ctx, &b)
-	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/FileName", item.FileName, ctx, &b)
-	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/FileAge", fmt.Sprintf("%f", item.Age), ctx, &b)
-	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/FileExt", item.FileExt, ctx, &b)
-	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/SHAHash", shaval, ctx, &b)
-	_ = ilTriple(s, "http://opencoredata.org/voc/csdco/v1/Mime", t, ctx, &b)
+	bn, err := rdf.NewBlank(fmt.Sprintf("b%s", guid))
+	if err != nil {
+		log.Println("Error setting blank node")
+	}
 
-	_ = iiTriple(d, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://www.w3.org/ns/dcat#Distribution", ctx, &b)
-	_ = iiTriple(d, "http://purl.org/dc/terms/license", "http://example.com/cc0.html", ctx, &b)
-	_ = iiTriple(d, "http://www.w3.org/ns/dcat#downloadURL", s, ctx, &b)
-	// _ = iiTriple(d, "http://www.w3.org/ns/dcat#mediaType", "https://www.iana.org/assignments/media-types/text/csv", ctx, &b)
+	_ = iiTriple(s, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://www.schema.org/DigitalDocument", ctx, &b)
+	_ = ilTriple(s, "http://schema.org/description", fmt.Sprintf("Digital object of type %s named %s for CSDCO project %s", item.Type, item.FileName, item.Project), ctx, &b)
+	_ = ilTriple(s, "http://schema.org/isRelatedTo", item.Project, ctx, &b)
+	_ = ilTriple(s, "http://schema.org/name", item.FileName, ctx, &b)
+	_ = ilTriple(s, "http://schema.org/dateCreated", item.DateCreated, ctx, &b)
 
-	_ = ilTriple(d, "http://purl.org/dc/terms/title", fmt.Sprintf("Digital object %s for CSDCO project %s", item.FileName, item.Project), ctx, &b)
-	// _ = ilTriple(d, "http://purl.org/dc/terms/description", "Description info here", ctx, &b)
+	_ = ilTriple(s, "http://schema.org/encodingFormat", t, ctx, &b)
+	_ = iiTriple(s, "http://schema.org/additionType", item.TypeURI, ctx, &b) // should be the URL
+	_ = iiTriple(s, "http://schema.org/license", "http://example.com/cc0.html", ctx, &b)
+	_ = iiTriple(s, "http://schema.org/url", douri, ctx, &b)
+	_ = ibTriple(s, "http://schema.org/identifier", bn, ctx, &b)
+
+	_ = blTriple(bn, "http://schema.org/propertyID", "SHA256", ctx, &b)
+	_ = blTriple(bn, "http://schema.org/value", shaval, ctx, &b)
+	_ = biTriple(bn, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://schema.org/PropertyValue", ctx, &b)
 
 	len, err := ub.Write([]byte(b.String()))
 	if err != nil {
@@ -88,6 +85,53 @@ func ilTriple(s, p, o string, c rdf.Context, b *strings.Builder) error {
 
 	qs := q.Serialize(rdf.NQuads)
 	if s != "" && p != "" && o != "" {
+		fmt.Fprintf(b, "%s", qs)
+	}
+
+	return err
+}
+
+func ibTriple(s, p string, o rdf.Blank, c rdf.Context, b *strings.Builder) error {
+	sub, err := rdf.NewIRI(s)
+	pred, err := rdf.NewIRI(p)
+
+	t := rdf.Triple{Subj: sub, Pred: pred, Obj: o}
+	q := rdf.Quad{t, c}
+
+	qs := q.Serialize(rdf.NQuads)
+	if s != "" && p != "" {
+		fmt.Fprintf(b, "%s", qs)
+	}
+
+	return err
+}
+
+func blTriple(s rdf.Blank, p, o string, c rdf.Context, b *strings.Builder) error {
+
+	pred, err := rdf.NewIRI(p)
+	obj, err := rdf.NewLiteral(o)
+
+	t := rdf.Triple{Subj: s, Pred: pred, Obj: obj}
+	q := rdf.Quad{t, c}
+
+	qs := q.Serialize(rdf.NQuads)
+	if p != "" && o != "" {
+		fmt.Fprintf(b, "%s", qs)
+	}
+
+	return err
+}
+
+func biTriple(s rdf.Blank, p, o string, c rdf.Context, b *strings.Builder) error {
+
+	pred, err := rdf.NewIRI(p)
+	obj, err := rdf.NewIRI(o)
+
+	t := rdf.Triple{Subj: s, Pred: pred, Obj: obj}
+	q := rdf.Quad{t, c}
+
+	qs := q.Serialize(rdf.NQuads)
+	if p != "" && o != "" {
 		fmt.Fprintf(b, "%s", qs)
 	}
 

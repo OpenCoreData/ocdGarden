@@ -3,7 +3,7 @@ package projgraph
 import (
 	"log"
 
-	"opencoredata.org/ocdGarden/CSDCOGraphBuilder/jld"
+	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/jld"
 )
 
 func BuildProjGraph() string {
