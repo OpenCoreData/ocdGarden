@@ -42,16 +42,15 @@ func VoidReader() []VoidDataset {
 	file, _ := os.Open("void.ttl")
 	nr := bufio.NewReader(file)
 
-	// r is an io.Reader
+	// nr is an io.Reader
 	g.Parse(nr, "text/turtle")
 
 	fmt.Printf("Read in file with %d triples\n", g.Len())
-
 	var vdsa []VoidDataset
 
+	// read the triples from g
 	triples := g.All(nil, nil, rdf2go.NewResource("http://rdfs.org/ns/void#Dataset"))
 	for triple := range triples {
-
 		var vds VoidDataset
 
 		fmt.Printf("Found the URI: %s \n", triples[triple].String())

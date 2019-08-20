@@ -28,7 +28,10 @@ func RDFGraph(guid string, item vault.VaultItem, shaval string, ub *utils.Buffer
 	douri := fmt.Sprintf("http://opencoredata.org/id/do/%s", shaval) // before I was using the guid var value..  not sure why
 
 	// guid := xid.New()                                          // Not sure why I was using xid here..
-	s := fmt.Sprintf("http://opencoredata.org/id/do/%s", guid) // before I was using the guid var value..  not sure why
+	s := fmt.Sprintf("http://opencoredata.org/id/do/%s", guid)
+	// before I was using the guid var value..  not sure why
+	// answer?  I may add or remove triples..  so the hash is a bad ID here.
+	// it's fine when I'm dealing with a byte stream and that is likely immutable
 
 	bn, err := rdf.NewBlank(fmt.Sprintf("b%s", guid))
 	if err != nil {
@@ -43,7 +46,7 @@ func RDFGraph(guid string, item vault.VaultItem, shaval string, ub *utils.Buffer
 
 	_ = ilTriple(s, "http://schema.org/encodingFormat", t, ctx, &b)
 	_ = iiTriple(s, "http://schema.org/additionType", item.TypeURI, ctx, &b) // should be the URL
-	_ = iiTriple(s, "http://schema.org/license", "http://example.com/cc0.html", ctx, &b)
+	_ = iiTriple(s, "http://schema.org/license", "https://creativecommons.org/share-your-work/public-domain/cc0/", ctx, &b)
 	_ = iiTriple(s, "http://schema.org/url", douri, ctx, &b)
 	_ = ibTriple(s, "http://schema.org/identifier", bn, ctx, &b)
 
