@@ -16,6 +16,6 @@ func main() {
 		log.Panic(err)
 	}
 
-	query.Boreholes(db)
+	//query.Boreholes(db)
 	query.Projects(db)
 }

@@ -45,7 +45,7 @@ func RDFGraph(guid string, item vault.VaultItem, shaval string, ub *utils.Buffer
 	_ = ilTriple(s, "http://schema.org/dateCreated", item.DateCreated, ctx, &b)
 
 	_ = ilTriple(s, "http://schema.org/encodingFormat", t, ctx, &b)
-	_ = iiTriple(s, "http://schema.org/additionType", item.TypeURI, ctx, &b) // should be the URL
+	_ = iiTriple(s, "http://schema.org/additionalType", item.TypeURI, ctx, &b) // should be the URL
 	_ = iiTriple(s, "http://schema.org/license", "https://creativecommons.org/share-your-work/public-domain/cc0/", ctx, &b)
 	_ = iiTriple(s, "http://schema.org/url", douri, ctx, &b)
 	_ = ibTriple(s, "http://schema.org/identifier", bn, ctx, &b)

@@ -34,9 +34,33 @@ func Projects(db *sql.DB) {
 			log.Println(err)
 		}
 
-		p := jld.Project{Expedition.String, Full_Name.String, Funding.String, Technique.String, Discipline.String,
-			Link_Title.String, Link_URL.String, Lab.String, Repository.String, Status.String, Start_Date.String,
-			Outreach.String, Investigators.String, Abstract.String}
+		pf := []jld.PjctFeature{}
+
+		var Hole_ID, IGSN, Location, Location_ID sql.NullString
+		var Lat, Long sql.NullFloat64
+
+		r, err := db.Query(`SELECT   Lat, Long, Hole_ID, IGSN, Location,
+		 Location_ID FROM boreholes WHERE Expedition is ?`, Expedition)
+		if err != nil {
+			log.Println(err)
+		}
+
+		for r.Next() {
+			err = r.Scan(&Lat, &Long, &Hole_ID, &IGSN, &Location, &Location_ID)
+			if err != nil {
+				log.Println(err)
+			}
+
+			f := jld.PjctFeature{Name: Hole_ID.String, Latitude: Lat.Float64, Longitude: Long.Float64}
+			pf = append(pf, f)
+		}
+		r.Close()
+
+		p := jld.Project{Expedition: Expedition.String, FullName: Full_Name.String, Funding: Funding.String,
+			Technique: Technique.String, Discipline: Discipline.String, LinkTitle: Link_Title.String,
+			LinkURL: Link_URL.String, Lab: Lab.String, Repository: Repository.String, Status: Status.String,
+			StartDate: Start_Date.String, Outreach: Outreach.String,
+			Investigators: Investigators.String, Abstract: Abstract.String, Features: pf}
 
 		jld, err := jld.ProjectDG(p)
 		if err != nil {
