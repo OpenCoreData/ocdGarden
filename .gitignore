@@ -1,3 +1,4 @@
+CSDCO/GraphBuilder/secret/*
 *.ttl
 !spec/*.ttl
 *.n3

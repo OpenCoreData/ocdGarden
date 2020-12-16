@@ -1,0 +1,11 @@
+sqlfile: ./data/input/CSDCO.sqlite3
+bucket: x
+sparql: 
+  address: 192.168.2.89
+  port: 3030
+  database: opencore
+minio:
+  address: localhost
+  port: 9000
+  accesskey: AKIAIOSFODNN7EXAMPLE
+  secretkey: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY

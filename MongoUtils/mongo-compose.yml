@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  mongodb:
+    image: mongo:3.4
+    labels:
+      - "traefik.backend=mongodb"
+    ports:
+        - "27017:27017"
+    restart: on-failure
+    volumes:
+      -  /home/fils/Data/OCDDataVolumes/mongo/datadir/:/data/db
+    networks:
+      - traefik_default
+
+
+networks:
+  traefik_default:

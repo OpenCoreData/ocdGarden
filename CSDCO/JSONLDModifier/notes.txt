@@ -1,0 +1,25 @@
+
+
+
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/additionType> <http://opencoredata.org/voc/csdco/v1/ICDFiles> <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/dateCreated> "2009-11-02" <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/description> "Digital object of type ICD named YNP3-ABD09-1A-1L-1.pdf for CSDCO project YNP3" <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/encodingFormat> "application/pdf" <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/identifier> _:b0 <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/isRelatedTo> "YNP3" <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/license> <http://example.com/cc0.html> <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/name> "YNP3-ABD09-1A-1L-1.pdf" <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://schema.org/url> <http://opencoredata.org/id/do/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+<http://opencoredata.org/id/do/bj6s49vtr9b9lop9n40g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.schema.org/DigitalDocument> <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+_:b0 <http://schema.org/propertyID> "SHA256" <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+_:b0 <http://schema.org/value> "e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad" <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> <http://opencoredata.org/objectgraph/id/e88c1fa53004f75e2f1a761284c42e22d69e1750e70904c02c0b726ff42250ad> .
+
+
+objectgraph/id/XYZ can stay..  is the named graph for the DO
+
+pull the SHA from it
+or better..   get from the schema.org/value line?
+
+then update id/do/PID   to id/csdco/do/SHA   or SHA.json for this metadata object
+

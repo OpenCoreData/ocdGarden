@@ -125,3 +125,21 @@ func BITriple(s, p, o string, c rdf.Context, b *strings.Builder) error {
 	fmt.Fprintf(b, "%s", qs)
 	return err
 }
+
+// BBTriple for IRI Literal sets
+func BBTriple(s, p, o string, c rdf.Context, b *strings.Builder) error {
+	if o == "" {
+		return nil
+	}
+
+	sub, err := rdf.NewBlank(s)
+	pred, err := rdf.NewIRI(p)
+	obj, err := rdf.NewBlank(o)
+
+	t := rdf.Triple{Subj: sub, Pred: pred, Obj: obj}
+	q := rdf.Quad{t, c}
+
+	qs := q.Serialize(rdf.NQuads)
+	fmt.Fprintf(b, "%s", qs)
+	return err
+}

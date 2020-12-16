@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"log"
 
-	_ "github.com/mattn/go-sqlite3"
+	"github.com/minio/minio-go"
 	gominio "github.com/minio/minio-go"
-	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/internal/connectors"
+
 	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/internal/jld"
 )
 
 // Boreholes will query for the projects and print the resulted
-func Boreholes(db *sql.DB) {
+func Boreholes(db *sql.DB, mc *minio.Client, bucketVal string) {
 	rows, err := db.Query(`SELECT  Azimuth,  Dip,   Elevation, Lat, Long,   Water_Depth,   mblf_B, mblf_T, Site,
 	Comment, Country, County_Region, Date, Expedition, Hole, Hole_ID, IGSN, Location, Location_ID, Location_Type,
 	Metadata_Source, NGDC_Serial, Original_ID, PI, Platform, Position, Sample_Type, SiteHole, State_Province,
@@ -22,8 +22,7 @@ func Boreholes(db *sql.DB) {
 		log.Println(err)
 	}
 
-	mc := connectors.MinioConnection()
-	bucketVal := "csdco"
+	//bucketVal := "csdco"
 
 	for rows.Next() {
 		var Azimuth, Dip, Elevation, Lat, Long, Water_Depth, mblf_B, mblf_T sql.NullFloat64

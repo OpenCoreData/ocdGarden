@@ -7,22 +7,22 @@ import (
 	"log"
 
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/minio/minio-go"
 	gominio "github.com/minio/minio-go"
 
-	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/internal/connectors"
 	"opencoredata.org/ocdGarden/CSDCO/GraphBuilder/internal/jld"
 )
 
 // Projects query
-func Projects(db *sql.DB) {
+func Projects(db *sql.DB, mc *minio.Client, bucketVal string) {
 	rows, err := db.Query(`SELECT Expedition,Full_Name,Funding,Technique,Discipline,
 	Link_Title,Link_URL,Lab,Repository,Status,Start_Date,Outreach,Investigators,Abstract  FROM projects`)
 	if err != nil {
 		log.Println(err)
 	}
 
-	mc := connectors.MinioConnection()
-	bucketVal := "csdco"
+	// mc := connectors.MinioConnection()
+	//bucketVal := "csdco"
 
 	for rows.Next() {
 		var Expedition, Full_Name, Funding, Technique, Discipline, Link_Title, Link_URL,

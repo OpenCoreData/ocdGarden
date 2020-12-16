@@ -95,6 +95,9 @@ func main() {
 				// If the type is unknown, if it is a dir or starts with a . then skip it..
 				if pf.Holdings[k].Type != "Exclude" && pf.Holdings[k].Type != "Directory" && !strings.HasPrefix(pf.Holdings[k].FileName, ".") {
 					shaval := utils.SHAFile(pf.Holdings[k].Name)
+
+					// at this point check the sha in the object store to see if it exists
+
 					guid := xid.New()
 
 					if pf.Holdings[k].Age > 2.00 {

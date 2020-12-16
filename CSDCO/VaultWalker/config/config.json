@@ -1,0 +1,13 @@
+{
+    "vault": {
+       "dir": "/home/fils/tmp"
+    },
+    "s3": {
+        "address": "192.168.86.45",
+        "port": "32773",
+        "accessKey": "AKIAIOSFODNN7EXAMPLE",
+        "secretKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+        "ssl": "false",
+        "bucket": "vaultwalker"
+    }
+}

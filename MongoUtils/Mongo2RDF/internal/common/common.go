@@ -11,7 +11,7 @@ import (
 	mgo "gopkg.in/mgo.v2"
 )
 
-// ref:  https://rosettacode.org/wiki/Strip_control_codes_and_extended_characters_from_a_string#Go
+// StripCtlAndExtFromUnicode ref:  https://rosettacode.org/wiki/Strip_control_codes_and_extended_characters_from_a_string#Go
 func StripCtlAndExtFromUnicode(str string) string {
 	isOk := func(r rune) bool {
 		return r < 32 || r >= 127
@@ -55,6 +55,7 @@ func WriteToName(rdf, filename string) (int, error) {
 	return fl, err // always nil,  we will never get here with FATAL..   leave for test..  but later remove to log only
 }
 
+// WriteFile file name
 func WriteFile(name string, tr []rdf.Triple) {
 	// Create the output file
 	outFile, err := os.Create(name)
@@ -75,7 +76,8 @@ func WriteFile(name string, tr []rdf.Triple) {
 	}
 }
 
+// GetMongoCon provides a mongo session connection
 func GetMongoCon() (*mgo.Session, error) {
-	host := os.Getenv("opencore.dev")
+	host := os.Getenv("machine.dev")
 	return mgo.Dial(host)
 }
